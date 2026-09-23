@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch05",
+    "no": 5,
+    "title": "도형 기초"
+  },
+  "lesson": {
+    "id": "c0-ch05-l04",
+    "no": 4,
+    "title": "원의 성질",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-middle"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "중심에서 같은 거리",
+      "body": [
+        "바퀴가 둥근 이유는 테두리의 모든 점이 중심에서 같은 거리에 있기 때문입니다.",
+        "그 거리가 반지름이고, 반지름의 2배가 지름입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "반지름이 5cm인 원의 지름은 몇 cm일까요?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "현과 수선",
+      "body": [
+        "원 위의 두 점을 이은 선분을 현, 원 위의 두 점 사이의 곡선 부분을 호라고 합니다.",
+        "원의 중심에서 현에 내린 수선은 그 현을 이등분합니다. 그래서 반지름, 중심에서 현까지의 거리, 현의 절반이 직각삼각형을 이룹니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "반지름이 5이고 중심에서 현까지의 거리가 3인 원에서 현의 길이는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "현의 절반을 먼저 피타고라스 정리로 구하세요.",
+      "explanation": "현의 절반 = √(25 − 9) = 4이므로 현은 8"
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "반지름이 13인 원에서 길이가 24인 현과 중심 사이의 거리는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "√(169 − 144) = 5"
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "접선",
+      "body": [
+        "원과 한 점에서만 만나는 직선을 접선, 그 점을 접점이라고 합니다.",
+        "접점을 지나는 반지름은 접선과 수직입니다.",
+        "원 밖의 한 점에서 원에 그은 두 접선의 길이는 같습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "반지름이 6인 원의 중심에서 10만큼 떨어진 점 P에서 원에 접선을 그었습니다. 점 P에서 접점까지의 거리는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "반지름과 접선이 수직입니다.",
+      "explanation": "√(100 − 36) = 8"
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "원 밖의 점 P에서 원에 그은 두 접선의 접점을 A, B라 할 때 PA = 7이면 PB는?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "discover",
+      "title": "원주각",
+      "body": [
+        "호의 양 끝과 원 위의 다른 한 점을 이어 만든 각을 원주각, 중심과 이어 만든 각을 중심각이라고 합니다.",
+        "한 호에 대한 원주각의 크기는 그 호에 대한 중심각의 절반이고, 같은 호에 대한 원주각은 모두 같습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "한 호에 대한 중심각이 100°일 때, 그 호에 대한 원주각은 몇 도일까요?",
+      "answer": "50",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "원의 지름에 대한 원주각은 몇 도일까요?",
+      "answer": "90",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "지름에 대한 중심각은 180°이므로 원주각은 90°입니다."
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "원에 내접하는 사각형",
+      "body": [
+        "네 꼭짓점이 모두 원 위에 있는 사각형을 원에 내접하는 사각형이라고 합니다.",
+        "원에 내접하는 사각형에서 마주 보는 두 각의 크기의 합은 180°입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "원에 내접하는 사각형의 한 각이 70°일 때, 그 각과 마주 보는 각은 몇 도일까요?",
+      "answer": "110",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "한 호에 대한 원주각 하나가 35°일 때, 같은 호에 대한 다른 원주각은 몇 도일까요?",
+      "answer": "35",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "삼각형 ABC의 세 꼭짓점이 원 위에 있고 변 AB가 지름입니다. ∠A = 40°일 때 ∠B는 몇 도일까요?",
+      "answer": "50",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "∠C는 지름에 대한 원주각이라 90°이므로 ∠B = 180° − 90° − 40° = 50°"
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "지름에 대한 원주각이 항상 90°인 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "중심각"
+          ],
+          [
+            "180"
+          ],
+          [
+            "절반",
+            "반",
+            "½",
+            "1/2"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "지름의 양 끝과 중심이 이루는 중심각은 일직선이라 180°입니다. 원주각은 같은 호에 대한 중심각의 절반이므로 90°가 됩니다."
+    }
+  ]
+}
