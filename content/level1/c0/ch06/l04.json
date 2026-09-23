@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch06",
+    "no": 6,
+    "title": "자료의 정리"
+  },
+  "lesson": {
+    "id": "c0-ch06-l04",
+    "no": 4,
+    "title": "상관관계",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-middle"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "두 자료를 함께 보기",
+      "body": [
+        "학생들의 키와 몸무게를 (키, 몸무게) 순서쌍으로 만들어 좌표평면에 점으로 찍어 볼 수 있습니다.",
+        "점들이 흩어진 모양을 보면 두 자료 사이의 관계를 짐작할 수 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "두 변량의 순서쌍을 좌표평면 위에 점으로 나타낸 그래프를 {{1}}라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "산점도"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "상관관계의 종류",
+      "body": [
+        "한 변량이 커질 때 다른 변량도 대체로 커지면 양의 상관관계, 대체로 작아지면 음의 상관관계라고 합니다.",
+        "어느 쪽으로도 뚜렷한 경향이 없으면 상관관계가 없다고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "공부 시간이 길수록 시험 점수가 대체로 높다면 두 변량 사이에는 {{1}}의 상관관계가 있습니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "양"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "겨울철 기온이 낮을수록 난방비가 대체로 많다면 두 변량 사이에는 {{1}}의 상관관계가 있습니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "음"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "키와 수학 점수 사이에는 상관관계가 {{1}}.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "없다",
+            "없음"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "산점도 읽기",
+      "body": [
+        "점들이 오른쪽 위로 향하는 직선 주변에 모이면 양의 상관관계, 오른쪽 아래로 향하면 음의 상관관계입니다.",
+        "점들이 한 직선에 가까이 모일수록 상관관계가 강하고, 넓게 퍼질수록 약합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": 0,
+        "xmax": 10,
+        "ymin": 0,
+        "ymax": 100,
+        "xstep": 1,
+        "ystep": 10
+      },
+      "prompt": "공부 시간 x시간과 점수 y점의 자료 (2, 60), (4, 70), (6, 80)이 같은 경향을 이어 간다고 할 때, 공부 시간 8시간에 해당하는 점을 표시하세요.",
+      "answer": {
+        "x": 8,
+        "y": 90,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": "2시간마다 10점씩 오르므로 (8, 90)입니다."
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": 0,
+        "xmax": 10,
+        "ymin": 0,
+        "ymax": 10,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "자료 (1, 9), (3, 7), (5, 5)가 같은 경향을 이어 간다고 할 때, x = 7에 해당하는 점을 표시하세요.",
+      "answer": {
+        "x": 7,
+        "y": 3,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": "x가 2 늘 때 y가 2 줄어드는 음의 상관관계이므로 (7, 3)입니다."
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "산점도의 점들이 한 직선 가까이 모여 있을수록 상관관계가 {{1}}합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "강"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "상관관계와 인과관계",
+      "body": [
+        "상관관계가 있다고 해서 한쪽이 다른 쪽의 원인이라는 뜻은 아닙니다.",
+        "아이스크림 판매량과 물놀이 사고 수는 양의 상관관계가 있지만, 둘 다 더운 날씨 때문에 함께 늘어나는 것입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "아이스크림 판매량과 물놀이 사고 수가 함께 늘어나는 공통 원인은 {{1}}입니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "기온",
+            "날씨",
+            "더위",
+            "온도"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "학생 6명의 (국어, 영어) 점수가 (60, 65), (70, 75), (80, 70), (90, 95), (50, 40), (85, 80)입니다. 영어 점수가 국어 점수보다 높은 학생은 몇 명일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "산점도에서 직선 y = x보다 위에 있는 점을 세는 것과 같습니다.",
+      "explanation": "(60, 65), (70, 75), (90, 95)로 3명입니다."
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "위 6명의 국어 점수와 영어 점수 사이에는 대체로 {{1}}의 상관관계가 있습니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "양"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "국어 점수가 높은 학생이 대체로 영어 점수도 높습니다."
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "두 변량 사이에 상관관계가 있다고 해서 인과관계가 있다고 단정할 수 없는 이유를 예를 들어 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "원인"
+          ],
+          [
+            "결과"
+          ],
+          [
+            "제3",
+            "공통",
+            "다른 요인",
+            "기온",
+            "날씨"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "두 변량이 함께 변하더라도 한쪽이 다른 쪽의 원인이 아닐 수 있습니다. 아이스크림 판매량과 물놀이 사고는 함께 늘지만, 실제 원인은 두 변량에 공통으로 영향을 주는 기온입니다."
+    }
+  ]
+}
