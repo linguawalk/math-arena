@@ -1,0 +1,311 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch01",
+    "no": 1,
+    "title": "수 체계"
+  },
+  "lesson": {
+    "id": "c0-ch01-l02",
+    "no": 2,
+    "title": "정수와 유리수의 계산",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-middle"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "0보다 작은 수",
+      "body": [
+        "겨울 아침 기온이 '영하 3도'라면 0도보다 3도 낮다는 뜻입니다.",
+        "0을 기준으로 반대 방향의 양을 나타내려고 음수를 씁니다. 영하 3도는 −3도입니다."
+      ],
+      "figure": {
+        "widget": "number_line",
+        "config": {
+          "min": -5,
+          "max": 5,
+          "step": 1
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "diagram",
+      "widget": "number_line",
+      "config": {
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      "prompt": "−3을 수직선 위에 표시하세요.",
+      "answer": {
+        "value": -3,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": "0에서 왼쪽으로 3칸 간 곳입니다."
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "정수와 유리수",
+      "body": [
+        "+1, +2, …를 양의 정수, −1, −2, …를 음의 정수라 하고, 이들과 0을 합쳐 정수라고 합니다.",
+        "분수 a/b(b ≠ 0, a와 b는 정수)로 나타낼 수 있는 수를 유리수라고 합니다. −5/2, 0.75, 4는 모두 유리수입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "discover",
+      "qtype": "diagram",
+      "widget": "number_line",
+      "config": {
+        "min": -5,
+        "max": 5,
+        "step": 0.5
+      },
+      "prompt": "−5/2를 수직선 위에 표시하세요.",
+      "answer": {
+        "value": -2.5,
+        "tolerance": 0
+      },
+      "hint": "−5/2 = −2.5입니다.",
+      "explanation": "−2와 −3의 한가운데입니다."
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "절댓값",
+      "body": [
+        "수직선에서 어떤 수를 나타내는 점과 0 사이의 거리를 그 수의 절댓값이라 하고 |a|로 씁니다.",
+        "|+4| = 4, |−4| = 4입니다. 거리이므로 절댓값은 0 이상입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "|−7| = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "7"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "−7은 0에서 7만큼 떨어져 있습니다."
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "ordering",
+      "prompt": "작은 수부터 차례로 배열하세요.",
+      "items": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "−1/2"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "1.5"
+        },
+        {
+          "id": "e",
+          "text": "−2.25"
+        }
+      ],
+      "answer_order": [
+        "a",
+        "e",
+        "b",
+        "c",
+        "d"
+      ],
+      "hint": null,
+      "explanation": "음수는 절댓값이 클수록 작습니다. −3 < −2.25 < −1/2 < 0 < 1.5"
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "덧셈과 뺄셈",
+      "body": [
+        "덧셈은 수직선 위의 이동입니다. 양수를 더하면 오른쪽, 음수를 더하면 왼쪽으로 갑니다.",
+        "뺄셈은 빼는 수의 부호를 바꾸어 더하는 것과 같습니다. 3 − (−4) = 3 + 4"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(−8) + 5 를 계산하세요.",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "−8에서 오른쪽으로 5칸 가면 −3입니다."
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "3 − (−4) 를 계산하세요.",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "3 + 4 = 7"
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "새벽 기온이 −6°C, 낮 기온이 4°C였습니다. 일교차는 몇 °C일까요?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "4 − (−6) = 10°C"
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "곱셈·나눗셈과 분수 계산",
+      "body": [
+        "부호가 같은 두 수의 곱과 몫은 양수, 다른 두 수의 곱과 몫은 음수입니다.",
+        "여러 수를 곱할 때는 음수의 개수가 짝수면 +, 홀수면 −입니다.",
+        "분수의 덧셈은 통분해서, 나눗셈은 나누는 수의 역수를 곱해서 계산합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(−2) × (−3) × (−5) 를 계산하세요.",
+      "answer": "-30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "음수가 3개(홀수)이므로 부호는 −, 크기는 30입니다."
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "(−1)¹⁰⁰ = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1",
+            "+1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "−1을 짝수 번 곱하면 1입니다."
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "−2/3 + 1/4 를 계산하세요. (기약분수로)",
+      "answer": "-5/12",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "−8/12 + 3/12 = −5/12"
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(−3/4) ÷ (9/8) 를 계산하세요. (기약분수로)",
+      "answer": "-2/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "−3/4 × 8/9 = −24/36 = −2/3"
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "−3² + (−2)³ ÷ 4 를 계산하세요.",
+      "answer": "-11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "−3²은 3²에 −를 붙인 것입니다.",
+      "explanation": "−9 + (−8) ÷ 4 = −9 − 2 = −11. 거듭제곱 → 곱셈·나눗셈 → 덧셈·뺄셈 순서입니다."
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "(−2)²과 −2²의 값이 다른 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "괄호"
+          ],
+          [
+            "거듭제곱",
+            "제곱"
+          ],
+          [
+            "4",
+            "−4",
+            "-4"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "(−2)²은 괄호 안의 −2를 두 번 곱해 4이고, −2²은 2²을 먼저 계산한 뒤 −를 붙여 −4입니다. 거듭제곱이 부호보다 먼저 계산되기 때문입니다."
+    }
+  ]
+}

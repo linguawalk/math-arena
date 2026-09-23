@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch01",
+    "no": 1,
+    "title": "수 체계"
+  },
+  "lesson": {
+    "id": "c0-ch01-l01",
+    "no": 1,
+    "title": "소인수분해",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-middle"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "수를 쪼개 보기",
+      "body": [
+        "사탕 12개를 봉지에 똑같이 나누어 담으려고 합니다.",
+        "한 봉지에 모두 담을 수도 있고, 12봉지에 하나씩 담을 수도 있습니다. 그 사이에는 어떤 방법이 있을까요?"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "사탕 12개를 남김없이 똑같이 나누어 담을 때, 가능한 봉지 수는 모두 몇 가지일까요? (1봉지, 12봉지도 포함)",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "12를 나누어떨어지게 하는 수를 모두 찾아보세요.",
+      "explanation": "1, 2, 3, 4, 6, 12봉지로 6가지입니다. 이 수들이 바로 12의 약수입니다."
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "약수가 두 개뿐인 수",
+      "body": [
+        "어떤 수를 나누어떨어지게 하는 수를 그 수의 약수라고 합니다. 12의 약수는 1, 2, 3, 4, 6, 12입니다.",
+        "7의 약수는 1과 7뿐입니다. 이처럼 1보다 큰 자연수 중 약수가 1과 자기 자신뿐인 수를 소수라고 합니다.",
+        "약수가 3개 이상인 수는 합성수입니다. 1은 약수가 1개뿐이라 소수도 합성수도 아닙니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "1보다 큰 자연수 중 약수가 1과 자기 자신 두 개뿐인 수를 {{1}}라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "소수"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "예를 들어 2, 3, 5, 7, 11은 모두 소수입니다."
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "1부터 20까지의 자연수 중 소수는 몇 개일까요?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "2의 배수, 3의 배수를 먼저 지워 보세요. 단, 2와 3 자신은 남깁니다.",
+      "explanation": "2, 3, 5, 7, 11, 13, 17, 19로 8개입니다. 짝수 중 소수는 2 하나뿐입니다."
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "ordering",
+      "prompt": "60을 소수들의 곱으로 쪼개는 과정입니다. 순서대로 배열하세요.",
+      "items": [
+        {
+          "id": "a",
+          "text": "60 = 2 × 2 × 3 × 5"
+        },
+        {
+          "id": "b",
+          "text": "60 = 2 × 30"
+        },
+        {
+          "id": "c",
+          "text": "60 = 2² × 3 × 5"
+        },
+        {
+          "id": "d",
+          "text": "60 = 2 × 2 × 15"
+        }
+      ],
+      "answer_order": [
+        "b",
+        "d",
+        "a",
+        "c"
+      ],
+      "hint": null,
+      "explanation": "더 이상 쪼갤 수 없는 소수만 남을 때까지 나누고, 같은 수는 거듭제곱으로 묶습니다."
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "summary",
+      "title": "소인수분해",
+      "body": [
+        "어떤 수의 약수 중 소수인 것을 소인수라고 합니다.",
+        "자연수를 소인수들만의 곱으로 나타내는 것을 소인수분해라고 합니다. 예: 60 = 2² × 3 × 5",
+        "어떤 순서로 쪼개더라도 소인수분해의 결과는 오직 한 가지입니다. 그래서 소인수분해는 수의 '지문'과 같습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "72를 소인수분해하면 72 = 2^{{1}} × 3^{{2}} 입니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": "72를 2로 계속 나누어 보세요.",
+      "explanation": "72 = 2 × 2 × 2 × 3 × 3 = 2³ × 3²"
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "소인수분해한 결과가 2³ × 3 × 5인 수는 얼마일까요?",
+      "answer": "120",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "8 × 3 × 5 = 120"
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "2² × 3 = 12의 약수는 몇 개일까요? 2의 거듭제곱(1, 2, 4)과 3의 거듭제곱(1, 3)을 짝지어 표를 만들어 세어 보세요.",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "1, 2, 4와 1, 3을 하나씩 골라 곱하면 3 × 2 = 6가지입니다."
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "약수의 개수와 최대공약수·최소공배수",
+      "body": [
+        "a^m × b^n 꼴로 소인수분해되는 수의 약수 개수는 (m + 1) × (n + 1)입니다. 각 소인수의 지수를 0부터 고를 수 있기 때문입니다.",
+        "두 수의 최대공약수는 공통인 소인수를 작은 지수로, 최소공배수는 모든 소인수를 큰 지수로 골라 곱합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "360 = 2³ × 3² × 5의 약수는 모두 몇 개일까요?",
+      "answer": "24",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "(3 + 1) × (2 + 1) × (1 + 1) = 24개입니다."
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "2³ × 3² × 5와 2² × 3³ × 7의 최대공약수는 얼마일까요?",
+      "answer": "36",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "공통 소인수 2와 3을 작은 지수로 고르면 2² × 3² = 36입니다."
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "12와 20의 최소공배수는 얼마일까요?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "12 = 2² × 3, 20 = 2² × 5이므로 2² × 3 × 5 = 60입니다."
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "가로 84cm, 세로 60cm인 종이를 남김없이 똑같은 정사각형으로 자르려 합니다. 가장 큰 정사각형의 한 변은 몇 cm일까요?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "한 변의 길이는 84와 60을 모두 나누어떨어지게 해야 합니다.",
+      "explanation": "84 = 2² × 3 × 7, 60 = 2² × 3 × 5이므로 최대공약수는 2² × 3 = 12cm입니다."
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "1을 소수로 인정하면 소인수분해가 '오직 한 가지'라는 성질이 깨집니다. 그 이유를 예를 들어 설명해 보세요.",
+      "hint": "6을 1을 포함해 여러 방법으로 써 보세요.",
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "한 가지",
+            "유일",
+            "하나"
+          ],
+          [
+            "1을 곱",
+            "× 1",
+            "×1",
+            "1 ×",
+            "1×"
+          ],
+          [
+            "여러",
+            "무수",
+            "끝없이",
+            "계속"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "1을 소수로 보면 6 = 2 × 3 = 1 × 2 × 3 = 1 × 1 × 2 × 3처럼 1을 몇 번이든 곱할 수 있어 표현이 여러 가지가 됩니다. 그래서 유일성을 지키기 위해 1을 소수에서 뺍니다."
+    }
+  ]
+}
