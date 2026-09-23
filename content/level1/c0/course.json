@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학",
+    "description": "고등 수학에 필요한 중학 수학 핵심"
+  },
+  "chapters": [
+    {
+      "no": 1,
+      "id": "c0-ch01",
+      "title": "수 체계",
+      "dir": "ch01",
+      "lessons": 4,
+      "questions": 47
+    },
+    {
+      "no": 2,
+      "id": "c0-ch02",
+      "title": "문자와 식",
+      "dir": "ch02",
+      "lessons": 4,
+      "questions": 46
+    },
+    {
+      "no": 3,
+      "id": "c0-ch03",
+      "title": "방정식과 연립방정식",
+      "dir": "ch03",
+      "lessons": 4,
+      "questions": 43
+    },
+    {
+      "no": 4,
+      "id": "c0-ch04",
+      "title": "일차함수",
+      "dir": "ch04",
+      "lessons": 4,
+      "questions": 44
+    },
+    {
+      "no": 5,
+      "id": "c0-ch05",
+      "title": "도형 기초",
+      "dir": "ch05",
+      "lessons": 4,
+      "questions": 44
+    },
+    {
+      "no": 6,
+      "id": "c0-ch06",
+      "title": "자료의 정리",
+      "dir": "ch06",
+      "lessons": 4,
+      "questions": 44
+    }
+  ],
+  "totals": {
+    "chapters": 6,
+    "lessons": 24,
+    "questions": 268
+  }
+}
