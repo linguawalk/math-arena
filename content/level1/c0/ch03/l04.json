@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch03",
+    "no": 3,
+    "title": "방정식과 연립방정식"
+  },
+  "lesson": {
+    "id": "c0-ch03-l04",
+    "no": 4,
+    "title": "방정식의 활용",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-middle"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "문장을 식으로",
+      "body": [
+        "활용 문제는 네 단계로 풉니다.",
+        "구하려는 것을 x로 놓는다 → 조건에 맞게 방정식을 세운다 → 방정식을 푼다 → 답이 문제의 조건에 맞는지 확인한다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "ordering",
+      "prompt": "방정식 활용 문제를 푸는 순서대로 배열하세요.",
+      "items": [
+        {
+          "id": "a",
+          "text": "답이 문제의 조건에 맞는지 확인한다"
+        },
+        {
+          "id": "b",
+          "text": "구하려는 것을 x로 놓는다"
+        },
+        {
+          "id": "c",
+          "text": "방정식을 푼다"
+        },
+        {
+          "id": "d",
+          "text": "조건에 맞게 방정식을 세운다"
+        }
+      ],
+      "answer_order": [
+        "b",
+        "d",
+        "c",
+        "a"
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "어떤 수의 3배에 5를 더했더니 26이 되었습니다. 어떤 수는?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "3x + 5 = 26, x = 7"
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "연속하는 세 자연수의 합이 48일 때, 가장 작은 수는?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "가장 작은 수를 x라 하면 나머지는 x + 1, x + 2입니다.",
+      "explanation": "3x + 3 = 48, x = 15. 세 수는 15, 16, 17입니다."
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "나이와 개수",
+      "body": [
+        "나이 문제에서는 '몇 년 후'에 모든 사람의 나이가 똑같이 늘어난다는 점을 식에 넣습니다.",
+        "개수와 금액이 함께 나오면 개수에 대한 식과 금액에 대한 식, 두 개를 세워 연립방정식으로 풉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "아버지는 42세, 아들은 12세입니다. 몇 년 후에 아버지의 나이가 아들 나이의 2배가 될까요?",
+      "answer": "18",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "42 + x = 2(12 + x), 42 + x = 24 + 2x, x = 18"
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "한 자루에 1,000원인 볼펜과 500원인 연필을 합해 10자루 사고 7,000원을 냈습니다. 볼펜은 몇 자루일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x + y = 10, 1000x + 500y = 7000에서 x = 4, y = 6"
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "거리·속력·시간",
+      "body": [
+        "(거리) = (속력) × (시간),  (시간) = (거리) ÷ (속력)",
+        "시속과 분속처럼 단위가 섞여 있으면 먼저 단위를 맞춥니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "도서관에 갈 때는 시속 4km, 올 때는 같은 길을 시속 6km로 걸어 모두 2시간 30분이 걸렸습니다. 집에서 도서관까지는 몇 km일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "2시간 30분 = 2.5시간",
+      "explanation": "x/4 + x/6 = 5/2, 양변에 12를 곱하면 5x = 30, x = 6"
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "동생이 분속 60m로 집을 나선 지 10분 후에 형이 분속 80m로 같은 길을 따라갔습니다. 형이 출발한 지 몇 분 후에 동생을 만날까요?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "만날 때까지 두 사람이 간 거리가 같으므로 60(10 + x) = 80x, 20x = 600, x = 30"
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "농도",
+      "body": [
+        "(소금의 양) = (농도 ÷ 100) × (소금물의 양)",
+        "물을 더하거나 증발시켜도 소금의 양은 변하지 않는다는 점이 식을 세우는 열쇠입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "8% 소금물 200g에 들어 있는 소금은 몇 g일까요?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "8/100 × 200 = 16"
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "10% 소금물 300g에 물을 몇 g 더 넣으면 6% 소금물이 될까요?",
+      "answer": "200",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "소금 30g은 그대로이므로 30 = 6/100 × (300 + x), 300 + x = 500, x = 200"
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "5% 소금물과 10% 소금물을 섞어 8% 소금물 500g을 만들었습니다. 5% 소금물은 몇 g 섞었을까요?",
+      "answer": "200",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x + y = 500, 5x/100 + 10y/100 = 40에서 x = 200, y = 300"
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "방정식을 풀어 얻은 값이 항상 활용 문제의 답이 되는 것은 아닙니다. 확인 단계가 필요한 이유를 예를 들어 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "조건"
+          ],
+          [
+            "자연수",
+            "사람 수",
+            "개수"
+          ],
+          [
+            "음수",
+            "소수",
+            "분수",
+            "맞지 않",
+            "안 맞"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "방정식의 해가 문제의 조건에 맞지 않을 수 있기 때문입니다. 예를 들어 사람 수나 물건 개수는 자연수여야 하는데 2.5나 음수가 나오면 답이 될 수 없으므로 확인이 필요합니다."
+    }
+  ]
+}
