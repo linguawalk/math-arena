@@ -1,1 +1,43 @@
-
+{
+  "schema_version": "1.0",
+  "course": "c0",
+  "chapter": {
+    "id": "c0-ch02",
+    "no": 2,
+    "title": "문자와 식"
+  },
+  "lessons": [
+    {
+      "no": 1,
+      "id": "c0-ch02-l01",
+      "title": "문자의 사용",
+      "file": "l01.json",
+      "questions": 11,
+      "screens": 15
+    },
+    {
+      "no": 2,
+      "id": "c0-ch02-l02",
+      "title": "일차식의 계산",
+      "file": "l02.json",
+      "questions": 11,
+      "screens": 15
+    },
+    {
+      "no": 3,
+      "id": "c0-ch02-l03",
+      "title": "지수법칙과 다항식의 곱셈",
+      "file": "l03.json",
+      "questions": 12,
+      "screens": 16
+    },
+    {
+      "no": 4,
+      "id": "c0-ch02-l04",
+      "title": "곱셈공식과 인수분해 기초",
+      "file": "l04.json",
+      "questions": 12,
+      "screens": 16
+    }
+  ]
+}

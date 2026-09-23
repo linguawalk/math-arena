@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch02",
+    "no": 2,
+    "title": "문자와 식"
+  },
+  "lesson": {
+    "id": "c0-ch02-l03",
+    "no": 3,
+    "title": "지수법칙과 다항식의 곱셈",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-middle"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "거듭제곱끼리 곱하기",
+      "body": [
+        "2³ × 2²을 풀어 쓰면 (2 × 2 × 2) × (2 × 2)입니다.",
+        "2를 모두 몇 번 곱했는지 세어 보면 규칙이 보입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "2³ × 2² = 2^{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "2를 3번, 2번 곱했으니 모두 5번입니다."
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "지수법칙",
+      "body": [
+        "aᵐ × aⁿ = aᵐ⁺ⁿ (지수끼리 더한다)",
+        "(aᵐ)ⁿ = aᵐⁿ (지수끼리 곱한다),  (ab)ⁿ = aⁿbⁿ",
+        "m > n일 때 aᵐ ÷ aⁿ = aᵐ⁻ⁿ (지수끼리 뺀다)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(x³)⁴ = x^{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "12"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "x³을 4번 곱하므로 3 × 4 = 12"
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(2a²)³ = {{1}}a^{{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "8"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": "계수 2도 세제곱해야 합니다.",
+      "explanation": "2³ × (a²)³ = 8a⁶"
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "x⁷ ÷ x³ = x^{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "7 − 3 = 4"
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "2¹⁰ ÷ 2⁷의 값은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "2³ = 8"
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "summary",
+      "title": "단항식의 곱셈과 나눗셈",
+      "body": [
+        "계수는 계수끼리, 문자는 문자끼리 계산합니다.",
+        "예: 2x × 5x² = (2 × 5)(x × x²) = 10x³,  6x³ ÷ 2x = 3x²"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "3x² × (−4x³) = {{1}}x^{{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−12",
+            "-12"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "3 × (−4) = −12, x² × x³ = x⁵"
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "12a³b² ÷ 3ab = {{1}}a^{{2}}b",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "12 ÷ 3 = 4, a³ ÷ a = a², b² ÷ b = b"
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "다항식의 곱셈",
+      "body": [
+        "분배법칙을 되풀이해 괄호를 풉니다. 이것을 전개라고 합니다.",
+        "(a + b)(c + d) = ac + ad + bc + bd. 가로 a + b, 세로 c + d인 직사각형을 네 조각으로 나눈 넓이와 같습니다.",
+        "전개한 뒤에는 동류항을 정리합니다."
+      ],
+      "figure": {
+        "widget": "area_model",
+        "config": {
+          "rows": [
+            "c",
+            "d"
+          ],
+          "cols": [
+            "a",
+            "b"
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "2x(3x − 5) = {{1}}x² − {{2}}x",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "10"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "2x × 3x − 2x × 5 = 6x² − 10x"
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "(x + 2)(x + 5) = x² + {{1}}x + {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "7"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "10"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "x² + 5x + 2x + 10 = x² + 7x + 10"
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "(2x − 1)(x + 3) = {{1}}x² + {{2}}x − {{3}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": 3,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "2x² + 6x − x − 3 = 2x² + 5x − 3"
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "3²⁰의 일의 자리 숫자는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "3¹, 3², 3³, 3⁴, 3⁵의 일의 자리를 차례로 써 보세요.",
+      "explanation": "일의 자리가 3, 9, 7, 1로 4개씩 반복됩니다. 20은 4의 배수이므로 1입니다."
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "x² × x³ = x⁶이라고 답한 친구에게 무엇이 틀렸는지 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "더",
+            "합"
+          ],
+          [
+            "곱하는 것이 아니",
+            "곱하면 안",
+            "곱한 것"
+          ],
+          [
+            "5",
+            "x⁵",
+            "x^5"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "같은 밑의 거듭제곱을 곱할 때는 지수를 더해야 합니다. x를 2번, 3번 곱하면 모두 5번이므로 x²× x³ = x⁵입니다. 지수를 곱하는 것은 (x²)³처럼 거듭제곱을 다시 거듭제곱할 때입니다."
+    }
+  ]
+}

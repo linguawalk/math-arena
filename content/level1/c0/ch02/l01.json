@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch02",
+    "no": 2,
+    "title": "문자와 식"
+  },
+  "lesson": {
+    "id": "c0-ch02-l01",
+    "no": 1,
+    "title": "문자의 사용",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-middle"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "모르는 수를 문자로",
+      "body": [
+        "사과 한 개가 700원입니다. 2개면 1,400원, 3개면 2,100원입니다.",
+        "개수를 정하지 않고 한 번에 나타내고 싶다면 개수를 x라고 두면 됩니다. 값은 700 × x원입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "한 개에 700원인 사과 x개의 값은 {{1}}원입니다. (곱셈 기호 없이)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "700x"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "수와 문자의 곱은 × 없이 수를 앞에 써서 700x로 나타냅니다."
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "곱셈·나눗셈 기호의 생략",
+      "body": [
+        "수와 문자, 문자와 문자의 곱에서는 ×를 생략하고 수를 문자 앞에 씁니다. 문자는 보통 알파벳 순서로 씁니다.",
+        "1이나 −1과 문자의 곱에서는 1을 생략합니다. 1 × a = a, (−1) × a = −a",
+        "같은 문자의 곱은 거듭제곱으로, 나눗셈은 분수 꼴로 씁니다. a × a = a², x ÷ 4 = x/4"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "a × 3 × b = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3ab"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "수를 앞에, 문자는 알파벳 순서로 씁니다."
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "x ÷ 4를 기호 ÷ 없이 나타내면 {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "x/4",
+            "(1/4)x",
+            "1/4x"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "나눗셈은 분수 꼴 x/4로 씁니다."
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(−1) × a × a × b = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−a²b",
+            "−a^2b",
+            "-a²b",
+            "-a^2b"
+          ]
+        }
+      ],
+      "hint": "−1의 1은 생략하고, 같은 문자는 거듭제곱으로 씁니다.",
+      "explanation": "−a²b"
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "식의 값",
+      "body": [
+        "문자에 수를 넣는 것을 대입이라 하고, 대입해서 계산한 결과를 식의 값이라고 합니다.",
+        "음수를 대입할 때는 반드시 괄호를 씌웁니다. x = −2일 때 3x + 5 = 3 × (−2) + 5"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x = −2일 때, 3x + 5의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "3 × (−2) + 5 = −6 + 5 = −1"
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a = −3일 때, a² − 2a의 값은?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "(−3)² − 2 × (−3) = 9 + 6 = 15"
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x = 1/2일 때, 4x − 1/x의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "1/x = 1 ÷ x입니다.",
+      "explanation": "4 × 1/2 − 1 ÷ 1/2 = 2 − 2 = 0"
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "다항식의 용어",
+      "body": [
+        "3x² − 5x + 7에서 3x², −5x, 7처럼 +로 연결된 하나하나를 항이라 합니다. 수만 있는 항 7은 상수항입니다.",
+        "문자 앞의 수를 계수라고 합니다. x²의 계수는 3, x의 계수는 −5입니다.",
+        "항이 하나인 식은 단항식, 여러 개인 식은 다항식입니다. 가장 큰 차수가 1인 다항식을 일차식이라고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "다항식 3x² − 5x + 7에서 x의 계수는?",
+      "answer": "-5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "−5x의 계수는 부호까지 포함해 −5입니다."
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "다항식 3x² − 5x + 7의 차수는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "차수가 가장 큰 항 3x²의 차수가 2입니다."
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "섭씨온도 C를 화씨온도로 바꾸는 식은 1.8C + 32입니다. 25°C는 화씨 몇 도일까요?",
+      "answer": "77",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "1.8 × 25 + 32 = 45 + 32 = 77"
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "x = −3일 때 x²의 값을 구하면서 −3²이라고 쓰면 안 되는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "괄호"
+          ],
+          [
+            "9"
+          ],
+          [
+            "−9",
+            "-9"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "x에 −3 전체를 넣어야 하므로 (−3)² = 9가 맞습니다. 괄호 없이 −3²이라고 쓰면 3²에 −를 붙인 −9가 되어 값이 달라집니다."
+    }
+  ]
+}
