@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c2",
+    "title": "함수와 그래프"
+  },
+  "chapter": {
+    "id": "c2-ch02",
+    "no": 2,
+    "title": "원과 도형의 이동"
+  },
+  "review": {
+    "id": "c2-ch02-review",
+    "title": "원과 도형의 이동 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "원 x² + y² + 6x − 2y + 6 = 0의 중심은 ({{1}}, {{2}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−3",
+            "-3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "같은 원의 반지름은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "중심이 (−4, 3)이고 y축에 접하는 원의 반지름은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l01"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "원 x² + y² = 10과 직선 y = 1이 만나 생기는 현의 길이는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "원 x² + y² = 13 위의 점 (2, 3)에서의 접선은 2x + 3y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "13"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l02"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "y = x² + 1을 x축 방향으로 −3만큼 평행이동하면 y = (x + {{1}})² + 1",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "점 (−2, 1)을 x축 방향으로 4, y축 방향으로 2만큼 평행이동한 점을 표시하세요.",
+      "answer": {
+        "x": 2,
+        "y": 3,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "점 (3, −1)을 y축에 대하여 대칭이동한 점을 표시하세요.",
+      "answer": {
+        "x": -3,
+        "y": -1,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "y = x − 4를 x축에 대하여 대칭이동하면 y = −x + {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "원 (x − 1)² + (y − 4)² = 2를 직선 y = x에 대하여 대칭이동한 원의 중심의 y좌표는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch02-l04"
+    }
+  ]
+}

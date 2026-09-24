@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c2",
+    "title": "함수와 그래프"
+  },
+  "chapter": {
+    "id": "c2-ch01",
+    "no": 1,
+    "title": "좌표평면"
+  },
+  "review": {
+    "id": "c2-ch01-review",
+    "title": "좌표평면 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "두 점 (−1, 3), (2, 7) 사이의 거리는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "두 점 A(0, 0), B(4, 2)에서 같은 거리에 있는 x축 위의 점 P(p, 0)에서 p의 값은?",
+      "answer": "5/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "A(2, −1), B(8, 5)를 2 : 1로 내분하는 점은 ({{1}}, {{2}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "A(−3, 4), B(1, −2)의 중점을 표시하세요.",
+      "answer": {
+        "x": -1,
+        "y": 1,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "두 점 (0, 1), (2, 5)를 지나는 직선은 y = {{1}}x + 1",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "직선 x − 3y + 6 = 0의 y절편은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "세 점 (0, 1), (2, 5), (4, a)가 한 직선 위에 있을 때 a의 값은?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "직선 y = 3x − 1에 수직인 직선의 기울기에 3을 곱한 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "원점과 직선 4x − 3y + 10 = 0 사이의 거리는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "두 직선 y = ax + 1, y = (a − 2)x + 3이 수직일 때 a의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c2-ch01-l04"
+    }
+  ]
+}

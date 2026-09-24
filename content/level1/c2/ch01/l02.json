@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c2",
+    "title": "함수와 그래프"
+  },
+  "chapter": {
+    "id": "c2-ch01",
+    "no": 1,
+    "title": "좌표평면"
+  },
+  "lesson": {
+    "id": "c2-ch01-l02",
+    "no": 2,
+    "title": "선분의 내분점과 중점",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "수직선 위의 내분점",
+      "body": [
+        "선분 AB 위의 점 P가 AP : PB = m : n일 때 P는 AB를 m : n으로 내분한다고 합니다.",
+        "A(a), B(b)이면 P = (mb + na)/(m + n). 중점은 (a + b)/2입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "A(1), B(7)을 1 : 2로 내분하는 점의 좌표는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "A(1), B(7)의 중점의 좌표는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "좌표평면 위의 내분점",
+      "body": [
+        "x좌표와 y좌표를 따로 내분하면 됩니다.",
+        "A(x₁, y₁), B(x₂, y₂)의 중점은 ((x₁ + x₂)/2, (y₁ + y₂)/2)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "A(−1, 2), B(5, −4)의 중점을 표시하세요.",
+      "answer": {
+        "x": 2,
+        "y": -1,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A(1, 1), B(7, 4)를 2 : 1로 내분하는 점은 ({{1}}, {{2}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A(0, 0), B(6, 9)를 1 : 2로 내분하는 점은 ({{1}}, {{2}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "A(−4, −2), B(4, 2)를 3 : 1로 내분하는 점을 표시하세요.",
+      "answer": {
+        "x": 2,
+        "y": 1,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "삼각형의 무게중심",
+      "body": [
+        "세 꼭짓점이 (x₁, y₁), (x₂, y₂), (x₃, y₃)인 삼각형의 무게중심은 ((x₁ + x₂ + x₃)/3, (y₁ + y₂ + y₃)/3)입니다.",
+        "무게중심은 각 중선을 꼭짓점에서부터 2 : 1로 내분합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "세 점 (0, 0), (6, 0), (3, 6)을 꼭짓점으로 하는 삼각형의 무게중심은 (3, {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "세 점 (1, 2), (4, 5), (a, −1)로 이루어진 삼각형의 무게중심의 x좌표가 3일 때 a의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 삼각형의 무게중심의 y좌표는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "중점의 활용",
+      "body": [
+        "평행사변형의 두 대각선은 서로를 이등분하므로 두 대각선의 중점이 같습니다.",
+        "중점과 한 끝점을 알면 다른 끝점을 거꾸로 구할 수 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -6,
+        "xmax": 6,
+        "ymin": -6,
+        "ymax": 6,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "평행사변형 ABCD에서 A(0, 0), B(4, 1), C(5, 4)일 때 D를 표시하세요.",
+      "answer": {
+        "x": 1,
+        "y": 3,
+        "tolerance": 0
+      },
+      "hint": "AC의 중점과 BD의 중점이 같습니다.",
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "선분 AB의 중점이 (3, 2)이고 A(1, −1)일 때 B의 x좌표는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 조건에서 B의 y좌표는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "비율로 위치 정하기",
+      "body": [
+        "내분점은 A에서 B 쪽으로 전체의 m/(m + n)만큼 간 점입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "수직선 위의 A(2), B(14)를 3 : 1로 내분하는 점의 좌표는?",
+      "answer": "11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A(1, 1), B(9, 5)이고 선분 AB 위의 점 P가 AP : PB = 1 : 3일 때 P의 x좌표는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "삼각형의 무게중심은 중선을 꼭짓점으로부터 {{1}} : 1로 내분합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "두 점의 중점 좌표가 두 좌표의 평균이 되는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "같은 거리",
+            "한가운데",
+            "절반"
+          ],
+          [
+            "평균",
+            "더해서 2로"
+          ],
+          [
+            "x좌표",
+            "y좌표",
+            "각각"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "중점은 두 점에서 같은 거리에 있는 한가운데 점입니다. x좌표와 y좌표를 각각 보면 두 수의 한가운데는 두 수를 더해 2로 나눈 평균입니다."
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c2",
+    "title": "함수와 그래프"
+  },
+  "chapter": {
+    "id": "c2-ch03",
+    "no": 3,
+    "title": "함수"
+  },
+  "lesson": {
+    "id": "c2-ch03-l01",
+    "no": 1,
+    "title": "함수의 뜻",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "함수",
+      "body": [
+        "집합 X의 각 원소에 집합 Y의 원소가 오직 하나씩 대응할 때 이 대응을 X에서 Y로의 함수라 하고 f : X → Y로 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "X = {1, 2, 3}에서 Y = {a, b}로의 함수는 모두 몇 개일까요?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "함숫값 전체의 집합을 {{1}}이라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "치역"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "정의역, 공역, 치역",
+      "body": [
+        "X를 정의역, Y를 공역, 실제로 나오는 함숫값 전체를 치역이라고 합니다. 치역은 공역의 부분집합입니다.",
+        "정의역이 따로 없으면 식이 정의되는 실수 전체를 정의역으로 봅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "정의역이 {0, 1, 2}인 함수 f(x) = 2x + 1의 치역의 원소의 합은?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "정의역이 {−2, −1, 0, 1, 2}인 함수 f(x) = x²의 치역의 원소는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "함수 f(x) = √(x − 3)의 정의역에서 가장 작은 x는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "서로 같은 함수",
+      "body": [
+        "두 함수는 정의역이 같고, 정의역의 모든 원소에서 함숫값이 같을 때 서로 같습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "정의역이 {−1, 0, 1}일 때 f(x) = x³과 g(x) = x는 서로 같은 함수일까요?  (같다 1, 다르다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "실수에서 정의된 f(x) = x²/x와 g(x) = x는 서로 같은 함수일까요?  (같다 1, 다르다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "f는 x = 0에서 정의되지 않아 정의역이 다릅니다."
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "여러 가지 함수",
+      "body": [
+        "서로 다른 x에 서로 다른 함숫값이 대응하면 일대일함수, 여기에 치역과 공역이 같으면 일대일대응입니다.",
+        "f(x) = x는 항등함수, f(x) = c는 상수함수입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "실수 전체에서 f(x) = 2x − 1은 일대일대응일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "실수 전체에서 f(x) = x²은 일대일함수일까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X = {1, 2, 3}에서 X로의 일대일대응은 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X = {1, 2, 3}에서 Y = {1, 2, 3, 4}로의 일대일함수는 몇 개일까요?",
+      "answer": "24",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "함숫값으로 식 구하기",
+      "body": [
+        "f(x) = ax + b에서 두 함숫값을 알면 연립방정식으로 a, b를 구합니다.",
+        "f(x + 1)처럼 식이 주어지면 괄호 안이 원하는 값이 되는 x를 넣습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = ax + b에서 f(1) = 5, f(2) = 8일 때 a의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 조건에서 b의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x + 1) = 2x + 3일 때 f(3)의 값은?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(2x) = x² + 1일 때 f(4)의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "실수 x, y에 대해 'x² = y'에서 y에 x를 대응시키는 관계가 함수가 아닌 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "하나",
+            "두 개"
+          ],
+          [
+            "대응"
+          ],
+          [
+            "4",
+            "±",
+            "양수와 음수",
+            "2와 −2"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "y = 4에 x = 2와 x = −2 두 개가 대응합니다. 함수는 각 원소에 오직 하나가 대응해야 하므로 함수가 아닙니다."
+    }
+  ]
+}

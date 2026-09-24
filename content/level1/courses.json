@@ -17,8 +17,8 @@
     {
       "id": "c2",
       "title": "함수와 그래프",
-      "description": "좌표평면, 원, 함수, 이차함수, 유리·무리함수",
-      "available": false
+      "description": "좌표평면, 원과 도형의 이동, 함수, 이차함수, 유리·무리함수, 함수 모델링",
+      "available": true
     },
     {
       "id": "c3",

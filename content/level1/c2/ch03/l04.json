@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c2",
+    "title": "함수와 그래프"
+  },
+  "chapter": {
+    "id": "c2-ch03",
+    "no": 3,
+    "title": "함수"
+  },
+  "lesson": {
+    "id": "c2-ch03-l04",
+    "no": 4,
+    "title": "역함수",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "역함수",
+      "body": [
+        "f가 일대일대응이면 y = f(x)에서 거꾸로 y에 x를 대응시키는 함수를 만들 수 있고, 이를 역함수 f⁻¹이라 합니다.",
+        "y = f(x) ⇔ x = f⁻¹(y)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(x) = 2x + 1일 때 f⁻¹(7)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(3) = 5일 때 f⁻¹(5)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "역함수 구하기",
+      "body": [
+        "y = f(x)를 x에 대해 푼 뒤 x와 y를 바꿉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "f(x) = 3x − 6일 때 f⁻¹(x) = x/3 + {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "f(x) = (x + 1)/2일 때 f⁻¹(x) = {{1}}x − 1",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³일 때 f⁻¹(8)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "역함수가 존재할 조건",
+      "body": [
+        "역함수가 있으려면 f가 일대일대응이어야 합니다. 정의역을 좁히면 역함수가 생기기도 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x ≥ 0에서 정의된 f(x) = x²은 역함수가 있을까요?  (있다 1, 없다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "실수 전체에서 정의된 f(x) = x²은 역함수가 있을까요?  (있다 1, 없다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "역함수의 그래프와 성질",
+      "body": [
+        "y = f(x)와 y = f⁻¹(x)의 그래프는 직선 y = x에 대하여 대칭입니다.",
+        "(f⁻¹∘f)(x) = x, (f∘f⁻¹)(x) = x"
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -5,
+          "xmax": 5,
+          "ymin": -5,
+          "ymax": 5,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "poly",
+              "coef": [
+                -3,
+                2
+              ]
+            },
+            {
+              "kind": "poly",
+              "coef": [
+                1.5,
+                0.5
+              ]
+            },
+            {
+              "kind": "poly",
+              "coef": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "y = f(x)의 그래프가 점 (1, 4)를 지날 때 y = f⁻¹(x)의 그래프가 지나는 점을 표시하세요.",
+      "answer": {
+        "x": 4,
+        "y": 1,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(f∘f⁻¹)(5)의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = 2x − 3, g = f⁻¹일 때 (g∘f)(10)의 값은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "역함수와의 교점",
+      "body": [
+        "증가하는 함수에서 y = f(x)와 y = f⁻¹(x)의 교점은 직선 y = x 위에 있으므로 f(x) = x를 풀면 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = 2x − 3의 그래프와 그 역함수의 그래프의 교점의 x좌표는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = ax + b에서 f⁻¹(3) = 1, f(2) = 5일 때 a + b의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x + 1 (x < 0), 2x + 1 (x ≥ 0)일 때 f⁻¹(5)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x + 2, g(x) = 3x일 때 (f⁻¹∘g)(2)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x + 1, g(x) = 2x일 때 (g∘f)⁻¹(8)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "역함수가 존재하려면 함수가 일대일대응이어야 하는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "거꾸로",
+            "반대로"
+          ],
+          [
+            "하나"
+          ],
+          [
+            "두 개",
+            "여러",
+            "없"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "역함수는 y에서 x로 거꾸로 대응시키는데, 이것도 함수여야 하므로 각 y에 x가 오직 하나 대응해야 합니다. 서로 다른 x가 같은 y로 가거나 대응하는 x가 없는 y가 있으면 역함수를 만들 수 없습니다."
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c2",
+    "title": "함수와 그래프"
+  },
+  "chapter": {
+    "id": "c2-ch04",
+    "no": 4,
+    "title": "이차함수"
+  },
+  "lesson": {
+    "id": "c2-ch04-l03",
+    "no": 3,
+    "title": "이차함수와 이차방정식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석",
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "x축과의 교점",
+      "body": [
+        "y = ax² + bx + c의 그래프가 x축과 만나는 점의 x좌표는 ax² + bx + c = 0의 실근입니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -5,
+          "xmax": 5,
+          "ymin": -5,
+          "ymax": 5,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "poly",
+              "coef": [
+                6,
+                -5,
+                1
+              ]
+            },
+            {
+              "kind": "poly",
+              "coef": [
+                4,
+                -4,
+                1
+              ]
+            },
+            {
+              "kind": "poly",
+              "coef": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y = x² − 5x + 6의 그래프와 x축의 교점은 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y = x² − 4x + 4의 그래프와 x축의 교점은 몇 개일까요?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y = x² + x + 1의 그래프와 x축의 교점은 몇 개일까요?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "판별식과 위치 관계",
+      "body": [
+        "D > 0이면 두 점에서 만나고, D = 0이면 접하고, D < 0이면 만나지 않습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = x² − 6x + k의 그래프가 x축에 접할 때 k의 값은?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = x² + 2x + k의 그래프가 x축과 만나지 않는 정수 k의 최솟값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = −x² + 4x + k의 그래프가 x축과 서로 다른 두 점에서 만나는 정수 k의 최솟값은?",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "두 교점 사이의 거리",
+      "body": [
+        "x축과의 두 교점 사이의 거리는 두 근의 차 |α − β|이고, (α − β)² = (α + β)² − 4αβ로 구할 수 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = x² − 2x − 8의 그래프가 x축과 만나는 두 점 사이의 거리는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = x² − 4x + k의 그래프가 x축과 만나는 두 점 사이의 거리가 2일 때 k의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "이차부등식과 그래프",
+      "body": [
+        "ax² + bx + c < 0의 해는 그래프가 x축보다 아래에 있는 x의 범위입니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -5,
+          "xmax": 5,
+          "ymin": -5,
+          "ymax": 5,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "poly",
+              "coef": [
+                -3,
+                -2,
+                1
+              ]
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "x² − 4x + 3 < 0의 해는 {{1}} < x < {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그림은 y = (x + 1)(x − 3)의 그래프입니다. −3 ≤ x ≤ 5인 정수 중 y ≥ 0을 만족하는 x는 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -5,
+          "xmax": 5,
+          "ymin": -5,
+          "ymax": 5,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "poly",
+              "coef": [
+                -3,
+                -2,
+                1
+              ]
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "근의 위치",
+      "body": [
+        "f(x) = x² + bx + c에서 f(k) < 0이면 그래프가 x = k에서 x축 아래에 있으므로, k는 두 근 사이에 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x² − 2x + k = 0의 두 근 사이에 3이 있도록 하는 정수 k의 최댓값은?",
+      "answer": "-4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "f(3) = 3 + k < 0"
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x² + kx + 4 = 0의 두 근이 모두 양수가 되는 정수 k의 최댓값은?",
+      "answer": "-4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x² − 3x + 2의 그래프와 x축의 교점의 x좌표의 합은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1,
+        "curves": [
+          {
+            "kind": "poly",
+            "coef": [
+              -3,
+              -2,
+              1
+            ]
+          }
+        ]
+      },
+      "prompt": "y = x² − 2x − 3의 그래프가 x축과 만나는 점 중 x좌표가 음수인 점을 표시하세요.",
+      "answer": {
+        "x": -1,
+        "y": 0,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = 2x² − 8의 그래프가 x축과 만나는 두 점 사이의 거리는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "판별식이 음수이면 이차함수의 그래프가 x축과 만나지 않는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "실근"
+          ],
+          [
+            "없"
+          ],
+          [
+            "x축"
+          ],
+          [
+            "교점",
+            "만나는 점"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "그래프와 x축의 교점의 x좌표는 이차방정식의 실근입니다. 판별식이 음수이면 실근이 없으므로 x축과 만나는 점도 없습니다."
+    }
+  ]
+}

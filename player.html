@@ -151,12 +151,47 @@ function numberLine(cfg, interactive, onChange){
   return svg;
 }
 
-function coordPlane(cfg, onChange){
+function drawCurves(svg, cfg, X, Y, pad, S){
+  const curves = cfg.curves || []; if (!curves.length) return;
+  const {xmin, xmax, ymin, ymax} = cfg, id = "clip" + Math.random().toString(36).slice(2, 8);
+  const defs = el("defs", {}, svg), cp = el("clipPath", {id}, defs);
+  el("rect", {x:X(xmin), y:Y(ymax), width:X(xmax) - X(xmin), height:Y(ymin) - Y(ymax)}, cp);
+  const g = el("g", {"clip-path":`url(#${id})`}, svg);
+  const colors = ["#1D3FA8", "#C2410C", "#1E7A50"];
+  let ci = 0;
+  curves.forEach(c => {
+    const col = c.color || colors[ci++ % colors.length];
+    if (c.kind === "circle"){ el("circle", {cx:X(c.cx), cy:Y(c.cy), r:Math.abs(X(c.cx + c.r) - X(c.cx)), fill:"none", stroke:col, "stroke-width":2.5}, g); return; }
+    if (c.kind === "vline"){ el("line", {x1:X(c.x), x2:X(c.x), y1:Y(ymin), y2:Y(ymax), stroke:"#4A5670", "stroke-dasharray":"5 5", "stroke-width":1.5}, g); return; }
+    if (c.kind === "hline"){ el("line", {x1:X(xmin), x2:X(xmax), y1:Y(c.y), y2:Y(c.y), stroke:"#4A5670", "stroke-dasharray":"5 5", "stroke-width":1.5}, g); return; }
+    const f = {
+      poly: t => c.coef.reduce((acc, co, k) => acc + co * t ** k, 0),
+      rational: t => Math.abs(t - c.p) < 1e-9 ? NaN : c.k / (t - c.p) + c.q,
+      sqrt: t => c.b * (t - c.p) < 0 ? NaN : c.a * Math.sqrt(c.b * (t - c.p)) + c.q,
+      abs: t => c.a * Math.abs(t - c.p) + c.q
+    }[c.kind];
+    if (!f) return;
+    let lo = Math.max(xmin, c.from ?? -Infinity), hi = Math.min(xmax, c.to ?? Infinity);
+    if (lo >= hi) return;
+    if (c.kind === "sqrt"){ if (c.b > 0) lo = Math.max(lo, c.p); else hi = Math.min(hi, c.p); if (lo >= hi) return; }
+    const N = 900, span = ymax - ymin; let d = "", prev = null;
+    for (let i = 0; i <= N; i++){
+      const t = lo + (hi - lo) * i / N, v = f(t);
+      if (!Number.isFinite(v) || v < ymin - span || v > ymax + span){ prev = null; continue; }
+      const jump = prev !== null && Math.abs(v - prev) > span;
+      d += (prev === null || jump ? " M" : " L") + `${X(t).toFixed(1)} ${Y(v).toFixed(1)}`; prev = v;
+    }
+    el("path", {d, fill:"none", stroke:col, "stroke-width":2.5, "stroke-linejoin":"round"}, g);
+  });
+}
+
+function coordPlane(cfg, onChange, interactive = true){
   const {xmin, xmax, ymin, ymax, xstep = 1, ystep = 1} = cfg, S = 420, pad = 34;
   const X = v => pad + (v - xmin) / (xmax - xmin) * (S - 2 * pad);
   const Y = v => S - pad - (v - ymin) / (ymax - ymin) * (S - 2 * pad);
-  const svg = el("svg", {viewBox:`0 0 ${S} ${S}`, width:S, role:"application", "aria-label":"좌표평면: 클릭하거나 방향키로 점을 옮기세요"});
-  svg.classList.add("pad"); svg.tabIndex = 0;
+  const svg = el("svg", interactive ? {viewBox:`0 0 ${S} ${S}`, width:S, role:"application", "aria-label":"좌표평면: 클릭하거나 방향키로 점을 옮기세요"}
+                                    : {viewBox:`0 0 ${S} ${S}`, width:S, role:"img", "aria-label":"그래프"});
+  if (interactive){ svg.classList.add("pad"); svg.tabIndex = 0; }
   const nx = Math.round((xmax - xmin) / xstep), ny = Math.round((ymax - ymin) / ystep);
   for (let i = 0; i <= nx; i++){ const v = xmin + i * xstep; el("line", {x1:X(v), x2:X(v), y1:Y(ymin), y2:Y(ymax), stroke:"#DCE4F0"}, svg); }
   for (let j = 0; j <= ny; j++){ const v = ymin + j * ystep; el("line", {x1:X(xmin), x2:X(xmax), y1:Y(v), y2:Y(v), stroke:"#DCE4F0"}, svg); }
@@ -168,6 +203,12 @@ function coordPlane(cfg, onChange){
   for (let i = 0; i <= nx; i += ex){ const v = xmin + i * xstep; if (Math.abs(v) > 1e-9) txt(svg, X(v), ay + 18, fmt(v), {"font-size":12}); }
   for (let j = 0; j <= ny; j += ey){ const v = ymin + j * ystep; if (Math.abs(v) > 1e-9) txt(svg, ax - 10, Y(v) + 4, fmt(v), {"font-size":12, "text-anchor":"end"}); }
   if (xmin <= 0 && ymin <= 0) txt(svg, ax - 10, ay + 18, "O", {"font-size":12, "text-anchor":"end"});
+  drawCurves(svg, cfg, X, Y, pad, S);
+  if (!interactive){
+    (cfg.points || []).forEach(pt => { el("circle", {cx:X(pt[0]), cy:Y(pt[1]), r:5, fill:"#FFD84D", stroke:"#172033", "stroke-width":1.5}, svg);
+      if (pt[2]) txt(svg, X(pt[0]) + 8, Y(pt[1]) - 8, pt[2], {"text-anchor":"start", fill:"#172033", "font-size":13}); });
+    return svg;
+  }
   const guide = el("path", {stroke:"#1D3FA8", "stroke-dasharray":"4 4", fill:"none", visibility:"hidden"}, svg);
   const dot = el("circle", {r:8, fill:"#1D3FA8", stroke:"#fff", "stroke-width":3, visibility:"hidden"}, svg);
   let cur = null;
@@ -225,13 +266,15 @@ function rightTriangle(cfg){
 function figure(f){
   const box = document.createElement("div"); box.className = "figure";
   const w = f.widget, c = f.config || {};
-  box.appendChild(w === "number_line" ? numberLine(c, false) : w === "area_model" ? areaModel(c) : w === "right_triangle" ? rightTriangle(c) : document.createTextNode(""));
+  box.appendChild(w === "number_line" ? numberLine(c, false) : w === "area_model" ? areaModel(c) : w === "right_triangle" ? rightTriangle(c)
+    : w === "graph" ? coordPlane(c, null, false) : document.createTextNode(""));
   return box;
 }
 
 /* ---------- 문항 ---------- */
 function buildQuestion(q, host){
   const api = {ready:false, value:null, check:null, lock(){}, reveal(){}};
+
   const prompt = document.createElement("p"); prompt.className = "prompt";
   if (q.qtype === "fill_blank"){
     const inputs = [];
@@ -359,6 +402,7 @@ function show(){
     return;
   }
   api = buildQuestion(s, main);
+  if (s.figure){ const pr = main.querySelector(".prompt"); if (pr) pr.after(figure(s.figure)); }
   api.onChange = () => { if (phase === "check") mainBtn.disabled = !api.ready; };
   if (s.hint){ hintBtn.hidden = false; hintBtn.onclick = () => { if (main.querySelector(".hintbox")) return;
     const h = document.createElement("div"); h.className = "hintbox"; h.textContent = s.hint; main.appendChild(h); hintBtn.hidden = true; }; }

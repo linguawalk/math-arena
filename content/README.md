@@ -17,7 +17,7 @@
 - 챕터의 모든 레슨에서 출제. 간격 복습과 진단 문항 풀로 재사용
 
 ## 화면 유형
-- explain: title, body(문단 배열), figure(선택, 정적 위젯: number_line, area_model, right_triangle)
+- explain: title, body(문단 배열), figure(선택, 정적 위젯: number_line, area_model, right_triangle, graph)
   - area_model: config.rows / config.cols 에 변 이름 배열, 칸마다 행×열 넓이를 표시
   - right_triangle: config.legs·hypotenuse(변 이름), squares(각 변 위 정사각형 표시), angle·labels(삼각비 기준각과 변 이름)
 - question: qtype별 필드
@@ -33,4 +33,16 @@
   - written: rubric(visibility=hidden, keyword_groups, min_groups_matched), model_answer
     - 채점: 각 그룹 중 하나라도 포함되면 그룹 일치, 일치 그룹 수가 기준 이상이면 통과
     - rubric은 화면에 노출하지 않음
-- 공통: hint(선택), explanation(정답 확인 후 표시)
+- 공통: hint(선택), explanation(정답 확인 후 표시), figure(선택, 문제 아래에 표시할 정적 그림)
+
+## graph 위젯
+- config: xmin, xmax, ymin, ymax, xstep, ystep, curves, points(선택, [x, y, 라벨])
+- curves 종류(kind)
+  - poly: coef = 오름차순 계수 [c0, c1, c2, …]
+  - circle: cx, cy, r
+  - rational: y = k/(x − p) + q
+  - sqrt: y = a√(b(x − p)) + q
+  - abs: y = a|x − p| + q
+  - vline: x / hline: y (점선, 점근선·경계 표시용)
+  - 공통 선택 키: from, to(그릴 x 범위), color
+- coordinate_plane 문항도 config.curves를 넣으면 곡선 위에 점을 찍게 할 수 있음
