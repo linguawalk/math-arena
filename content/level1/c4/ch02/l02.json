@@ -1,0 +1,377 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch02",
+    "no": 2,
+    "title": "미분계수와 도함수"
+  },
+  "lesson": {
+    "id": "c4-ch02-l02",
+    "no": 2,
+    "title": "미분계수와 접선",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "접선의 기울기",
+      "body": [
+        "f′(a)는 곡선 y = f(x) 위의 점 (a, f(a))에서 그은 접선의 기울기입니다.",
+        "두 점을 이은 직선에서 한 점을 다른 점에 한없이 가깝게 하면 접선이 됩니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -3,
+          "xmax": 3,
+          "ymin": -2,
+          "ymax": 5,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "poly",
+              "coef": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "kind": "poly",
+              "coef": [
+                -1,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              1,
+              "(1, 1)"
+            ]
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y = x² 위의 점 (1, 1)에서의 접선의 기울기는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y = x² 위의 점 (2, 4)에서의 접선의 기울기는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "미분가능성과 연속성",
+      "body": [
+        "f′(a)가 존재하면 x = a에서 미분가능하다고 합니다. 미분가능하면 반드시 연속입니다.",
+        "하지만 y = |x|처럼 연속이어도 뾰족한 점에서는 미분가능하지 않습니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -5,
+          "xmax": 5,
+          "ymin": -5,
+          "ymax": 5,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "abs",
+              "a": 1,
+              "p": 0,
+              "q": 0
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = |x|는 x = 0에서 미분가능할까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = |x|는 x = 0에서 연속일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x = a에서 미분가능하면 반드시 연속일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "매끄럽게 이어질 조건",
+      "body": [
+        "범위마다 식이 다른 함수가 경계에서 미분가능하려면 연속이면서, 양쪽의 미분계수도 같아야 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x² (x < 1), ax + b (x ≥ 1)가 x = 1에서 미분가능할 때 a의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 조건에서 b의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "접선의 방정식",
+      "body": [
+        "점 (a, f(a))에서의 접선은 y − f(a) = f′(a)(x − a)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "y = x² 위의 점 (1, 1)에서의 접선은 y = 2x − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "y = x² 위의 점 (−1, 1)에서의 접선은 y = −2x − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 6,
+        "xstep": 1,
+        "ystep": 1,
+        "curves": [
+          {
+            "kind": "poly",
+            "coef": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "poly",
+            "coef": [
+              -4,
+              4
+            ]
+          }
+        ]
+      },
+      "prompt": "y = x² 위의 점 (2, 4)에서의 접선이 y축과 만나는 점을 표시하세요.",
+      "answer": {
+        "x": 0,
+        "y": -4,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "기울기만 필요하면 f′(a), 직선의 식이 필요하면 점과 기울기로 접선의 방정식을 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x³ 위의 점 (1, 1)에서의 접선의 기울기는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x² + 1의 접선의 기울기가 4인 접점의 x좌표는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = 2x²의 접선의 기울기가 −4인 접점의 x좌표는?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x² − 3x의 접선이 x축과 평행한 점의 x좌표는? (기약분수로)",
+      "answer": "3/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x²과 직선 y = 2x + k가 접할 때 접점의 x좌표는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "미분가능하면 연속인 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "f(a + h) − f(a)",
+            "차"
+          ],
+          [
+            "h",
+            "0"
+          ],
+          [
+            "극한",
+            "가까워"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "f(a + h) − f(a) = {(f(a + h) − f(a))/h} × h입니다. 미분가능하면 앞부분은 f′(a)로 가고 h는 0으로 가므로 곱은 0이 됩니다. 즉 f(a + h)가 f(a)에 가까워져 연속입니다."
+    }
+  ]
+}

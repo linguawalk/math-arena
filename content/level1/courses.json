@@ -29,8 +29,8 @@
     {
       "id": "c4",
       "title": "미적분",
-      "description": "극한, 미분, 적분, 급수",
-      "available": false
+      "description": "극한과 연속, 미분과 활용, 적분과 활용, 수열의 극한과 급수",
+      "available": true
     },
     {
       "id": "c5",

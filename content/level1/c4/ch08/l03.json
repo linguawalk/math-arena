@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch08",
+    "no": 8,
+    "title": "여러 가지 적분법"
+  },
+  "lesson": {
+    "id": "c4-ch08-l03",
+    "no": 3,
+    "title": "정적분의 활용: 넓이와 부피",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석",
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "여러 가지 함수의 넓이",
+      "body": [
+        "지수·로그·삼각함수도 같은 방법으로 곡선과 x축 사이의 넓이를 구합니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -0.5,
+          "xmax": 1.5,
+          "ymin": -0.5,
+          "ymax": 3,
+          "xstep": 0.5,
+          "ystep": 0.5,
+          "curves": [
+            {
+              "kind": "exp",
+              "a": 1,
+              "b": 2.718281828,
+              "p": 0,
+              "q": 0
+            },
+            {
+              "kind": "shade",
+              "curve": {
+                "kind": "exp",
+                "a": 1,
+                "b": 2.718281828,
+                "p": 0,
+                "q": 0
+              },
+              "from": 0,
+              "to": 1
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "y = eˣ와 x축, 두 직선 x = 0, x = 1로 둘러싸인 부분의 넓이는 e − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y = 1/x와 x축, 두 직선 x = 1, x = e로 둘러싸인 부분의 넓이는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "두 곡선 사이",
+      "body": [
+        "∫ₐᵇ |f(x) − g(x)| dx. 교점에서 위아래가 바뀌는지 확인합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = sin x와 x축으로 둘러싸인 부분(0 ≤ x ≤ π)의 넓이는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "0 ≤ x ≤ π/4에서 y = cos x와 y = sin x 사이의 넓이는 √2 − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "입체의 부피",
+      "body": [
+        "x축에 수직인 평면으로 자른 단면의 넓이가 S(x)이면 부피는 ∫ₐᵇ S(x) dx입니다. 얇은 조각의 부피를 모두 더한 것입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x에서 자른 단면이 한 변 x인 정사각형인 입체(0 ≤ x ≤ 3)의 부피는?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "단면의 넓이가 S(x) = 2x인 입체(0 ≤ x ≤ 2)의 부피는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "원뿔과 구의 부피",
+      "body": [
+        "원뿔은 꼭짓점에서 x만큼 떨어진 단면이 원이고, 반지름이 x에 비례합니다.",
+        "반지름 1인 구는 중심에서 x 떨어진 단면의 반지름이 √(1 − x²)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "높이 3, 밑면의 반지름 3인 원뿔의 부피를 ∫₀³ πx² dx로 구하면 {{1}}π",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "9"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "반지름 1인 구의 부피를 ∫₋₁¹ π(1 − x²) dx로 구하면 {{1}}π/3",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "넓이는 길이를, 부피는 단면의 넓이를 적분합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x²과 y = √x로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "1/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "단면이 반지름 x인 반원인 입체(0 ≤ x ≤ 2)의 부피는 {{1}}π/3",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = eˣ, y = e, x = 0으로 둘러싸인 부분의 넓이는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = ln x와 x축, 직선 x = e로 둘러싸인 부분의 넓이는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x³과 x축, 직선 x = 2로 둘러싸인 부분의 넓이는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "단면이 두 변의 길이가 x인 직각이등변삼각형인 입체(0 ≤ x ≤ 3)의 부피는? (기약분수로)",
+      "answer": "9/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = cos x와 x축, 0 ≤ x ≤ π/2 부분의 넓이는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "단면의 넓이를 적분하면 입체의 부피가 되는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "얇",
+            "조각"
+          ],
+          [
+            "단면",
+            "넓이"
+          ],
+          [
+            "더",
+            "합"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "입체를 x축에 수직으로 아주 얇게 썰면 각 조각의 부피는 단면의 넓이 S(x)에 두께 dx를 곱한 것과 거의 같습니다. 이 조각들을 모두 더하는 것이 ∫ S(x) dx이므로 부피가 됩니다."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch04",
+    "no": 4,
+    "title": "적분"
+  },
+  "review": {
+    "id": "c4-ch04-review",
+    "title": "적분 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "∫ 6x² dx = {{1}}x³ + C",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f′(x) = 4x − 1, f(0) = 2일 때 f(1)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "∫₀³ 2 dx의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "∫₀¹ f(x) dx = 3일 때 ∫₁⁰ f(x) dx의 값은?",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "∫₀³ (x² + 1) dx의 값은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l03"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "d/dx ∫₀ˣ (t³ − t) dt를 x = 2에서 계산한 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "∫₋₁¹ (x³ + 2) dx의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y = x와 y = x³으로 둘러싸인 부분 중 x ≥ 0인 부분의 넓이는? (기약분수로)",
+      "answer": "1/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "v(t) = t − 1일 때 t = 0부터 t = 3까지 움직인 거리는? (기약분수로)",
+      "answer": "5/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y = 4 − x²과 x축으로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "32/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch04-l04"
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch04",
+    "no": 4,
+    "title": "적분"
+  },
+  "lesson": {
+    "id": "c4-ch04-l04",
+    "no": 4,
+    "title": "넓이와 이동 거리",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "곡선과 x축 사이의 넓이",
+      "body": [
+        "넓이는 항상 양수이므로 ∫ₐᵇ |f(x)| dx로 구합니다. x축 아래 부분은 부호를 바꿔 더합니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -2,
+          "xmax": 2,
+          "ymin": -2,
+          "ymax": 2,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "poly",
+              "coef": [
+                -1,
+                0,
+                1
+              ]
+            },
+            {
+              "kind": "shade",
+              "curve": {
+                "kind": "poly",
+                "coef": [
+                  -1,
+                  0,
+                  1
+                ]
+              },
+              "from": -1,
+              "to": 1
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y = x² − 1과 x축으로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "4/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y = x(x − 2)와 x축으로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "4/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "두 곡선 사이의 넓이",
+      "body": [
+        "두 곡선 사이의 넓이는 ∫ₐᵇ (위 곡선 − 아래 곡선) dx입니다. 교점의 x좌표가 적분 구간이 됩니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -0.5,
+          "xmax": 1.5,
+          "ymin": -0.5,
+          "ymax": 1.5,
+          "xstep": 0.5,
+          "ystep": 0.5,
+          "curves": [
+            {
+              "kind": "poly",
+              "coef": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "kind": "poly",
+              "coef": [
+                0,
+                1
+              ]
+            },
+            {
+              "kind": "shade",
+              "curve": {
+                "kind": "poly",
+                "coef": [
+                  0,
+                  1
+                ]
+              },
+              "from": 0,
+              "to": 1,
+              "curve2": {
+                "kind": "poly",
+                "coef": [
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = x²과 y = x로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "1/6",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = x²과 y = 4로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "32/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = −x² + 2와 y = x로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "9/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "위치의 변화와 이동 거리",
+      "body": [
+        "속도가 v(t)일 때 a부터 b까지 위치의 변화는 ∫ₐᵇ v(t) dt, 움직인 거리는 ∫ₐᵇ |v(t)| dt입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "v(t) = 2t일 때 t = 0부터 t = 3까지 움직인 거리는?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "v(t) = t − 2일 때 t = 0부터 t = 4까지 위치의 변화는?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 운동에서 t = 0부터 t = 4까지 움직인 거리는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "방향이 바뀌는 운동",
+      "body": [
+        "v(t) = 0이 되는 시각에서 구간을 나눠 각각의 넓이를 더하면 이동 거리입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "v(t) = 3t² − 6t일 때 t = 0부터 t = 3까지 위치의 변화는?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 운동에서 t = 0부터 t = 3까지 움직인 거리는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "넓이와 거리는 절댓값을 적분하고, 위치의 변화는 부호 그대로 적분합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x³과 x축, 두 직선 x = −1, x = 1로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x² − 2x와 y = x로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "9/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "공의 속도가 v(t) = 20 − 10t(m/s)일 때 t = 0부터 t = 2까지 움직인 거리는?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 공이 t = 0부터 t = 4까지 움직인 거리는?",
+      "answer": "40",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = √x와 y = x로 둘러싸인 부분의 넓이는? (기약분수로)",
+      "answer": "1/6",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "위치의 변화와 움직인 거리가 다를 수 있는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "방향"
+          ],
+          [
+            "음수",
+            "되돌아",
+            "반대"
+          ],
+          [
+            "절댓값",
+            "상쇄",
+            "빼"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "운동 방향이 바뀌면 되돌아온 만큼이 위치의 변화에서는 음수로 빠지지만, 움직인 거리에는 그대로 더해집니다. 그래서 위치의 변화는 ∫v, 거리는 ∫|v|로 구합니다."
+    }
+  ]
+}

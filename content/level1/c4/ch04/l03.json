@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch04",
+    "no": 4,
+    "title": "적분"
+  },
+  "lesson": {
+    "id": "c4-ch04-l03",
+    "no": 3,
+    "title": "미적분의 기본정리",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "정적분 계산",
+      "body": [
+        "f의 부정적분 하나를 F라 하면 ∫ₐᵇ f(x) dx = F(b) − F(a)입니다. 넓이를 원시함수의 차로 구할 수 있다는 뜻입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "∫₀² x² dx의 값은? (기약분수로)",
+      "answer": "8/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "∫₁³ 2x dx의 값은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "∫₀¹ (3x² + 1) dx의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "적분으로 정의된 함수의 미분",
+      "body": [
+        "d/dx ∫ₐˣ f(t) dt = f(x). 넓이 함수를 미분하면 원래 함수가 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "d/dx ∫₀ˣ (t² + 1) dt를 x = 2에서 계산한 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = ∫₁ˣ (3t² − 1) dt일 때 f′(2)의 값은?",
+      "answer": "11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 f에서 f(1)의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "계산 연습",
+      "body": [
+        "원시함수를 구하고 위끝, 아래끝을 차례로 넣어 뺍니다. 부호에 주의합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "∫₋₁² (x² − 1) dx의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "∫₀² (x³ − x) dx의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "∫₋₂² x³ dx의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "대칭성 이용",
+      "body": [
+        "y축에 대칭인 함수(짝수 차수)는 ∫₋ₐᵃ f = 2∫₀ᵃ f, 원점에 대칭인 함수(홀수 차수)는 ∫₋ₐᵃ f = 0입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "∫₋₁¹ (x² + x) dx의 값은? (기약분수로)",
+      "answer": "2/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "∫₋₂² (x³ + 3x²) dx의 값은?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정적분이 포함된 식",
+      "body": [
+        "∫₀ˣ f(t) dt = g(x)이면 양변을 미분해 f(x) = g′(x)를 얻고, x = 0(아래끝)을 넣어 조건을 얻습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "∫₀ˣ f(t) dt = x² + 2x일 때 f(3)의 값은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "∫₁ˣ f(t) dt = x² + ax − 3일 때 a의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x² − ∫₀¹ f(t) dt일 때 f(0)의 값은? (기약분수로)",
+      "answer": "-1/6",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": "∫₀¹ f(t) dt = k로 놓으세요.",
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "∫₀³ |x − 1| dx의 값은? (기약분수로)",
+      "answer": "5/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "미적분의 기본정리가 무엇을 연결하는지 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "넓이",
+            "정적분"
+          ],
+          [
+            "미분",
+            "원시함수",
+            "부정적분"
+          ],
+          [
+            "거꾸로",
+            "역",
+            "연결"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "넓이를 구하는 정적분과 미분의 역과정인 부정적분을 연결합니다. 넓이를 직사각형 합의 극한으로 구하는 대신, 원시함수를 찾아 F(b) − F(a)로 바로 계산할 수 있게 해 줍니다."
+    }
+  ]
+}

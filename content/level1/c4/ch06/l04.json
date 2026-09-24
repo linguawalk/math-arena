@@ -1,0 +1,287 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch06",
+    "no": 6,
+    "title": "여러 가지 함수의 미분"
+  },
+  "lesson": {
+    "id": "c4-ch06-l04",
+    "no": 4,
+    "title": "매개변수와 음함수의 미분",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "매개변수로 나타낸 함수",
+      "body": [
+        "x = f(t), y = g(t)처럼 둘 다 t로 나타내면 dy/dx = (dy/dt)/(dx/dt)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "x = t², y = t³일 때 t = 1에서 dy/dx의 값은? (기약분수로)",
+      "answer": "3/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "x = 2t, y = t²일 때 t = 3에서 dy/dx의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "원의 매개변수 표현",
+      "body": [
+        "x = cos t, y = sin t는 단위원입니다. dy/dx = cos t / (−sin t)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x = cos t, y = sin t일 때 t = π/4에서 dy/dx의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "음함수의 미분",
+      "body": [
+        "x² + y² = 25처럼 y가 식 속에 섞여 있으면 y를 x의 함수로 보고 양변을 x에 대해 미분합니다.",
+        "y²을 미분하면 2y × dy/dx입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x² + y² = 25 위의 점 (3, 4)에서 dy/dx의 값은? (기약분수로)",
+      "answer": "-3/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "xy = 6 위의 점 (2, 3)에서 dy/dx의 값은? (기약분수로)",
+      "answer": "-3/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y² = 4x 위의 점 (1, 2)에서 dy/dx의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "음함수와 접선",
+      "body": [
+        "구한 dy/dx를 기울기로 하여 접선의 방정식을 세웁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "x² + y² = 25 위의 점 (3, 4)에서의 접선은 3x + 4y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "25"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x² + xy + y² = 7 위의 점 (1, 2)에서 dy/dx의 값은? (기약분수로)",
+      "answer": "-4/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "역함수의 미분",
+      "body": [
+        "y = f(x)의 역함수 g에 대해 g′(b) = 1/f′(a) (b = f(a))입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ + x의 역함수를 g라 할 때 g′(2)의 값은? (기약분수로)",
+      "answer": "1/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "f(1) = 2, f′(1) = 4"
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = eˣ의 역함수 ln x에 대해 x = 1에서의 미분계수는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³의 역함수를 g라 할 때 g′(8)의 값은? (기약분수로)",
+      "answer": "1/12",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x = t + 1, y = t² − 1일 때 t = 2에서 dy/dx의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x = eᵗ, y = e^(2t)일 때 t = 0에서 dy/dx의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x³ + y³ = 9 위의 점 (1, 2)에서 dy/dx의 값은? (기약분수로)",
+      "answer": "-1/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x = cos t일 때 t = π/2에서 dx/dt의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "음함수를 미분할 때 y²의 도함수가 2y가 아니라 2y × dy/dx인 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "합성"
+          ],
+          [
+            "y는 x의 함수",
+            "x에 따라",
+            "x의 함수"
+          ],
+          [
+            "dy/dx",
+            "곱"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "y는 x에 따라 변하는 함수이므로 y²은 x에 대한 합성함수입니다. 합성함수의 미분법에 따라 겉의 미분 2y에 속 y의 도함수 dy/dx를 곱해야 합니다."
+    }
+  ]
+}

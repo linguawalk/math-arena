@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch07",
+    "no": 7,
+    "title": "미분법의 활용"
+  },
+  "review": {
+    "id": "c4-ch07-review",
+    "title": "미분법의 활용 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = x⁴ − x²일 때 f″(1)의 값은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = e^(3x)일 때 f″(0)의 값은?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y = x³ + 3x²의 변곡점의 x좌표는?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y = x³ − 3x²이 위로 볼록한 범위가 x < a일 때 a의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y = x³ − 12x의 극값은 모두 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l03"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x³ − 12x = k가 서로 다른 세 실근을 갖는 양의 정수 k는 몇 개일까요?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x > 0에서 x + 4/x의 최솟값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x = 6t, y = 8t로 움직이는 점의 속력은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x = 4cos t, y = 4sin t로 움직이는 점의 속력은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x = t², y = t²일 때 t = 1에서 가속도의 y성분은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch07-l04"
+    }
+  ]
+}

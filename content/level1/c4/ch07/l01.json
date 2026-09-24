@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch07",
+    "no": 7,
+    "title": "미분법의 활용"
+  },
+  "lesson": {
+    "id": "c4-ch07-l01",
+    "no": 1,
+    "title": "이계도함수",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "이계도함수",
+      "body": [
+        "도함수 f′(x)를 한 번 더 미분한 것을 이계도함수라 하고 f″(x), y″, d²y/dx²로 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³일 때 f″(1)의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(x) = eˣ일 때 f″(0)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "가속도",
+      "body": [
+        "위치 x(t)를 두 번 미분하면 가속도 x″(t)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x(t) = t³ − 2t일 때 t = 1에서의 가속도는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = sin x일 때 f″(π/2)의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x⁴일 때 f″(1)의 값은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "여러 번 미분하기",
+      "body": [
+        "세 번, 네 번 미분한 것도 같은 방법으로 구합니다. sin x는 네 번 미분하면 다시 sin x가 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x⁵일 때 세 번 미분한 값을 x = 1에서 구하면?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = sin x를 네 번 미분한 함수의 x = π/2에서의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "이계도함수로 극값 판정",
+      "body": [
+        "f′(a) = 0이고 f″(a) > 0이면 x = a에서 극소, f″(a) < 0이면 극대입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ − 3x일 때 f″(1)의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 함수는 x = 1에서 극소일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = −x² + 4x는 x = 2에서 극대일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "f′는 기울기, f″는 기울기가 변하는 빠르기입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = ln x일 때 f″(1)의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = xeˣ일 때 f″(0)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = e^(2x)일 때 f″(0)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = cos 2x일 때 f″(0)의 값은?",
+      "answer": "-4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = 1/x일 때 f″(1)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "이계도함수 f″(x)가 그래프에서 무엇을 나타내는지 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "기울기"
+          ],
+          [
+            "변하",
+            "증가",
+            "감소"
+          ],
+          [
+            "볼록",
+            "휘"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "f″(x)는 접선의 기울기 f′(x)가 변하는 빠르기입니다. f″ > 0이면 기울기가 커지면서 아래로 볼록하게 휘고, f″ < 0이면 기울기가 작아지면서 위로 볼록하게 휩니다."
+    }
+  ]
+}

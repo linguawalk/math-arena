@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch01",
+    "no": 1,
+    "title": "함수의 극한"
+  },
+  "review": {
+    "id": "c4-ch01-review",
+    "title": "함수의 극한 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "lim(x→−2) (x² + x)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = 2x (x < 1), x + 3 (x ≥ 1)에서 lim(x→1+) f(x)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "lim(x→3) (x² − x − 6)/(x − 3)의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) (√(x + 9) − 3)/x의 값은? (기약분수로)",
+      "answer": "1/6",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "lim(x→∞) (2x² − x)/(x² + 4)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = 3x − a (x < 2), x² (x ≥ 2)가 연속일 때 a의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = 1/(x² − x)가 불연속인 점은 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "구간 [0, 3]에서 f(x) = −x² + 2x의 최솟값은?",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ − 5의 근이 있는 구간 (n, n + 1)에서 정수 n은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "연속함수 f에서 f(0) = −2, f(1) = 1, f(2) = −1입니다. (0, 2)에서 f(x) = 0의 실근은 적어도 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch01-l04"
+    }
+  ]
+}

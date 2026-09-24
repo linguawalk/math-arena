@@ -155,20 +155,8 @@ function numberLine(cfg, interactive, onChange){
   return svg;
 }
 
-function drawCurves(svg, cfg, X, Y, pad, S){
-  const curves = cfg.curves || []; if (!curves.length) return;
-  const {xmin, xmax, ymin, ymax} = cfg, id = "clip" + Math.random().toString(36).slice(2, 8);
-  const defs = el("defs", {}, svg), cp = el("clipPath", {id}, defs);
-  el("rect", {x:X(xmin), y:Y(ymax), width:X(xmax) - X(xmin), height:Y(ymin) - Y(ymax)}, cp);
-  const g = el("g", {"clip-path":`url(#${id})`}, svg);
-  const colors = ["#1D3FA8", "#C2410C", "#1E7A50"];
-  let ci = 0;
-  curves.forEach(c => {
-    const col = c.color || colors[ci++ % colors.length];
-    if (c.kind === "circle"){ el("circle", {cx:X(c.cx), cy:Y(c.cy), r:Math.abs(X(c.cx + c.r) - X(c.cx)), fill:"none", stroke:col, "stroke-width":2.5}, g); return; }
-    if (c.kind === "vline"){ el("line", {x1:X(c.x), x2:X(c.x), y1:Y(ymin), y2:Y(ymax), stroke:"#4A5670", "stroke-dasharray":"5 5", "stroke-width":1.5}, g); return; }
-    if (c.kind === "hline"){ el("line", {x1:X(xmin), x2:X(xmax), y1:Y(c.y), y2:Y(c.y), stroke:"#4A5670", "stroke-dasharray":"5 5", "stroke-width":1.5}, g); return; }
-    const f = {
+function curveFn(c){
+  return {
       poly: t => c.coef.reduce((acc, co, k) => acc + co * t ** k, 0),
       rational: t => Math.abs(t - c.p) < 1e-9 ? NaN : c.k / (t - c.p) + c.q,
       sqrt: t => c.b * (t - c.p) < 0 ? NaN : c.a * Math.sqrt(c.b * (t - c.p)) + c.q,
@@ -177,7 +165,31 @@ function drawCurves(svg, cfg, X, Y, pad, S){
       log: t => t - c.p <= 0 ? NaN : c.a * Math.log(t - c.p) / Math.log(c.b) + c.q,
       trig: t => { const u = c.b * (t - c.p); const v = c.fn === "sin" ? Math.sin(u) : c.fn === "cos" ? Math.cos(u) : Math.tan(u);
                    return c.fn === "tan" && Math.abs(Math.cos(u)) < 1e-3 ? NaN : c.a * v + c.q; }
-    }[c.kind];
+  }[c.kind];
+}
+
+function drawCurves(svg, cfg, X, Y, pad, S){
+  const curves = cfg.curves || []; if (!curves.length) return;
+  const {xmin, xmax, ymin, ymax} = cfg, id = "clip" + Math.random().toString(36).slice(2, 8);
+  const defs = el("defs", {}, svg), cp = el("clipPath", {id}, defs);
+  el("rect", {x:X(xmin), y:Y(ymax), width:X(xmax) - X(xmin), height:Y(ymin) - Y(ymax)}, cp);
+  const g = el("g", {"clip-path":`url(#${id})`}, svg);
+  const colors = ["#1D3FA8", "#C2410C", "#1E7A50"];
+  let ci = 0;
+  [...curves].sort((p, q) => (q.kind === "shade") - (p.kind === "shade")).forEach(c => {
+    const col = c.color || colors[ci++ % colors.length];
+    if (c.kind === "circle"){ el("circle", {cx:X(c.cx), cy:Y(c.cy), r:Math.abs(X(c.cx + c.r) - X(c.cx)), fill:"none", stroke:col, "stroke-width":2.5}, g); return; }
+    if (c.kind === "vline"){ el("line", {x1:X(c.x), x2:X(c.x), y1:Y(ymin), y2:Y(ymax), stroke:"#4A5670", "stroke-dasharray":"5 5", "stroke-width":1.5}, g); return; }
+    if (c.kind === "hline"){ el("line", {x1:X(xmin), x2:X(xmax), y1:Y(c.y), y2:Y(c.y), stroke:"#4A5670", "stroke-dasharray":"5 5", "stroke-width":1.5}, g); return; }
+    if (c.kind === "shade"){
+      const f1 = curveFn(c.curve), f2 = c.curve2 ? curveFn(c.curve2) : (() => 0);
+      if (!f1 || !f2) return;
+      const lo2 = Math.max(xmin, c.from), hi2 = Math.min(xmax, c.to), M = 300; let d = "";
+      for (let i = 0; i <= M; i++){ const t = lo2 + (hi2 - lo2) * i / M; d += (i ? " L" : "M") + `${X(t).toFixed(1)} ${Y(Math.max(ymin, Math.min(ymax, f1(t)))).toFixed(1)}`; }
+      for (let i = M; i >= 0; i--){ const t = lo2 + (hi2 - lo2) * i / M; d += ` L${X(t).toFixed(1)} ${Y(Math.max(ymin, Math.min(ymax, f2(t)))).toFixed(1)}`; }
+      el("path", {d: d + " Z", fill:"rgba(29,63,168,0.18)", stroke:"none"}, g); return;
+    }
+    const f = curveFn(c);
     if (!f) return;
     let lo = Math.max(xmin, c.from ?? -Infinity), hi = Math.min(xmax, c.to ?? Infinity);
     if (lo >= hi) return;
@@ -295,7 +307,7 @@ function buildQuestion(q, host){
       else prompt.appendChild(document.createTextNode(part));
     });
     host.appendChild(prompt);
-    const PALETTE = ["∈", "∉", "⊂", "∪", "∩", "∅", "≠", "≤", "≥", "√", "ᶜ", "−"];
+    const PALETTE = ["∈", "∉", "⊂", "∪", "∩", "∅", "≠", "≤", "≥", "√", "ᶜ", "∞", "π", "−"];
     const needs = q.blanks.some(bl => bl.answers.every(ans => [...ans].some(ch => PALETTE.includes(ch) && ch !== "−")));
     let last = inputs[0];
     inputs.forEach(i => i.addEventListener("focus", () => { last = i; }));

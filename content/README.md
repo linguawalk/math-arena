@@ -47,5 +47,6 @@
   - log: y = a·log_b(x − p) + q
   - trig: y = a·fn(b(x − p)) + q, fn = sin | cos | tan
   - vline: x / hline: y (점선, 점근선·경계 표시용)
+  - shade: curve와 x축(또는 curve2) 사이를 from~to 구간에서 칠함 (넓이 표시용)
   - 공통 선택 키: from, to(그릴 x 범위), color
 - coordinate_plane 문항도 config.curves를 넣으면 곡선 위에 점을 찍게 할 수 있음

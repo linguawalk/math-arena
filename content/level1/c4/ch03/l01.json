@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch03",
+    "no": 3,
+    "title": "도함수의 활용"
+  },
+  "lesson": {
+    "id": "c4-ch03-l01",
+    "no": 1,
+    "title": "접선의 방정식과 평균값 정리",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "접선의 방정식",
+      "body": [
+        "곡선 y = f(x) 위의 점 (a, f(a))에서의 접선은 y − f(a) = f′(a)(x − a)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "y = x³ 위의 점 (1, 1)에서의 접선은 y = 3x − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "y = x² − 2x 위의 점 (2, 0)에서의 접선은 y = 2x − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "기울기가 주어진 접선",
+      "body": [
+        "f′(x) = m을 풀어 접점을 먼저 찾습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = x²의 접선 중 기울기가 6인 것의 접점의 x좌표는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "그 접선은 y = 6x − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "9"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "곡선 밖의 점에서 그은 접선",
+      "body": [
+        "접점을 (t, f(t))로 놓고 접선이 그 점을 지난다는 조건으로 t를 구합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "점 (0, −1)에서 y = x²에 그은 접선 중 기울기가 양수인 것의 기울기는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "그 접점의 x좌표는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "접선에 수직인 직선",
+      "body": [
+        "접선의 기울기가 m이면 그 점에서 수직인 직선(법선)의 기울기는 −1/m입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x² 위의 점 (1, 1)에서 접선에 수직인 직선의 기울기는? (기약분수로)",
+      "answer": "-1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x³ − 3x의 접선 중 x축과 평행한 것은 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "롤의 정리와 평균값 정리",
+      "body": [
+        "f(a) = f(b)이면 f′(c) = 0인 c가 a와 b 사이에 있습니다(롤의 정리).",
+        "(f(b) − f(a))/(b − a) = f′(c)인 c가 a와 b 사이에 있습니다(평균값 정리)."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "구간 [−1, 1]에서 f(x) = x²에 대해 롤의 정리를 만족하는 c는?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "구간 [0, 2]에서 f(x) = x²에 대해 평균값 정리를 만족하는 c는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "구간 [0, 3]에서 f(x) = x³에 대해 평균값 정리를 만족하는 c = √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -1,
+        "xmax": 5,
+        "ymin": -1,
+        "ymax": 6,
+        "xstep": 1,
+        "ystep": 1,
+        "curves": [
+          {
+            "kind": "poly",
+            "coef": [
+              5,
+              -4,
+              1
+            ]
+          }
+        ]
+      },
+      "prompt": "y = x² − 4x + 5에서 접선의 기울기가 0인 점을 표시하세요.",
+      "answer": {
+        "x": 2,
+        "y": 1,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x³과 직선 y = 3x + k가 접할 때 양수 k의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x² + ax 위의 점 (1, 3)에서의 접선의 기울기가 4일 때 a의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x²과 y = −x² + 2x + k가 한 점에서 접할 때 k의 값은? (기약분수로)",
+      "answer": "-1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "평균값 정리의 뜻을 자동차의 속도로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "평균 속도",
+            "평균속도"
+          ],
+          [
+            "순간",
+            "어느 순간"
+          ],
+          [
+            "같"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "2시간에 120km를 갔다면 평균 속도는 시속 60km입니다. 평균값 정리에 따르면 그 사이 어느 순간에는 순간 속도가 평균 속도와 같은 시속 60km였던 때가 반드시 있습니다."
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch02",
+    "no": 2,
+    "title": "미분계수와 도함수"
+  },
+  "lesson": {
+    "id": "c4-ch02-l01",
+    "no": 1,
+    "title": "순간변화율",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "평균변화율에서 출발",
+      "body": [
+        "x가 a에서 a + h까지 변할 때 평균변화율은 (f(a + h) − f(a))/h입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²에서 x가 1에서 3까지 변할 때 평균변화율은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²에서 x가 1에서 1.1까지 변할 때 평균변화율은?",
+      "answer": "2.1",
+      "answer_format": "decimal",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "미분계수",
+      "body": [
+        "h → 0일 때 평균변화율의 극한을 x = a에서의 순간변화율 또는 미분계수라 하고 f′(a)로 씁니다.",
+        "f′(a) = lim(h→0) (f(a + h) − f(a))/h"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²일 때 f′(1)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²일 때 f′(3)의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "정의로 계산하기",
+      "body": [
+        "f(a + h) − f(a)를 전개하면 h로 나누어떨어지고, 남은 식에 h = 0을 넣습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = 3x + 1일 때 f′(2)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x² + x일 때 f′(1)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = 2x²일 때 f′(1)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "순간 속도",
+      "body": [
+        "위치가 s(t)일 때 시각 t = a에서의 순간 속도는 s′(a)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "s(t) = 5t²(m)일 때 t = 2초에서의 순간 속도는 초속 몇 m일까요?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "s(t) = t² + 2t일 때 t = 3에서의 순간 속도는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정의를 변형한 극한",
+      "body": [
+        "lim(h→0) (f(a + 2h) − f(a))/h = 2f′(a),  lim(h→0) (f(a + h) − f(a − h))/h = 2f′(a)",
+        "lim(x→a) (f(x) − f(a))/(x − a) = f′(a)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f′(1) = 3일 때 lim(h→0) (f(1 + 2h) − f(1))/h의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f′(1) = 3일 때 lim(h→0) (f(1 + h) − f(1 − h))/h의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f′(1) = 3일 때 lim(x→1) (f(x) − f(1))/(x − 1)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³일 때 f′(2)의 값은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = 1/x일 때 f′(1)의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(h→0) ((2 + h)² − 4)/h의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "평균변화율에서 순간변화율로 넘어가는 과정을 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "구간",
+            "h"
+          ],
+          [
+            "0",
+            "좁"
+          ],
+          [
+            "극한"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "두 점 사이의 평균변화율에서 구간의 폭 h를 점점 줄여 0에 한없이 가깝게 합니다. 그때 평균변화율이 가까워지는 극한값이 한 순간의 변화율, 즉 미분계수입니다."
+    }
+  ]
+}

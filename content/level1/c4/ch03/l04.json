@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch03",
+    "no": 3,
+    "title": "도함수의 활용"
+  },
+  "lesson": {
+    "id": "c4-ch03-l04",
+    "no": 4,
+    "title": "속도와 가속도",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "속도와 가속도",
+      "body": [
+        "수직선 위를 움직이는 점의 위치가 x(t)이면 속도는 v = dx/dt, 가속도는 a = dv/dt입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "x(t) = t² + 3t일 때 t = 2에서의 속도는?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "같은 운동의 가속도는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "운동 방향",
+      "body": [
+        "v > 0이면 양의 방향, v < 0이면 음의 방향으로 움직입니다. v의 부호가 바뀌는 순간 운동 방향이 바뀝니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x(t) = t² − 4t일 때 운동 방향이 바뀌는 시각은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x(t) = t³ − 6t² + 9t (t > 0)에서 운동 방향이 바뀌는 시각은 몇 번일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "위로 던진 공",
+      "body": [
+        "높이 h(t)에서 최고점은 속도가 0인 순간이고, 땅에 닿는 순간은 h(t) = 0인 때입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "h(t) = 20t − 5t²(m)인 공이 최고점에 도달하는 시각은 몇 초 후일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "최고 높이는 몇 m일까요?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "땅에 닿는 순간의 속력은 초속 몇 m일까요?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "여러 가지 변화율",
+      "body": [
+        "넓이, 부피처럼 시간에 따라 변하는 양의 변화율도 시간에 대해 미분해 구합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "반지름이 r = 2t인 원의 넓이가 변하는 비율은 t = 1일 때 {{1}}π",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "8"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "정사각형의 한 변이 매초 3cm씩 늘어납니다. 한 변이 5cm일 때 넓이가 늘어나는 비율은 초당 몇 cm²일까요?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "위치를 한 번 미분하면 속도, 두 번 미분하면 가속도입니다. 정지하는 순간은 속도가 0인 때입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x(t) = t³ − 3t일 때 t = 2에서의 가속도는?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 운동에서 t > 0일 때 점이 정지하는 시각은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x(t) = −t² + 6t에서 점이 원점에서 가장 멀리 가는 위치는?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "속도가 v = 3t² − 12일 때 t > 0에서 속도가 0이 되는 시각은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x(t) = 2t³ − 9t² + 12t에서 운동 방향이 처음 바뀌는 시각은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "h(t) = 30t − 5t²인 공의 최고 높이는?",
+      "answer": "45",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "속도의 부호와 운동 방향의 관계를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "양수",
+            "양의 방향"
+          ],
+          [
+            "음수",
+            "음의 방향"
+          ],
+          [
+            "바뀌",
+            "0"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "속도가 양수이면 위치가 커지는 양의 방향으로, 음수이면 음의 방향으로 움직입니다. 속도가 0이 되며 부호가 바뀌는 순간 운동 방향이 바뀝니다."
+    }
+  ]
+}

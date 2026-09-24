@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch02",
+    "no": 2,
+    "title": "미분계수와 도함수"
+  },
+  "lesson": {
+    "id": "c4-ch02-l03",
+    "no": 3,
+    "title": "도함수",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "도함수",
+      "body": [
+        "각 x에 미분계수 f′(x)를 대응시킨 함수를 도함수라고 합니다. f′(x) = lim(h→0) (f(x + h) − f(x))/h",
+        "도함수를 구하는 것을 미분한다고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "f(x) = x²이면 f′(x) = {{1}}x",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "f(x) = x³이면 f′(x) = {{1}}x²",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "기본 공식",
+      "body": [
+        "(xⁿ)′ = nxⁿ⁻¹ (n은 자연수),  (x)′ = 1,  (c)′ = 0 (c는 상수)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(x⁵)′ = 5x^{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "(7)′의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(x)′ = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "여러 가지 기호",
+      "body": [
+        "y = f(x)의 도함수를 y′, f′(x), dy/dx, d/dx f(x)로 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = x⁴일 때 x = 1에서 dy/dx의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x = 3에서 d/dx (x²)의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "도함수에서 미분계수로",
+      "body": [
+        "도함수를 구한 뒤 x = a를 넣으면 f′(a)입니다. 정의로 매번 계산하는 것보다 훨씬 빠릅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³일 때 f′(2)의 값은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x⁴일 때 f′(−1)의 값은?",
+      "answer": "-4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²에서 f′(a) = 10일 때 a의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "도함수의 부호",
+      "body": [
+        "f′(x) > 0인 곳에서는 접선이 오른쪽 위로, f′(x) < 0인 곳에서는 오른쪽 아래로 향합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²에서 f′(x) < 0인 x의 범위가 x < a일 때 a의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³일 때 f′(0)의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f′(x) = 2x이고 f(0) = 1인 다항함수 f에서 f(2)의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x¹⁰일 때 f′(1)의 값은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²에서 f′(x) = f(x)를 만족하는 양수 x는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "(x²)′ = 2x를 도함수의 정의로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "(x + h)²",
+            "전개"
+          ],
+          [
+            "h로 나누",
+            "2x + h"
+          ],
+          [
+            "h → 0",
+            "0에 가까",
+            "극한"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "(x + h)² − x² = 2xh + h²이므로 이를 h로 나누면 2x + h입니다. h → 0일 때 극한을 구하면 2x가 되어 (x²)′ = 2x입니다."
+    }
+  ]
+}

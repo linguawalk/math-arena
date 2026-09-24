@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch01",
+    "no": 1,
+    "title": "함수의 극한"
+  },
+  "lesson": {
+    "id": "c4-ch01-l03",
+    "no": 3,
+    "title": "함수의 연속",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "연속",
+      "body": [
+        "함수 f(x)가 x = a에서 연속이려면 ① f(a)가 정의되고 ② 극한이 존재하며 ③ 그 극한이 f(a)와 같아야 합니다.",
+        "그래프로는 x = a에서 끊어지지 않는다는 뜻입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²은 x = 1에서 연속일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(x) = 1/x는 x = 0에서 연속일까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "범위마다 식이 다른 함수",
+      "body": [
+        "경계에서 좌극한, 우극한, 함숫값이 모두 같아야 연속입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x + a (x < 1), 2x (x ≥ 1)가 x = 1에서 연속일 때 a의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = (x² − 1)/(x − 1) (x ≠ 1), k (x = 1)가 연속일 때 k의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = ax² (x ≤ 2), x + 2 (x > 2)가 연속일 때 a의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "연속함수의 성질",
+      "body": [
+        "연속함수끼리 더하고 빼고 곱한 함수, 분모가 0이 아닌 곳에서 나눈 함수는 연속입니다.",
+        "다항함수는 모든 실수에서 연속입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = 1/(x² − 4)가 불연속인 점은 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = 1/(x² + 1)이 불연속인 점은 몇 개일까요?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "최대·최소 정리",
+      "body": [
+        "닫힌구간 [a, b]에서 연속인 함수는 그 구간에서 반드시 최댓값과 최솟값을 가집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "닫힌구간에서 연속인 함수는 반드시 최댓값을 가질까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "구간 [−1, 2]에서 f(x) = x²의 최댓값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 구간에서 최솟값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "끊어질 수 있는 곳은 분모가 0인 곳, 식이 바뀌는 경계입니다. 그곳만 확인하면 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = |x|는 x = 0에서 연속일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = (x² + ax + b)/(x − 2) (x ≠ 2), 3 (x = 2)이 연속일 때 a + b의 값은?",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "분자 = (x − 2)(x + 1) = x² − x − 2"
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x² − 1 (x < 0), x + k (x ≥ 0)가 연속일 때 k의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "연속함수 f, g에서 f(1) = 2, g(1) = 3일 때 lim(x→1) f(x)g(x)의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ − x + 1이 불연속인 점은 몇 개일까요?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "함수가 x = a에서 연속이기 위한 세 조건을 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "정의",
+            "f(a)"
+          ],
+          [
+            "극한",
+            "존재"
+          ],
+          [
+            "같"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "x = a에서 함숫값 f(a)가 정의되어 있고, x → a일 때의 극한이 존재하며, 그 극한값이 f(a)와 같아야 합니다."
+    }
+  ]
+}

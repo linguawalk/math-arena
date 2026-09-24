@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch08",
+    "no": 8,
+    "title": "여러 가지 적분법"
+  },
+  "lesson": {
+    "id": "c4-ch08-l04",
+    "no": 4,
+    "title": "속도와 거리, 곡선의 길이",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "평면 운동의 이동 거리",
+      "body": [
+        "위치가 (x(t), y(t))인 점이 t = a부터 b까지 움직인 거리는 ∫ₐᵇ √(x′² + y′²) dt입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "x = 3t, y = 4t일 때 t = 0부터 t = 1까지 움직인 거리는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "x = cos t, y = sin t일 때 t = 0부터 t = π까지 움직인 거리는 {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "π"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "곡선의 길이",
+      "body": [
+        "곡선 y = f(x)의 a ≤ x ≤ b 부분의 길이는 ∫ₐᵇ √(1 + {f′(x)}²) dx입니다. 짧은 직각삼각형의 빗변을 모두 더한 것입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "직선 y = x에서 0 ≤ x ≤ 1 부분의 길이는 √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = (2/3)x^(3/2)에서 0 ≤ x ≤ 3 부분의 길이는? (기약분수로)",
+      "answer": "14/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "매개변수 곡선의 길이",
+      "body": [
+        "x = f(t), y = g(t)로 나타낸 곡선의 길이도 ∫ √(x′² + y′²) dt입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "x = 3cos t, y = 3sin t (0 ≤ t ≤ 2π)의 길이는 {{1}}π",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x = 5t, y = 12t (0 ≤ t ≤ 2)의 길이는?",
+      "answer": "26",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "직선 운동의 이동 거리",
+      "body": [
+        "수직선 위에서는 ∫|v(t)| dt가 이동 거리, ∫v(t) dt가 위치의 변화입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "v(t) = sin t일 때 t = 0부터 2π까지 움직인 거리는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 운동에서 t = 0부터 2π까지 위치의 변화는?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "길이와 거리는 항상 '속력' 또는 '빗변'을 적분합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "v(t) = eᵗ일 때 t = 0부터 t = ln 3까지 움직인 거리는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "x = 2cos t, y = 2sin t (0 ≤ t ≤ 2π)의 길이는 {{1}}π",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "x = t², y = t² (0 ≤ t ≤ 1)의 길이는 √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "v(t) = 3t² − 3일 때 t = 0부터 t = 2까지 움직인 거리는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 운동에서 t = 0부터 t = 2까지 위치의 변화는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = x^(3/2)에서 0 ≤ x ≤ 4/3 부분의 길이는? (기약분수로)",
+      "answer": "56/27",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "x = 2t + 1, y = 2t (0 ≤ t ≤ 1)의 길이는 {{1}}√2",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "곡선의 길이 공식 ∫ √(1 + {f′(x)}²) dx가 피타고라스 정리에서 나오는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "직각삼각형",
+            "빗변"
+          ],
+          [
+            "dx",
+            "가로"
+          ],
+          [
+            "dy",
+            "세로",
+            "f′"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "곡선을 아주 짧게 나누면 각 조각은 가로 dx, 세로 dy = f′(x)dx인 직각삼각형의 빗변과 거의 같습니다. 빗변의 길이는 √(dx² + dy²) = √(1 + f′²) dx이고, 이를 모두 더하면 곡선의 길이입니다."
+    }
+  ]
+}

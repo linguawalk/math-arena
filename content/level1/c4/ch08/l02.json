@@ -1,0 +1,343 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch08",
+    "no": 8,
+    "title": "여러 가지 적분법"
+  },
+  "lesson": {
+    "id": "c4-ch08-l02",
+    "no": 2,
+    "title": "부분적분법",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "부분적분",
+      "body": [
+        "곱의 미분법을 거꾸로 하면 ∫ f(x)g′(x) dx = f(x)g(x) − ∫ f′(x)g(x) dx입니다.",
+        "미분하면 간단해지는 것을 f(다항식, ln x), 적분하기 쉬운 것을 g′(eˣ, sin x, cos x)으로 고릅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "∫ xeˣ dx = (x − {{1}})eˣ + C",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "∫ x cos x dx = x sin x + {{1}} x + C",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "cos"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "로그함수의 적분",
+      "body": [
+        "∫ ln x dx는 ln x × 1로 보고 f = ln x, g′ = 1로 부분적분하면 x ln x − x + C입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "∫₁ᵉ ln x dx의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "∫ x ln x dx = (x²/2) ln x − x²/{{1}} + C",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "정적분의 부분적분",
+      "body": [
+        "∫ₐᵇ fg′ dx = [fg]ₐᵇ − ∫ₐᵇ f′g dx"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "∫₀¹ xeˣ dx의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "∫₀^π x sin x dx = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "π"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "두 번 하는 부분적분",
+      "body": [
+        "x²eˣ처럼 다항식의 차수가 2이면 부분적분을 두 번 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "∫ x²eˣ dx = (x² − 2x + {{1}})eˣ + C",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "∫₀¹ x²eˣ dx = e − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "되돌아오는 부분적분",
+      "body": [
+        "eˣ sin x처럼 두 번 부분적분하면 처음 적분이 다시 나오는 경우, 그것을 미지수로 놓고 풉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "∫ eˣ sin x dx = eˣ(sin x − cos x)/{{1}} + C",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "∫₀^(π/2) x cos x dx = π/2 − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "∫₁² ln x dx = 2 ln 2 − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "∫₀¹ (x + 1)eˣ dx = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "e"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "d/dx (x ln x − x)를 x = e에서 계산한 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "∫₀¹ xe⁻ˣ dx = 1 − {{1}}/e",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "∫₋π^π x sin x dx = {{1}}π",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "부분적분에서 f와 g′을 고르는 기준을 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "미분"
+          ],
+          [
+            "간단"
+          ],
+          [
+            "적분"
+          ],
+          [
+            "쉬운",
+            "쉽게"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "미분하면 더 간단해지는 쪽을 f로, 적분하기 쉬운 쪽을 g′으로 고릅니다. 그래야 남은 적분 ∫ f′g dx가 처음보다 쉬워집니다. 예를 들어 xeˣ에서는 x를 f, eˣ를 g′으로 고릅니다."
+    }
+  ]
+}

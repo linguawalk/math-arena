@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch06",
+    "no": 6,
+    "title": "여러 가지 함수의 미분"
+  },
+  "lesson": {
+    "id": "c4-ch06-l02",
+    "no": 2,
+    "title": "삼각함수의 미분",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "기본 극한",
+      "body": [
+        "lim(x→0) sin x / x = 1 (x는 라디안). 아주 작은 각에서는 sin x ≈ x입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) sin x / x의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) sin 3x / x의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) sin x / (2x)의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "사인과 코사인의 미분",
+      "body": [
+        "(sin x)′ = cos x,  (cos x)′ = −sin x"
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -3.141592653589793,
+          "xmax": 6.283185307179586,
+          "ymin": -2,
+          "ymax": 2,
+          "xstep": 1.5707963267948966,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "trig",
+              "fn": "sin",
+              "a": 1,
+              "b": 1,
+              "p": 0,
+              "q": 0
+            },
+            {
+              "kind": "trig",
+              "fn": "cos",
+              "a": 1,
+              "b": 1,
+              "p": 0,
+              "q": 0
+            }
+          ],
+          "xpi": true
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = sin x일 때 f′(0)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = cos x일 때 f′(π/2)의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "덧셈정리",
+      "body": [
+        "sin(α + β) = sin α cos β + cos α sin β,  cos(α + β) = cos α cos β − sin α sin β",
+        "사인의 미분 공식은 이 덧셈정리와 기본 극한에서 나옵니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "sin 75° = sin(45° + 30°) = (√6 + √{{1}})/4",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "cos(π/3 + π/6)의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "탄젠트의 미분",
+      "body": [
+        "(tan x)′ = 1/cos² x"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = tan x일 때 f′(0)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = sin x + cos x일 때 f′(0)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) (1 − cos x)/x²의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "극한 문제는 sin □ / □ 꼴을 만들고, 미분은 sin → cos, cos → −sin 순서로 바뀝니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = sin x 위의 원점에서의 접선의 기울기는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = 2 sin x − cos x일 때 f′(0)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) tan x / x의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) sin 2x / sin x의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = sin x일 때 f′(π)의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "lim(x→0) sin x / x = 1이 뜻하는 바를 단위원으로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "호"
+          ],
+          [
+            "높이",
+            "sin x",
+            "세로"
+          ],
+          [
+            "거의 같",
+            "같아",
+            "비슷"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "단위원에서 중심각 x에 대한 호의 길이는 x, 세로 높이는 sin x입니다. 각이 아주 작아지면 호와 세로 선분의 길이가 거의 같아져 비가 1에 가까워집니다."
+    }
+  ]
+}

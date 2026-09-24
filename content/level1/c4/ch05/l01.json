@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch05",
+    "no": 5,
+    "title": "수열의 극한과 급수"
+  },
+  "lesson": {
+    "id": "c4-ch05-l01",
+    "no": 1,
+    "title": "수열의 극한",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "수렴과 발산",
+      "body": [
+        "n이 한없이 커질 때 aₙ이 일정한 값 L에 한없이 가까워지면 수열이 L에 수렴한다고 하고 lim(n→∞) aₙ = L로 씁니다.",
+        "수렴하지 않으면 발산한다고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) 1/n의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (2n + 1)/n의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "∞/∞ 꼴",
+      "body": [
+        "분모의 최고차항으로 분모, 분자를 나눕니다. 차수가 같으면 최고차항 계수의 비, 분모 차수가 크면 0입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (n² + 1)/(3n² − n)의 값은? (기약분수로)",
+      "answer": "1/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (3n + 2)/(n² + 1)의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (2n² − n)/(n² + 5)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "발산하는 수열",
+      "body": [
+        "한없이 커지면 양의 무한대로 발산, 1, −1, 1, −1처럼 오가면 진동한다고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "수열 (−1)ⁿ은 수렴할까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "수열 (n² + 1)/n은 수렴할까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "∞ − ∞ 꼴",
+      "body": [
+        "√가 있는 차는 유리화해 ∞/∞ 꼴로 바꿉니다. √(n² + 2n) − n = 2n/(√(n² + 2n) + n)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (√(n² + 2n) − n)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (√(n² + n) − n)의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "극한의 성질",
+      "body": [
+        "수렴하는 두 수열의 합, 차, 곱, 몫의 극한은 각 극한의 합, 차, 곱, 몫입니다.",
+        "aₙ ≤ cₙ ≤ bₙ이고 lim aₙ = lim bₙ = L이면 lim cₙ = L입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim aₙ = 3, lim bₙ = 2일 때 lim (aₙ + 2bₙ)의 값은?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 조건에서 lim aₙbₙ의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (sin n)/n의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "−1/n ≤ (sin n)/n ≤ 1/n"
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (1 + 2 + … + n)/n²의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (1² + 2² + … + n²)/n³의 값은? (기약분수로)",
+      "answer": "1/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (an + 1)/(2n + 3) = 3일 때 a의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "∞/∞ 꼴의 극한에서 분모의 최고차항으로 나누는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "최고차항"
+          ],
+          [
+            "0으로",
+            "0에 가까"
+          ],
+          [
+            "나머지",
+            "다른 항"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "최고차항으로 나누면 나머지 항들은 1/n, 1/n²처럼 되어 0으로 갑니다. 그러면 최고차항끼리의 비만 남아 극한을 바로 알 수 있습니다."
+    }
+  ]
+}

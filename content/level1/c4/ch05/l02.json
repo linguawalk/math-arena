@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch05",
+    "no": 5,
+    "title": "수열의 극한과 급수"
+  },
+  "lesson": {
+    "id": "c4-ch05-l02",
+    "no": 2,
+    "title": "등비수열의 극한",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "rⁿ의 극한",
+      "body": [
+        "|r| < 1이면 rⁿ → 0, r = 1이면 1, r > 1이면 발산, r ≤ −1이면 진동합니다.",
+        "그래서 rⁿ이 수렴할 조건은 −1 < r ≤ 1입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (1/2)ⁿ의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) 1ⁿ의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "수열 2ⁿ은 수렴할까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "분수 꼴",
+      "body": [
+        "밑의 절댓값이 가장 큰 거듭제곱으로 분모, 분자를 나누면 나머지는 0으로 갑니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (3ⁿ⁺¹ + 2ⁿ)/(3ⁿ − 1)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) 2ⁿ/(2ⁿ + 3ⁿ)의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (4ⁿ + 1)/(4ⁿ − 3ⁿ)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "수렴 조건",
+      "body": [
+        "(x − 1)ⁿ이 수렴하려면 −1 < x − 1 ≤ 1이어야 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "수열 (x − 1)ⁿ이 수렴하는 정수 x는 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "수열 (x/3)ⁿ이 수렴하는 정수 x는 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "극한으로 정의된 함수",
+      "body": [
+        "f(x) = lim xⁿ/(1 + xⁿ)처럼 x의 범위에 따라 xⁿ의 극한이 달라지면 범위를 나눠 계산합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = lim(n→∞) xⁿ/(1 + xⁿ)일 때 f(1/2)의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 f에서 f(1)의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 f에서 f(2)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "밑이 1보다 작은 거듭제곱은 사라지고, 가장 큰 밑이 극한을 결정합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (5ⁿ − 2ⁿ)/5ⁿ의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "수열 rⁿ이 수렴하는 r의 최댓값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) (0.9)ⁿ의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(n→∞) 2ⁿ⁺²/(2ⁿ + 1)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "|r| < 1이면 rⁿ이 0에 가까워지는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "곱"
+          ],
+          [
+            "작아",
+            "줄어"
+          ],
+          [
+            "1보다 작"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "절댓값이 1보다 작은 수를 곱할 때마다 절댓값이 일정한 비율로 줄어듭니다. 이를 한없이 반복하면 절댓값이 한없이 작아져 0에 가까워집니다."
+    }
+  ]
+}

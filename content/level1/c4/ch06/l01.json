@@ -1,0 +1,332 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch06",
+    "no": 6,
+    "title": "여러 가지 함수의 미분"
+  },
+  "lesson": {
+    "id": "c4-ch06-l01",
+    "no": 1,
+    "title": "지수함수와 로그함수의 미분",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "수 e",
+      "body": [
+        "(1 + 1/n)ⁿ은 n이 커질수록 약 2.718…에 가까워집니다. 이 수를 e라 합니다.",
+        "e를 밑으로 하는 로그를 자연로그라 하고 ln x로 씁니다. lim(x→0) (eˣ − 1)/x = 1,  lim(x→0) ln(1 + x)/x = 1"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "e의 정수 부분은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) (eˣ − 1)/x의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) ln(1 + x)/x의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "지수함수의 미분",
+      "body": [
+        "(eˣ)′ = eˣ. 미분해도 자기 자신이 되는 함수입니다.",
+        "(aˣ)′ = aˣ ln a"
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -3,
+          "xmax": 2,
+          "ymin": -1,
+          "ymax": 5,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "exp",
+              "a": 1,
+              "b": 2.718281828,
+              "p": 0,
+              "q": 0
+            },
+            {
+              "kind": "poly",
+              "coef": [
+                1,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              1,
+              "(0, 1)"
+            ]
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = eˣ일 때 f′(0)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(2ˣ)′ = 2ˣ ln {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = 3eˣ일 때 f′(0)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "로그함수의 미분",
+      "body": [
+        "(ln x)′ = 1/x,  (logₐ x)′ = 1/(x ln a)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = ln x일 때 f′(2)의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(log₂ x)′ = 1/(x ln {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = ln x² (x > 0)일 때 f′(1)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "극한의 변형",
+      "body": [
+        "lim(x→0) (e^(ax) − 1)/x = a처럼, 안의 식을 맞추기 위해 분모에 같은 수를 곱하고 나눕니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) (e^(2x) − 1)/x의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) ln(1 + 3x)/x의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "lim(x→0) (eˣ − 1)/(2x)의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "eˣ는 미분해도 그대로, ln x는 미분하면 1/x이 됩니다. 밑이 e가 아니면 ln a가 곱해지거나 나눠집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "f(x) = eˣ + ln x일 때 f′(1) = e + {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = eˣ 위의 점 (0, 1)에서의 접선의 y절편은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = ln x 위의 점 (1, 0)에서의 접선의 기울기는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "(eˣ)′ = eˣ라는 성질이 그래프에서 무엇을 뜻하는지 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "기울기"
+          ],
+          [
+            "높이",
+            "y좌표",
+            "함숫값"
+          ],
+          [
+            "같"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "y = eˣ 위의 모든 점에서 접선의 기울기가 그 점의 y좌표(높이)와 같다는 뜻입니다. 높이가 클수록 더 가파르게 올라갑니다."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch02",
+    "no": 2,
+    "title": "미분계수와 도함수"
+  },
+  "review": {
+    "id": "c4-ch02-review",
+    "title": "미분계수와 도함수 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = x² − 2x일 때 f′(3)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f′(2) = 5일 때 lim(h→0) (f(2 + 3h) − f(2))/h의 값은?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "y = x² 위의 점 (3, 9)에서의 접선은 y = 6x − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "9"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y = x² + 2x의 접선의 기울기가 0인 점의 x좌표는?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "(x⁷)′ = {{1}}x⁶",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "7"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l03"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ − 2x일 때 f′(2)의 값은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = (x − 1)(x + 2)일 때 f′(0)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l04"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = (3x − 1)²일 때 f′(1)의 값은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = ax³ + 1에서 f′(1) = 6일 때 a의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²일 때 lim(x→2) (f(x) − 4)/(x − 2)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c4-ch02-l04"
+    }
+  ]
+}

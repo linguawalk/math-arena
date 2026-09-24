@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c4",
+    "title": "미적분"
+  },
+  "chapter": {
+    "id": "c4-ch03",
+    "no": 3,
+    "title": "도함수의 활용"
+  },
+  "lesson": {
+    "id": "c4-ch03-l02",
+    "no": 2,
+    "title": "함수의 증가와 감소",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "도함수의 부호",
+      "body": [
+        "어떤 구간에서 f′(x) > 0이면 f는 증가하고, f′(x) < 0이면 감소합니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -3,
+          "xmax": 3,
+          "ymin": -3,
+          "ymax": 3,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "poly",
+              "coef": [
+                0,
+                -3,
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(x) = x²이 감소하는 범위가 x < a일 때 a의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³은 실수 전체에서 증가할까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "증감표",
+      "body": [
+        "f′(x) = 0이 되는 x를 찾고, 그 사이 구간마다 f′의 부호를 조사해 표로 정리합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "f(x) = x³ − 3x가 증가하는 구간은 x < −1 또는 x > {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "같은 함수가 감소하는 구간은 {{1}} < x < 1",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−1",
+            "-1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "f(x) = −x² + 4x가 증가하는 구간은 x < {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "항상 증가할 조건",
+      "body": [
+        "삼차함수가 실수 전체에서 증가하려면 모든 x에서 f′(x) ≥ 0, 즉 이차식 f′(x)의 판별식이 0 이하여야 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ + ax가 실수 전체에서 증가하는 a의 최솟값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ − 3x² + kx가 실수 전체에서 증가하는 k의 최솟값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "구간에서의 증가·감소",
+      "body": [
+        "주어진 구간 전체에서 f′(x)의 부호 조건이 성립하도록 계수를 정합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ − 6x²이 감소하는 구간의 길이는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = −x³ + ax²이 구간 (0, 2)에서 증가하는 a의 최솟값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "f′(x) = 0인 점은 증가와 감소가 바뀔 수 있는 후보입니다. 부호가 실제로 바뀌는지 확인합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x⁴ − 2x²이 증가하는 구간은 몇 개로 나뉘어 있을까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ − 12x는 −2 < x < 2에서 감소합니다. 이 구간에 있는 정수는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = 2x³ − 3x²이 x > a에서 증가할 때 a의 최솟값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ + 3x² + 3x는 실수 전체에서 증가할까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = −x³ − x는 실수 전체에서 감소할까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "f(x) = x³ − 3ax (a > 0)가 감소하는 구간이 −2 < x < 2일 때 a의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "f′(x) > 0인 구간에서 함수가 증가하는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "접선"
+          ],
+          [
+            "기울기"
+          ],
+          [
+            "양수",
+            "오른쪽 위"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "f′(x)는 그 점에서의 접선의 기울기입니다. 구간의 모든 점에서 기울기가 양수이면 그래프가 어디서나 오른쪽 위로 향하므로 x가 커질수록 f(x)도 커집니다."
+    }
+  ]
+}
