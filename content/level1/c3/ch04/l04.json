@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch04",
+    "no": 4,
+    "title": "삼각함수"
+  },
+  "lesson": {
+    "id": "c3-ch04-l04",
+    "no": 4,
+    "title": "삼각함수의 성질과 방정식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "각의 변환",
+      "body": [
+        "sin(−x) = −sin x,  cos(−x) = cos x,  sin(π − x) = sin x,  cos(π − x) = −cos x",
+        "sin(π/2 + x) = cos x,  cos(π/2 + x) = −sin x. 단위원에서 점이 어디로 옮겨 가는지 보면 알 수 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "sin (−π/6)의 값은? (기약분수로)",
+      "answer": "-1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "cos (−π/3)의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "sin (5π/6)의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "삼각방정식",
+      "body": [
+        "sin x = k는 단위원과 직선 y = k의 교점, 또는 y = sin x와 y = k의 그래프의 교점으로 풉니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": 0,
+          "xmax": 6.283185307179586,
+          "ymin": -1.5,
+          "ymax": 1.5,
+          "xstep": 0.5235987755982988,
+          "ystep": 0.5,
+          "curves": [
+            {
+              "kind": "trig",
+              "fn": "sin",
+              "a": 1,
+              "b": 1,
+              "p": 0,
+              "q": 0
+            },
+            {
+              "kind": "hline",
+              "y": 0.5
+            }
+          ],
+          "xpi": true
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "0 ≤ x < 2π에서 sin x = 1/2의 해는 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "그 해는 π/6과 {{1}}π/6",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "0 ≤ x < 2π에서 cos x = −1의 해는 x = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "π"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "0 ≤ x < 2π에서 tan x = 1의 해는 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "삼각부등식",
+      "body": [
+        "그래프가 기준선보다 위에 있거나 아래에 있는 x의 범위를 읽습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "0 ≤ x < 2π에서 sin x > 1/2의 해는 π/6 < x < {{1}}π/6",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "0 ≤ x < 2π에서 cos x ≤ 0의 해는 π/2 ≤ x ≤ {{1}}π/2",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "이차식 꼴",
+      "body": [
+        "sin x나 cos x를 t로 치환하면 이차방정식이 됩니다. 이때 −1 ≤ t ≤ 1이라는 범위를 지켜야 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "0 ≤ x < 2π에서 2sin² x − sin x − 1 = 0의 해는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "sin x = 1 (1개) 또는 sin x = −1/2 (2개)"
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "0 ≤ x < 2π에서 cos² x = 1/4의 해는 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y = sin x + cos² x의 최댓값은? (기약분수로)",
+      "answer": "5/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": "cos² x = 1 − sin² x",
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "각을 변환해 특수각으로 만들고, 단위원이나 그래프로 해를 셉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "0 ≤ x < 2π에서 2cos x = 1의 모든 해의 합은 {{1}}π",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "sin (π/2 + π/3)의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "0 ≤ x < 2π에서 sin 2x = 0의 해는 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "0 ≤ x < 2π에서 sin x = 1/2의 해가 두 개인 이유를 단위원으로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "단위원"
+          ],
+          [
+            "y = 1/2",
+            "직선"
+          ],
+          [
+            "두 점",
+            "2개",
+            "두 개"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "sin x는 단위원 위의 점의 y좌표입니다. 직선 y = 1/2은 단위원과 제1사분면과 제2사분면에서 한 번씩, 모두 두 점에서 만나므로 해도 두 개입니다."
+    }
+  ]
+}

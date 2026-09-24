@@ -23,8 +23,8 @@
     {
       "id": "c3",
       "title": "대수",
-      "description": "지수와 로그, 삼각함수, 수열, 수학적 귀납법",
-      "available": false
+      "description": "지수와 로그, 지수·로그함수, 삼각함수, 삼각형의 활용, 수열, 수학적 귀납법",
+      "available": true
     },
     {
       "id": "c4",

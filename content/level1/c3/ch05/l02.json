@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch05",
+    "no": 5,
+    "title": "삼각형과 삼각함수"
+  },
+  "lesson": {
+    "id": "c3-ch05-l02",
+    "no": 2,
+    "title": "코사인법칙",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "코사인법칙",
+      "body": [
+        "a² = b² + c² − 2bc cos A. 두 변과 그 끼인각을 알면 나머지 한 변을 구할 수 있습니다.",
+        "A = 90°이면 cos A = 0이 되어 피타고라스 정리가 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "b = 3, c = 5, A = 60°일 때 a = √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "19"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "b = 4, c = 4, A = 60°일 때 a의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "세 변으로 각 구하기",
+      "body": [
+        "cos A = (b² + c² − a²) / 2bc"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a = 7, b = 5, c = 8일 때 cos A의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "그때 A는 몇 도일까요?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a = 7, b = 3, c = 5일 때 A는 몇 도일까요?",
+      "answer": "120",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "예각·직각·둔각 판별",
+      "body": [
+        "가장 긴 변을 a라 할 때 a² < b² + c²이면 예각삼각형, a² = b² + c²이면 직각삼각형, a² > b² + c²이면 둔각삼각형입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "세 변이 4, 5, 7인 삼각형은?  (예각삼각형 1, 직각삼각형 2, 둔각삼각형 3 중 번호)",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "세 변이 6, 8, 10인 삼각형은?  (예각삼각형 1, 직각삼각형 2, 둔각삼각형 3 중 번호)",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "세 변이 5, 6, 7인 삼각형은?  (예각삼각형 1, 직각삼각형 2, 둔각삼각형 3 중 번호)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "코사인법칙의 활용",
+      "body": [
+        "평행사변형의 대각선은 두 변과 끼인각(또는 그 보각)으로 이루어진 삼각형의 한 변입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "두 변이 3, 5이고 끼인각이 120°인 삼각형의 나머지 변의 길이는?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "두 변이 3, 5이고 끼인각이 60°인 평행사변형의 짧은 대각선의 길이는 √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "19"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 평행사변형의 긴 대각선의 길이는?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "두 변과 끼인각, 또는 세 변을 알면 코사인법칙을 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a = 2, b = 3, c = 4일 때 cos C의 값은? (기약분수로)",
+      "answer": "-1/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "a = 5, b = 7, C = 60°일 때 c = √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "39"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "세 변이 x, x + 1, x + 2인 둔각삼각형이 되는 자연수 x는 몇 개일까요?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "삼각형 조건 x > 1과 (x + 2)² > x² + (x + 1)²에서 x = 2"
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "cos A = 0인 삼각형에서 A는 몇 도일까요?",
+      "answer": "90",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "코사인법칙이 피타고라스 정리를 넓힌 것이라고 하는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "90",
+            "직각"
+          ],
+          [
+            "cos",
+            "0"
+          ],
+          [
+            "피타고라스"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "코사인법칙 a² = b² + c² − 2bc cos A에서 A가 90°이면 cos A = 0이 되어 a² = b² + c², 즉 피타고라스 정리가 됩니다. 직각이 아닌 삼각형까지 다룰 수 있게 넓힌 것입니다."
+    }
+  ]
+}

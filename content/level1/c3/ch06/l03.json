@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch06",
+    "no": 6,
+    "title": "수열"
+  },
+  "lesson": {
+    "id": "c3-ch06-l03",
+    "no": 3,
+    "title": "합의 기호 Σ",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "Σ 기호",
+      "body": [
+        "a₁ + a₂ + … + aₙ을 Σ(k = 1부터 n까지) aₖ로 줄여 씁니다. 이 레슨에서는 Σ(k=1~n) aₖ로 적습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~5) k의 값은?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~4) 2k의 값은?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "Σ의 성질",
+      "body": [
+        "Σ(aₖ + bₖ) = Σaₖ + Σbₖ,  Σ c·aₖ = c Σaₖ,  Σ(k=1~n) c = cn"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~10) 3의 값은?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~n) aₖ = 10, Σ(k=1~n) bₖ = 4일 때 Σ(k=1~n) (2aₖ − bₖ)의 값은?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~10) (k + 1)의 값은?",
+      "answer": "65",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "자연수의 거듭제곱의 합",
+      "body": [
+        "Σk = n(n + 1)/2,  Σk² = n(n + 1)(2n + 1)/6,  Σk³ = {n(n + 1)/2}²"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~5) k²의 값은?",
+      "answer": "55",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~4) k³의 값은?",
+      "answer": "100",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~10) k²의 값은?",
+      "answer": "385",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "식을 나눠 계산",
+      "body": [
+        "Σ 안의 식을 전개해 Σk², Σk, Σ(상수)로 나눈 뒤 공식을 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~10) (2k − 1)의 값은?",
+      "answer": "100",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~5) k(k + 1)의 값은?",
+      "answer": "70",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~10) (k² − 1)의 값은?",
+      "answer": "375",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "범위 바꾸기",
+      "body": [
+        "Σ(k=6~10) k = Σ(k=1~10) k − Σ(k=1~5) k처럼 처음부터의 합에서 빼서 구합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=6~10) k의 값은?",
+      "answer": "40",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~n) 2 = 20일 때 n의 값은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~n) k = 210일 때 n의 값은?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=11~20) k의 값은?",
+      "answer": "155",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "Σ(aₖbₖ)와 (Σaₖ)(Σbₖ)가 일반적으로 같지 않은 이유를 예를 들어 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "곱"
+          ],
+          [
+            "같지 않",
+            "다르",
+            "달라",
+            "다릅"
+          ],
+          [
+            "예",
+            "1",
+            "2"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "예를 들어 aₖ = bₖ = k, n = 2이면 Σ(aₖbₖ) = 1 + 4 = 5이지만 (Σaₖ)(Σbₖ) = 3 × 3 = 9입니다. 곱의 합은 합의 곱과 달라서 Σ는 곱셈에 대해 나눠 쓸 수 없습니다."
+    }
+  ]
+}

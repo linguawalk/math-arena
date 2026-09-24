@@ -1,0 +1,300 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch02",
+    "no": 2,
+    "title": "로그"
+  },
+  "lesson": {
+    "id": "c3-ch02-l02",
+    "no": 2,
+    "title": "로그의 성질",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "로그의 성질",
+      "body": [
+        "logₐ MN = logₐ M + logₐ N,  logₐ (M/N) = logₐ M − logₐ N",
+        "logₐ Mᵏ = k logₐ M,  logₐ a = 1,  logₐ 1 = 0"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "log₂ 4 + log₂ 8의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "log₃ 54 − log₃ 2의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "log₅ 25³의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "진수를 합치고 나누기",
+      "body": [
+        "더하면 진수끼리 곱하고, 빼면 진수끼리 나눕니다. 합친 진수가 밑의 거듭제곱이 되도록 만듭니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log₆ 4 + log₆ 9의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log₂ 12 − log₂ 3의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "2 log₃ 6 − log₃ 4의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "밑변환 공식",
+      "body": [
+        "logₐ b = log_c b / log_c a (c > 0, c ≠ 1). 밑이 달라도 같은 밑으로 바꿔 계산할 수 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log₄ 8의 값은? (기약분수로)",
+      "answer": "3/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log₂ 3 × log₃ 8의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log₂ 5 × log₅ 16의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "밑변환에서 나오는 성질",
+      "body": [
+        "logₐ b × log_b a = 1,  log_(aᵐ) bⁿ = (n/m) logₐ b"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "log₃ 7 × log₇ 3의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "log₈ 4의 값은? (기약분수로)",
+      "answer": "2/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "log₂₅ 5의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "문자로 나타내기",
+      "body": [
+        "log 2 = a, log 3 = b일 때(밑 10 생략), 6 = 2 × 3, 12 = 2² × 3, 5 = 10/2로 바꿔 나타냅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "log 6 = a + {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "b"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "log 12 = {{1}}a + b",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "log 5 = 1 − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "a"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "logₐ MN = logₐ M + logₐ N이 성립하는 이유를 지수법칙으로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "지수법칙",
+            "aˣaʸ",
+            "더"
+          ],
+          [
+            "M = aˣ",
+            "M=aˣ",
+            "로 놓",
+            "라 하"
+          ],
+          [
+            "x + y",
+            "x+y"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "M = aˣ, N = aʸ라 하면 logₐ M = x, logₐ N = y입니다. MN = aˣaʸ = aˣ⁺ʸ이므로 logₐ MN = x + y = logₐ M + logₐ N입니다."
+    }
+  ]
+}

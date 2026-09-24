@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch07",
+    "no": 7,
+    "title": "수학적 귀납법"
+  },
+  "lesson": {
+    "id": "c3-ch07-l01",
+    "no": 1,
+    "title": "수열의 귀납적 정의",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합",
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "귀납적 정의",
+      "body": [
+        "첫째항 a₁과, 이웃한 항 사이의 관계식(점화식)으로 수열을 정하는 것을 귀납적 정의라고 합니다.",
+        "a₁ = 2, aₙ₊₁ = aₙ + 3이면 2, 5, 8, 11, …입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "a₁ = 2, aₙ₊₁ = aₙ + 3일 때 a₄의 값은?",
+      "answer": "11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = 2aₙ일 때 a₅의 값은?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "등차·등비수열의 점화식",
+      "body": [
+        "aₙ₊₁ − aₙ = d이면 등차수열, aₙ₊₁ = raₙ이면 등비수열입니다.",
+        "2aₙ₊₁ = aₙ + aₙ₊₂이면 등차수열, aₙ₊₁² = aₙaₙ₊₂이면 등비수열입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a₁ = 3, aₙ₊₁ − aₙ = 5일 때 a₁₀의 값은?",
+      "answer": "48",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a₁ = 2, aₙ₊₁ = 3aₙ일 때 a₄의 값은?",
+      "answer": "54",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, a₂ = 4이고 2aₙ₊₁ = aₙ + aₙ₊₂일 때 a₆의 값은?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "aₙ₊₁ = aₙ + f(n)",
+      "body": [
+        "n = 1, 2, 3, …을 차례로 넣어 더해 가면 aₙ = a₁ + f(1) + f(2) + … + f(n − 1)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = aₙ + n일 때 a₅의 값은?",
+      "answer": "11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = aₙ + 2n일 때 a₁₀의 값은?",
+      "answer": "91",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "aₙ₊₁ = f(n)aₙ",
+      "body": [
+        "차례로 곱해 가면 aₙ = a₁ × f(1) × f(2) × … × f(n − 1)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = (n + 1)aₙ일 때 a₅의 값은?",
+      "answer": "120",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = 2ⁿaₙ일 때 a₄의 값은?",
+      "answer": "64",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "여러 가지 점화식",
+      "body": [
+        "앞의 두 항으로 다음 항을 정하거나, 몇 항 계산해 보면 반복되는 경우도 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = a₂ = 1, aₙ₊₂ = aₙ₊₁ + aₙ일 때 a₈의 값은?",
+      "answer": "21",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 2, aₙ₊₁ = aₙ² − 1일 때 a₃의 값은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 3, aₙ₊₁ = 1/(1 − aₙ)일 때 a₁₀의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "3, −1/2, 2/3, 3, …으로 세 개씩 반복"
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 5, aₙ₊₁ = aₙ − 2일 때 처음으로 음수가 되는 항은 제몇항일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "aₙ₊₁ = aₙ + 3이고 a₅ = 20일 때 a₁의 값은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = 2aₙ + 1일 때 a₅의 값은?",
+      "answer": "31",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "첫째항과 점화식만으로 수열의 모든 항이 정해지는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "첫째항",
+            "a₁"
+          ],
+          [
+            "다음 항",
+            "이웃",
+            "차례로"
+          ],
+          [
+            "모든 항"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "첫째항이 정해지면 점화식으로 둘째 항을, 둘째 항으로 셋째 항을 구할 수 있습니다. 이렇게 차례로 계속 구할 수 있으므로 모든 항이 하나로 정해집니다."
+    }
+  ]
+}

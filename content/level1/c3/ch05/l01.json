@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch05",
+    "no": 5,
+    "title": "삼각형과 삼각함수"
+  },
+  "lesson": {
+    "id": "c3-ch05-l01",
+    "no": 1,
+    "title": "사인법칙",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "사인법칙",
+      "body": [
+        "삼각형 ABC의 외접원의 반지름을 R이라 하면 a/sin A = b/sin B = c/sin C = 2R입니다.",
+        "a, b, c는 각 A, B, C와 마주 보는 변의 길이입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "A = 30°, a = 5인 삼각형의 외접원의 반지름은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "B = 45°, b = 4인 삼각형에서 2R = {{1}}√2",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "두 각과 한 변",
+      "body": [
+        "두 각과 한 변을 알면 사인법칙으로 나머지 변을 구할 수 있습니다. b = a sin B / sin A"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A = 45°, B = 30°, a = 4일 때 b = {{1}}√2",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A = 60°, B = 45°, b = 2일 때 a = √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A : B : C = 1 : 2 : 3인 삼각형에서 c/a의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "A = 30°, C = 90°이므로 c/a = sin 90°/sin 30°"
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "변의 비 = 사인의 비",
+      "body": [
+        "a : b : c = sin A : sin B : sin C입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "sin A : sin B : sin C = 3 : 4 : 5이고 a = 6일 때 c의 값은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "외접원의 반지름이 3이고 A = 30°일 때 a의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "삼각형의 모양",
+      "body": [
+        "사인법칙으로 sin을 변의 길이로 바꾸면 삼각형의 모양을 알 수 있습니다.",
+        "sin² A = sin² B + sin² C이면 a² = b² + c²이므로 A = 90°인 직각삼각형입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "sin² A = sin² B + sin² C인 삼각형에서 A는 몇 도일까요?",
+      "answer": "90",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a sin A = b sin B인 삼각형은 a = b인 이등변삼각형일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "외접원의 반지름이나 마주 보는 변과 각 한 쌍을 알면 사인법칙을 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "C = 120°, c = 6인 삼각형의 외접원의 반지름은 {{1}}√3",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "외접원의 반지름이 5인 삼각형에서 a = 5일 때 sin A의 값은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A = 30°, a = 3, b = 3√3인 삼각형은 몇 개 만들어질까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "sin B = √3/2이므로 B = 60° 또는 120°"
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그중 B가 예각일 때 C는 몇 도일까요?",
+      "answer": "90",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A : B : C = 1 : 1 : 2인 삼각형에서 (c/a)²의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "외접원의 지름이 10이고 sin A = 0.6일 때 a의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "사인법칙에서 a/sin A가 외접원의 지름 2R과 같아지는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "원주각"
+          ],
+          [
+            "지름"
+          ],
+          [
+            "직각",
+            "90"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "B에서 지름 BA′을 그으면 같은 호에 대한 원주각이라 A′ = A이고, 지름에 대한 원주각이라 삼각형 A′BC는 직각삼각형입니다. 그래서 a = 2R sin A, 즉 a/sin A = 2R입니다."
+    }
+  ]
+}

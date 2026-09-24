@@ -36,13 +36,16 @@
 - 공통: hint(선택), explanation(정답 확인 후 표시), figure(선택, 문제 아래에 표시할 정적 그림)
 
 ## graph 위젯
-- config: xmin, xmax, ymin, ymax, xstep, ystep, curves, points(선택, [x, y, 라벨])
+- config: xmin, xmax, ymin, ymax, xstep, ystep, curves, points(선택, [x, y, 라벨]), xpi(선택, true이면 x축 눈금을 π/2, π처럼 표시)
 - curves 종류(kind)
   - poly: coef = 오름차순 계수 [c0, c1, c2, …]
   - circle: cx, cy, r
   - rational: y = k/(x − p) + q
   - sqrt: y = a√(b(x − p)) + q
   - abs: y = a|x − p| + q
+  - exp: y = a·b^(x − p) + q
+  - log: y = a·log_b(x − p) + q
+  - trig: y = a·fn(b(x − p)) + q, fn = sin | cos | tan
   - vline: x / hline: y (점선, 점근선·경계 표시용)
   - 공통 선택 키: from, to(그릴 x 범위), color
 - coordinate_plane 문항도 config.curves를 넣으면 곡선 위에 점을 찍게 할 수 있음

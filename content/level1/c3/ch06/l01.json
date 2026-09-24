@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch06",
+    "no": 6,
+    "title": "수열"
+  },
+  "lesson": {
+    "id": "c3-ch06-l01",
+    "no": 1,
+    "title": "등차수열",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "수열",
+      "body": [
+        "차례로 나열된 수의 열을 수열이라 하고, n번째 항을 aₙ으로 씁니다.",
+        "aₙ을 n에 대한 식으로 나타낸 것을 일반항이라고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "aₙ = 2n + 1일 때 a₅의 값은?",
+      "answer": "11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "1, 4, 9, 16, … 다음 수는?",
+      "answer": "25",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "등차수열",
+      "body": [
+        "첫째항부터 차례로 일정한 수 d를 더해 만든 수열을 등차수열, d를 공차라고 합니다.",
+        "일반항은 aₙ = a + (n − 1)d입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "3, 7, 11, …의 공차는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "3, 7, 11, …의 제10항은?",
+      "answer": "39",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "등차수열에서 a₃ = 7, a₇ = 19일 때 공차는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 수열의 첫째항은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "등차중항",
+      "body": [
+        "세 수 a, b, c가 이 순서로 등차수열을 이루면 2b = a + c이고, b를 등차중항이라고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "4, x, 16이 등차수열을 이룰 때 x의 값은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "첫째항이 50, 공차가 −3인 등차수열에서 처음으로 음수가 되는 항은 제몇항일까요?",
+      "answer": "18",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "등차수열의 합",
+      "body": [
+        "첫째항부터 제n항까지의 합은 Sₙ = n(a₁ + aₙ)/2 = n{2a + (n − 1)d}/2입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1 + 2 + 3 + … + 100의 값은?",
+      "answer": "5050",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "3 + 7 + 11 + …의 첫째항부터 제10항까지의 합은?",
+      "answer": "210",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "첫째항이 2, 공차가 3인 등차수열의 첫째항부터 제20항까지의 합은?",
+      "answer": "610",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "합에서 일반항 구하기",
+      "body": [
+        "aₙ = Sₙ − Sₙ₋₁ (n ≥ 2),  a₁ = S₁"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Sₙ = n² + 2n일 때 a₅의 값은?",
+      "answer": "11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1부터 100까지의 자연수 중 3의 배수의 합은?",
+      "answer": "1683",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "첫째항이 20, 공차가 −3인 등차수열의 합 Sₙ의 최댓값은?",
+      "answer": "77",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "양수인 항 20, 17, …, 2 (7개)까지 더할 때 최대"
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "등차수열을 이루는 세 수의 합이 15, 곱이 80일 때 가장 큰 수는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "등차수열의 합 공식 n(a₁ + aₙ)/2가 나오는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "거꾸로",
+            "반대 순서"
+          ],
+          [
+            "더하",
+            "짝"
+          ],
+          [
+            "a₁ + aₙ",
+            "같은 값",
+            "n개"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "합을 앞에서부터 쓴 것과 거꾸로 쓴 것을 위아래로 더하면 각 짝의 합이 모두 a₁ + aₙ으로 같고, 그런 짝이 n개입니다. 이 값은 합의 2배이므로 2로 나눕니다."
+    }
+  ]
+}

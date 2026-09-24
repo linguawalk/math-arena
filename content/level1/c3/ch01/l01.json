@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch01",
+    "no": 1,
+    "title": "지수"
+  },
+  "lesson": {
+    "id": "c3-ch01-l01",
+    "no": 1,
+    "title": "거듭제곱근",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "n제곱근",
+      "body": [
+        "n제곱해서 a가 되는 수, 즉 xⁿ = a를 만족하는 x를 a의 n제곱근이라고 합니다.",
+        "2³ = 8이므로 2는 8의 세제곱근입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "8의 세제곱근 중 실수는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "16의 네제곱근 중 실수는 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "2와 −2"
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "실수인 n제곱근의 개수",
+      "body": [
+        "n이 홀수이면 실수 a의 n제곱근 중 실수는 하나입니다.",
+        "n이 짝수이면 a > 0일 때 둘(±), a = 0일 때 하나(0), a < 0일 때 없습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "−27의 세제곱근 중 실수는?",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "−16의 네제곱근 중 실수는 몇 개일까요?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "5의 여섯제곱근 중 실수는 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "기호 ⁿ√a와 성질",
+      "body": [
+        "a > 0일 때 a의 양의 n제곱근을 ⁿ√a로 씁니다. n이 홀수이면 음수 a에 대해서도 ⁿ√a가 실수입니다.",
+        "ⁿ√a × ⁿ√b = ⁿ√(ab),  (ⁿ√a)ᵐ = ⁿ√(aᵐ),  ᵐ√(ⁿ√a) = ᵐⁿ√a"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "³√8 × ³√27의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "⁴√81의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "³√2 × ³√4의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "√(³√64) = ⁶√64 = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "거듭제곱근의 크기 비교",
+      "body": [
+        "근호의 차수를 같게 만들면 안의 수로 비교할 수 있습니다. ³√3 = ⁶√9, √2 = ⁶√8"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "³√3 {{1}} √2  (부등호 >, < 중 하나)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            ">"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "⁵√(−32)의 값은?",
+      "answer": "-2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(³√5)³의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "근호 안을 거듭제곱 꼴로 나타내면 대부분의 계산이 간단해집니다. 64 = 2⁶, 729 = 3⁶"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "⁴√16 + ³√(−8)의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "³√(√729)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "ⁿ√(2¹²) = 8을 만족하는 자연수 n은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "음수의 제곱근(짝수 제곱근) 중에 실수가 없는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "짝수"
+          ],
+          [
+            "0 이상",
+            "음수가 아니",
+            "양수"
+          ],
+          [
+            "제곱",
+            "거듭제곱"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "실수를 짝수 번 거듭제곱하면 항상 0 이상이 됩니다. 그래서 짝수 번 곱해 음수가 되는 실수는 없습니다."
+    }
+  ]
+}

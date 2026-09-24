@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch06",
+    "no": 6,
+    "title": "수열"
+  },
+  "lesson": {
+    "id": "c3-ch06-l04",
+    "no": 4,
+    "title": "여러 가지 수열의 합",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "부분분수로 나누기",
+      "body": [
+        "1/(k(k + 1)) = 1/k − 1/(k + 1)로 나누면 합에서 가운데 항이 연달아 지워집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~9) 1/(k(k + 1))의 값은? (기약분수로)",
+      "answer": "9/10",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~19) 1/(k(k + 1))의 값은? (기약분수로)",
+      "answer": "19/20",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "계차수열",
+      "body": [
+        "이웃한 두 항의 차 bₙ = aₙ₊₁ − aₙ으로 만든 수열을 계차수열이라고 합니다.",
+        "aₙ = a₁ + Σ(k=1~n−1) bₖ"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "1, 2, 4, 7, 11, … 다음 수는?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1이고 계차수열이 1, 2, 3, …인 수열의 a₁₀은?",
+      "answer": "46",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "근호가 있는 합",
+      "body": [
+        "1/(√(k + 1) + √k) = √(k + 1) − √k로 유리화하면 역시 가운데 항이 지워집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~8) 1/(√(k + 1) + √k)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "√9 − √1"
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~24) 1/(√(k + 1) + √k)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "규칙 찾기",
+      "body": [
+        "묶음으로 반복되는 수열은 몇 번째 묶음의 몇 번째 수인지 찾습니다.",
+        "부호가 번갈아 바뀌면 두 항씩 묶어 봅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1, 1, 2, 1, 2, 3, 1, 2, 3, 4, …의 제20항은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1 − 2 + 3 − 4 + … + 99 − 100의 값은?",
+      "answer": "-50",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1² − 2² + 3² − 4² + … + 9² − 10²의 값은?",
+      "answer": "-55",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "여러 수열이 섞인 합",
+      "body": [
+        "Σ 안이 등비수열과 다항식의 합이면 각각 따로 더합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~5) 2ᵏ의 값은?",
+      "answer": "62",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~5) (2ᵏ + k)의 값은?",
+      "answer": "77",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~5) 1/((2k − 1)(2k + 1))의 값은? (기약분수로)",
+      "answer": "5/11",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=1~10) (−1)ᵏ k의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1·2 + 2·3 + … + 9·10의 값은?",
+      "answer": "330",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1, 3, 7, 15, 31, … 다음 수는?",
+      "answer": "63",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "부분분수로 나누면 합이 간단해지는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "지워",
+            "소거",
+            "사라"
+          ],
+          [
+            "처음",
+            "첫"
+          ],
+          [
+            "마지막",
+            "끝"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "각 항을 두 분수의 차로 나누면 앞 항의 뒷부분과 다음 항의 앞부분이 서로 지워집니다. 그래서 처음 항의 앞부분과 마지막 항의 뒷부분만 남아 합이 간단해집니다."
+    }
+  ]
+}

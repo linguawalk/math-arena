@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch01",
+    "no": 1,
+    "title": "지수"
+  },
+  "lesson": {
+    "id": "c3-ch01-l03",
+    "no": 3,
+    "title": "지수법칙",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "지수법칙",
+      "body": [
+        "a > 0, b > 0이고 x, y가 실수일 때",
+        "aˣaʸ = aˣ⁺ʸ,  aˣ ÷ aʸ = aˣ⁻ʸ,  (aˣ)ʸ = aˣʸ,  (ab)ˣ = aˣbˣ"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "2³ × 2⁻¹ = 2^{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "(3^(1/2))⁴의 값은?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "5^(2/3) × 5^(1/3)의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "계산 연습",
+      "body": [
+        "밑이 다르면 같은 밑의 거듭제곱으로 바꾼 뒤 지수끼리 계산합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "2^(1/2) × 8^(1/2)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "27^(1/3) ÷ 9^(1/2)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "(2^(1/3) × 3^(1/2))⁶의 값은?",
+      "answer": "108",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "4^(3/2) × 2⁻²의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "밑을 같게 만들기",
+      "body": [
+        "8ˣ = (2³)ˣ = 2³ˣ처럼 밑을 통일하면 지수끼리 비교할 수 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "8ˣ = 2^({{1}}x)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "4ˣ = 32일 때 x의 값은? (기약분수로)",
+      "answer": "5/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "9ˣ = 27일 때 x의 값은? (기약분수로)",
+      "answer": "3/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "aˣ + a⁻ˣ 꼴의 값",
+      "body": [
+        "(aˣ + a⁻ˣ)² = a²ˣ + 2 + a⁻²ˣ이므로 제곱해서 원하는 식을 만듭니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "2ˣ + 2⁻ˣ = 3일 때 4ˣ + 4⁻ˣ의 값은?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a^(1/2) + a^(−1/2) = 3일 때 a + a⁻¹의 값은?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "2ˣ = 3일 때 8ˣ의 값은?",
+      "answer": "27",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "지수에 문자가 있어도 지수법칙은 그대로 적용됩니다. 알고 있는 값의 거듭제곱으로 원하는 값을 만듭니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "3ˣ = 5일 때 9ˣ의 값은?",
+      "answer": "25",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "2^(x + 2) = 20일 때 2ˣ의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "(aˣ)ʸ = aˣʸ인 이유를 x, y가 자연수인 경우로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "곱"
+          ],
+          [
+            "y번",
+            "y 번"
+          ],
+          [
+            "xy",
+            "x × y",
+            "x를 y번"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "aˣ를 y번 곱하면 a를 x번 곱한 묶음이 y개 있는 셈이라 a를 모두 xy번 곱한 것과 같습니다. 그래서 (aˣ)ʸ = aˣʸ입니다."
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch02",
+    "no": 2,
+    "title": "로그"
+  },
+  "lesson": {
+    "id": "c3-ch02-l04",
+    "no": 4,
+    "title": "로그의 활용",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "로그방정식",
+      "body": [
+        "logₐ f(x) = k이면 f(x) = aᵏ로 바꿔 풉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "log₂ x = 3의 해는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "log₃ (x + 1) = 2의 해는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "진수 조건 확인",
+      "body": [
+        "로그의 성질로 식을 합친 뒤 풀고, 구한 해가 처음 식의 진수를 모두 양수로 만드는지 확인합니다.",
+        "logₐ x를 t로 치환하면 이차방정식이 되기도 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log₂ x + log₂ (x − 2) = 3의 해는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x(x − 2) = 8에서 x = 4 (x = −2는 진수 조건에 맞지 않음)"
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log x² = 2의 양수 해는?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "(log₂ x)² − 3 log₂ x + 2 = 0의 두 해의 곱은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "log₂ x = 1, 2이므로 x = 2, 4"
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "로그부등식",
+      "body": [
+        "밑이 1보다 크면 진수의 대소가 그대로, 0과 1 사이이면 반대입니다. 진수 조건도 함께 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log₂ x < 3을 만족하는 정수 x는 몇 개일까요?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log_(1/2) x > −2를 만족하는 정수 x는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "0 < x < 4"
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "log₃ (x − 1) ≤ 2를 만족하는 정수 x는 몇 개일까요?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "1 < x ≤ 10"
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "생활 속 로그",
+      "body": [
+        "pH = −log[H⁺],  소리의 세기 dB = 10 log (I/I₀)처럼 크기 차이가 아주 큰 양은 로그로 나타냅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "수소 이온 농도가 10⁻³인 용액의 pH는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "pH 3인 용액의 수소 이온 농도는 pH 5인 용액의 몇 배일까요?",
+      "answer": "100",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "세기 I가 기준 I₀의 10⁶배인 소리는 몇 dB일까요?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "몇 번 만에 넘을까",
+      "body": [
+        "1.1ⁿ ≥ 2처럼 지수에 모르는 수가 있으면 양변에 상용로그를 취해 n ≥ log 2 / log 1.1로 풉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "log 2 ≈ 0.3010, log 1.1 ≈ 0.0414일 때 매년 10%씩 늘어나는 양이 처음으로 2배 이상이 되는 것은 몇 년 후일까요?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "log 2 ≈ 0.3010, log 1.05 ≈ 0.0212일 때 연 5% 복리로 원금이 처음으로 2배 이상이 되는 것은 몇 년 후일까요?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "log 3 ≈ 0.4771일 때 1마리가 매시간 3배가 되는 세균이 처음으로 10⁶마리를 넘는 것은 몇 시간 후일까요?",
+      "answer": "13",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "log₂ (log₃ x) = 1의 해는?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "로그방정식을 푼 뒤 진수 조건을 확인해야 하는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "진수"
+          ],
+          [
+            "양수",
+            "0보다 커",
+            "0보다 크"
+          ],
+          [
+            "합치",
+            "성질",
+            "변형"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "로그의 성질로 식을 합치면 원래 식에서는 진수가 음수가 되던 값도 새 식의 해로 나올 수 있습니다. 로그는 진수가 양수일 때만 정의되므로 처음 식의 진수를 모두 양수로 만드는지 확인해야 합니다."
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch04",
+    "no": 4,
+    "title": "삼각함수"
+  },
+  "lesson": {
+    "id": "c3-ch04-l02",
+    "no": 2,
+    "title": "삼각함수의 뜻",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "해석"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "삼각함수의 정의",
+      "body": [
+        "원점이 중심이고 반지름이 r인 원 위의 점 P(x, y)에서 동경 OP가 나타내는 각을 θ라 합니다.",
+        "sin θ = y/r,  cos θ = x/r,  tan θ = y/x (x ≠ 0)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "동경 위의 점이 P(3, 4)일 때 sin θ = {{1}}/5",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "같은 θ에서 cos θ = {{1}}/5",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "같은 θ에서 tan θ = 4/{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "사분면과 부호",
+      "body": [
+        "제1사분면은 모두 양수, 제2사분면은 sin만, 제3사분면은 tan만, 제4사분면은 cos만 양수입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "θ가 제2사분면의 각일 때 sin θ의 부호는?  (양수 1, 음수 −1)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "θ가 제3사분면의 각일 때 tan θ의 부호는?  (양수 1, 음수 −1)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "θ가 제4사분면의 각일 때 cos θ의 부호는?  (양수 1, 음수 −1)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "단위원에서 읽기",
+      "body": [
+        "반지름이 1인 원(단위원) 위의 점은 (cos θ, sin θ)입니다. 특수각은 30°, 45°, 60°의 직각삼각형으로 좌표를 구합니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -1.5,
+          "xmax": 1.5,
+          "ymin": -1.5,
+          "ymax": 1.5,
+          "xstep": 0.5,
+          "ystep": 0.5,
+          "curves": [
+            {
+              "kind": "circle",
+              "cx": 0,
+              "cy": 0,
+              "r": 1
+            }
+          ],
+          "points": [
+            [
+              0.866,
+              0.5,
+              "π/6"
+            ],
+            [
+              -0.5,
+              0.866,
+              "2π/3"
+            ]
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "sin (5π/6) = 1/{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "cos (2π/3) = −1/{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "tan (3π/4)의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "cos π의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "삼각함수 사이의 관계",
+      "body": [
+        "tan θ = sin θ / cos θ,  sin² θ + cos² θ = 1"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "sin θ = 3/5이고 θ가 제2사분면의 각일 때 cos θ의 값은? (기약분수로)",
+      "answer": "-4/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 θ에서 tan θ의 값은? (기약분수로)",
+      "answer": "-3/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "sin θ + cos θ = 1/2일 때 sin θ cos θ의 값은? (기약분수로)",
+      "answer": "-3/8",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "식의 값",
+      "body": [
+        "양변을 제곱하거나 sin² θ + cos² θ = 1을 이용해 원하는 식을 만듭니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(sin θ + cos θ)² + (sin θ − cos θ)²의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "tan θ = 2일 때 sin θ cos θ의 값은? (기약분수로)",
+      "answer": "2/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": "sin θ cos θ = tan θ / (1 + tan² θ)",
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "sin² θ + cos² θ = 1이 성립하는 이유를 단위원으로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "단위원",
+            "반지름이 1"
+          ],
+          [
+            "(cos θ, sin θ)",
+            "좌표"
+          ],
+          [
+            "피타고라스",
+            "x² + y² = 1"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "단위원 위의 점은 (cos θ, sin θ)이고, 단위원의 방정식은 x² + y² = 1입니다. 이 점이 원 위에 있으므로 cos² θ + sin² θ = 1입니다. 피타고라스 정리와 같은 뜻입니다."
+    }
+  ]
+}

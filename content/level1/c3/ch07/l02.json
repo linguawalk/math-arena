@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c3",
+    "title": "대수"
+  },
+  "chapter": {
+    "id": "c3-ch07",
+    "no": 7,
+    "title": "수학적 귀납법"
+  },
+  "lesson": {
+    "id": "c3-ch07-l02",
+    "no": 2,
+    "title": "점화식으로 일반항 구하기",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합",
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "aₙ₊₁ = paₙ + q 꼴",
+      "body": [
+        "α = pα + q를 만족하는 α를 찾으면 aₙ₊₁ − α = p(aₙ − α)가 되어, aₙ − α가 공비 p인 등비수열입니다.",
+        "예: aₙ₊₁ = 2aₙ + 1이면 α = −1이므로 aₙ + 1이 공비 2인 등비수열입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = 2aₙ + 1일 때 a₆의 값은?",
+      "answer": "63",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "aₙ + 1 = 2ⁿ"
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "a₁ = 2, aₙ₊₁ = 3aₙ − 2일 때 a₄의 값은?",
+      "answer": "28",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "aₙ − 1 = 3ⁿ⁻¹"
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "계차가 주어진 점화식",
+      "body": [
+        "aₙ₊₁ − aₙ = f(n)이면 aₙ = a₁ + Σ(k=1~n−1) f(k)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a₁ = 2, aₙ₊₁ − aₙ = 2n일 때 a₁₀의 값은?",
+      "answer": "92",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ − aₙ = 3ⁿ일 때 a₄의 값은?",
+      "answer": "40",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "합 Sₙ이 주어진 경우",
+      "body": [
+        "aₙ₊₁ = Sₙ₊₁ − Sₙ을 이용해 aₙ 사이의 관계식을 만듭니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Sₙ = 2aₙ − 1일 때 a₆의 값은?",
+      "answer": "32",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "aₙ₊₁ = 2aₙ, a₁ = 1"
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "Sₙ = n² − n일 때 a₁₀의 값은?",
+      "answer": "18",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "곱의 꼴",
+      "body": [
+        "aₙ₊₁ = f(n)aₙ은 차례로 곱해 약분합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = (n/(n + 1))aₙ일 때 a₁₀의 값은? (기약분수로)",
+      "answer": "1/10",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = ((n + 2)/n)aₙ일 때 a₅의 값은?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "점화식 세우기",
+      "body": [
+        "n단계와 n + 1단계의 관계를 식으로 세우면 복잡한 세기 문제도 풀 수 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 4, aₙ₊₁ = 2aₙ − 3일 때 a₅의 값은?",
+      "answer": "19",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 4, aₙ₊₁ = aₙ/2 + 1일 때 a₃의 값은? (기약분수로)",
+      "answer": "5/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a₁ = 1, aₙ₊₁ = aₙ + 2n + 1일 때 a₁₀의 값은?",
+      "answer": "100",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "하노이의 탑에서 원판 n개를 옮기는 최소 횟수 aₙ은 aₙ₊₁ = 2aₙ + 1, a₁ = 1입니다. 원판 5개의 최소 횟수는?",
+      "answer": "31",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "계단을 한 번에 1칸 또는 2칸씩 오를 때 n칸을 오르는 방법의 수 aₙ은 aₙ = aₙ₋₁ + aₙ₋₂, a₁ = 1, a₂ = 2입니다. a₆은?",
+      "answer": "13",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "원 n개가 평면을 나누는 영역의 최대 개수 aₙ은 aₙ₊₁ = aₙ + 2n, a₁ = 2입니다. a₄는?",
+      "answer": "14",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "직선 n개가 평면을 나누는 영역의 최대 개수 aₙ은 aₙ₊₁ = aₙ + n + 1, a₁ = 2입니다. a₅는?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "aₙ₊₁ = paₙ + q를 aₙ₊₁ − α = p(aₙ − α)로 바꾸는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "등비수열"
+          ],
+          [
+            "공비",
+            "p배"
+          ],
+          [
+            "일반항",
+            "구할 수"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "이렇게 바꾸면 aₙ − α가 매번 p배가 되는 등비수열이 됩니다. 등비수열의 일반항은 바로 구할 수 있으므로 aₙ − α를 구한 뒤 α를 더해 aₙ을 얻습니다."
+    }
+  ]
+}
