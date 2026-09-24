@@ -55,3 +55,17 @@
   - shade: curve와 x축(또는 curve2) 사이를 from~to 구간에서 칠함 (넓이 표시용)
   - 공통 선택 키: from, to(그릴 x 범위), color
 - coordinate_plane 문항도 config.curves를 넣으면 곡선 위에 점을 찍게 할 수 있음
+
+## geo 위젯 (도형 그림)
+- config: elements(요소 배열), alt(대체 텍스트), maxh(최대 높이)
+- 좌표는 수학 좌표(위쪽이 +y)이고, 전체 요소가 들어가도록 자동으로 크기를 맞춤
+- 요소(t)
+  - pt: 점 p, label(이름), pos(n/s/e/w/ne/nw/se/sw, 생략하면 도형 바깥쪽), hide(점 숨김)
+  - seg: 선분 a–b, dash(점선), hl(강조)
+  - poly: 다각형 pts, fill(false면 테두리만), hl(강조 색)
+  - circle: 중심 c, 반지름 r, dash
+  - right: 꼭짓점 p에서 a, b 방향 사이의 직각 표시
+  - arc: 꼭짓점 p에서 a, b 방향 사이의 각 표시, label, r(화면 픽셀 반지름)
+  - text: 위치 p에 글자 s (길이·기호 표시)
+- 입체(정육면체, 각뿔)는 제작 단계에서 (x, y, z) → (x + 0.5y, z + 0.32y)로 투영하고, 보이지 않는 모서리는 점선으로 그림
+- 도형 그림은 빌드 뒤 add_figs.py로 주입함. 레슨을 다시 생성하면 add_figs.py도 다시 실행할 것

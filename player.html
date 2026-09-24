@@ -303,11 +303,49 @@ function rightTriangle(cfg){
   return svg;
 }
 
+function geoFig(cfg){
+  const E = cfg.elements || [], W = 420, pad = 34;
+  const xs = [], ys = [];
+  const add = q => { xs.push(q[0]); ys.push(q[1]); };
+  E.forEach(e => { ["p", "a", "b", "c"].forEach(k => e[k] && Array.isArray(e[k]) && add(e[k])); (e.pts || []).forEach(add);
+    if (e.t === "circle"){ add([e.c[0] - e.r, e.c[1] - e.r]); add([e.c[0] + e.r, e.c[1] + e.r]); } });
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const sc = Math.min((W - 2 * pad) / Math.max(x1 - x0, 1e-6), (cfg.maxh || 300) / Math.max(y1 - y0, 1e-6));
+  const H = (y1 - y0) * sc + 2 * pad, Wd = (x1 - x0) * sc + 2 * pad;
+  const X = x => pad + (x - x0) * sc, Y = y => H - pad - (y - y0) * sc;
+  const cx = xs.reduce((a, b) => a + b, 0) / xs.length, cy = ys.reduce((a, b) => a + b, 0) / ys.length;
+  const svg = el("svg", {viewBox:`0 0 ${Wd} ${H}`, width:Wd, role:"img", "aria-label": cfg.alt || "도형 그림"});
+  const ink = "#172033", hl = "#1D3FA8", soft = "#7C889E";
+  const order = {poly:0, circle:1, seg:2, arc:3, right:3, text:4, pt:5};
+  [...E].sort((p, q) => (order[p.t] ?? 2) - (order[q.t] ?? 2)).forEach(e => {
+    const col = e.hl ? hl : ink;
+    if (e.t === "poly") el("polygon", {points: e.pts.map(q => X(q[0]) + "," + Y(q[1])).join(" "), fill: e.fill === false ? "none" : (e.hl ? "#DCE4F8" : "#EEF2FA"), stroke: col, "stroke-width": 1.8, "stroke-dasharray": e.dash ? "5 4" : "none", "fill-opacity": e.fill === false ? 0 : 0.9}, svg);
+    else if (e.t === "seg") el("line", {x1:X(e.a[0]), y1:Y(e.a[1]), x2:X(e.b[0]), y2:Y(e.b[1]), stroke: e.dash ? soft : col, "stroke-width": e.hl ? 2.6 : 1.8, "stroke-dasharray": e.dash ? "5 4" : "none"}, svg);
+    else if (e.t === "circle") el("circle", {cx:X(e.c[0]), cy:Y(e.c[1]), r:e.r * sc, fill:"none", stroke:col, "stroke-width":1.8, "stroke-dasharray": e.dash ? "5 4" : "none"}, svg);
+    else if (e.t === "right"){ const v = e.p, u1 = [e.a[0] - v[0], e.a[1] - v[1]], u2 = [e.b[0] - v[0], e.b[1] - v[1]];
+      const n1 = Math.hypot(...u1), n2 = Math.hypot(...u2), s = 11 / sc;
+      const pA = [v[0] + u1[0] / n1 * s, v[1] + u1[1] / n1 * s], pB = [v[0] + u2[0] / n2 * s, v[1] + u2[1] / n2 * s], pC = [pA[0] + u2[0] / n2 * s, pA[1] + u2[1] / n2 * s];
+      el("path", {d:`M${X(pA[0])} ${Y(pA[1])} L${X(pC[0])} ${Y(pC[1])} L${X(pB[0])} ${Y(pB[1])}`, fill:"none", stroke:ink, "stroke-width":1.4}, svg); }
+    else if (e.t === "arc"){ const v = e.p, a1 = Math.atan2(e.a[1] - v[1], e.a[0] - v[0]), a2 = Math.atan2(e.b[1] - v[1], e.b[0] - v[0]);
+      let d = a2 - a1; while (d <= -Math.PI) d += 2 * Math.PI; while (d > Math.PI) d -= 2 * Math.PI;
+      const R = (e.r || 22) / sc, N = 24; let path = "";
+      for (let i = 0; i <= N; i++){ const t = a1 + d * i / N; path += (i ? " L" : "M") + X(v[0] + R * Math.cos(t)).toFixed(1) + " " + Y(v[1] + R * Math.sin(t)).toFixed(1); }
+      el("path", {d:path, fill:"none", stroke:hl, "stroke-width":1.8}, svg);
+      if (e.label){ const tm = a1 + d / 2, R2 = R + 14 / sc; txt(svg, X(v[0] + R2 * Math.cos(tm)), Y(v[1] + R2 * Math.sin(tm)) + 5, e.label, {fill:hl, "font-size":14}); } }
+    else if (e.t === "text") txt(svg, X(e.p[0]), Y(e.p[1]) + 5, e.s, {fill: e.hl ? hl : "#4A5670", "font-size": 14});
+    else if (e.t === "pt"){ if (!e.hide) el("circle", {cx:X(e.p[0]), cy:Y(e.p[1]), r:3.2, fill:ink}, svg);
+      if (e.label){ let dx = e.p[0] - cx, dy = e.p[1] - cy; const n = Math.hypot(dx, dy) || 1; dx /= n; dy /= n;
+        if (e.pos){ const m = {n:[0,1], s:[0,-1], e:[1,0], w:[-1,0], ne:[.7,.7], nw:[-.7,.7], se:[.7,-.7], sw:[-.7,-.7]}[e.pos]; dx = m[0]; dy = m[1]; }
+        txt(svg, X(e.p[0]) + dx * 14, Y(e.p[1]) - dy * 14 + 5, e.label, {fill:ink, "font-size":15, "font-weight":500}); } }
+  });
+  return svg;
+}
+
 function figure(f){
   const box = document.createElement("div"); box.className = "figure";
   const w = f.widget, c = f.config || {};
   box.appendChild(w === "number_line" ? numberLine(c, false) : w === "area_model" ? areaModel(c) : w === "right_triangle" ? rightTriangle(c)
-    : w === "graph" ? coordPlane(c, null, false) : document.createTextNode(""));
+    : w === "graph" ? coordPlane(c, null, false) : w === "geo" ? geoFig(c) : document.createTextNode(""));
   return box;
 }
 
