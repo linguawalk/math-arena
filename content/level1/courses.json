@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "level": 1,
+  "courses": [
+    {
+      "id": "c0",
+      "title": "기초 수학",
+      "description": "고등 수학에 필요한 중학 수학 핵심",
+      "available": true
+    },
+    {
+      "id": "c1",
+      "title": "수학의 기초",
+      "description": "집합과 명제, 방정식과 부등식, 경우의 수, 행렬",
+      "available": false
+    },
+    {
+      "id": "c2",
+      "title": "함수와 그래프",
+      "description": "좌표평면, 원, 함수, 이차함수, 유리·무리함수",
+      "available": false
+    },
+    {
+      "id": "c3",
+      "title": "대수",
+      "description": "지수와 로그, 삼각함수, 수열, 수학적 귀납법",
+      "available": false
+    },
+    {
+      "id": "c4",
+      "title": "미적분",
+      "description": "극한, 미분, 적분, 급수",
+      "available": false
+    },
+    {
+      "id": "c5",
+      "title": "확률과 통계",
+      "description": "순열과 조합, 확률, 확률분포, 통계적 추정",
+      "available": false
+    },
+    {
+      "id": "c6",
+      "title": "기하",
+      "description": "이차곡선, 평면벡터, 공간도형과 공간좌표",
+      "available": false
+    }
+  ]
+}
