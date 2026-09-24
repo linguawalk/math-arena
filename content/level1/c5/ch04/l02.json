@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch04",
+    "no": 4,
+    "title": "조건부확률"
+  },
+  "lesson": {
+    "id": "c5-ch04-l02",
+    "no": 2,
+    "title": "확률의 곱셈정리",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "곱셈정리",
+      "body": [
+        "P(A ∩ B) = P(A)P(B|A). 차례로 일어나는 일의 확률은 각 단계의 확률을 곱합니다.",
+        "아래에서는 흰 공 3개, 검은 공 2개에서 꺼낸 공을 넣지 않고 두 번 꺼냅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "두 번 모두 흰 공일 확률은? (기약분수로)",
+      "answer": "3/10",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "첫 번째는 흰 공, 두 번째는 검은 공일 확률은? (기약분수로)",
+      "answer": "3/10",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "나뭇가지 그림",
+      "body": [
+        "일어날 수 있는 경로를 나뭇가지 그림으로 그리고, 각 경로의 확률(곱)을 원하는 경로끼리 더합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 상황에서 두 번째 공이 흰 공일 확률은? (기약분수로)",
+      "answer": "3/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "주머니 A(흰 공 2, 검은 공 1)와 B(흰 공 1, 검은 공 2) 중 동전으로 하나를 골라 공 1개를 꺼낼 때 흰 공일 확률은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "결과에서 원인 찾기",
+      "body": [
+        "결과를 알 때 그 원인일 확률은 P(원인|결과) = P(원인 ∩ 결과)/P(결과)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "위 문제에서 흰 공이 나왔을 때 그것이 주머니 A에서 나왔을 확률은? (기약분수로)",
+      "answer": "2/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "어떤 병의 유병률은 1%이고, 검사는 환자의 90%, 비환자의 10%를 양성으로 판정합니다. 임의의 한 사람이 양성 판정을 받을 확률은?",
+      "answer": "0.108",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "양성 판정을 받은 사람이 실제로 환자일 확률은? (기약분수로)",
+      "answer": "1/12",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "제비뽑기",
+      "body": [
+        "당첨 제비를 먼저 뽑든 나중에 뽑든 각 사람이 당첨될 확률은 같습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "당첨 제비 3개를 포함한 10개에서 두 사람이 차례로 뽑을 때 두 번째 사람이 당첨될 확률은? (기약분수로)",
+      "answer": "3/10",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "두 사람 모두 당첨될 확률은? (기약분수로)",
+      "answer": "1/15",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "차례가 있으면 곱하고, 여러 경로가 있으면 더합니다. 조건이 결과 쪽에 있으면 나눕니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "흰 공 4개, 검은 공 1개에서 넣지 않고 차례로 꺼낼 때 세 번째에 처음으로 검은 공이 나올 확률은? (기약분수로)",
+      "answer": "1/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "제품의 60%를 만드는 공장 A의 불량률은 2%, 40%를 만드는 공장 B의 불량률은 5%입니다. 임의의 제품이 불량일 확률은?",
+      "answer": "0.032",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "불량품이 나왔을 때 그것이 공장 B의 제품일 확률은? (기약분수로)",
+      "answer": "5/8",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "P(A) = 0.4, P(B|A) = 0.5일 때 P(A ∩ B)는?",
+      "answer": "0.2",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "흰 공 3개, 검은 공 3개에서 꺼낸 공을 다시 넣고 두 번 꺼낼 때 둘 다 흰 공일 확률은? (기약분수로)",
+      "answer": "1/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "불량품 2개를 포함한 10개 중 차례로 꺼낼 때(넣지 않음) 두 번째에 처음으로 불량품이 나올 확률은? (기약분수로)",
+      "answer": "8/45",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "제비뽑기에서 먼저 뽑든 나중에 뽑든 당첨 확률이 같은 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "경우",
+            "경로"
+          ],
+          [
+            "더",
+            "합"
+          ],
+          [
+            "같"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "두 번째 사람의 당첨 확률은 첫 사람이 당첨된 경우와 아닌 경우의 확률을 각각 곱해 더한 값입니다. 계산하면 처음 비율과 같은 값이 나오므로 순서와 관계없이 당첨 확률은 같습니다."
+    }
+  ]
+}

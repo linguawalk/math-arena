@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch06",
+    "no": 6,
+    "title": "연속확률분포"
+  },
+  "lesson": {
+    "id": "c5-ch06-l03",
+    "no": 3,
+    "title": "표준화",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "표준화",
+      "body": [
+        "X ~ N(m, σ²)이면 Z = (X − m)/σ는 평균 0, 표준편차 1인 표준정규분포 N(0, 1)을 따릅니다.",
+        "모든 정규분포를 하나의 표로 계산할 수 있게 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "X ~ N(50, 5²)에서 X = 60을 표준화한 값 Z는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "같은 X에서 X = 45를 표준화한 값 Z는?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "표 읽기",
+      "body": [
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987",
+        "P(Z ≤ 1) = 0.5 + 0.3413처럼 0.5와 표의 값을 더하거나 뺍니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "P(Z ≤ 1)은?",
+      "answer": "0.8413",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "P(Z ≥ 2)는?",
+      "answer": "0.0228",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "P(−1 ≤ Z ≤ 2)는?",
+      "answer": "0.8185",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "정규분포의 확률 계산",
+      "body": [
+        "X를 Z로 바꾼 뒤 표의 값을 씁니다. 아래는 X ~ N(70, 10²)입니다.",
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "P(X ≥ 85)는?",
+      "answer": "0.0668",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "P(60 ≤ X ≤ 90)은?",
+      "answer": "0.8185",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "P(X ≤ 65)는?",
+      "answer": "0.3085",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "확률에서 값 찾기",
+      "body": [
+        "확률이 주어지면 표에서 z를 찾고 x = m + zσ로 되돌립니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X ~ N(70, 10²)에서 P(X ≥ a) = 0.0228일 때 a는?",
+      "answer": "90",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X ~ N(m, 4²)에서 P(X ≥ 60) = 0.1587일 때 m은?",
+      "answer": "56",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "비교와 활용",
+      "body": [
+        "평균과 흩어짐이 다른 집단의 값을 비교할 때는 표준화한 값 Z로 비교합니다.",
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "점수가 N(65, 10²)을 따르는 시험에 1,000명이 응시했을 때 85점 이상은 약 몇 명일까요?",
+      "answer": "22.8",
+      "answer_format": "decimal",
+      "tolerance": 0.05,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 시험에서 상위 약 15.87% 안에 들기 위한 최저 점수는?",
+      "answer": "75",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "A반은 N(70, 10²), B반은 N(60, 5²)입니다. A반 80점과 B반 70점 중 반 안에서 상대적으로 더 높은 점수는 {{1}}반 학생의 점수입니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "B"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X ~ N(50, σ²)에서 P(X ≤ 44) = 0.0668일 때 σ는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "P(|Z| ≤ 1.5)는?",
+      "answer": "0.8664",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "정규분포의 확률을 계산할 때 표준화하는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "표준정규분포",
+            "N(0, 1)",
+            "하나의 표"
+          ],
+          [
+            "평균",
+            "표준편차"
+          ],
+          [
+            "다른",
+            "모든"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "정규분포는 평균과 표준편차에 따라 모양이 다른데, 표준화하면 모두 평균 0, 표준편차 1인 표준정규분포가 됩니다. 그래서 하나의 표준정규분포표로 모든 정규분포의 확률을 계산할 수 있습니다."
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch03",
+    "no": 3,
+    "title": "확률의 뜻"
+  },
+  "lesson": {
+    "id": "c5-ch03-l02",
+    "no": 2,
+    "title": "수학적 확률과 통계적 확률",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "수학적 확률",
+      "body": [
+        "각 근원사건이 일어날 가능성이 같을 때, 사건 A의 확률은 P(A) = n(A)/n(S)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "주사위 한 개를 던질 때 짝수의 눈이 나올 확률은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "동전 두 개를 던질 때 모두 앞면이 나올 확률은? (기약분수로)",
+      "answer": "1/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "주사위 두 개",
+      "body": [
+        "주사위 두 개의 표본공간은 36개의 순서쌍입니다. 조건에 맞는 순서쌍을 셉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 눈의 합이 7일 확률은? (기약분수로)",
+      "answer": "1/6",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "눈의 합이 10 이상일 확률은? (기약분수로)",
+      "answer": "1/6",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "두 눈의 곱이 홀수일 확률은? (기약분수로)",
+      "answer": "1/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "조합으로 세기",
+      "body": [
+        "여러 개를 동시에 뽑을 때는 전체와 조건에 맞는 경우를 모두 조합으로 셉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "흰 공 3개, 검은 공 2개 중 2개를 뽑을 때 둘 다 흰 공일 확률은? (기약분수로)",
+      "answer": "3/10",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "5명 중 2명을 뽑을 때 A가 뽑힐 확률은? (기약분수로)",
+      "answer": "2/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "통계적 확률",
+      "body": [
+        "같은 시행을 n번 반복해 사건 A가 r번 일어났을 때, n이 충분히 크면 상대도수 r/n을 A의 확률로 봅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "동전을 1,000번 던져 앞면이 512번 나왔을 때 앞면이 나올 통계적 확률은?",
+      "answer": "0.512",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "압정을 500번 던져 바늘이 위로 향한 것이 300번이었을 때 그 통계적 확률은?",
+      "answer": "0.6",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "어떤 사건의 확률이 0.3일 때 200번 시행하면 약 몇 번 일어날까요?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "확률의 기본 성질",
+      "body": [
+        "0 ≤ P(A) ≤ 1,  P(S) = 1,  P(∅) = 0"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "표본공간 S에 대해 P(S)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "5명을 일렬로 세울 때 A와 B가 이웃할 확률은? (기약분수로)",
+      "answer": "2/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1부터 9까지의 카드 중 두 장을 뽑을 때 두 수의 합이 짝수일 확률은? (기약분수로)",
+      "answer": "4/9",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "동전 세 개를 던질 때 앞면이 2개 이상 나올 확률은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 같은 눈이 나올 확률은? (기약분수로)",
+      "answer": "1/6",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "수학적 확률과 통계적 확률의 차이를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "같은 가능성",
+            "가능성이 같",
+            "경우의 수"
+          ],
+          [
+            "반복",
+            "실험",
+            "상대도수"
+          ],
+          [
+            "n이 커",
+            "많이"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "수학적 확률은 각 결과가 일어날 가능성이 같다고 보고 경우의 수의 비로 계산합니다. 통계적 확률은 실제로 여러 번 반복한 실험의 상대도수로 구하며, 시행 횟수가 많을수록 수학적 확률에 가까워집니다."
+    }
+  ]
+}

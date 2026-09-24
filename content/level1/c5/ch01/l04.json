@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch01",
+    "no": 1,
+    "title": "여러 가지 순열"
+  },
+  "lesson": {
+    "id": "c5-ch01-l04",
+    "no": 4,
+    "title": "순열의 활용",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "조건이 여러 개인 수 만들기",
+      "body": [
+        "가장 까다로운 자리(맨 앞, 맨 끝)부터 정하고 나머지를 순열로 셉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "0, 1, 2, 3, 4로 만드는 네 자리 수 중 5의 배수는? (같은 숫자 사용 불가)",
+      "answer": "24",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "0, 1, 2, 3, 4로 만드는 네 자리 수 중 3000 이상인 것은? (같은 숫자 사용 불가)",
+      "answer": "48",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "사전식 배열",
+      "body": [
+        "사전식으로 늘어놓을 때 몇 번째인지는 앞자리가 더 작은 것들의 개수를 차례로 더해 구합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a, b, c, d를 사전식으로 늘어놓을 때 bacd는 몇 번째일까요?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "1, 2, 3, 4로 만든 네 자리 수를 작은 수부터 늘어놓을 때 20번째 수는?",
+      "answer": "4132",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "사이에 끼는 조건",
+      "body": [
+        "두 사람 사이에 정확히 k명이 오도록 하려면 그 묶음을 먼저 만들고 한 덩어리로 늘어놓습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "5명을 일렬로 세울 때 A와 B 사이에 정확히 1명이 서는 방법은?",
+      "answer": "36",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "남자 3명, 여자 3명을 일렬로 교대로 세우는 방법은?",
+      "answer": "72",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "입체와 회전",
+      "body": [
+        "입체에 색을 칠할 때는 입체를 돌려서 같아지는 경우를 하나로 봅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "정육각형의 여섯 꼭짓점에 서로 다른 6가지 색의 구슬을 놓는 방법은? (돌려서 같은 것은 한 가지)",
+      "answer": "120",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "정사면체의 네 면을 서로 다른 4가지 색으로 칠하는 방법은? (돌려서 같은 것은 한 가지)",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "순열, 원순열, 같은 것이 있는 순열 중 어떤 상황인지 먼저 판단하고, 조건은 묶기·끼우기·여사건으로 처리합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1부터 6까지 적힌 카드를 일렬로 놓을 때 홀수끼리 이웃하지 않는 방법은?",
+      "answer": "144",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "SCHOOL의 여섯 글자를 일렬로 늘어놓는 방법은?",
+      "answer": "360",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그중 O끼리 이웃하는 방법은?",
+      "answer": "120",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "7명 중 3명을 뽑아 원탁에 앉히는 방법은?",
+      "answer": "70",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "서로 다른 공 5개를 서로 다른 상자 2개에 빈 상자 없이 넣는 방법은?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1부터 5까지를 일렬로 늘어놓을 때 1이 2보다 앞에 오는 방법은?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a, a, b, c, d를 일렬로 늘어놓을 때 양 끝이 모두 a인 방법은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "'이웃하지 않는' 경우를 셀 때 전체에서 '이웃하는' 경우를 빼는 방법이 편리한 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "전체"
+          ],
+          [
+            "이웃하는"
+          ],
+          [
+            "빼",
+            "여사건"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "이웃하지 않는 경우는 여러 모양으로 흩어져 있어 직접 세기 어렵지만, 이웃하는 경우는 묶어서 한 번에 셀 수 있습니다. 그래서 전체에서 이웃하는 경우를 빼면 쉽게 구할 수 있습니다."
+    }
+  ]
+}

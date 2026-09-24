@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch03",
+    "no": 3,
+    "title": "확률의 뜻"
+  },
+  "lesson": {
+    "id": "c5-ch03-l04",
+    "no": 4,
+    "title": "여사건의 확률",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "여사건의 확률",
+      "body": [
+        "P(Aᶜ) = 1 − P(A). 어떤 사건이 일어나지 않을 확률은 1에서 일어날 확률을 뺀 것입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "P(A) = 0.3일 때 P(Aᶜ)은?",
+      "answer": "0.7",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 눈의 합이 12가 아닐 확률은? (기약분수로)",
+      "answer": "35/36",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "'적어도'의 확률",
+      "body": [
+        "'적어도 하나'의 여사건은 '하나도 없음'입니다. 하나도 없는 경우가 훨씬 세기 쉽습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "동전 세 개를 던질 때 적어도 한 개가 앞면일 확률은? (기약분수로)",
+      "answer": "7/8",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 적어도 한 개가 6일 확률은? (기약분수로)",
+      "answer": "11/36",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "흰 공 3개, 검은 공 4개 중 3개를 뽑을 때 적어도 한 개가 흰 공일 확률은? (기약분수로)",
+      "answer": "31/35",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "같은 것이 생길 확률",
+      "body": [
+        "'적어도 두 명이 같은 요일'의 여사건은 '모두 다른 요일'입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "3명의 생일 요일이 적어도 두 명 같을 확률은? (각 요일은 같은 확률) (기약분수로)",
+      "answer": "19/49",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "대표 뽑기와 곱",
+      "body": [
+        "'적어도 여학생 1명'은 '모두 남학생'의 여사건, '곱이 짝수'는 '모두 홀수'의 여사건입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위를 세 번 던질 때 적어도 한 번 짝수가 나올 확률은? (기약분수로)",
+      "answer": "7/8",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "남자 3명, 여자 2명 중 대표 2명을 뽑을 때 적어도 한 명이 여자일 확률은? (기약분수로)",
+      "answer": "7/10",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "'적어도', '~이 아닌', '모두 다른 것이 아닌'이 보이면 여사건을 먼저 떠올립니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1부터 10까지의 카드 중 두 장을 뽑을 때 두 수의 곱이 짝수일 확률은? (기약분수로)",
+      "answer": "7/9",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "동전을 n번 던질 때 적어도 한 번 앞면이 나올 확률이 0.9보다 크게 되는 n의 최솟값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "명중률이 1/3인 사수가 3번 쏠 때 적어도 한 번 명중할 확률은? (기약분수로)",
+      "answer": "19/27",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 서로 다른 눈이 나올 확률은? (기약분수로)",
+      "answer": "5/6",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "5명을 일렬로 세울 때 A가 맨 앞이 아닐 확률은? (기약분수로)",
+      "answer": "4/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "불량률이 0.1인 제품 2개를 고를 때 적어도 1개가 불량일 확률은?",
+      "answer": "0.19",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위를 네 번 던질 때 나온 눈이 모두 다르지는 않을 확률은? (기약분수로)",
+      "answer": "13/18",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "'적어도 하나'의 확률을 구할 때 여사건을 쓰면 편리한 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "하나도",
+            "모두"
+          ],
+          [
+            "여러",
+            "나누",
+            "경우"
+          ],
+          [
+            "1에서",
+            "빼"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "'적어도 하나'는 1개, 2개, 3개…처럼 여러 경우로 나눠 더해야 하지만, 그 여사건 '하나도 없음'은 한 가지 경우뿐입니다. 그래서 1에서 '하나도 없음'의 확률을 빼면 간단히 구할 수 있습니다."
+    }
+  ]
+}

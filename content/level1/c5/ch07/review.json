@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch07",
+    "no": 7,
+    "title": "통계적 추정"
+  },
+  "review": {
+    "id": "c5-ch07-review",
+    "title": "통계적 추정 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "표본 3, 5, 7의 표본평균은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "같은 표본의 표본분산은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "σ = 20인 모집단에서 크기 100인 표본을 뽑을 때 σ(X̄)는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "모집단 N(80, 12²)에서 크기 36인 표본을 뽑을 때 P(X̄ ≥ 82)는?",
+      "answer": "0.1587",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x̄ = 60, σ = 8, n = 64일 때 신뢰도 95% 신뢰구간의 아래 끝은?",
+      "answer": "58.04",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l03"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "σ = 8, n = 64일 때 신뢰도 95% 신뢰구간의 길이는?",
+      "answer": "3.92",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "신뢰구간의 길이를 1/2로 줄이려면 표본의 크기를 몇 배로 해야 할까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "500명 중 150명이 찬성했을 때 표본비율은?",
+      "answer": "0.3",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "p̂ = 0.5, n = 2500일 때 신뢰도 95% 신뢰구간의 아래 끝은?",
+      "answer": "0.4804",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "모비율의 신뢰구간이 0.32 ≤ p ≤ 0.38일 때 표본비율은?",
+      "answer": "0.35",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch07-l04"
+    }
+  ]
+}

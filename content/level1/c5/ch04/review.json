@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch04",
+    "no": 4,
+    "title": "조건부확률"
+  },
+  "review": {
+    "id": "c5-ch04-review",
+    "title": "조건부확률 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "주사위를 던져 홀수가 나왔을 때 그 눈이 3 이상일 확률은? (기약분수로)",
+      "answer": "2/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "P(B) = 0.4, P(A ∩ B) = 0.1일 때 P(A|B)는?",
+      "answer": "0.25",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "흰 공 2개, 검은 공 3개에서 넣지 않고 두 번 꺼낼 때 둘 다 검은 공일 확률은? (기약분수로)",
+      "answer": "3/10",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "같은 상황에서 두 번째 공이 검은 공일 확률은? (기약분수로)",
+      "answer": "3/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "A, B가 독립이고 P(A) = 0.2, P(B) = 0.5일 때 P(A ∪ B)는?",
+      "answer": "0.6",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l03"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "명중률이 0.6, 0.5인 두 사수가 한 발씩 쏠 때 둘 다 빗나갈 확률은?",
+      "answer": "0.2",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "동전을 5번 던질 때 앞면이 정확히 2번 나올 확률은? (기약분수로)",
+      "answer": "5/16",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l04"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "주사위를 3번 던질 때 6의 눈이 정확히 두 번 나올 확률은? (기약분수로)",
+      "answer": "5/72",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "성공 확률이 1/2인 시행을 4번 할 때 적어도 한 번 성공할 확률은? (기약분수로)",
+      "answer": "15/16",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "성공 확률이 0.2인 시행을 2번 할 때 모두 실패할 확률은?",
+      "answer": "0.64",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch04-l04"
+    }
+  ]
+}

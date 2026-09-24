@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch04",
+    "no": 4,
+    "title": "조건부확률"
+  },
+  "lesson": {
+    "id": "c5-ch04-l03",
+    "no": 3,
+    "title": "사건의 독립",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "독립",
+      "body": [
+        "한 사건이 일어나는 것이 다른 사건의 확률에 영향을 주지 않으면 두 사건은 독립입니다.",
+        "A, B가 독립 ⇔ P(A ∩ B) = P(A)P(B)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "A, B가 독립이고 P(A) = 0.3, P(B) = 0.5일 때 P(A ∩ B)는?",
+      "answer": "0.15",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "동전을 두 번 던질 때 두 번 모두 앞면일 확률은? (기약분수로)",
+      "answer": "1/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "독립인지 판단하기",
+      "body": [
+        "P(A ∩ B)와 P(A)P(B)를 각각 계산해 같은지 비교합니다. 주사위를 던져 A: 짝수, B: 3의 배수, C: 4 이상입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A와 B는 독립일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A와 C는 독립일까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "여사건도 독립",
+      "body": [
+        "A, B가 독립이면 A와 Bᶜ, Aᶜ과 Bᶜ도 독립입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A, B가 독립이고 P(A) = 0.4, P(B) = 0.5일 때 P(Aᶜ ∩ Bᶜ)은?",
+      "answer": "0.3",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 조건에서 P(A ∪ B)는?",
+      "answer": "0.7",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "배반과 독립",
+      "body": [
+        "배반은 '동시에 일어나지 않는다', 독립은 '서로 영향을 주지 않는다'입니다. 확률이 0이 아닌 두 배반사건은 독립이 아닙니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "P(A) > 0, P(B) > 0인 두 사건이 배반이면 독립일까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "명중률이 0.8, 0.7인 두 사수가 서로 영향 없이 한 발씩 쏠 때 둘 다 명중할 확률은?",
+      "answer": "0.56",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "적어도 한 명이 명중할 확률은?",
+      "answer": "0.94",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "부품의 연결",
+      "body": [
+        "직렬 연결은 모두 작동해야 하므로 곱, 병렬 연결은 모두 고장 나지만 않으면 되므로 1 − (모두 고장)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A, B가 독립이고 P(A) = 1/2, P(B) = 1/3일 때 P(A ∪ B)는? (기약분수로)",
+      "answer": "2/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A, B가 독립이고 P(A ∩ B) = 0.12, P(A) = 0.3일 때 P(B)는?",
+      "answer": "0.4",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위 한 개와 동전 한 개를 던질 때 주사위는 6, 동전은 앞면이 나올 확률은? (기약분수로)",
+      "answer": "1/12",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "고장 확률이 각각 0.1인 부품 3개가 서로 독립일 때 모두 정상일 확률은?",
+      "answer": "0.729",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "작동 확률이 0.9인 부품 두 개를 직렬로 연결했을 때 작동할 확률은?",
+      "answer": "0.81",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 부품 두 개를 병렬로 연결했을 때 작동할 확률은?",
+      "answer": "0.99",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "두 사건이 '배반'인 것과 '독립'인 것의 차이를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "동시에"
+          ],
+          [
+            "영향"
+          ],
+          [
+            "곱",
+            "P(A)P(B)"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "배반은 두 사건이 동시에 일어날 수 없다는 뜻이고, 독립은 한 사건이 일어나도 다른 사건의 확률이 바뀌지 않는다는 뜻입니다. 독립이면 P(A ∩ B) = P(A)P(B)이지만, 배반이면 P(A ∩ B) = 0입니다."
+    }
+  ]
+}

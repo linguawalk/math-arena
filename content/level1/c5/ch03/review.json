@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch03",
+    "no": 3,
+    "title": "확률의 뜻"
+  },
+  "review": {
+    "id": "c5-ch03-review",
+    "title": "확률의 뜻 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "동전 세 개를 던질 때 표본공간의 원소는 몇 개일까요?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "주사위에서 A = {1, 3, 5}, B = {1, 2}일 때 A ∪ B의 원소는 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 눈의 합이 5일 확률은? (기약분수로)",
+      "answer": "1/9",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "흰 공 4개, 검은 공 2개 중 2개를 뽑을 때 둘 다 검은 공일 확률은? (기약분수로)",
+      "answer": "1/15",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "P(A) = 0.6, P(B) = 0.3, P(A ∩ B) = 0.1일 때 P(A ∪ B)는?",
+      "answer": "0.8",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l03"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "1부터 12까지 중 하나를 고를 때 3의 배수 또는 4의 배수일 확률은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "A, B가 서로 배반이고 P(A) = 1/2, P(B) = 1/6일 때 P(A ∪ B)는? (기약분수로)",
+      "answer": "2/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "동전 네 개를 던질 때 적어도 한 개가 뒷면일 확률은? (기약분수로)",
+      "answer": "15/16",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "남자 4명, 여자 2명 중 2명을 뽑을 때 적어도 한 명이 여자일 확률은? (기약분수로)",
+      "answer": "3/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 두 눈의 곱이 짝수일 확률은? (기약분수로)",
+      "answer": "3/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch03-l04"
+    }
+  ]
+}

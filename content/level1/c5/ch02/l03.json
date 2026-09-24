@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch02",
+    "no": 2,
+    "title": "중복조합과 이항정리"
+  },
+  "lesson": {
+    "id": "c5-ch02-l03",
+    "no": 3,
+    "title": "파스칼의 삼각형",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "파스칼의 삼각형",
+      "body": [
+        "이항계수를 삼각형 모양으로 늘어놓으면, 각 수는 바로 위 두 수의 합입니다. nCr = n−1Cr−1 + n−1Cr"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "n = 6인 줄의 가운데 수 ₆C₃은?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "₇C₃ = ₆C₂ + ₆C{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "하키스틱 성질",
+      "body": [
+        "한 대각선을 따라 더한 합은 그 아래 한 칸의 수와 같습니다. ₂C₂ + ₃C₂ + … + ₙC₂ = n+1C₃"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "₂C₂ + ₃C₂ + ₄C₂ + ₅C₂ + ₆C₂의 값은?",
+      "answer": "35",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "₃C₀ + ₄C₁ + ₅C₂의 값은?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "대칭",
+      "body": [
+        "nCr = nCn−r. 파스칼의 삼각형은 좌우 대칭입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "₂₀C₁₈의 값은?",
+      "answer": "190",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "ₙC₃ = ₙC₅일 때 n의 값은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "줄의 합",
+      "body": [
+        "n번째 줄의 합은 2ⁿ이고, 홀수 번째 항끼리의 합과 짝수 번째 항끼리의 합은 각각 2ⁿ⁻¹입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "n = 7인 줄의 수를 모두 더하면?",
+      "answer": "128",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "₉C₁ + ₉C₃ + ₉C₅ + ₉C₇ + ₉C₉의 값은?",
+      "answer": "256",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "여러 가지 성질",
+      "body": [
+        "k·nCk = n·n−1Ck−1이므로 Σ k·nCk = n·2ⁿ⁻¹입니다.",
+        "(nC0)² + (nC1)² + … + (nCn)² = 2nCn"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "Σ(k=0~5) k·₅Cₖ의 값은?",
+      "answer": "80",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(₅C₀)² + (₅C₁)² + … + (₅C₅)²의 값은?",
+      "answer": "252",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "₈Cᵣ 중 가장 큰 값은?",
+      "answer": "70",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "₁₀C₀, ₁₀C₁, …, ₁₀C₁₀ 중 홀수는 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "₄C₀ + ₅C₁ + ₆C₂ + ₇C₃의 값은?",
+      "answer": "56",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "₁C₁ + ₂C₁ + … + ₁₀C₁의 값은?",
+      "answer": "55",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "ₙC₂ = 45일 때 n의 값은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "nCr = n−1Cr−1 + n−1Cr가 성립하는 이유를 특정한 한 사람을 기준으로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "포함"
+          ],
+          [
+            "포함하지 않",
+            "제외"
+          ],
+          [
+            "더"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "n명 중 r명을 뽑는 방법을 특정한 한 사람 A를 포함하는 경우와 포함하지 않는 경우로 나눕니다. A를 포함하면 나머지 n − 1명 중 r − 1명, 포함하지 않으면 n − 1명 중 r명을 뽑으므로 두 경우를 더하면 됩니다."
+    }
+  ]
+}

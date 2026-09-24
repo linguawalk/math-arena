@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch07",
+    "no": 7,
+    "title": "통계적 추정"
+  },
+  "lesson": {
+    "id": "c5-ch07-l04",
+    "no": 4,
+    "title": "모비율의 추정",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "표본비율",
+      "body": [
+        "크기 n인 표본에서 어떤 특성을 가진 것이 X개이면 표본비율은 p̂ = X/n입니다.",
+        "모비율이 p이면 E(p̂) = p, V(p̂) = p(1 − p)/n입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "400명 중 240명이 찬성했을 때 표본비율은?",
+      "answer": "0.6",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "모비율이 0.5이고 n = 100일 때 V(p̂)는?",
+      "answer": "0.0025",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "모비율의 신뢰구간",
+      "body": [
+        "n이 충분히 크면 모비율 p의 신뢰도 95% 신뢰구간은 p̂ − 1.96√(p̂(1 − p̂)/n) ≤ p ≤ p̂ + 1.96√(p̂(1 − p̂)/n)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "p̂ = 0.5, n = 100일 때 신뢰도 95% 신뢰구간의 아래 끝은?",
+      "answer": "0.402",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 경우 위 끝은?",
+      "answer": "0.598",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "표본의 크기와 정밀도",
+      "body": [
+        "표본이 클수록 √(p̂(1 − p̂)/n)이 작아져 신뢰구간이 좁아집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "p̂ = 0.5, n = 400일 때 신뢰도 95% 신뢰구간의 아래 끝은?",
+      "answer": "0.451",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "p̂ = 0.6, n = 600일 때 신뢰도 95% 신뢰구간의 아래 끝은?",
+      "answer": "0.5608",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "필요한 표본의 크기",
+      "body": [
+        "오차 1.96√(p(1 − p)/n)이 원하는 값 이하가 되도록 n을 구합니다. p를 모르면 가장 큰 경우인 p = 0.5로 계산합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "p = 0.5로 보고 신뢰도 95%의 오차를 0.049로 하려면 표본의 크기는?",
+      "answer": "400",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 방법으로 오차를 0.098로 하려면 표본의 크기는?",
+      "answer": "100",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "여론조사 읽기",
+      "body": [
+        "'신뢰수준 95%에 오차 ±4%p'는 표본비율에서 4%p를 빼고 더한 범위가 95% 신뢰구간이라는 뜻입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1,000명 중 550명이 지지했을 때 표본비율은?",
+      "answer": "0.55",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "p̂ = 0.2, n = 400일 때 신뢰도 95% 신뢰구간의 아래 끝은?",
+      "answer": "0.1608",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "p̂ = 0.5, n = 100일 때 신뢰도 99% 신뢰구간의 오차(반폭) 2.58√(p̂(1 − p̂)/n)은?",
+      "answer": "0.129",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "모비율의 신뢰구간이 0.46 ≤ p ≤ 0.54일 때 표본비율은?",
+      "answer": "0.5",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 신뢰구간의 오차(반폭)는?",
+      "answer": "0.04",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "p(1 − p)가 가장 커지는 p의 값은?",
+      "answer": "0.5",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "표본의 크기를 4배로 늘리면 모비율 추정의 오차는 몇 배가 될까요? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "여론조사 결과에 '오차 ±3%p'가 함께 발표되는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "표본"
+          ],
+          [
+            "전체",
+            "모집단"
+          ],
+          [
+            "범위",
+            "차이",
+            "오차"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "여론조사는 전체가 아니라 일부 표본만 조사하므로 표본비율이 실제 모비율과 조금 다를 수 있습니다. 그 차이가 어느 정도 범위 안에 있는지 알려 주기 위해 신뢰도와 함께 오차를 발표합니다."
+    }
+  ]
+}

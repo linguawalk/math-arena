@@ -35,8 +35,8 @@
     {
       "id": "c5",
       "title": "확률과 통계",
-      "description": "순열과 조합, 확률, 확률분포, 통계적 추정",
-      "available": false
+      "description": "순열과 조합, 확률, 조건부확률, 확률분포, 정규분포, 통계적 추정",
+      "available": true
     },
     {
       "id": "c6",

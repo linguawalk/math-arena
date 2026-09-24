@@ -1,0 +1,329 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch06",
+    "no": 6,
+    "title": "연속확률분포"
+  },
+  "lesson": {
+    "id": "c5-ch06-l02",
+    "no": 2,
+    "title": "정규분포",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "정규분포",
+      "body": [
+        "키, 시험 점수처럼 평균 근처에 많고 멀어질수록 적은 자료는 종 모양의 정규분포를 따릅니다.",
+        "평균이 m, 표준편차가 σ인 정규분포를 N(m, σ²)으로 씁니다. 그래프는 직선 x = m에 대하여 대칭입니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": 20,
+          "xmax": 80,
+          "ymin": 0,
+          "ymax": 0.1,
+          "xstep": 10,
+          "ystep": 0.02,
+          "curves": [
+            {
+              "kind": "normal",
+              "m": 50,
+              "s": 10,
+              "scale": 1
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "X ~ N(50, 4²)의 그래프의 대칭축은 직선 x = ?",
+      "answer": "50",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "같은 X에서 P(X ≥ 50)은? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "σ에 따른 모양",
+      "body": [
+        "σ가 커지면 그래프가 낮고 넓게 퍼지고, 작아지면 높고 좁아집니다. m이 바뀌면 모양은 그대로 평행이동합니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": 20,
+          "xmax": 80,
+          "ymin": 0,
+          "ymax": 0.1,
+          "xstep": 10,
+          "ystep": 0.02,
+          "curves": [
+            {
+              "kind": "normal",
+              "m": 50,
+              "s": 5,
+              "scale": 1
+            },
+            {
+              "kind": "normal",
+              "m": 50,
+              "s": 10,
+              "scale": 1
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "σ가 더 큰 정규분포 곡선의 가장 높은 점이 더 낮을까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "평균만 바뀌면 곡선은 모양이 같고 평행이동할까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "σ 단위의 넓이",
+      "body": [
+        "평균에서 σ 이내에 약 68%, 2σ 이내에 약 95%가 들어갑니다.",
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "표를 이용하면 P(m − σ ≤ X ≤ m + σ)는?",
+      "answer": "0.6826",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "P(m − 2σ ≤ X ≤ m + 2σ)는?",
+      "answer": "0.9544",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "대칭을 이용한 계산",
+      "body": [
+        "아래 문제는 X ~ N(60, 10²)입니다. 평균 60을 기준으로 σ = 10의 몇 배인지 보고 표의 값을 씁니다.",
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "P(X ≤ 60)은?",
+      "answer": "0.5",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "P(50 ≤ X ≤ 70)은?",
+      "answer": "0.6826",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "P(X ≥ 70)은?",
+      "answer": "0.1587",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "평균보다 큰 쪽과 작은 쪽의 넓이가 각각 0.5라는 점과 좌우 대칭을 함께 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X ~ N(60, 10²)일 때 P(X ≤ 80)은?",
+      "answer": "0.9772",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 X에서 P(40 ≤ X ≤ 60)은?",
+      "answer": "0.4772",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 X에서 P(X ≤ 50)은?",
+      "answer": "0.1587",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X ~ N(m, σ²)에서 P(X ≥ 64) = P(X ≤ 56)일 때 m은?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X ~ N(100, 15²)일 때 P(85 ≤ X ≤ 115)는?",
+      "answer": "0.6826",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "표준정규분포 Z ~ N(0, 1)에서 P(Z ≥ 0)은?",
+      "answer": "0.5",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "정규분포에서 P(X ≥ m + a) = P(X ≤ m − a)인 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "대칭"
+          ],
+          [
+            "평균",
+            "m"
+          ],
+          [
+            "넓이",
+            "같"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "정규분포 곡선은 평균 m을 지나는 직선에 대하여 좌우 대칭입니다. 그래서 m에서 오른쪽으로 a 이상 떨어진 부분과 왼쪽으로 a 이상 떨어진 부분의 넓이가 같습니다."
+    }
+  ]
+}

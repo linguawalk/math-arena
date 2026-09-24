@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch07",
+    "no": 7,
+    "title": "통계적 추정"
+  },
+  "lesson": {
+    "id": "c5-ch07-l02",
+    "no": 2,
+    "title": "표본평균의 분포",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "표본평균의 평균과 분산",
+      "body": [
+        "모평균 m, 모분산 σ²인 모집단에서 크기 n인 표본을 임의추출하면",
+        "E(X̄) = m,  V(X̄) = σ²/n,  σ(X̄) = σ/√n"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "m = 50, σ = 10인 모집단에서 크기 25인 표본을 뽑을 때 E(X̄)는?",
+      "answer": "50",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "같은 경우 σ(X̄)는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "직접 확인해 보기",
+      "body": [
+        "모집단 {1, 3, 5}에서 크기 2인 표본을 복원추출하면 9가지 표본이 같은 확률로 나옵니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "이때 X̄의 평균은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "이때 X̄의 분산은? (기약분수로)",
+      "answer": "4/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "P(X̄ = 3)은? (기약분수로)",
+      "answer": "1/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "표본평균의 분포는 정규분포",
+      "body": [
+        "모집단이 정규분포이면 X̄ ~ N(m, σ²/n)입니다. 모집단이 정규분포가 아니어도 n이 크면 X̄는 정규분포에 가까워집니다.",
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "모집단 N(100, 20²)에서 크기 16인 표본을 뽑을 때 σ(X̄)는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 경우 P(X̄ ≥ 110)은?",
+      "answer": "0.0228",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 경우 P(95 ≤ X̄ ≤ 105)는?",
+      "answer": "0.6826",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "표본의 크기와 흩어짐",
+      "body": [
+        "표본의 크기가 클수록 X̄는 모평균 근처에 모입니다. n을 4배로 하면 σ(X̄)는 1/2배가 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "표본의 크기를 4배로 늘리면 σ(X̄)는 몇 배가 될까요? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "σ = 12인 모집단에서 σ(X̄) = 2가 되게 하는 표본의 크기는?",
+      "answer": "36",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "X̄의 평균은 모평균과 같고, 표준편차는 σ/√n으로 줄어듭니다.",
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "m = 60, σ = 8인 정규모집단에서 크기 16인 표본을 뽑을 때 P(X̄ ≤ 58)은?",
+      "answer": "0.1587",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "σ = 10인 모집단에서 V(X̄) = 4가 되는 표본의 크기는?",
+      "answer": "25",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "모평균이 70인 모집단에서 뽑은 표본평균의 기댓값은?",
+      "answer": "70",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "모집단 N(50, 10²)에서 크기 25인 표본을 뽑을 때 P(X̄ ≥ 53)은?",
+      "answer": "0.0668",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "σ = 15인 모집단에서 σ(X̄) = 3이 되는 표본의 크기는?",
+      "answer": "25",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "표본의 크기가 클수록 표본평균이 모평균 근처에 모이는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "σ/√n",
+            "√n"
+          ],
+          [
+            "작아",
+            "줄어"
+          ],
+          [
+            "평균",
+            "상쇄",
+            "치우침"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "표본평균의 표준편차는 σ/√n이라 n이 커질수록 작아집니다. 값을 많이 모아 평균을 내면 크게 벗어난 값들이 서로 상쇄되어 모평균에서 크게 벗어나기 어렵기 때문입니다."
+    }
+  ]
+}

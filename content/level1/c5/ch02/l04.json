@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch02",
+    "no": 2,
+    "title": "중복조합과 이항정리"
+  },
+  "lesson": {
+    "id": "c5-ch02-l04",
+    "no": 4,
+    "title": "조합의 활용",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "묶음으로 나누기",
+      "body": [
+        "서로 다른 것을 몇 묶음으로 나눌 때, 크기가 같은 묶음이 k개 있으면 k!로 나눕니다. 묶음끼리 순서가 없기 때문입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "서로 다른 6개를 2개씩 세 묶음으로 나누는 방법은?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "서로 다른 6개를 3개, 2개, 1개의 세 묶음으로 나누는 방법은?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "나눠 주기",
+      "body": [
+        "묶음으로 나눈 뒤 서로 다른 사람에게 나눠 주면 묶음의 수의 계승을 곱합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "서로 다른 책 6권을 3명에게 2권씩 나눠 주는 방법은?",
+      "answer": "90",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "서로 다른 책 5권을 2명에게 한 권 이상씩 나눠 주는 방법은?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "자연수의 분할",
+      "body": [
+        "자연수를 순서 없이 자연수들의 합으로 나타내는 것을 분할이라고 합니다. 큰 수부터 차례로 나열해 빠짐없이 셉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "7을 3개의 자연수의 합으로 나타내는 방법은? (순서 무시)",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "6을 자연수들의 합으로 나타내는 방법은 모두 몇 가지일까요? (6 자신 포함, 순서 무시)",
+      "answer": "11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "조건이 있는 함수의 개수",
+      "body": [
+        "f(1) < f(2) < f(3)이면 치역의 원소를 고르기만 하면 되므로 조합, f(1) ≤ f(2) ≤ f(3)이면 중복조합입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X = {1, 2, 3}에서 Y = {1, 2, 3, 4, 5}로의 함수 중 f(1) < f(2) < f(3)인 것은 몇 개일까요?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 X, Y에서 f(1) ≤ f(2) ≤ f(3)인 함수는 몇 개일까요?",
+      "answer": "35",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "공과 상자의 네 가지 경우",
+      "body": [
+        "공이 서로 다른지, 상자가 서로 다른지에 따라 순열·조합·중복조합·분할 중 알맞은 방법이 달라집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "8명을 4명씩 두 조로 나누는 방법은?",
+      "answer": "35",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "서로 다른 공 4개를 똑같은 상자 2개에 빈 상자 없이 넣는 방법은?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "똑같은 공 4개를 서로 다른 상자 3개에 빈 상자 없이 넣는 방법은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "똑같은 공 5개를 똑같은 상자 3개에 빈 상자 없이 넣는 방법은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "서로 다른 공 5개를 서로 다른 상자 3개에 빈 상자 없이 넣는 방법은?",
+      "answer": "150",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X = {1, 2, 3, 4}에서 Y = {1, 2, 3}으로의 함수 중 f(1) ≤ f(2) ≤ f(3) ≤ f(4)인 것은 몇 개일까요?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "10명 중 대표 1명, 부대표 1명, 위원 2명을 뽑는 방법은?",
+      "answer": "2520",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "서로 다른 6개를 2개씩 세 묶음으로 나눌 때 3!로 나누는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "순서"
+          ],
+          [
+            "같은 크기",
+            "묶음"
+          ],
+          [
+            "중복",
+            "여러 번 세"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "₆C₂ × ₄C₂ × ₂C₂는 첫째, 둘째, 셋째 묶음을 구분해 센 값입니다. 크기가 같은 세 묶음은 순서를 바꿔도 같은 나눔이므로 3!번씩 중복해서 센 셈이라 3!로 나눕니다."
+    }
+  ]
+}

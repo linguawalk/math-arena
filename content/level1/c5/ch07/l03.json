@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch07",
+    "no": 7,
+    "title": "통계적 추정"
+  },
+  "lesson": {
+    "id": "c5-ch07-l03",
+    "no": 3,
+    "title": "모평균의 추정",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "신뢰구간",
+      "body": [
+        "모표준편차 σ를 알 때, 크기 n인 표본의 평균 x̄로 모평균 m을 추정하는 신뢰도 95% 신뢰구간은",
+        "x̄ − 1.96σ/√n ≤ m ≤ x̄ + 1.96σ/√n,  신뢰도 99%는 1.96 대신 2.58을 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "x̄ = 50, σ = 10, n = 100일 때 신뢰도 95% 신뢰구간의 아래 끝은?",
+      "answer": "48.04",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "같은 경우 위 끝은?",
+      "answer": "51.96",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "신뢰구간의 길이",
+      "body": [
+        "신뢰구간의 길이는 2 × 1.96 × σ/√n (95%)입니다. x̄와 관계없이 σ, n, 신뢰도로 정해집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "σ = 10, n = 100일 때 신뢰도 95% 신뢰구간의 길이는?",
+      "answer": "3.92",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 경우 신뢰도 99% 신뢰구간의 길이는?",
+      "answer": "5.16",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "표본의 크기와 길이",
+      "body": [
+        "길이는 1/√n에 비례합니다. n을 4배 하면 길이는 1/2배가 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "표본의 크기를 4배로 늘리면 신뢰구간의 길이는 몇 배가 될까요? (기약분수로)",
+      "answer": "1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "신뢰구간의 길이를 1/3로 줄이려면 표본의 크기를 몇 배로 해야 할까요?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "필요한 표본의 크기",
+      "body": [
+        "원하는 길이 이하가 되도록 2 × 1.96 × σ/√n ≤ (길이)를 풀어 n을 구합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "σ = 10일 때 신뢰도 95% 신뢰구간의 길이가 3.92 이하가 되는 표본의 크기의 최솟값은?",
+      "answer": "100",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "σ = 5일 때 신뢰도 95% 신뢰구간의 길이가 1.96이 되는 표본의 크기는?",
+      "answer": "100",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "신뢰도의 뜻",
+      "body": [
+        "95% 신뢰구간이란, 같은 방법으로 신뢰구간을 여러 번 만들면 그중 약 95%가 모평균을 포함한다는 뜻입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 방법으로 95% 신뢰구간을 100번 만들면 모평균을 포함하는 구간은 약 몇 개일까요?",
+      "answer": "95",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "신뢰도를 높이면 신뢰구간의 길이는 길어질까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x̄ = 170, σ = 5, n = 25일 때 신뢰도 95% 신뢰구간의 아래 끝은?",
+      "answer": "168.04",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 경우 위 끝은?",
+      "answer": "171.96",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x̄ = 80, σ = 10, n = 100일 때 신뢰도 99% 신뢰구간의 아래 끝은?",
+      "answer": "77.42",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "모평균의 신뢰구간이 72.16 ≤ m ≤ 75.84일 때 표본평균은?",
+      "answer": "74",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 신뢰구간의 길이는?",
+      "answer": "3.68",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "'신뢰도 95%'의 뜻을 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "여러 번",
+            "100번",
+            "반복"
+          ],
+          [
+            "95"
+          ],
+          [
+            "포함"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "같은 방법으로 표본을 뽑아 신뢰구간을 여러 번 만들면, 그중 약 95%의 구간이 실제 모평균을 포함한다는 뜻입니다. 구간 하나가 모평균을 포함할 확률이 95%라는 뜻과는 조금 다릅니다."
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch01",
+    "no": 1,
+    "title": "여러 가지 순열"
+  },
+  "lesson": {
+    "id": "c5-ch01-l02",
+    "no": 2,
+    "title": "중복순열",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "중복순열",
+      "body": [
+        "서로 다른 n개에서 중복을 허락해 r개를 늘어놓는 방법은 nΠr = nʳ입니다. 자리마다 n가지를 고를 수 있기 때문입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "서로 다른 3종류의 우표에서 중복을 허락해 4장을 골라 일렬로 붙이는 방법은?",
+      "answer": "81",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "₂Π₅의 값은?",
+      "answer": "32",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "함수의 개수",
+      "body": [
+        "원소가 m개인 X에서 원소가 n개인 Y로의 함수는 nᵐ개입니다. X의 원소마다 Y의 원소를 하나씩 고르기 때문입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "X = {1, 2, 3}에서 Y = {a, b, c, d}로의 함수는 몇 개일까요?",
+      "answer": "64",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "X = {1, 2, 3, 4}에서 Y = {a, b}로의 함수는 몇 개일까요?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "숫자 만들기",
+      "body": [
+        "중복을 허락하면 자리마다 쓸 수 있는 숫자를 곱합니다. 맨 앞자리 0과 짝수 조건을 먼저 처리합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "1, 2, 3으로 만들 수 있는 네 자리 수는? (같은 숫자 사용 가능)",
+      "answer": "81",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "0, 1, 2로 만들 수 있는 세 자리 수는? (같은 숫자 사용 가능)",
+      "answer": "18",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "1, 2, 3, 4, 5로 만들 수 있는 세 자리 짝수는? (같은 숫자 사용 가능)",
+      "answer": "50",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "신호 만들기",
+      "body": [
+        "길이가 정해지지 않은 신호는 길이별로 중복순열을 구해 더합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "서로 다른 깃발 3종류를 1개에서 3개까지 일렬로 세워 만드는 신호는? (같은 종류 반복 가능)",
+      "answer": "39",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "점과 선을 1개에서 4개까지 늘어놓아 만드는 부호는 몇 가지일까요?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "빈 곳이 없게 나누기",
+      "body": [
+        "서로 다른 공을 서로 다른 상자에 빈 상자 없이 넣는 경우는 전체에서 빈 상자가 있는 경우를 빼서 셉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "서로 다른 공 4개를 서로 다른 상자 3개에 빈 상자 없이 넣는 방법은?",
+      "answer": "36",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "5명이 후보 3명 중 한 명에게 각각 기명 투표하는 방법은?",
+      "answer": "243",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X = {1, 2, 3}에서 Y = {1, 2, 3, 4}로의 함수 중 일대일함수가 아닌 것은 몇 개일까요?",
+      "answer": "40",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "3명이 가위바위보를 한 번 할 때 나오는 경우는 모두 몇 가지일까요?",
+      "answer": "27",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그중 비기는 경우(모두 같거나 모두 다름)는 몇 가지일까요?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1000보다 작은 자연수 중 모든 자리의 숫자가 홀수인 수는 몇 개일까요?",
+      "answer": "155",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "중복순열과 순열의 차이를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "중복"
+          ],
+          [
+            "다시",
+            "여러 번",
+            "반복"
+          ],
+          [
+            "nʳ",
+            "n^r",
+            "줄어"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "순열은 한 번 쓴 것을 다시 쓸 수 없어 자리마다 고를 수 있는 것이 하나씩 줄지만, 중복순열은 같은 것을 여러 번 쓸 수 있어 자리마다 n가지로 같습니다. 그래서 중복순열은 nʳ입니다."
+    }
+  ]
+}

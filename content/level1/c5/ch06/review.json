@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch06",
+    "no": 6,
+    "title": "연속확률분포"
+  },
+  "review": {
+    "id": "c5-ch06-review",
+    "title": "연속확률분포 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = 1/5 (0 ≤ x ≤ 5)일 때 P(1 ≤ X ≤ 4)는? (기약분수로)",
+      "answer": "3/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "f(x) = ax (0 ≤ x ≤ 4)가 확률밀도함수일 때 a는? (기약분수로)",
+      "answer": "1/8",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "X ~ N(50, 5²)일 때 P(45 ≤ X ≤ 55)는?",
+      "answer": "0.6826",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "X ~ N(50, 5²)일 때 P(X ≥ 60)은?",
+      "answer": "0.0228",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "X ~ N(80, 6²)에서 X = 71을 표준화한 값 Z는?",
+      "answer": "-1.5",
+      "answer_format": "decimal",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l03"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "P(0.5 ≤ Z ≤ 2)는?",
+      "answer": "0.2857",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "X ~ N(m, 5²)에서 P(X ≤ 40) = 0.0228일 때 m은?",
+      "answer": "50",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "X ~ B(900, 1/2)의 표준편차는?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "X ~ B(100, 1/2)일 때 P(X ≤ 40)의 근삿값은?",
+      "answer": "0.0228",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "X ~ B(100, 1/2)일 때 P(50 ≤ X ≤ 60)의 근삿값은?",
+      "answer": "0.4772",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c5-ch06-l04"
+    }
+  ]
+}

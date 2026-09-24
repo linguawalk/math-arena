@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch02",
+    "no": 2,
+    "title": "중복조합과 이항정리"
+  },
+  "lesson": {
+    "id": "c5-ch02-l01",
+    "no": 1,
+    "title": "중복조합",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "중복조합",
+      "body": [
+        "서로 다른 n종류에서 중복을 허락해 r개를 고르는 방법은 nHr = n+r−1Cr입니다.",
+        "고른 r개와 칸막이 n − 1개를 일렬로 늘어놓는 것과 같기 때문입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "₃H₂의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "₄H₃의 값은?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "방정식의 정수해",
+      "body": [
+        "x + y + z = r의 음이 아닌 정수해는 ₃Hᵣ개입니다. 자연수해는 각 변수에 1씩 먼저 주고 나머지를 나눕니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x + y + z = 5를 만족하는 음이 아닌 정수해는 몇 쌍일까요?",
+      "answer": "21",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x + y + z + w = 4를 만족하는 음이 아닌 정수해는 몇 쌍일까요?",
+      "answer": "35",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x + y + z = 7을 만족하는 자연수해는 몇 쌍일까요?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "부등식과 하한 조건",
+      "body": [
+        "x + y + z ≤ 3은 남는 양을 w로 두어 x + y + z + w = 3으로 바꿉니다.",
+        "x ≥ 1, y ≥ 2 같은 조건은 먼저 그만큼 빼고 셉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x + y + z ≤ 3을 만족하는 음이 아닌 정수해는 몇 쌍일까요?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x ≥ 1, y ≥ 2, z ≥ 0이고 x + y + z = 8인 정수해는 몇 쌍일까요?",
+      "answer": "21",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "같은 물건 나누기",
+      "body": [
+        "똑같은 물건 r개를 n명에게 나누는 방법은 nHr입니다. 모두 1개 이상 받으려면 1개씩 먼저 나눠 줍니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "똑같은 공 6개를 3명에게 모두 1개 이상 나눠 주는 방법은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "똑같은 사탕 5개를 4명에게 나눠 주는 방법은? (못 받는 사람이 있어도 됨)",
+      "answer": "56",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "중복조합의 활용",
+      "body": [
+        "(a + b + c)ⁿ을 전개한 항의 개수, a ≤ b ≤ c 같은 순서쌍의 개수도 중복조합입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(a + b + c)⁴을 전개했을 때 서로 다른 항은 몇 개일까요?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(x + y)⁵을 전개했을 때 서로 다른 항은 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1 ≤ a ≤ b ≤ c ≤ 4를 만족하는 자연수 순서쌍 (a, b, c)는 몇 개일까요?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "음료 4종류에서 중복을 허락해 6잔을 고를 때 각 종류를 1잔 이상 고르는 방법은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x + y + z = 10을 만족하는 음이 아닌 짝수해는 몇 쌍일까요?",
+      "answer": "21",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x + y + z = 10을 만족하는 자연수해 중 x = 2인 것은 몇 쌍일까요?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "x + y + z = 5의 음이 아닌 정수해의 개수가 ₇C₂인 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "칸막이",
+            "막대"
+          ],
+          [
+            "○",
+            "공",
+            "5개"
+          ],
+          [
+            "늘어놓",
+            "자리"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "공 5개와 칸막이 2개를 일렬로 늘어놓으면 칸막이로 나뉜 세 부분의 공 개수가 x, y, z가 됩니다. 7자리 중 칸막이 2개의 자리를 고르는 방법이 ₇C₂이므로 해의 개수도 ₇C₂입니다."
+    }
+  ]
+}

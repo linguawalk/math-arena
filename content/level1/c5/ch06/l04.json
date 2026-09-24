@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch06",
+    "no": 6,
+    "title": "연속확률분포"
+  },
+  "lesson": {
+    "id": "c5-ch06-l04",
+    "no": 4,
+    "title": "이항분포의 정규근사",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "정규분포로 근사하기",
+      "body": [
+        "n이 충분히 크면 이항분포 B(n, p)는 평균 np, 분산 np(1 − p)인 정규분포에 가까워집니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": 30,
+          "xmax": 70,
+          "ymin": 0,
+          "ymax": 0.1,
+          "xstep": 5,
+          "ystep": 0.02,
+          "curves": [
+            {
+              "kind": "normal",
+              "m": 50,
+              "s": 5,
+              "scale": 1
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "X ~ B(100, 1/2)일 때 근사하는 정규분포의 평균은?",
+      "answer": "50",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "그 표준편차는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "근사해서 계산하기",
+      "body": [
+        "평균과 표준편차를 구해 표준화한 뒤 표의 값을 씁니다.",
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "X ~ B(100, 1/2)일 때 P(X ≥ 60)의 근삿값은?",
+      "answer": "0.0228",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 X에서 P(45 ≤ X ≤ 55)의 근삿값은?",
+      "answer": "0.6826",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "주사위의 예",
+      "body": [
+        "주사위를 180번 던질 때 1의 눈이 나오는 횟수 X는 B(180, 1/6)을 따릅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "X의 평균은?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "X의 표준편차는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "P(X ≥ 40)의 근삿값은?",
+      "answer": "0.0228",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "근사의 조건",
+      "body": [
+        "np와 n(1 − p)가 모두 충분히 클 때(대략 5 이상) 근사가 잘 맞습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X ~ B(400, 0.2)의 평균은?",
+      "answer": "80",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 X의 표준편차는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 X에서 P(X ≤ 72)의 근삿값은?",
+      "answer": "0.1587",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "이항분포 → 평균·표준편차 → 표준화 → 표 순서로 계산합니다.",
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "동전을 400번 던질 때 앞면이 220번 이상 나올 확률의 근삿값은?",
+      "answer": "0.0228",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "불량률이 0.1인 제품 900개 중 불량품이 99개 이상일 확률의 근삿값은?",
+      "answer": "0.1587",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "X ~ B(2500, 0.5)의 표준편차는?",
+      "answer": "25",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "명중률 0.8인 사수가 100발을 쏠 때 88발 이상 명중할 확률의 근삿값은?",
+      "answer": "0.0228",
+      "answer_format": "decimal",
+      "tolerance": 0.0001,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "이항분포를 근사한 정규분포의 평균이 60, 분산이 24일 때 시행 횟수 n은?",
+      "answer": "100",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "1 − p = 24/60 = 0.4이므로 p = 0.6, n = 60/0.6 = 100"
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "이항분포의 확률을 정규분포로 근사해서 계산하는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "n이 크",
+            "시행이 많"
+          ],
+          [
+            "계산",
+            "복잡",
+            "번거"
+          ],
+          [
+            "정규분포",
+            "표"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "n이 크면 이항분포의 확률을 nCr pʳ(1 − p)ⁿ⁻ʳ로 하나하나 더하기가 매우 번거롭습니다. 이때 이항분포는 정규분포에 가까워지므로 표준정규분포표로 간단히 근삿값을 구할 수 있습니다."
+    }
+  ]
+}

@@ -164,7 +164,8 @@ function curveFn(c){
       exp: t => c.a * Math.pow(c.b, t - c.p) + c.q,
       log: t => t - c.p <= 0 ? NaN : c.a * Math.log(t - c.p) / Math.log(c.b) + c.q,
       trig: t => { const u = c.b * (t - c.p); const v = c.fn === "sin" ? Math.sin(u) : c.fn === "cos" ? Math.cos(u) : Math.tan(u);
-                   return c.fn === "tan" && Math.abs(Math.cos(u)) < 1e-3 ? NaN : c.a * v + c.q; }
+                   return c.fn === "tan" && Math.abs(Math.cos(u)) < 1e-3 ? NaN : c.a * v + c.q; },
+      normal: t => (c.scale ?? 1) * Math.exp(-((t - c.m) ** 2) / (2 * c.s * c.s)) / (c.s * Math.sqrt(2 * Math.PI))
   }[c.kind];
 }
 

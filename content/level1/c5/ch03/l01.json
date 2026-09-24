@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c5",
+    "title": "확률과 통계"
+  },
+  "chapter": {
+    "id": "c5-ch03",
+    "no": 3,
+    "title": "확률의 뜻"
+  },
+  "lesson": {
+    "id": "c5-ch03-l01",
+    "no": 1,
+    "title": "시행과 사건",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "확률통계"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "시행과 사건",
+      "body": [
+        "같은 조건에서 반복할 수 있고 결과가 우연에 의해 정해지는 실험이나 관찰을 시행이라고 합니다.",
+        "일어날 수 있는 모든 결과의 집합을 표본공간 S, 그 부분집합을 사건이라고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "주사위 한 개를 던질 때 표본공간의 원소는 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "동전 두 개를 던질 때 표본공간의 원소는 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "합사건, 곱사건, 배반사건",
+      "body": [
+        "A 또는 B가 일어나는 사건이 합사건 A ∪ B, 동시에 일어나는 사건이 곱사건 A ∩ B입니다.",
+        "A ∩ B = ∅이면 A와 B는 서로 배반사건입니다. 아래에서 주사위를 던져 A = {2, 4, 6}, B = {1, 2, 3}입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A ∩ B의 원소는 몇 개일까요?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A ∪ B의 원소는 몇 개일까요?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A = {1, 2}와 C = {5, 6}은 서로 배반사건일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "여사건",
+      "body": [
+        "사건 A가 일어나지 않는 사건을 A의 여사건 Aᶜ이라고 합니다. A와 Aᶜ은 항상 서로 배반사건입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "주사위에서 A = {2, 4, 6}의 여사건의 원소는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A와 Aᶜ은 서로 배반사건일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "사건의 원소 세기",
+      "body": [
+        "두 개 이상의 결과를 다룰 때는 순서쌍으로 적어 빠짐없이 셉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 눈의 합이 7인 사건의 원소는 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "동전 세 개를 던질 때 앞면이 정확히 2개인 사건의 원소는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "표본공간의 원소가 n개이면 만들 수 있는 사건은 부분집합의 수와 같은 2ⁿ개입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위 한 개를 던지는 시행에서 만들 수 있는 사건은 모두 몇 개일까요?",
+      "answer": "64",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 두 눈의 곱이 짝수인 사건의 원소는 몇 개일까요?",
+      "answer": "27",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1부터 10까지의 카드에서 한 장을 뽑을 때 3의 배수 또는 5의 배수인 사건의 원소는 몇 개일까요?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A와 B가 서로 배반이고 n(A) = 3, n(B) = 2일 때 n(A ∪ B)는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위 한 개에서 '소수이면서 홀수인 눈' 사건의 원소는 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "동전 네 개를 던질 때 앞면이 적어도 하나 나오는 사건의 원소는 몇 개일까요?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "배반사건과 여사건의 차이를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "동시에"
+          ],
+          [
+            "합",
+            "전체",
+            "표본공간"
+          ],
+          [
+            "여사건"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "배반사건은 동시에 일어나지 않는 두 사건입니다. 여사건은 그중에서도 둘을 합치면 표본공간 전체가 되는 경우입니다. 여사건은 항상 배반사건이지만, 배반사건이 항상 여사건인 것은 아닙니다."
+    }
+  ]
+}
