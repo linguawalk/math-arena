@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch07",
+    "no": 7,
+    "title": "행렬"
+  },
+  "lesson": {
+    "id": "c1-ch07-l04",
+    "no": 4,
+    "title": "행렬과 연립일차방정식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "연립방정식을 행렬로",
+      "body": [
+        "x + 2y = 5, 3x + 4y = 6은 [1 2 ; 3 4][x ; y] = [5 ; 6]으로 쓸 수 있습니다.",
+        "계수만 모은 행렬 A와 미지수 행렬 X, 상수 행렬 B로 AX = B가 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "x + 2y = 5, 3x + 4y = 6 → [1 2 ; 3 {{1}}][x ; y] = [5 ; 6]",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "2x − y = 1, x + y = 5 → [2 −1 ; 1 {{1}}][x ; y] = [1 ; 5]",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "역행렬",
+      "body": [
+        "AX = XA = E인 행렬 X를 A의 역행렬 A⁻¹이라고 합니다.",
+        "A = [a b ; c d]에서 ad − bc ≠ 0이면 A⁻¹ = 1/(ad − bc) × [d −b ; −c a]이고, ad − bc = 0이면 역행렬이 없습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A = [2 1 ; 5 3]일 때 ad − bc의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "같은 A에서 A⁻¹ = [3 −1 ; {{1}} 2]",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−5",
+            "-5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A = [1 2 ; 2 4]의 역행렬이 있을까요?  (있다 1, 없다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "역행렬로 풀기",
+      "body": [
+        "AX = B의 양변 왼쪽에 A⁻¹을 곱하면 X = A⁻¹B입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "[2 1 ; 5 3][x ; y] = [3 ; 8]의 해는 x = {{1}}, y = {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "x + y = 3, x − y = 1의 해는 x = {{1}}, y = {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "해가 하나로 정해질 조건",
+      "body": [
+        "ad − bc ≠ 0이면 해가 하나뿐입니다.",
+        "ad − bc = 0이면 해가 없거나 무수히 많습니다. 두 직선이 평행하거나 일치하는 경우입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x + ky = 1, 2x + 4y = 3의 해가 하나로 정해지지 않는 k의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "kx + 2y = 0, 2x + ky = 0이 x = y = 0 이외의 해를 가지는 양수 k의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A = [1 2 ; 3 4]일 때 ad − bc의 값은?",
+      "answer": "-2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "AA⁻¹ = A⁻¹A = E.  대각선만 있는 행렬 [p 0 ; 0 q]의 역행렬은 [1/p 0 ; 0 1/q]입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "AA⁻¹ = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "E"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A = [3 0 ; 0 2]일 때 A⁻¹의 (1, 1) 성분은? (기약분수로)",
+      "answer": "1/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A = [a 2 ; 3 4]의 역행렬이 없을 때 a의 값은? (기약분수로)",
+      "answer": "3/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "3x + 2y = 12, x + y = 5의 해에서 x의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "사과 x개, 배 y개에 대해 2x + y = 7, x + 3y = 11일 때 y의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "ad − bc = 0이면 연립방정식의 해가 하나로 정해지지 않는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "역행렬"
+          ],
+          [
+            "없"
+          ],
+          [
+            "평행",
+            "일치",
+            "무수히",
+            "해가 없"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "ad − bc = 0이면 계수 행렬의 역행렬이 없어 X = A⁻¹B로 해를 하나로 구할 수 없습니다. 그래프로 보면 두 직선이 평행해 해가 없거나, 일치해 해가 무수히 많습니다."
+    }
+  ]
+}

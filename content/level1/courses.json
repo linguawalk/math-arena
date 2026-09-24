@@ -11,8 +11,8 @@
     {
       "id": "c1",
       "title": "수학의 기초",
-      "description": "집합과 명제, 방정식과 부등식, 경우의 수, 행렬",
-      "available": false
+      "description": "수와 식, 집합과 명제, 방정식과 부등식, 경우의 수, 행렬",
+      "available": true
     },
     {
       "id": "c2",

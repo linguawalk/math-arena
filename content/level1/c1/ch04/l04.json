@@ -1,0 +1,300 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch04",
+    "no": 4,
+    "title": "방정식"
+  },
+  "lesson": {
+    "id": "c1-ch04-l04",
+    "no": 4,
+    "title": "연립방정식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "미지수가 세 개인 연립일차방정식",
+      "body": [
+        "한 문자를 없애 미지수가 두 개인 연립방정식으로 바꾼 뒤 풉니다.",
+        "세 식을 모두 더해 보면 빨리 풀리는 경우도 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "x + y + z = 6, x − y = 1, y − z = 1의 해는 x = {{1}}, y = {{2}}, z = {{3}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "2"
+          ]
+        },
+        {
+          "id": 3,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "x + y = 5, y + z = 7, z + x = 6일 때 x + y + z의 값은?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "세 식을 더하면 2(x + y + z) = 18"
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "그때 z의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "일차식과 이차식의 연립",
+      "body": [
+        "일차방정식을 한 문자에 대해 풀어 이차방정식에 대입합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x − y = 1, x² + y² = 13의 해 중 x > 0인 해의 x는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "그때 y는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x + y = 4, xy = 3이고 x > y일 때 x는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x, y는 t² − 4t + 3 = 0의 두 근"
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "이차식끼리의 연립",
+      "body": [
+        "한쪽 식이 인수분해되면 두 일차식으로 나눠 각각 다른 식과 연립합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x² − y² = 0, x² + y² = 8의 실수해 (x, y)는 몇 쌍일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x² − 3xy + 2y² = 0, x² + y² = 10에서 x = y인 경우 x²의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "공통근",
+      "body": [
+        "두 방정식을 빼서 이차항을 없애면 공통근을 찾기 쉬워집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x² + ax + 2 = 0과 x² + 2x + a = 0이 공통근을 가질 때(a ≠ 2) 공통근은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "빼면 (a − 2)x − (a − 2) = 0"
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그때 a의 값은?",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "부정방정식",
+      "body": [
+        "미지수보다 식이 적어도, 해가 정수라는 조건이나 실수 조건이 있으면 해를 구할 수 있습니다.",
+        "(x − 1)(y − 1) = 2처럼 곱의 꼴로 바꾸거나, (완전제곱) + (완전제곱) = 0을 이용합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "xy − x − y = 1을 만족하는 자연수 해 (x, y)는 몇 쌍일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "(x − 1)(y − 1) = 2"
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "실수 x, y가 x² + y² = 0을 만족할 때 x의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "실수 x, y가 x² + y² − 2x + 4y + 5 = 0을 만족할 때 x + y의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "(x − 1)² + (y + 2)² = 0"
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "합이 7, 곱이 12인 두 수 중 큰 수는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "둘레가 20, 넓이가 24인 직사각형의 긴 변의 길이는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "실수 x, y에서 x² + y² = 0이면 x = y = 0뿐인 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "0 이상",
+            "음수가 아니",
+            "0보다 크거나"
+          ],
+          [
+            "제곱"
+          ],
+          [
+            "둘 다",
+            "모두"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "실수의 제곱은 0 이상입니다. 0 이상인 두 수를 더해 0이 되려면 둘 다 0이어야 하므로 x² = 0, y² = 0, 즉 x = y = 0입니다."
+    }
+  ]
+}

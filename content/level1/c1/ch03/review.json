@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch03",
+    "no": 3,
+    "title": "명제와 증명"
+  },
+  "review": {
+    "id": "c1-ch03-review",
+    "title": "명제와 증명 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "U = {1, 2, …, 12}에서 조건 'x는 12의 약수'의 진리집합의 원소는 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "'x ≤ 2 또는 x ≥ 5'의 부정은 '2 < x {{1}} x < 5'",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "그리고"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "'x가 소수이면 x는 홀수이다'의 반례가 되는 x는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l01"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "'x > 0이면 x² > 0'의 대우는 'x² ≤ 0이면 x {{1}} 0'",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "≤",
+            "<="
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "'x = 3이면 x² = 9'의 역  (참이면 1, 거짓이면 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l02"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x² = 9는 x = 3이기 위한 조건입니다.  (① 충분조건  ② 필요조건  ③ 필요충분조건 중 번호)",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "p: x < 2, q: x < a일 때 p가 q이기 위한 충분조건이 되는 a의 최솟값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x > 0일 때 x + 9/x의 최솟값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "a > 0, b > 0, a + b = 8일 때 ab의 최댓값은?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "'n²이 홀수이면 n은 홀수'의 대우는 'n이 {{1}}수이면 n²은 짝수'",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "짝"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch03-l04"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch06",
+    "no": 6,
+    "title": "경우의 수"
+  },
+  "lesson": {
+    "id": "c1-ch06-l04",
+    "no": 4,
+    "title": "순열과 조합의 활용",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "원순열",
+      "body": [
+        "원형으로 늘어놓으면 회전해서 같은 것은 한 가지로 봅니다.",
+        "서로 다른 n개를 원형으로 늘어놓는 방법은 n!/n = (n − 1)!입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "5명이 원탁에 앉는 방법은?",
+      "answer": "24",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "6명이 원탁에 앉을 때 특정한 2명이 이웃하는 방법은?",
+      "answer": "48",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "묶어서 5명의 원순열 4!에 2를 곱합니다."
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "같은 것이 있는 순열",
+      "body": [
+        "n개 중 같은 것이 각각 p개, q개 있으면 늘어놓는 방법은 n!/(p! q!)입니다.",
+        "격자에서 최단 경로는 → 와 ↑ 를 늘어놓는 방법과 같습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A, A, B, B를 일렬로 늘어놓는 방법은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "BANANA의 여섯 글자를 일렬로 늘어놓는 방법은?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "가로로 3칸, 세로로 2칸 가는 격자 최단 경로는 몇 가지일까요?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "중복순열",
+      "body": [
+        "서로 다른 n개에서 중복을 허락해 r개를 늘어놓는 방법은 nʳ입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "0과 1로 만들 수 있는 네 자리 신호는 몇 가지일까요? (맨 앞 0 가능)",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "서로 다른 편지 4통을 3명에게 나눠 주는 방법은? (한 통도 못 받는 사람이 있어도 됨)",
+      "answer": "81",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "중복조합",
+      "body": [
+        "서로 다른 n종류에서 중복을 허락해 r개를 고르는 방법은 nHr = n+r−1Cr입니다.",
+        "x + y + z = r의 음이 아닌 정수해의 개수는 ₃Hᵣ입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "3종류의 음료 중에서 중복을 허락해 5잔을 고르는 방법은?",
+      "answer": "21",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x + y + z = 4를 만족하는 음이 아닌 정수해는 몇 쌍일까요?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x + y + z = 6을 만족하는 자연수해는 몇 쌍일까요?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "x = x′ + 1처럼 1씩 먼저 나눠 주세요.",
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "이항정리",
+      "body": [
+        "(a + b)ⁿ의 전개식에서 aⁿ⁻ʳbʳ의 계수는 nCr입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(x + 1)⁵의 전개식에서 x²의 계수는?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(2x + 1)⁴의 전개식에서 x³의 계수는?",
+      "answer": "32",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "₄C₃ × 2³ = 32"
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "똑같은 사과 5개를 3명에게 나눠 주는 방법은? (못 받는 사람이 있어도 됨)",
+      "answer": "21",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "서로 다른 공 4개를 서로 다른 상자 2개에 넣는 방법은? (빈 상자 허용)",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "가로로 4칸, 세로로 3칸 가는 격자 최단 경로는 몇 가지일까요?",
+      "answer": "35",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "원순열의 수가 (n − 1)!인 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "회전"
+          ],
+          [
+            "같은",
+            "같게"
+          ],
+          [
+            "n으로 나누",
+            "한 명을 고정",
+            "고정"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "일렬로 늘어놓는 n!가지 중 회전해서 같아지는 것이 n가지씩 있으므로 n으로 나눠 (n − 1)!입니다. 한 사람의 자리를 고정하고 나머지를 늘어놓는다고 봐도 됩니다."
+    }
+  ]
+}

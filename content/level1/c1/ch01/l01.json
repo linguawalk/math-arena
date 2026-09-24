@@ -1,0 +1,324 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch01",
+    "no": 1,
+    "title": "수와 식의 확장"
+  },
+  "lesson": {
+    "id": "c1-ch01-l01",
+    "no": 1,
+    "title": "실수와 절댓값",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "실수 다시 보기",
+      "body": [
+        "유리수와 무리수를 합쳐 실수라고 합니다.",
+        "실수는 수직선 위의 점과 하나씩 빠짐없이 대응합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "−2, 0, √4, π, 1/3, √7, 0.5 중 무리수는 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "√4 = 2는 유리수이고, 무리수는 π와 √7입니다."
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "유리수와 무리수를 통틀어 {{1}}라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "실수"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "절댓값을 식으로",
+      "body": [
+        "a ≥ 0이면 |a| = a, a < 0이면 |a| = −a입니다.",
+        "그래서 √(a²) = |a|입니다. 제곱근은 음수가 될 수 없기 때문입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x = −3일 때 |x| + |x − 2|의 값은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "3 + 5 = 8"
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "x < 0일 때 |x| = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−x",
+            "-x"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "1 < x < 3일 때 |x − 1| + |x − 3|의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "x − 1은 양수, x − 3은 음수입니다.",
+      "explanation": "(x − 1) + (3 − x) = 2"
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a = −2일 때 √(a²) + √((a + 5)²)의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "|−2| + |3| = 5"
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "diagram",
+      "widget": "number_line",
+      "config": {
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      "prompt": "|x| = 3이고 x < 0인 x를 수직선에 표시하세요.",
+      "answer": {
+        "value": -3,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "summary",
+      "title": "분모의 유리화",
+      "body": [
+        "분모에 근호가 있으면 분모와 분자에 같은 수를 곱해 분모를 유리수로 바꿉니다.",
+        "1/√a = √a/a,  1/(√a + √b) = (√a − √b)/(a − b)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "1/√3 = √3/{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "6/√2 = {{1}}√2",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "6√2/2 = 3√2"
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "1/(√3 − √2) = √3 + √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "분모 (√3)² − (√2)² = 1"
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "2/(√5 + 1) = (√5 − 1)/{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "2(√5 − 1)/4"
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "크기 비교와 정수 부분",
+      "body": [
+        "양수끼리는 제곱해서 비교할 수 있습니다.",
+        "√7은 2와 3 사이에 있으므로 정수 부분은 2, 소수 부분은 √7 − 2입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "3√2 {{1}} 2√3  (부등호 >, < 중 하나)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            ">"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "제곱하면 18과 12"
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "3 − √5의 정수 부분은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "√5 ≈ 2.24이므로 3 − √5 ≈ 0.76"
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "√7의 정수 부분은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "√7의 소수 부분은 √7 − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "√(a²) = a가 항상 성립하지는 않는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "음수"
+          ],
+          [
+            "절댓값",
+            "|a|"
+          ],
+          [
+            "−a",
+            "-a",
+            "양수"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "a가 음수이면 √(a²)은 양수이므로 a와 같을 수 없습니다. 정확히는 √(a²) = |a|이고, a < 0일 때는 −a입니다."
+    }
+  ]
+}

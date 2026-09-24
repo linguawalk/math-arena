@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "course": "c1",
+  "chapter": {
+    "id": "c1-ch01",
+    "no": 1,
+    "title": "수와 식의 확장"
+  },
+  "lessons": [
+    {
+      "no": 1,
+      "id": "c1-ch01-l01",
+      "title": "실수와 절댓값",
+      "file": "l01.json",
+      "questions": 16,
+      "screens": 20
+    },
+    {
+      "no": 2,
+      "id": "c1-ch01-l02",
+      "title": "다항식의 연산",
+      "file": "l02.json",
+      "questions": 16,
+      "screens": 21
+    },
+    {
+      "no": 3,
+      "id": "c1-ch01-l03",
+      "title": "나머지정리와 인수분해",
+      "file": "l03.json",
+      "questions": 16,
+      "screens": 21
+    },
+    {
+      "no": 4,
+      "id": "c1-ch01-l04",
+      "title": "복소수",
+      "file": "l04.json",
+      "questions": 16,
+      "screens": 21
+    }
+  ],
+  "review": {
+    "id": "c1-ch01-review",
+    "file": "review.json",
+    "questions": 10
+  }
+}

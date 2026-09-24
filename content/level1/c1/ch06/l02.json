@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch06",
+    "no": 6,
+    "title": "경우의 수"
+  },
+  "lesson": {
+    "id": "c1-ch06-l02",
+    "no": 2,
+    "title": "순열",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "순열",
+      "body": [
+        "서로 다른 n개에서 r개를 골라 일렬로 늘어놓는 경우의 수를 nPr로 씁니다.",
+        "nPr = n(n − 1)(n − 2) … (n − r + 1)"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "5명 중 3명을 뽑아 일렬로 세우는 방법은?",
+      "answer": "60",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "₄P₂의 값은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "계승",
+      "body": [
+        "n! = n × (n − 1) × … × 1이고 0! = 1로 약속합니다.",
+        "nPr = n!/(n − r)!"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "5!의 값은?",
+      "answer": "120",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "0!의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "ₙP₂ = 30일 때 n의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "이웃하는 경우와 이웃하지 않는 경우",
+      "body": [
+        "이웃해야 하는 것은 한 묶음으로 보고 늘어놓은 뒤, 묶음 안의 순서를 곱합니다.",
+        "이웃하지 않아야 하는 것은 나머지를 먼저 세우고 그 사이사이와 양 끝에 끼워 넣습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A, B를 포함한 5명을 일렬로 세울 때 A와 B가 이웃하는 방법은?",
+      "answer": "48",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A와 B가 이웃하지 않는 방법은?",
+      "answer": "72",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "남자 3명, 여자 2명을 일렬로 세울 때 여자끼리 이웃하지 않는 방법은?",
+      "answer": "72",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "남자 3! × 네 자리 중 두 곳에 여자 ₄P₂"
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "자리가 정해진 경우",
+      "body": [
+        "특정한 자리에 올 것을 먼저 세우고, 나머지를 남은 자리에 늘어놓습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "5명을 일렬로 세울 때 A가 맨 앞에 서는 방법은?",
+      "answer": "24",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "5명을 일렬로 세울 때 양 끝에 A와 B가 서는 방법은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1부터 5까지 숫자를 한 번씩 써서 만드는 다섯 자리 짝수는 몇 개일까요?",
+      "answer": "48",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "0이 있는 수 만들기",
+      "body": [
+        "맨 앞자리에는 0이 올 수 없습니다. 짝수 조건이 있으면 일의 자리가 0인 경우와 아닌 경우를 나눕니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "0, 1, 2, 3, 4로 만드는 세 자리 수(같은 숫자 사용 불가)는 몇 개일까요?",
+      "answer": "48",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그중 짝수는 몇 개일까요?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "MATH의 네 글자를 일렬로 늘어놓는 방법은?",
+      "answer": "24",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "MATH를 늘어놓을 때 M이 T보다 앞에 오는 방법은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "M, T의 순서는 반반이므로 24 ÷ 2"
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "이웃하는 경우를 셀 때 두 사람을 한 묶음으로 보고, 마지막에 2를 곱하는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "묶",
+            "한 사람"
+          ],
+          [
+            "자리를 바꾸",
+            "순서",
+            "바꿔"
+          ],
+          [
+            "2"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "이웃하는 두 사람을 한 사람처럼 묶으면 나머지와 함께 늘어놓는 경우를 셀 수 있습니다. 묶음 안에서 두 사람이 자리를 바꿀 수 있으므로 2를 곱합니다."
+    }
+  ]
+}

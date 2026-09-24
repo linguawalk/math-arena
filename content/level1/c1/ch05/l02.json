@@ -1,0 +1,338 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch05",
+    "no": 5,
+    "title": "부등식"
+  },
+  "lesson": {
+    "id": "c1-ch05-l02",
+    "no": 2,
+    "title": "절댓값이 있는 부등식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "|x|와 거리",
+      "body": [
+        "|x|는 수직선에서 x와 0 사이의 거리입니다.",
+        "a > 0일 때 |x| < a ⇔ −a < x < a,  |x| > a ⇔ x < −a 또는 x > a"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "|x| < 3의 해는 {{1}} < x < {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−3",
+            "-3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "|x| < 3을 만족하는 정수는 몇 개일까요?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "|x| ≥ 2의 해는 x ≤ −2 또는 x ≥ {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "|x − a| 꼴",
+      "body": [
+        "|x − a|는 x와 a 사이의 거리입니다. |x − a| < b는 a에서 거리가 b보다 가까운 범위입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "|x − 1| < 4의 해는 {{1}} < x < {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−3",
+            "-3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "|x − 1| < 4를 만족하는 정수는 몇 개일까요?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "|2x + 1| ≤ 5의 해는 {{1}} ≤ x ≤ {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−3",
+            "-3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "절댓값이 두 개일 때",
+      "body": [
+        "절댓값 안이 0이 되는 x를 기준으로 범위를 나누고, 각 범위에서 절댓값을 벗겨 풉니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "|x − 1| + |x − 3|의 최솟값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "1과 3 사이에 있을 때 두 거리의 합은 2"
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "|x − 1| + |x − 3| < 4의 해는 {{1}} < x < {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "0"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "|x| + |x − 2| ≤ 2를 만족하는 정수는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "해에서 거꾸로",
+      "body": [
+        "|x − a| < b의 해는 a − b < x < a + b이므로, 해의 가운데가 a, 폭의 절반이 b입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "|x − a| < 2의 해가 1 < x < 5일 때 a의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "|x − 3| < k를 만족하는 정수가 5개일 때 자연수 k의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "number_line",
+      "config": {
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      "prompt": "|x + 1| = 0인 x를 수직선에 표시하세요.",
+      "answer": {
+        "value": -1,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "절댓값은 '거리'로 읽으면 부등식의 해를 수직선에서 바로 떠올릴 수 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "|x − 2| ≤ 3을 만족하는 정수는 몇 개일까요?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "|3 − x| < 1을 만족하는 정수는 몇 개일까요?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "|x − 5| ≤ 5를 만족하는 자연수는 몇 개일까요?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "|x − 1| < 4의 해를 '거리'를 이용해 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "거리"
+          ],
+          [
+            "1"
+          ],
+          [
+            "4"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "|x − 1|은 수직선에서 x와 1 사이의 거리입니다. 이 거리가 4보다 작은 점은 1에서 왼쪽, 오른쪽으로 4 이내에 있으므로 −3 < x < 5입니다."
+    }
+  ]
+}

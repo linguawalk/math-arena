@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch06",
+    "no": 6,
+    "title": "경우의 수"
+  },
+  "lesson": {
+    "id": "c1-ch06-l01",
+    "no": 1,
+    "title": "합의 법칙과 곱의 법칙",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "합의 법칙",
+      "body": [
+        "두 사건이 동시에 일어나지 않을 때, 한쪽이 일어나는 경우가 m가지, 다른 쪽이 n가지이면 어느 한쪽이 일어나는 경우는 m + n가지입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "버스로 가는 방법이 3가지, 기차로 가는 방법이 2가지일 때 가는 방법은 모두 몇 가지일까요?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 눈의 합이 4 또는 5인 경우는 몇 가지일까요?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "곱의 법칙",
+      "body": [
+        "한 사건이 m가지로 일어나고, 그 각각에 대해 다른 사건이 n가지로 일어나면 두 사건이 잇달아 일어나는 경우는 m × n가지입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "셔츠 4벌, 바지 3벌로 입는 방법은 몇 가지일까요?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A에서 B로 가는 길이 3가지, B에서 C로 가는 길이 2가지입니다. A에서 B를 거쳐 C로 가는 방법은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 두 눈이 모두 짝수인 경우는 몇 가지일까요?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "곱의 법칙의 활용",
+      "body": [
+        "약수의 개수: 2ᵃ × 3ᵇ의 약수는 (a + 1)(b + 1)개입니다.",
+        "(a + b)(x + y + z)를 전개하면 2 × 3 = 6개의 항이 생깁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "72의 약수는 몇 개일까요?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "(a + b)(x + y + z)를 전개했을 때 항은 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "자리마다 세기",
+      "body": [
+        "자리마다 올 수 있는 경우의 수를 차례로 곱합니다. 맨 앞자리에 0이 올 수 없는 조건을 먼저 처리합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1, 2, 3으로 세 자리 수를 만들 때(같은 숫자 사용 가능) 모두 몇 개일까요?",
+      "answer": "27",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 숫자를 쓰지 않으면 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "0, 1, 2, 3으로 세 자리 수를 만들 때(같은 숫자 사용 불가) 모두 몇 개일까요?",
+      "answer": "18",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "동전 2개와 주사위 1개를 동시에 던질 때 나올 수 있는 경우는 몇 가지일까요?",
+      "answer": "24",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "색칠과 지불",
+      "body": [
+        "색칠 문제는 인접한 영역이 많은 곳부터 칠합니다.",
+        "지불 방법은 각 화폐를 몇 개 쓸지 고르는 경우의 곱이고, 지불 금액은 같은 금액이 겹치지 않는지 따로 확인합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "일렬로 붙은 세 영역 A, B, C를 4가지 색으로 칠합니다. 이웃한 영역은 다른 색일 때 방법은 몇 가지일까요?",
+      "answer": "36",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1,000원 지폐 2장과 500원 동전 3개로 지불할 수 있는 금액은 몇 가지일까요? (0원 제외)",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 돈으로 지불하는 방법은 몇 가지일까요? (0원 제외)",
+      "answer": "11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "주사위 두 개를 던질 때 눈의 곱이 홀수인 경우는 몇 가지일까요?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "합의 법칙과 곱의 법칙을 쓰는 상황의 차이를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "동시에",
+            "겹치지"
+          ],
+          [
+            "잇달아",
+            "이어서",
+            "연달아",
+            "각각"
+          ],
+          [
+            "더",
+            "곱"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "합의 법칙은 두 경우가 동시에 일어나지 않을 때 어느 한쪽을 고르는 상황에서 더합니다. 곱의 법칙은 한 일을 하고 이어서 다른 일을 하는 상황에서 각 경우의 수를 곱합니다."
+    }
+  ]
+}

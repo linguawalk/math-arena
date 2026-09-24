@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch03",
+    "no": 3,
+    "title": "명제와 증명"
+  },
+  "lesson": {
+    "id": "c1-ch03-l04",
+    "no": 4,
+    "title": "증명과 절대부등식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합",
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "정의와 정리",
+      "body": [
+        "용어의 뜻을 명확하게 정한 문장이 정의, 참임이 증명된 명제 중 기본이 되는 것이 정리입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "용어의 뜻을 명확히 정한 문장을 {{1}}라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "정의"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "참임이 증명된 명제 중 기본이 되는 것을 {{1}}라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "정리"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "대우를 이용한 증명",
+      "body": [
+        "원래 명제를 직접 증명하기 어려우면 참, 거짓이 같은 대우를 증명합니다.",
+        "'n²이 짝수이면 n은 짝수'는 대우 'n이 홀수이면 n²은 홀수'를 보이면 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "ordering",
+      "prompt": "'n²이 짝수이면 n은 짝수'를 대우로 증명하는 순서대로 배열하세요.",
+      "items": [
+        {
+          "id": "c",
+          "text": "n² = 2(2k² + 2k) + 1이므로 홀수이다"
+        },
+        {
+          "id": "a",
+          "text": "대우 'n이 홀수이면 n²은 홀수'를 증명한다"
+        },
+        {
+          "id": "d",
+          "text": "대우가 참이므로 원래 명제도 참이다"
+        },
+        {
+          "id": "b",
+          "text": "n = 2k + 1로 놓는다"
+        }
+      ],
+      "answer_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "n = 2k + 1이면 n² = 4k² + 4k + {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "귀류법",
+      "body": [
+        "결론을 부정한 뒤 모순을 이끌어 내 원래 결론이 참임을 보이는 방법을 귀류법이라고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "결론을 부정해 모순을 이끌어 내는 증명법을 {{1}}법이라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "귀류"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "ordering",
+      "prompt": "√2가 무리수임을 귀류법으로 증명하는 순서대로 배열하세요.",
+      "items": [
+        {
+          "id": "b",
+          "text": "√2 = p/q(p, q는 서로소인 자연수)로 놓는다"
+        },
+        {
+          "id": "d",
+          "text": "서로소라는 가정에 모순이므로 √2는 무리수이다"
+        },
+        {
+          "id": "a",
+          "text": "√2가 유리수라고 가정한다"
+        },
+        {
+          "id": "c",
+          "text": "p² = 2q²에서 p와 q가 모두 짝수가 된다"
+        }
+      ],
+      "answer_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "'소수가 유한 개라고 가정하면 모순이 생긴다'로 시작하는 증명은 {{1}}법입니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "귀류"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "절대부등식",
+      "body": [
+        "모든 실수에 대해 항상 성립하는 부등식을 절대부등식이라고 합니다.",
+        "a > 0, b > 0이면 (a + b)/2 ≥ √(ab)이고, 등호는 a = b일 때 성립합니다. 산술평균과 기하평균의 관계입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "a > 0, b > 0일 때 (a + b)/2 {{1}} √(ab)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "≥",
+            ">="
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x > 0일 때 x + 1/x의 최솟값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x > 0일 때 x + 4/x의 최솟값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x + 4/x ≥ 2√4 = 4"
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "위 최솟값을 가질 때 x의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x = 4/x에서 x = 2"
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a > 0, b > 0, ab = 9일 때 a + b의 최솟값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a > 0, b > 0, a + b = 10일 때 ab의 최댓값은?",
+      "answer": "25",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "다른 절대부등식",
+      "body": [
+        "a² + b² ≥ 2ab. (a − b)² ≥ 0에서 나옵니다.",
+        "(a² + b²)(x² + y²) ≥ (ax + by)². 코시-슈바르츠 부등식입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "실수 x, y가 x² + y² = 5를 만족할 때 x + 2y의 최댓값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": "(1² + 2²)(x² + y²) ≥ (x + 2y)²",
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "a² + b² − 2ab = (a − b)² {{1}} 0",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "≥",
+            ">="
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "x > 0일 때 x + 1/x ≥ 2에서 등호가 성립하는 조건과 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "x = 1",
+            "x=1",
+            "1일 때"
+          ],
+          [
+            "같",
+            "x = 1/x"
+          ],
+          [
+            "등호"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "산술평균과 기하평균의 관계에서 등호는 두 수가 같을 때 성립합니다. x = 1/x이면 x = 1이므로 x = 1일 때 최솟값 2가 됩니다."
+    }
+  ]
+}

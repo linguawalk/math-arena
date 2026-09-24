@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch07",
+    "no": 7,
+    "title": "행렬"
+  },
+  "lesson": {
+    "id": "c1-ch07-l02",
+    "no": 2,
+    "title": "행렬의 덧셈, 뺄셈, 실수배",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "덧셈과 뺄셈",
+      "body": [
+        "꼴이 같은 두 행렬은 같은 위치의 성분끼리 더하거나 뺍니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "[1 2 ; 3 4] + [5 6 ; 7 8] = [6 {{1}} ; 10 12]",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "8"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "[4 1 ; 0 3] − [1 1 ; 2 5] = [3 0 ; {{1}} −2]",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−2",
+            "-2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "실수배",
+      "body": [
+        "행렬 A에 실수 k를 곱한 kA는 모든 성분에 k를 곱한 것입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "3[1 −2 ; 0 4] = [3 {{1}} ; 0 12]",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−6",
+            "-6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A = [1 2 ; 3 4]일 때 2A의 성분을 모두 더하면?",
+      "answer": "20",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "연산 법칙",
+      "body": [
+        "A + B = B + A, (A + B) + C = A + (B + C)가 성립합니다.",
+        "A + O = A, A − A = O"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A + O = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "A"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A − A = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "O"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "행렬 방정식",
+      "body": [
+        "수의 방정식처럼 이항하고 실수로 나눠 X를 구합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "2X + A = B, A = [1 3 ; 5 7], B = [5 5 ; 5 5]일 때 X의 (1, 1) 성분은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 X의 (2, 2) 성분은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A + B = [3 1 ; 2 0], A − B = [1 −1 ; 0 2]일 때 A의 (1, 1) 성분은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 조건에서 B의 (2, 2) 성분은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "활용",
+      "body": [
+        "달마다 판매량 행렬을 더하면 합계가, 가격 행렬에 1.1을 곱하면 10% 인상된 가격이 됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "1월 판매량 [3 5 ; 2 4], 2월 판매량 [4 2 ; 3 1]일 때 두 달 판매량 합계 행렬의 성분을 모두 더하면?",
+      "answer": "24",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "가격 [100 200]을 10% 올린 행렬의 두 성분의 합은?",
+      "answer": "330",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A = [1 2 ; 3 4]일 때 3A − 2A의 성분을 모두 더하면?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A = [a 1 ; 2 b]이고 A + A = [4 2 ; 4 −6]일 때 a + b의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "kA = [6 −3 ; 0 9], A = [2 −1 ; 0 3]일 때 k의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "꼴이 다른 두 행렬은 더할 수 없는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "대응",
+            "같은 위치"
+          ],
+          [
+            "성분"
+          ],
+          [
+            "없",
+            "짝"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "행렬의 덧셈은 같은 위치에 있는 성분끼리 더하는 것인데, 꼴이 다르면 짝이 되는 성분이 없는 자리가 생기기 때문입니다."
+    }
+  ]
+}

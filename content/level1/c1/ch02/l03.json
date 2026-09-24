@@ -1,0 +1,321 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch02",
+    "no": 2,
+    "title": "집합"
+  },
+  "lesson": {
+    "id": "c1-ch02-l03",
+    "no": 3,
+    "title": "집합의 연산",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "합집합과 교집합",
+      "body": [
+        "A 또는 B에 속하는 원소의 집합이 합집합 A ∪ B, A와 B에 모두 속하는 원소의 집합이 교집합 A ∩ B입니다.",
+        "아래에서 A = {1, 2, 3, 4}, B = {3, 4, 5, 6}입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "n(A ∪ B)의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "n(A ∩ B)의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "여집합과 차집합",
+      "body": [
+        "전체집합 U에서 A에 속하지 않는 원소의 집합이 여집합 Aᶜ입니다.",
+        "A에는 속하고 B에는 속하지 않는 원소의 집합이 차집합 A − B입니다. A ∩ B = ∅이면 A, B는 서로소입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "U = {1, 2, …, 8}, A = {1, 2, 3, 4}일 때 n(Aᶜ)은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A = {1, 2, 3, 4}, B = {3, 4, 5, 6}일 때 A − B = {1, {{1}}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A ∩ B = ∅이면 A와 B는 {{1}}라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "서로소"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "연산 법칙",
+      "body": [
+        "교환법칙, 결합법칙, 분배법칙이 성립합니다. A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)",
+        "드모르간의 법칙: (A ∪ B)ᶜ = Aᶜ ∩ Bᶜ,  (A ∩ B)ᶜ = Aᶜ ∪ Bᶜ.  또 A − B = A ∩ Bᶜ"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(A ∪ B)ᶜ = Aᶜ {{1}} Bᶜ",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "∩"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A − B = A ∩ {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "Bᶜ",
+            "B^c",
+            "Bc"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A ∩ (B ∪ C) = (A ∩ B) {{1}} (A ∩ C)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "∪"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "연산 연습",
+      "body": [
+        "아래에서 U = {1, 2, …, 10}, A는 짝수의 집합, B는 3의 배수의 집합입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "n(A ∩ B)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "n(A ∪ B)의 값은?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "n((A ∪ B)ᶜ)의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "n(A − B)의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "포함 관계와 연산",
+      "body": [
+        "A ⊂ B이면 A ∩ B = A, A ∪ B = B, A − B = ∅이 모두 성립합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "A ⊂ B이면 A ∩ B = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "A"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "A ⊂ B이면 A − B = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "∅"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A = {1, 2, a}, B = {2, 4}이고 A ∩ B = {2, 4}일 때 a의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "드모르간의 법칙 (A ∪ B)ᶜ = Aᶜ ∩ Bᶜ의 뜻을 말로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "둘 다",
+            "어느 쪽에도",
+            "모두"
+          ],
+          [
+            "속하지 않"
+          ],
+          [
+            "A",
+            "B"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "A 또는 B에 속하지 않는다는 것은 A에도 속하지 않고 B에도 속하지 않는다는 뜻입니다. 그래서 합집합의 여집합은 두 여집합의 교집합과 같습니다."
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch03",
+    "no": 3,
+    "title": "명제와 증명"
+  },
+  "lesson": {
+    "id": "c1-ch03-l02",
+    "no": 2,
+    "title": "역·이·대우",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "역, 이, 대우",
+      "body": [
+        "명제 p → q에 대해 q → p를 역, ~p → ~q를 이, ~q → ~p를 대우라고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "'p → q'의 역은 '{{1}} → {{2}}'",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "q"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "p"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "'x = 2이면 x² = 4'의 역은 'x² = 4이면 x = {{1}}'",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "위의 역  (참이면 1, 거짓이면 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x = −2가 반례입니다."
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "명제와 대우",
+      "body": [
+        "명제가 참이면 대우도 참이고, 명제가 거짓이면 대우도 거짓입니다.",
+        "P ⊂ Q이면 Qᶜ ⊂ Pᶜ이기 때문입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "'p → q'의 대우는 '~{{1}} → ~{{2}}'",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "q"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "p"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "'x가 짝수이면 x²은 짝수이다'의 대우  (참이면 1, 거짓이면 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "'a = 0이면 ab = 0'의 대우는 'ab ≠ 0이면 a {{1}} 0'",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "≠"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "역과 이",
+      "body": [
+        "역과 이는 서로 대우 관계라 참, 거짓이 같습니다.",
+        "명제가 참이어도 역은 참일 수도, 거짓일 수도 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "명제가 참이면 그 대우는 반드시 참일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "명제가 참이면 그 역은 반드시 참일까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "'x > 1이면 x > 0'의 역  (참이면 1, 거짓이면 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x = 0.5가 반례입니다."
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "'x > 1이면 x > 0'의 이  (참이면 1, 거짓이면 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "이는 'x ≤ 1이면 x ≤ 0'이고 x = 0.5가 반례입니다."
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "삼단논법",
+      "body": [
+        "p → q와 q → r이 참이면 p → r도 참입니다.",
+        "대우를 함께 쓰면 연결 고리를 찾기 쉬워집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "p → q, q → r이 참이면 {{1}} → r도 참",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "p"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "p → q, ~r → ~q가 참이면 p → {{1}}도 참",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "r"
+          ]
+        }
+      ],
+      "hint": "~r → ~q의 대우를 생각하세요.",
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "p → ~q, r → q가 참일 때 p → ~r  (참이면 1, 거짓이면 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "r → q의 대우 ~q → ~r과 p → ~q를 이으면 p → ~r"
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "대우로 판단하기",
+      "body": [
+        "원래 명제를 직접 판단하기 어려우면 대우로 바꿔 봅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "'x² ≠ 1이면 x ≠ 1'  (참이면 1, 거짓이면 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "대우 'x = 1이면 x² = 1'이 참입니다."
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "자연수 a, b에 대해 'a + b가 홀수이면 a, b 중 하나는 짝수이다'  (참이면 1, 거짓이면 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "명제와 그 대우의 참, 거짓이 항상 같은 이유를 집합으로 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "P ⊂ Q",
+            "P⊂Q"
+          ],
+          [
+            "Qᶜ ⊂ Pᶜ",
+            "Qᶜ⊂Pᶜ",
+            "여집합"
+          ],
+          [
+            "같"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "p → q가 참이면 P ⊂ Q이고, 이는 Qᶜ ⊂ Pᶜ와 같은 뜻입니다. Qᶜ ⊂ Pᶜ는 대우 ~q → ~p가 참이라는 뜻이므로 둘의 참, 거짓은 항상 같습니다."
+    }
+  ]
+}

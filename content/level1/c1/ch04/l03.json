@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch04",
+    "no": 4,
+    "title": "방정식"
+  },
+  "lesson": {
+    "id": "c1-ch04-l03",
+    "no": 3,
+    "title": "고차방정식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "대수"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "인수분해로 풀기",
+      "body": [
+        "삼차 이상의 방정식은 인수정리와 조립제법으로 인수분해한 뒤 AB = 0을 이용합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "x³ − 1 = 0의 실근은 x = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "x³ − 6x² + 11x − 6 = 0의 근은 1, 2, {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "치환해서 풀기",
+      "body": [
+        "x⁴ + ax² + b = 0은 x² = t로 놓으면 t에 대한 이차방정식이 됩니다.",
+        "t는 x²이므로 t < 0이면 실근이 생기지 않습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x⁴ − 5x² + 4 = 0의 실근은 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "그 실근 중 가장 큰 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x⁴ − 3x² − 4 = 0의 실근은 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x² = 4 또는 x² = −1"
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "삼차방정식의 근과 계수",
+      "body": [
+        "ax³ + bx² + cx + d = 0의 세 근을 α, β, γ라 하면",
+        "α + β + γ = −b/a,  αβ + βγ + γα = c/a,  αβγ = −d/a"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x³ − 2x² − 5x + 6 = 0의 세 근의 합은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "세 근의 곱은?",
+      "answer": "-6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "두 근끼리 곱한 것의 합은?",
+      "answer": "-5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "x³ = 1의 허근 ω",
+      "body": [
+        "x³ − 1 = (x − 1)(x² + x + 1)이므로 허근 ω는 ω² + ω + 1 = 0을 만족합니다.",
+        "ω³ = 1이므로 ω의 거듭제곱은 세 개씩 반복됩니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "ω³의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "ω² + ω + 1의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "ω¹⁰ + ω⁵ + 1의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "ω¹⁰ = ω, ω⁵ = ω²"
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "ω + 1/ω = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−1",
+            "-1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "1/ω = ω²이므로 ω + ω² = −1"
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "한 근이 주어질 때",
+      "body": [
+        "주어진 근을 대입해 계수를 구한 뒤, 조립제법으로 나머지 근을 찾습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x³ + ax² − x − 2 = 0의 한 근이 2일 때 a의 값은?",
+      "answer": "-1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "그때 x³ − x² − x − 2 = (x − 2)(x² + x + {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "x³ − 2x² + x − 2 = 0의 실근은 몇 개일까요?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "(x − 2)(x² + 1) = 0"
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "x³ = 1의 근이 1 하나뿐이 아닌 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "허근",
+            "복소수"
+          ],
+          [
+            "x² + x + 1",
+            "이차방정식"
+          ],
+          [
+            "세 개",
+            "3개",
+            "두 개"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "x³ − 1 = (x − 1)(x² + x + 1)이고 x² + x + 1 = 0은 판별식이 음수라 두 허근을 가집니다. 그래서 복소수 범위에서 근은 1과 두 허근, 모두 세 개입니다."
+    }
+  ]
+}

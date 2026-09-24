@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch05",
+    "no": 5,
+    "title": "부등식"
+  },
+  "review": {
+    "id": "c1-ch05-review",
+    "title": "부등식 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "4x − 1 ≥ 2x + 5의 해는 x ≥ {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "2 < x + 3 ≤ 6을 만족하는 정수는 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "diagram",
+      "widget": "number_line",
+      "config": {
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      "prompt": "부등식 −2x + 4 > 0의 해의 경계가 되는 값을 수직선에 표시하세요.",
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l01"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "|x + 2| ≤ 3의 해는 {{1}} ≤ x ≤ {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−5",
+            "-5"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "|2x − 3| < 5를 만족하는 정수는 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l02"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "x² − 2x − 8 < 0의 해는 {{1}} < x < {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−2",
+            "-2"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x² + 6x + 9 ≤ 0의 해는?",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x² − kx + 4 > 0이 모든 실수 x에 대해 성립하는 정수 k는 몇 개일까요?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l03"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x² + ax + b < 0의 해가 2 < x < 4일 때 a + b의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "x² − 4x + k = 0의 두 근이 모두 양의 실수가 되는 k의 최댓값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c1-ch05-l04"
+    }
+  ]
+}

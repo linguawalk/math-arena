@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c1",
+    "title": "수학의 기초"
+  },
+  "chapter": {
+    "id": "c1-ch02",
+    "no": 2,
+    "title": "집합"
+  },
+  "lesson": {
+    "id": "c1-ch02-l01",
+    "no": 1,
+    "title": "집합의 뜻과 표현",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "이산조합"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "집합",
+      "body": [
+        "대상을 분명히 정할 수 있는 모임을 집합, 집합을 이루는 대상을 원소라고 합니다.",
+        "a가 집합 A의 원소이면 a ∈ A, 원소가 아니면 a ∉ A로 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "다음 중 집합인 것은 몇 개일까요?  '10보다 작은 자연수의 모임', '키가 큰 학생의 모임', '2의 배수의 모임', '예쁜 꽃의 모임'",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "2가 집합 A의 원소일 때 2 {{1}} A",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "∈"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "집합을 나타내는 방법",
+      "body": [
+        "원소나열법: {1, 2, 3, 6}처럼 원소를 모두 나열합니다.",
+        "조건제시법: {x | x는 6의 약수}처럼 원소의 조건을 씁니다. 벤 다이어그램으로 그림으로도 나타냅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "{x | x는 6의 약수} = {1, 2, 3, {{1}}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "{x | x는 20 이하의 소수}의 원소는 몇 개일까요?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "{1, 3, 5, 7, …} = {x | x는 {{1}}수인 자연수}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "홀"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "원소의 개수",
+      "body": [
+        "유한집합 A의 원소의 개수를 n(A)로 씁니다.",
+        "원소가 하나도 없는 집합을 공집합이라 하고 ∅로 씁니다. n(∅) = 0"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "n({a, b, c, d})의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "n(∅)의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "n({∅})의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "∅이라는 원소 하나를 가진 집합입니다."
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A = {x | x² = 4}일 때 n(A)는? (x는 실수)",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "집합의 약속",
+      "body": [
+        "같은 원소는 한 번만 씁니다. 원소를 쓰는 순서는 상관없습니다.",
+        "원소가 끝없이 많은 집합은 무한집합, 셀 수 있게 정해진 집합은 유한집합입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "{1, 2, 2, 3, 3, 3}의 원소는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "{x | x는 1 < x < 2인 자연수}의 원소는 몇 개일까요?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "{x | x = 2k, k는 5 이하의 자연수}의 원소의 합은?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A = {1, 2}일 때 {x + y | x ∈ A, y ∈ A}의 원소는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "{2, 3, 4}"
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "10 이하 자연수 중 3의 배수의 집합에서 원소의 합은?",
+      "answer": "18",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "자연수 전체의 집합은 {{1}}집합입니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "무한"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "'키가 큰 학생의 모임'이 집합이 아닌 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "기준"
+          ],
+          [
+            "분명",
+            "명확",
+            "정할 수 없"
+          ],
+          [
+            "사람마다",
+            "주관"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "키가 크다는 기준이 사람마다 달라 어떤 학생이 속하는지 분명하게 정할 수 없기 때문입니다."
+    }
+  ]
+}
