@@ -37,6 +37,18 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y = 500x에서 y = 4000일 때 x의 값은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "numeric",
@@ -56,6 +68,46 @@
         "x가 2배, 3배, …로 변할 때 y도 2배, 3배, …로 변하면 y는 x에 정비례한다고 합니다.",
         "정비례 관계는 y = ax(a ≠ 0) 꼴이고, 그래프는 원점을 지나는 직선입니다. a > 0이면 오른쪽 위로, a < 0이면 오른쪽 아래로 향합니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "y = 3x의 그래프는 점 ({{1}}, 0)을 지납니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "0"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "y = x/2의 그래프 위에서 x좌표가 4인 점을 표시하세요.",
+      "answer": {
+        "x": 4,
+        "y": 2,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -109,6 +161,18 @@
     },
     {
       "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = 18/x에서 x = 6일 때 y의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q4",
       "stage": "discover",
       "qtype": "numeric",
@@ -157,6 +221,23 @@
         "정비례: y = ax, y/x가 일정, 그래프는 원점을 지나는 직선",
         "반비례: y = a/x, xy가 일정, 그래프는 원점을 지나지 않는 한 쌍의 곡선"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "y/x의 값이 일정하면 y는 x에 {{1}}합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "정비례"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

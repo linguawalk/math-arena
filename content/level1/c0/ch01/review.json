@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch01",
+    "no": 1,
+    "title": "수 체계"
+  },
+  "review": {
+    "id": "c0-ch01-review",
+    "title": "수 체계 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "84의 약수는 몇 개일까요?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "84 = 2² × 3 × 7이므로 3 × 2 × 2 = 12",
+      "source_lesson": "c0-ch01-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "18과 24의 최대공약수는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch01-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "(−4) × 3 − (−10)을 계산하세요.",
+      "answer": "-2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "1/2 − 5/6을 계산하세요. (기약분수로)",
+      "answer": "-1/3",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "ordering",
+      "prompt": "작은 수부터 차례로 배열하세요.",
+      "items": [
+        {
+          "id": "a",
+          "text": "−1.5"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "−2"
+        },
+        {
+          "id": "d",
+          "text": "0.5"
+        }
+      ],
+      "answer_order": [
+        "c",
+        "a",
+        "d",
+        "b"
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "√((−7)²) − (√3)²의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "7 − 3 = 4",
+      "source_lesson": "c0-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "√n이 4보다 작게 되는 자연수 n은 몇 개일까요?",
+      "answer": "15",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "n < 16이므로 1부터 15까지",
+      "source_lesson": "c0-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "√27 = {{1}}√3",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch01-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "0.2727…(27이 반복)을 기약분수로 나타내세요.",
+      "answer": "3/11",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "27/99 = 3/11",
+      "source_lesson": "c0-ch01-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "2√5 + √20 = {{1}}√5",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "√20 = 2√5",
+      "source_lesson": "c0-ch01-l04"
+    }
+  ]
+}

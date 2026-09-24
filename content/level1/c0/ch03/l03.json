@@ -37,6 +37,23 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "사과 한 개 x원, 배 한 개 y원일 때 사과 2개와 배 1개가 3,000원이면 2x + y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3000"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "numeric",
@@ -59,6 +76,18 @@
     },
     {
       "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "(2, 1)이 방정식 x + 3y = a의 해일 때 a의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q2",
       "stage": "discover",
       "qtype": "numeric",
@@ -78,6 +107,40 @@
         "두 방정식을 변끼리 더하거나 빼서 한 미지수를 없애는 방법을 가감법이라고 합니다.",
         "없애려는 미지수의 계수의 절댓값이 같지 않으면 먼저 한 식이나 두 식에 적당한 수를 곱해 맞춥니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "x + y = 10, x − y = 4를 변끼리 더하면 2x = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "14"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "3x + y = 5에서 x + y = 3을 변끼리 빼면 2x = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -165,6 +228,23 @@
     },
     {
       "type": "question",
+      "id": "k5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "x = y + 2를 2x + y = 7에 대입해 풀면 y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "2(y + 2) + y = 7, 3y = 3"
+    },
+    {
+      "type": "question",
       "id": "q6",
       "stage": "apply",
       "qtype": "fill_blank",
@@ -195,6 +275,24 @@
         "x + y = 3과 2x + 2y = 6처럼 한 식에 수를 곱해 다른 식이 되면 해가 무수히 많습니다.",
         "x + 2y = 4와 2x + 4y = 5처럼 좌변은 같아지는데 우변이 다르면 해가 없습니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k6",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "x + y = 3, 2x + 2y = 6의 해는 무수히 {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "많다",
+            "많음"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

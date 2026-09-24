@@ -37,6 +37,18 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "어떤 수에서 4를 뺀 뒤 2배 했더니 10이 되었습니다. 어떤 수는?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "2(x − 4) = 10"
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "ordering",
@@ -104,6 +116,18 @@
     },
     {
       "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "형은 동생보다 3살 많고 두 사람 나이의 합은 25입니다. 동생은 몇 살일까요?",
+      "answer": "11",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q4",
       "stage": "discover",
       "qtype": "numeric",
@@ -138,6 +162,30 @@
     },
     {
       "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "시속 60km로 2시간 30분 동안 달린 거리는 몇 km일까요?",
+      "answer": "150",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "12km를 시속 4km로 걸으면 몇 시간이 걸릴까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q6",
       "stage": "apply",
       "qtype": "numeric",
@@ -169,6 +217,18 @@
         "(소금의 양) = (농도 ÷ 100) × (소금물의 양)",
         "물을 더하거나 증발시켜도 소금의 양은 변하지 않는다는 점이 식을 세우는 열쇠입니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "소금 20g이 들어 있는 소금물 200g의 농도는 몇 %일까요?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

@@ -37,6 +37,18 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "한 변이 3cm인 정사각형을 3배로 확대하면 한 변은 몇 cm일까요?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "numeric",
@@ -56,6 +68,23 @@
         "닮은 두 도형에서 서로 대응하는 변의 길이의 비는 모두 같고, 이 비를 닮음비라고 합니다.",
         "대응하는 각의 크기는 서로 같습니다. 확대해도 각은 벌어지지 않습니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "닮음비가 1 : 4인 두 도형에서 작은 도형의 변이 5이면 대응하는 큰 도형의 변은 {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "20"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -99,6 +128,35 @@
     },
     {
       "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "세 쌍의 대응변의 길이의 비가 같은 두 삼각형은 {{1}} 닮음입니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "SSS"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "두 각이 50°, 60°인 삼각형과 닮은 삼각형의 나머지 한 각은 몇 도일까요?",
+      "answer": "70",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q4",
       "stage": "discover",
       "qtype": "fill_blank",
@@ -135,6 +193,23 @@
         "닮음비가 m : n이면 넓이의 비는 m² : n², 부피의 비는 m³ : n³입니다.",
         "길이가 2배가 되면 넓이는 가로와 세로가 모두 2배가 되어 4배가 됩니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "닮음비가 1 : 3인 두 도형의 넓이의 비는 1 : {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "9"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

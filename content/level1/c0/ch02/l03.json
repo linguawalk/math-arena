@@ -37,6 +37,23 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "a² × a⁴ = a^{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "fill_blank",
@@ -62,6 +79,23 @@
         "(aᵐ)ⁿ = aᵐⁿ (지수끼리 곱한다),  (ab)ⁿ = aⁿbⁿ",
         "m > n일 때 aᵐ ÷ aⁿ = aᵐ⁻ⁿ (지수끼리 뺀다)"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(xy)³ = x^{{1}}y³",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -144,6 +178,23 @@
     },
     {
       "type": "question",
+      "id": "k3",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "2a × 3b = {{1}}ab",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q6",
       "stage": "apply",
       "qtype": "fill_blank",
@@ -213,6 +264,23 @@
         },
         "static": true
       }
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "x(x + 4) = x² + {{1}}x",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

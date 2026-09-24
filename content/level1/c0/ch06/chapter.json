@@ -12,32 +12,37 @@
       "id": "c0-ch06-l01",
       "title": "대푯값",
       "file": "l01.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     },
     {
       "no": 2,
       "id": "c0-ch06-l02",
       "title": "산포도",
       "file": "l02.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     },
     {
       "no": 3,
       "id": "c0-ch06-l03",
       "title": "도수분포와 그래프",
       "file": "l03.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     },
     {
       "no": 4,
       "id": "c0-ch06-l04",
       "title": "상관관계",
       "file": "l04.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     }
-  ]
+  ],
+  "review": {
+    "id": "c0-ch06-review",
+    "file": "review.json",
+    "questions": 10
+  }
 }

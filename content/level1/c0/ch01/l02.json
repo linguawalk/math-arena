@@ -75,6 +75,18 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "−3, 0, 2.5, 7, −1/2 중 정수는 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "−3, 0, 7이 정수입니다."
+    },
+    {
+      "type": "question",
       "id": "q2",
       "stage": "discover",
       "qtype": "diagram",
@@ -101,6 +113,18 @@
         "수직선에서 어떤 수를 나타내는 점과 0 사이의 거리를 그 수의 절댓값이라 하고 |a|로 씁니다.",
         "|+4| = 4, |−4| = 4입니다. 거리이므로 절댓값은 0 이상입니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "절댓값이 4인 수는 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "4와 −4, 2개입니다."
     },
     {
       "type": "question",
@@ -166,6 +190,18 @@
         "덧셈은 수직선 위의 이동입니다. 양수를 더하면 오른쪽, 음수를 더하면 왼쪽으로 갑니다.",
         "뺄셈은 빼는 수의 부호를 바꾸어 더하는 것과 같습니다. 3 − (−4) = 3 + 4"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "(−5) − (+3)을 계산하세요.",
+      "answer": "-8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "−5 + (−3) = −8"
     },
     {
       "type": "question",

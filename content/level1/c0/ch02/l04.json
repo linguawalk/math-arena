@@ -79,6 +79,46 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(x + 1)² = x² + {{1}}x + 1",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(x + 2)(x + 3) = x² + {{1}}x + {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q2",
       "stage": "discover",
       "qtype": "fill_blank",
@@ -154,6 +194,23 @@
     },
     {
       "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "5x + 10 = {{1}}(x + 2)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q6",
       "stage": "discover",
       "qtype": "fill_blank",
@@ -207,6 +264,23 @@
         "x² + px + q를 (x + a)(x + b)로 인수분해하려면 더해서 p, 곱해서 q가 되는 두 수 a, b를 찾습니다.",
         "예: x² + 5x + 6은 더해서 5, 곱해서 6인 2와 3을 찾아 (x + 2)(x + 3)"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "x² + 5x + 6 = (x + 2)(x + {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

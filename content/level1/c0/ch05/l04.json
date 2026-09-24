@@ -37,6 +37,18 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "지름이 14cm인 원의 반지름은 몇 cm일까요?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "numeric",
@@ -56,6 +68,35 @@
         "원 위의 두 점을 이은 선분을 현, 원 위의 두 점 사이의 곡선 부분을 호라고 합니다.",
         "원의 중심에서 현에 내린 수선은 그 현을 이등분합니다. 그래서 반지름, 중심에서 현까지의 거리, 현의 절반이 직각삼각형을 이룹니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "원 위의 두 점을 이은 선분을 {{1}}이라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "현"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "반지름이 10인 원에서 길이 12인 현과 중심 사이의 거리는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -94,6 +135,18 @@
     },
     {
       "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "접선과 접점을 지나는 반지름이 이루는 각은 몇 도일까요?",
+      "answer": "90",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q4",
       "stage": "discover",
       "qtype": "numeric",
@@ -125,6 +178,18 @@
         "호의 양 끝과 원 위의 다른 한 점을 이어 만든 각을 원주각, 중심과 이어 만든 각을 중심각이라고 합니다.",
         "한 호에 대한 원주각의 크기는 그 호에 대한 중심각의 절반이고, 같은 호에 대한 원주각은 모두 같습니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "원주각이 40°일 때 같은 호에 대한 중심각은 몇 도일까요?",
+      "answer": "80",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

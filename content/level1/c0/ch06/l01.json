@@ -37,6 +37,18 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "자료 2, 4, 9의 평균은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "numeric",
@@ -57,6 +69,30 @@
         "중앙값: 변량을 크기순으로 늘어놓았을 때 한가운데 값. 개수가 짝수면 가운데 두 값의 평균",
         "최빈값: 가장 많이 나타나는 값"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "자료 10, 20, 30, 40, 50의 중앙값은?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "자료 5, 5, 6, 7, 7, 7의 최빈값은?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -103,6 +139,18 @@
         "다른 값들과 동떨어진 극단값이 있으면 평균은 그 값 쪽으로 크게 끌려갑니다.",
         "중앙값은 순서만 보므로 극단값의 영향을 거의 받지 않습니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "자료 1, 2, 3, 4, 90의 중앙값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "90이 아무리 커도 가운데 값은 3입니다."
     },
     {
       "type": "question",
@@ -154,6 +202,18 @@
         "(변량의 총합) = (평균) × (변량의 개수)",
         "평균을 알면 총합을 구할 수 있고, 여기서 모르는 변량을 찾을 수 있습니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "평균이 7인 변량 5개의 총합은?",
+      "answer": "35",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

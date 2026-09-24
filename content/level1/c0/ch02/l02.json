@@ -37,6 +37,23 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "7y − 3y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4y"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "fill_blank",
@@ -62,6 +79,18 @@
         "2x와 2x²은 문자는 같지만 차수가 달라 동류항이 아닙니다.",
         "동류항끼리는 계수를 더하거나 빼서 하나로 정리합니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "5a, 3b, −a, a², 2 중 3a와 동류항인 것은 몇 개일까요?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "5a와 −a입니다."
     },
     {
       "type": "question",
@@ -119,6 +148,40 @@
         "a(b + c) = ab + ac. 괄호 밖의 수를 괄호 안 모든 항에 곱합니다.",
         "괄호 앞에 −가 있으면 괄호 안 모든 항의 부호가 바뀝니다. −(x − 2) = −x + 2"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "4(x + 2) = 4x + {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "8"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "−2(x − 3) = −2x + {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -200,6 +263,29 @@
         "일차식을 수로 나눌 때는 그 수의 역수를 곱합니다. (6x + 4) ÷ 2 = (6x + 4) × 1/2 = 3x + 2",
         "분수 꼴의 일차식끼리 더할 때는 분모를 통분한 뒤 분자끼리 계산합니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "(9x + 6) ÷ 3 = {{1}}x + {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

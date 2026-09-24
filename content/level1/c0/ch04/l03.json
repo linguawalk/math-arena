@@ -64,6 +64,18 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "f(x) = 5x일 때 f(−2)의 값은?",
+      "answer": "-10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q2",
       "stage": "discover",
       "qtype": "numeric",
@@ -98,6 +110,35 @@
     },
     {
       "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "y = 3x의 그래프를 y축 방향으로 −2만큼 평행이동하면 y = 3x − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = −x + 5의 그래프의 x절편은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q4",
       "stage": "discover",
       "qtype": "fill_blank",
@@ -129,6 +170,18 @@
         "일차함수에서 x의 값이 증가한 양에 대한 y의 값이 증가한 양의 비율은 항상 일정하며, 그 값이 a입니다.",
         "(기울기) = (y의 값의 증가량) ÷ (x의 값의 증가량) = a"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y = 4x − 1에서 x가 2만큼 증가하면 y는 얼마만큼 증가할까요?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -214,6 +267,23 @@
         "a > 0이면 x가 증가할 때 y도 증가해 그래프가 오른쪽 위로 향합니다. a < 0이면 오른쪽 아래로 향합니다.",
         "|a|가 클수록 그래프는 y축에 가깝게 가파릅니다. 기울기가 같고 y절편이 다른 두 직선은 평행합니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "y = −2x + 3의 그래프는 오른쪽 {{1}}로 향합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "아래"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

@@ -72,6 +72,52 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "∠C = 90°, BC = 5, AC = 12, AB = 13일 때 sin A = {{1}}/{{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "13"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "같은 삼각형에서 tan A = {{1}}/{{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "12"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q2",
       "stage": "discover",
       "qtype": "fill_blank",
@@ -152,6 +198,40 @@
     },
     {
       "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "sin 60° = √{{1}}/2",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "cos 45° = √{{1}}/2",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q5",
       "stage": "discover",
       "qtype": "fill_blank",
@@ -222,6 +302,18 @@
         "각과 한 변을 알면 삼각비로 나머지 변을 구할 수 있습니다.",
         "높이 = 빗변 × sin A,  밑변 = 빗변 × cos A,  높이 = 밑변 × tan A"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "빗변이 8이고 ∠A = 60°인 직각삼각형에서 ∠A를 낀 밑변의 길이는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "8 × cos 60° = 4"
     },
     {
       "type": "question",

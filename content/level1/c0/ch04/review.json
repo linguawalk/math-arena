@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch04",
+    "no": 4,
+    "title": "일차함수"
+  },
+  "review": {
+    "id": "c0-ch04-review",
+    "title": "일차함수 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "점 (0, −3)을 표시하세요.",
+      "answer": {
+        "x": 0,
+        "y": -3,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "점 (−1, 4)를 x축에 대하여 대칭이동한 점은 (−1, {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−4",
+            "-4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y가 x에 정비례하고 x = 4일 때 y = −8입니다. x = −3일 때 y는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y가 x에 반비례하고 x = 5일 때 y = 4입니다. x = 10일 때 y는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "두 점 (−1, 5), (2, −1)을 지나는 직선의 기울기는?",
+      "answer": "-2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l03"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "기울기가 −3이고 y절편이 4인 직선은 y = {{1}}x + 4",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−3",
+            "-3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y = 2x + 6의 그래프의 x절편은?",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "두 직선 y = −x + 1과 y = x − 3의 교점을 표시하세요.",
+      "answer": {
+        "x": 2,
+        "y": -1,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "직선 y = x + 3과 x축, y축으로 둘러싸인 삼각형의 넓이는?",
+      "answer": "4.5",
+      "answer_format": "decimal",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "네 직선 x = 2, x = 5, y = 0, y = 3으로 둘러싸인 도형의 넓이는?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch04-l04"
+    }
+  ]
+}

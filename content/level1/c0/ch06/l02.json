@@ -59,6 +59,36 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "평균이 10인 자료에서 변량 7의 편차는 {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−3",
+            "-3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "어떤 자료든 편차의 합은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q2",
       "stage": "discover",
       "qtype": "fill_blank",
@@ -97,6 +127,30 @@
         "(분산) = (편차)²의 평균,  (표준편차) = √(분산)",
         "분산, 표준편차처럼 흩어진 정도를 나타내는 값을 산포도라고 합니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "편차가 −1, 1인 자료의 분산은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "분산이 9인 자료의 표준편차는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -148,6 +202,18 @@
         "표준편차가 작을수록 변량이 평균 가까이 모여 있고, 클수록 넓게 흩어져 있습니다.",
         "모든 변량에 같은 수를 더하면 분산은 변하지 않습니다. 모든 변량을 a배 하면 표준편차는 |a|배가 됩니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "자료 5, 5, 5, 5의 분산은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "모두 평균과 같아 흩어짐이 없습니다."
     },
     {
       "type": "question",

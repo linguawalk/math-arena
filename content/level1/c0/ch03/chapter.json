@@ -12,32 +12,37 @@
       "id": "c0-ch03-l01",
       "title": "등식과 방정식",
       "file": "l01.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     },
     {
       "no": 2,
       "id": "c0-ch03-l02",
       "title": "일차방정식",
       "file": "l02.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     },
     {
       "no": 3,
       "id": "c0-ch03-l03",
       "title": "연립일차방정식",
       "file": "l03.json",
-      "questions": 10,
-      "screens": 15
+      "questions": 16,
+      "screens": 21
     },
     {
       "no": 4,
       "id": "c0-ch03-l04",
       "title": "방정식의 활용",
       "file": "l04.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     }
-  ]
+  ],
+  "review": {
+    "id": "c0-ch03-review",
+    "file": "review.json",
+    "questions": 10
+  }
 }

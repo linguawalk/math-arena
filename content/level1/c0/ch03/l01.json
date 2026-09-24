@@ -60,6 +60,35 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "방정식 x − 2 = 5의 해는?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "x + 5 = 5 + x는 x에 어떤 값을 넣어도 참이므로 {{1}}입니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "항등식"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q2",
       "stage": "discover",
       "qtype": "numeric",
@@ -109,6 +138,35 @@
         "a = b이면 양변을 0이 아닌 같은 수로 나누어도 등식은 성립합니다.",
         "이 성질을 이용해 x만 남을 때까지 식을 바꾸는 것이 방정식 풀이입니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "a = b이면 3a = 3{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "b"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "2x = 18의 양변을 2로 나누면 x = ?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -176,6 +234,23 @@
         "등식의 한 변에 있는 항을 부호를 바꾸어 다른 변으로 옮기는 것을 이항이라고 합니다.",
         "5x − 7 = 8에서 −7을 이항하면 5x = 8 + 7입니다. 양변에 7을 더한 것과 같습니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "x + 6 = 10에서 6을 이항하면 x = 10 − {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

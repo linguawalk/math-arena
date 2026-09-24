@@ -38,6 +38,29 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "2x − y + 1 = 0을 y에 대해 풀면 y = {{1}}x + {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "fill_blank",
@@ -69,6 +92,24 @@
         "방정식 x = p의 그래프는 점 (p, 0)을 지나고 y축에 평행한 직선입니다.",
         "방정식 y = q의 그래프는 점 (0, q)를 지나고 x축에 평행한 직선입니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "점 (1, −4)를 지나고 x축에 평행한 직선은 y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−4",
+            "-4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -114,6 +155,41 @@
         "연립방정식의 해는 두 일차방정식의 그래프가 만나는 점의 좌표와 같습니다.",
         "두 직선이 평행하면 만나지 않아 해가 없고, 두 직선이 일치하면 해가 무수히 많습니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -5,
+        "xmax": 5,
+        "ymin": -5,
+        "ymax": 5,
+        "xstep": 1,
+        "ystep": 1
+      },
+      "prompt": "두 직선 y = 2x와 y = −x + 3의 교점을 표시하세요.",
+      "answer": {
+        "x": 1,
+        "y": 2,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "두 직선 y = x − 1과 y = −2x + 5의 교점의 x좌표는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -194,6 +270,18 @@
         "직선과 좌표축, 또는 두 직선과 x축으로 둘러싸인 도형의 넓이는 절편과 교점의 좌표로 구합니다.",
         "밑변은 x축 위 두 점 사이의 거리, 높이는 교점의 y좌표로 잡으면 편리합니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "직선 y = 2x − 4와 x축, y축으로 둘러싸인 삼각형의 넓이는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "x절편 2, y절편 −4이므로 2 × 4 ÷ 2 = 4"
     },
     {
       "type": "question",

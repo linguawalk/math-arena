@@ -37,6 +37,18 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "1/8을 소수로 나타내세요.",
+      "answer": "0.125",
+      "answer_format": "decimal",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "1 ÷ 8 = 0.125로 끝이 있는 소수입니다."
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "fill_blank",
@@ -65,6 +77,23 @@
     },
     {
       "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "0.777… = {{1}}/9",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "7"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q2",
       "stage": "discover",
       "qtype": "numeric",
@@ -88,6 +117,23 @@
     },
     {
       "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "원주율 π는 {{1}}수입니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "무리"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q3",
       "stage": "discover",
       "qtype": "numeric",
@@ -107,6 +153,18 @@
         "한 변이 1인 정사각형의 대각선 길이는 √2입니다. 컴퍼스로 이 길이를 수직선에 옮기면 √2를 나타내는 점을 정확히 찍을 수 있습니다.",
         "유리수만으로는 수직선에 빈틈이 남지만, 실수는 수직선을 빈틈없이 채웁니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "√2와 √3 사이에 있는 정수는 몇 개일까요?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "√2 ≈ 1.41, √3 ≈ 1.73이라 그 사이에 정수가 없습니다."
     },
     {
       "type": "question",
@@ -137,6 +195,23 @@
         "√(k² × a) = k√a. 예: √12 = √(2² × 3) = 2√3",
         "근호 안이 같은 수끼리만 더하고 뺄 수 있습니다. 예: 3√2 + √2 = 4√2"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "√2 × √5 = √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "10"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

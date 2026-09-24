@@ -37,6 +37,23 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "한 변이 a cm인 정사각형의 둘레는 {{1}} cm입니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4a"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q1",
       "stage": "intro",
       "qtype": "fill_blank",
@@ -62,6 +79,41 @@
         "1이나 −1과 문자의 곱에서는 1을 생략합니다. 1 × a = a, (−1) × a = −a",
         "같은 문자의 곱은 거듭제곱으로, 나눗셈은 분수 꼴로 씁니다. a × a = a², x ÷ 4 = x/4"
       ]
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "x × x × x = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "x³",
+            "x^3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "1 × y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "y"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -131,6 +183,18 @@
     },
     {
       "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a = 4일 때 a²/2의 값은?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q5",
       "stage": "discover",
       "qtype": "numeric",
@@ -175,6 +239,18 @@
         "문자 앞의 수를 계수라고 합니다. x²의 계수는 3, x의 계수는 −5입니다.",
         "항이 하나인 식은 단항식, 여러 개인 식은 다항식입니다. 가장 큰 차수가 1인 다항식을 일차식이라고 합니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "다항식 2x + 5 − x²의 항은 몇 개일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",

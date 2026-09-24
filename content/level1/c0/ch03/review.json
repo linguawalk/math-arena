@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c0",
+    "title": "기초 수학"
+  },
+  "chapter": {
+    "id": "c0-ch03",
+    "no": 3,
+    "title": "방정식과 연립방정식"
+  },
+  "review": {
+    "id": "c0-ch03-review",
+    "title": "방정식과 연립방정식 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "방정식 2x + 7 = 1의 해는?",
+      "answer": "-3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch03-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "ax + 2 = 5x + b가 x에 대한 항등식일 때 ab의 값은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "a = 5, b = 2",
+      "source_lesson": "c0-ch03-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "방정식 2(x − 4) = −(x + 2)의 해는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch03-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "방정식 x/4 + 1 = x/2의 해는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch03-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "방정식 0.5x − 1 = 0.2x + 0.8의 해는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch03-l02"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "2x + y = 8, x − y = 1의 해는 x = {{1}}, y = {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch03-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "y = x + 1, 3x − y = 5의 해는 x = {{1}}, y = {{2}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch03-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "합이 30이고 차가 6인 두 수 중 큰 수는?",
+      "answer": "18",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch03-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "닭과 토끼가 모두 10마리이고 다리 수의 합이 28개입니다. 토끼는 몇 마리일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch03-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "15% 소금물 200g에 들어 있는 소금은 몇 g일까요?",
+      "answer": "30",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c0-ch03-l04"
+    }
+  ]
+}

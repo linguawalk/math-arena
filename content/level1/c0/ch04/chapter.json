@@ -12,32 +12,37 @@
       "id": "c0-ch04-l01",
       "title": "좌표와 그래프",
       "file": "l01.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     },
     {
       "no": 2,
       "id": "c0-ch04-l02",
       "title": "정비례와 반비례",
       "file": "l02.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     },
     {
       "no": 3,
       "id": "c0-ch04-l03",
       "title": "일차함수와 기울기",
       "file": "l03.json",
-      "questions": 11,
-      "screens": 16
+      "questions": 16,
+      "screens": 21
     },
     {
       "no": 4,
       "id": "c0-ch04-l04",
       "title": "일차함수와 일차방정식",
       "file": "l04.json",
-      "questions": 11,
-      "screens": 15
+      "questions": 16,
+      "screens": 20
     }
-  ]
+  ],
+  "review": {
+    "id": "c0-ch04-review",
+    "file": "review.json",
+    "questions": 10
+  }
 }

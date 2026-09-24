@@ -60,6 +60,30 @@
     },
     {
       "type": "question",
+      "id": "k1",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "계급이 20 이상 30 미만일 때 계급값은?",
+      "answer": "25",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k2",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "계급을 0 이상 5 미만, 5 이상 10 미만, …으로 나누었을 때 계급의 크기는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
       "id": "q2",
       "stage": "discover",
       "qtype": "numeric",
@@ -91,6 +115,30 @@
         "가로축에 계급, 세로축에 도수를 잡아 직사각형으로 나타낸 그래프가 히스토그램입니다. 직사각형 윗변의 가운데를 이으면 도수분포다각형이 됩니다.",
         "(상대도수) = (계급의 도수) ÷ (도수의 총합). 상대도수의 합은 항상 1입니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "총도수 20인 자료에서 도수가 4인 계급의 상대도수는?",
+      "answer": "0.2",
+      "answer_format": "decimal",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "k4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "모든 계급의 상대도수를 더하면?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
@@ -149,6 +197,18 @@
         "도수를 작은 계급부터 차례로 더해 가면 몇 번째 변량이 어느 계급에 있는지 알 수 있습니다.",
         "전체 인원이 다른 두 집단을 비교할 때는 도수가 아니라 상대도수로 비교합니다."
       ]
+    },
+    {
+      "type": "question",
+      "id": "k5",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "도수가 차례로 3, 7, 6, 4명인 통학 시간 도수분포표(0분부터 10분 간격)에서 20분 미만인 학생은 몇 명일까요?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
     },
     {
       "type": "question",
