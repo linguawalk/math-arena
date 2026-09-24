@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>레슨 · math-arena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAFBFD; --ink:#172033; --ink-soft:#4A5670; --grid:#DCE4F0; --grid-strong:#B9C7DD;
+  --blue:#1D3FA8; --blue-soft:#E7ECFA; --marker:#FFD84D; --marker-soft:#FFF4C2;
+  --ok:#1E7A50; --ok-soft:#E3F3EA; --bad:#B83434; --bad-soft:#FBE7E7;
+  --radius-s:6px; --radius-m:10px;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;word-break:keep-all;overflow-wrap:anywhere;background:var(--paper);color:var(--ink);font-family:var(--font);}
+body{min-height:100vh;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.top{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--grid);padding:12px 16px}
+.top-inner{max-width:680px;margin:0 auto;display:flex;align-items:center;gap:14px}
+.close{border:none;background:none;font-size:22px;line-height:1;padding:6px 8px;cursor:pointer;color:var(--ink-soft);border-radius:var(--radius-s)}
+.close:hover{background:var(--blue-soft)}
+.bar{flex:1;height:10px;background:var(--grid);border-radius:5px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--blue);transition:width .3s ease}
+.where{font-size:13px;color:var(--ink-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:40%}
+main{flex:1;width:100%;max-width:680px;margin:0 auto;padding:28px 20px 140px}
+.stage{font-size:13px;color:var(--ink-soft);margin:0 0 6px}
+h1{font-size:26px;line-height:1.35;margin:0 0 18px;font-weight:700;letter-spacing:-.01em}
+.body p{font-size:18px;line-height:1.75;margin:0 0 14px}
+.prompt{font-size:20px;line-height:1.7;margin:0 0 22px;font-weight:500}
+.figure{margin:22px 0;padding:16px;border:1px solid var(--grid);border-radius:var(--radius-m);background:#fff;overflow-x:auto}
+.figure svg{display:block;max-width:100%;height:auto;margin:0 auto}
+input.ans{border:2px solid var(--grid-strong);border-radius:var(--radius-s);padding:10px 12px;font-size:20px;background:#fff;width:100%;max-width:260px}
+input.blank{border:none;border-bottom:3px solid var(--blue);background:var(--marker-soft);font-size:20px;width:5.2em;padding:2px 6px;margin:0 3px;text-align:center;border-radius:4px 4px 0 0}
+input.ans:focus,input.blank:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
+textarea{width:100%;min-height:140px;border:2px solid var(--grid-strong);border-radius:var(--radius-s);padding:12px;font-size:17px;line-height:1.6;background:#fff;resize:vertical}
+.order{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.order li{display:flex;align-items:center;gap:10px;background:#fff;border:2px solid var(--grid-strong);border-radius:var(--radius-s);padding:10px 12px;font-size:18px}
+.order li .n{color:var(--ink-soft);font-size:14px;width:1.4em}
+.order li .t{flex:1}
+.order button{border:1px solid var(--grid-strong);background:var(--paper);border-radius:var(--radius-s);width:36px;height:36px;cursor:pointer;font-size:16px}
+.order button:disabled{opacity:.3;cursor:default}
+.pad{touch-action:manipulation;cursor:crosshair}
+svg.pad:focus{outline:none}
+svg.pad:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-radius:4px}
+.readout{font-size:15px;color:var(--ink-soft);margin-top:8px;text-align:center}
+.hintbox{margin-top:18px;padding:12px 14px;background:var(--marker-soft);border-left:4px solid var(--marker);border-radius:0 var(--radius-s) var(--radius-s) 0;font-size:16px;line-height:1.6}
+.feedback{position:fixed;left:0;right:0;bottom:0;z-index:6;border-top:1px solid var(--grid);background:var(--paper);padding:14px 16px calc(14px + env(safe-area-inset-bottom,0px))}
+.feedback.ok{background:var(--ok-soft);border-top-color:#BFE3CF}
+.feedback.bad{background:var(--bad-soft);border-top-color:#F0C4C4}
+.fb-inner{max-width:680px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.fb-text{flex:1 1 280px;font-size:16px;line-height:1.6}
+.fb-text strong{display:block;font-size:18px;margin-bottom:2px}
+.feedback.ok strong{color:var(--ok)} .feedback.bad strong{color:var(--bad)}
+.btn{border:none;border-radius:var(--radius-m);padding:13px 22px;font-size:17px;font-weight:700;cursor:pointer;background:var(--blue);color:#fff;min-width:120px}
+.btn:disabled{background:var(--grid-strong);cursor:default}
+.btn.ghost{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+.btn.link{background:none;color:var(--ink-soft);font-weight:500;min-width:0;padding:13px 8px;text-decoration:underline}
+.done{text-align:left}
+.score{font-size:64px;font-weight:700;line-height:1;margin:8px 0 6px;font-variant-numeric:tabular-nums}
+.score small{font-size:24px;color:var(--ink-soft);font-weight:500}
+.error{padding:18px;border:2px solid var(--bad);border-radius:var(--radius-m);background:var(--bad-soft)}
+@media (max-width:520px){.where{max-width:30%}h1{font-size:22px}.prompt{font-size:18px}.body p{font-size:17px}.btn{flex:1}}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-inner">
+  <button class="close" id="close" aria-label="레슨 나가기">✕</button>
+  <div class="bar" role="progressbar" aria-label="진행률" aria-valuemin="0" aria-valuemax="100"><i id="barFill"></i></div>
+  <span class="where" id="where"></span>
+</div></header>
+<main id="main" aria-live="polite"></main>
+<div class="feedback" id="fb"><div class="fb-inner">
+  <div class="fb-text" id="fbText"></div>
+  <button class="btn link" id="hintBtn" hidden>힌트 보기</button>
+  <button class="btn ghost" id="revealBtn" hidden>정답 보기</button>
+  <button class="btn" id="mainBtn">확인</button>
+</div></div>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const P = new URLSearchParams(location.search);
+const LEVEL = P.get("level") || "1", COURSE = P.get("c") || "c0";
+const CH = (P.get("ch") || "01").padStart(2, "0");
+const LES = P.get("l") ? P.get("l").padStart(2, "0") : null;
+const IS_REVIEW = !LES;
+const BASE = `content/level${LEVEL}/${COURSE}/ch${CH}/`;
+const STAGE = {intro:"도입", discover:"발견", summary:"정리", apply:"적용", review:"복습"};
+
+/* ---------- 저장 ---------- */
+const store = {
+  get(){ try{ return JSON.parse(localStorage.getItem("math-arena:progress")) || {}; }catch(e){ return {}; } },
+  put(id, rec){ try{ const all = store.get(); all[id] = rec; localStorage.setItem("math-arena:progress", JSON.stringify(all)); }catch(e){} }
+};
+
+/* ---------- 채점 도구 ---------- */
+const SUP = {"⁰":"^0","¹":"^1","²":"^2","³":"^3","⁴":"^4","⁵":"^5","⁶":"^6","⁷":"^7","⁸":"^8","⁹":"^9"};
+function norm(s){
+  return String(s).trim().replace(/\s+/g, "").replace(/[−–—]/g, "-")
+    .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g, c => SUP[c]).replace(/×/g, "*").toLowerCase();
+}
+function frac(s){
+  s = norm(s).replace(/^\+/, "");
+  let m;
+  if ((m = s.match(/^(-?\d+)\/(-?\d+)$/))) { const d = +m[2]; return d === 0 ? null : [+m[1], d]; }
+  if ((m = s.match(/^(-?)(\d*)\.(\d+)$/))) { const den = 10 ** m[3].length; const n = +(m[2] || 0) * den + +m[3]; return [m[1] ? -n : n, den]; }
+  if (/^-?\d+$/.test(s)) return [+s, 1];
+  return null;
+}
+const fracEq = (a, b) => a && b && a[0] * b[1] === b[0] * a[1];
+const fracVal = f => f[0] / f[1];
+
+/* ---------- SVG 도구 ---------- */
+const NS = "http://www.w3.org/2000/svg";
+function el(tag, attrs = {}, parent){ const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+function txt(parent, x, y, s, attrs = {}){ const t = el("text", Object.assign({x, y, "font-size":14, fill:"#4A5670", "text-anchor":"middle", "font-family":"IBM Plex Sans KR, sans-serif"}, attrs), parent); t.textContent = s; return t; }
+const fmt = v => { const r = Math.round(v * 1000) / 1000; return (r < 0 ? "−" : "") + Math.abs(r); };
+
+function numberLine(cfg, interactive, onChange){
+  const W = 600, H = 96, pad = 30, {min, max, step} = cfg;
+  const X = v => pad + (v - min) / (max - min) * (W - 2 * pad);
+  const svg = el("svg", {viewBox:`0 0 ${W} ${H}`, width:W, role: interactive ? "slider" : "img",
+    "aria-label": interactive ? "수직선: 방향키나 클릭으로 점을 옮기세요" : "수직선"});
+  el("line", {x1:pad - 12, x2:W - pad + 12, y1:48, y2:48, stroke:"#172033", "stroke-width":2}, svg);
+  const n = Math.round((max - min) / step);
+  const labelEvery = n > 24 ? Math.round(1 / step) : (step < 1 ? Math.round(1 / step) : 1);
+  for (let i = 0; i <= n; i++){
+    const v = min + i * step, major = i % labelEvery === 0;
+    el("line", {x1:X(v), x2:X(v), y1:major ? 40 : 44, y2:major ? 56 : 52, stroke:"#172033", "stroke-width":major ? 2 : 1}, svg);
+    if (major) txt(svg, X(v), 78, fmt(v), {fill: Math.abs(v) < 1e-9 ? "#172033" : "#4A5670"});
+  }
+  if (!interactive) return svg;
+  svg.classList.add("pad"); svg.tabIndex = 0;
+  const dot = el("circle", {r:9, cy:48, fill:"#1D3FA8", stroke:"#fff", "stroke-width":3, visibility:"hidden"}, svg);
+  let val = null;
+  const set = v => { v = Math.min(max, Math.max(min, Math.round((v - min) / step) * step + min)); v = Math.round(v * 1e6) / 1e6;
+    val = v; dot.setAttribute("cx", X(v)); dot.setAttribute("visibility", "visible"); svg.setAttribute("aria-valuenow", v); onChange(v, fmt(v)); };
+  svg.addEventListener("pointerdown", e => { const r = svg.getBoundingClientRect(); const px = (e.clientX - r.left) / r.width * W; set(min + (px - pad) / (W - 2 * pad) * (max - min)); });
+  svg.addEventListener("keydown", e => { if (e.key === "ArrowRight" || e.key === "ArrowLeft"){ e.preventDefault(); set((val ?? (min + max) / 2) + (e.key === "ArrowRight" ? step : -step)); } });
+  svg.lock = () => { svg.style.pointerEvents = "none"; };
+  return svg;
+}
+
+function coordPlane(cfg, onChange){
+  const {xmin, xmax, ymin, ymax, xstep = 1, ystep = 1} = cfg, S = 420, pad = 34;
+  const X = v => pad + (v - xmin) / (xmax - xmin) * (S - 2 * pad);
+  const Y = v => S - pad - (v - ymin) / (ymax - ymin) * (S - 2 * pad);
+  const svg = el("svg", {viewBox:`0 0 ${S} ${S}`, width:S, role:"application", "aria-label":"좌표평면: 클릭하거나 방향키로 점을 옮기세요"});
+  svg.classList.add("pad"); svg.tabIndex = 0;
+  const nx = Math.round((xmax - xmin) / xstep), ny = Math.round((ymax - ymin) / ystep);
+  for (let i = 0; i <= nx; i++){ const v = xmin + i * xstep; el("line", {x1:X(v), x2:X(v), y1:Y(ymin), y2:Y(ymax), stroke:"#DCE4F0"}, svg); }
+  for (let j = 0; j <= ny; j++){ const v = ymin + j * ystep; el("line", {x1:X(xmin), x2:X(xmax), y1:Y(v), y2:Y(v), stroke:"#DCE4F0"}, svg); }
+  const ax = xmin <= 0 && 0 <= xmax ? X(0) : X(xmin), ay = ymin <= 0 && 0 <= ymax ? Y(0) : Y(ymin);
+  el("line", {x1:X(xmin), x2:X(xmax), y1:ay, y2:ay, stroke:"#172033", "stroke-width":1.6}, svg);
+  el("line", {x1:ax, x2:ax, y1:Y(ymin), y2:Y(ymax), stroke:"#172033", "stroke-width":1.6}, svg);
+  txt(svg, X(xmax) + 14, ay + 5, "x", {fill:"#172033"}); txt(svg, ax, Y(ymax) - 12, "y", {fill:"#172033"});
+  const ex = Math.max(1, Math.ceil(nx / 10)), ey = Math.max(1, Math.ceil(ny / 10));
+  for (let i = 0; i <= nx; i += ex){ const v = xmin + i * xstep; if (Math.abs(v) > 1e-9) txt(svg, X(v), ay + 18, fmt(v), {"font-size":12}); }
+  for (let j = 0; j <= ny; j += ey){ const v = ymin + j * ystep; if (Math.abs(v) > 1e-9) txt(svg, ax - 10, Y(v) + 4, fmt(v), {"font-size":12, "text-anchor":"end"}); }
+  if (xmin <= 0 && ymin <= 0) txt(svg, ax - 10, ay + 18, "O", {"font-size":12, "text-anchor":"end"});
+  const guide = el("path", {stroke:"#1D3FA8", "stroke-dasharray":"4 4", fill:"none", visibility:"hidden"}, svg);
+  const dot = el("circle", {r:8, fill:"#1D3FA8", stroke:"#fff", "stroke-width":3, visibility:"hidden"}, svg);
+  let cur = null;
+  const snap = (v, lo, hi, st) => Math.round(Math.min(hi, Math.max(lo, Math.round((v - lo) / st) * st + lo)) * 1e6) / 1e6;
+  const set = (x, y) => { x = snap(x, xmin, xmax, xstep); y = snap(y, ymin, ymax, ystep); cur = [x, y];
+    dot.setAttribute("cx", X(x)); dot.setAttribute("cy", Y(y)); dot.setAttribute("visibility", "visible");
+    guide.setAttribute("d", `M${X(x)} ${ay} V${Y(y)} H${ax}`); guide.setAttribute("visibility", "visible");
+    onChange(cur, `(${fmt(x)}, ${fmt(y)})`); };
+  svg.addEventListener("pointerdown", e => { const r = svg.getBoundingClientRect();
+    const px = (e.clientX - r.left) / r.width * S, py = (e.clientY - r.top) / r.height * S;
+    set(xmin + (px - pad) / (S - 2 * pad) * (xmax - xmin), ymin + (S - pad - py) / (S - 2 * pad) * (ymax - ymin)); });
+  svg.addEventListener("keydown", e => { const d = {ArrowRight:[1,0], ArrowLeft:[-1,0], ArrowUp:[0,1], ArrowDown:[0,-1]}[e.key]; if (!d) return;
+    e.preventDefault(); const c = cur || [(xmin + xmax) / 2, (ymin + ymax) / 2]; set(c[0] + d[0] * xstep, c[1] + d[1] * ystep); });
+  svg.lock = () => { svg.style.pointerEvents = "none"; };
+  return svg;
+}
+
+function areaModel(cfg){
+  const {rows, cols} = cfg, W = 360, H = 260, ox = 40, oy = 34;
+  const cw = [0.62, 0.38], rh = [0.62, 0.38];
+  const svg = el("svg", {viewBox:`0 0 ${W} ${H}`, width:W, role:"img", "aria-label":"넓이 모형"});
+  const gw = W - ox - 10, gh = H - oy - 10;
+  let y = oy;
+  rows.forEach((r, i) => { let x = ox; const h = gh * (rh[i] ?? 1 / rows.length);
+    cols.forEach((c, j) => { const w = gw * (cw[j] ?? 1 / cols.length);
+      el("rect", {x, y, width:w, height:h, fill: i === j ? "#FFF4C2" : "#E7ECFA", stroke:"#172033", "stroke-width":1.5}, svg);
+      txt(svg, x + w / 2, y + h / 2 + 6, c === r ? `${c}²` : [r, c].sort().join(""), {"font-size":18, fill:"#172033"});
+      if (i === 0) txt(svg, x + w / 2, oy - 12, c, {"font-size":16, fill:"#172033"});
+      x += w; });
+    txt(svg, ox - 16, y + h / 2 + 6, r, {"font-size":16, fill:"#172033"}); y += h; });
+  return svg;
+}
+
+function rightTriangle(cfg){
+  const svg = el("svg", {viewBox:"0 0 360 230", width:360, role:"img", "aria-label":"직각삼각형"});
+  const A = [40, 200], C = [300, 200], B = [300, 40];
+  el("polygon", {points:[A, C, B].map(p => p.join(",")).join(" "), fill:"#E7ECFA", stroke:"#172033", "stroke-width":2}, svg);
+  el("path", {d:"M284 200 V184 H300", fill:"none", stroke:"#172033", "stroke-width":1.5}, svg);
+  if (cfg.labels){
+    const L = cfg.labels;
+    el("path", {d:"M78 200 A38 38 0 0 0 73 180", fill:"none", stroke:"#1D3FA8", "stroke-width":2}, svg);
+    txt(svg, 30, 222, cfg.angle || "A", {fill:"#172033", "font-size":16});
+    txt(svg, 170, 222, L.adjacent, {fill:"#172033", "font-size":16});
+    txt(svg, 330, 125, L.opposite, {fill:"#172033", "font-size":16});
+    txt(svg, 150, 105, L.hypotenuse, {fill:"#172033", "font-size":16});
+  } else {
+    const [a, b] = cfg.legs || ["a", "b"];
+    txt(svg, 170, 222, b, {fill:"#172033", "font-size":18}); txt(svg, 320, 125, a, {fill:"#172033", "font-size":18});
+    txt(svg, 155, 108, cfg.hypotenuse || "c", {fill:"#172033", "font-size":18});
+    if (cfg.squares) txt(svg, 180, 150, `${a}² + ${b}² = ${cfg.hypotenuse || "c"}²`, {fill:"#1D3FA8", "font-size":16});
+  }
+  return svg;
+}
+
+function figure(f){
+  const box = document.createElement("div"); box.className = "figure";
+  const w = f.widget, c = f.config || {};
+  box.appendChild(w === "number_line" ? numberLine(c, false) : w === "area_model" ? areaModel(c) : w === "right_triangle" ? rightTriangle(c) : document.createTextNode(""));
+  return box;
+}
+
+/* ---------- 문항 ---------- */
+function buildQuestion(q, host){
+  const api = {ready:false, value:null, check:null, lock(){}, reveal(){}};
+  const prompt = document.createElement("p"); prompt.className = "prompt";
+  if (q.qtype === "fill_blank"){
+    const inputs = [];
+    q.prompt.split(/(\{\{\d+\}\})/).forEach(part => {
+      const m = part.match(/^\{\{(\d+)\}\}$/);
+      if (m){ const i = document.createElement("input"); i.className = "blank"; i.setAttribute("aria-label", `빈칸 ${m[1]}`);
+        i.autocomplete = "off"; i.addEventListener("input", () => { api.ready = inputs.every(x => x.value.trim()); api.onChange(); });
+        inputs.push(i); prompt.appendChild(i); }
+      else prompt.appendChild(document.createTextNode(part));
+    });
+    host.appendChild(prompt);
+    api.focus = () => inputs[0].focus();
+    api.check = () => {
+      const got = inputs.map(i => norm(i.value)), ok = q.blanks.map(b => b.answers.map(norm));
+      const groups = q.unordered_groups || [];
+      const inGroup = new Set(groups.flat().map(n => n - 1));
+      for (let k = 0; k < ok.length; k++) if (!inGroup.has(k) && !ok[k].includes(got[k])) return false;
+      for (const g of groups){ const idx = g.map(n => n - 1), pool = idx.map(k => ok[k]); const used = new Set();
+        for (const k of idx){ const hit = pool.findIndex((a, j) => !used.has(j) && a.includes(got[k])); if (hit < 0) return false; used.add(hit); } }
+      return true;
+    };
+    api.lock = () => inputs.forEach(i => i.readOnly = true);
+    api.reveal = () => inputs.forEach((i, k) => i.value = q.blanks[k].answers[0]);
+    api.enter = inputs;
+    return api;
+  }
+  prompt.textContent = q.prompt; host.appendChild(prompt);
+  if (q.qtype === "numeric"){
+    const i = document.createElement("input"); i.className = "ans"; i.inputMode = q.answer_format === "integer" ? "numeric" : "text";
+    i.autocomplete = "off"; i.placeholder = q.answer_format === "fraction" ? "예: -3/4" : q.answer_format === "decimal" ? "예: 0.5" : "답";
+    i.setAttribute("aria-label", "답 입력");
+    i.addEventListener("input", () => { api.ready = !!i.value.trim(); api.onChange(); });
+    host.appendChild(i); api.focus = () => i.focus(); api.enter = [i];
+    api.check = () => { const u = frac(i.value), a = frac(q.answer); if (!u || !a) return false;
+      if (q.answer_format === "decimal" || q.tolerance) return Math.abs(fracVal(u) - fracVal(a)) <= (q.tolerance || 0) + 1e-9;
+      return fracEq(u, a); };
+    api.lock = () => i.readOnly = true;
+    api.reveal = () => i.value = q.answer.replace(/^-/, "−");
+    return api;
+  }
+  if (q.qtype === "ordering"){
+    const ol = document.createElement("ol"); ol.className = "order"; host.appendChild(ol);
+    let order = q.items.map(it => it.id); api.ready = true;
+    const byId = Object.fromEntries(q.items.map(it => [it.id, it.text]));
+    let locked = false;
+    const draw = () => { ol.innerHTML = "";
+      order.forEach((id, k) => { const li = document.createElement("li");
+        li.innerHTML = `<span class="n">${k + 1}</span><span class="t"></span>`; li.querySelector(".t").textContent = byId[id];
+        const up = document.createElement("button"), dn = document.createElement("button");
+        up.textContent = "↑"; dn.textContent = "↓"; up.setAttribute("aria-label", `${byId[id]} 위로`); dn.setAttribute("aria-label", `${byId[id]} 아래로`);
+        up.disabled = locked || k === 0; dn.disabled = locked || k === order.length - 1;
+        up.onclick = () => { [order[k - 1], order[k]] = [order[k], order[k - 1]]; draw(); ol.querySelectorAll("button")[(k - 1) * 2].focus(); };
+        dn.onclick = () => { [order[k + 1], order[k]] = [order[k], order[k + 1]]; draw(); ol.querySelectorAll("button")[(k + 1) * 2 + 1].focus(); };
+        li.append(up, dn); ol.appendChild(li); }); };
+    draw();
+    api.check = () => order.join() === q.answer_order.join();
+    api.lock = () => { locked = true; draw(); };
+    api.reveal = () => { order = [...q.answer_order]; draw(); };
+    return api;
+  }
+  if (q.qtype === "diagram"){
+    const box = document.createElement("div"); box.className = "figure"; host.appendChild(box);
+    const read = document.createElement("div"); read.className = "readout"; read.textContent = "점을 찍어 보세요";
+    let svg;
+    if (q.widget === "number_line"){
+      svg = numberLine(q.config, true, (v, s) => { api.value = v; api.ready = true; read.textContent = `선택: ${s}`; api.onChange(); });
+      api.check = () => Math.abs(api.value - q.answer.value) <= (q.answer.tolerance || 0) + 1e-9;
+      api.reveal = () => { read.textContent = `정답: ${fmt(q.answer.value)}`; };
+    } else {
+      svg = coordPlane(q.config, (v, s) => { api.value = v; api.ready = true; read.textContent = `선택: ${s}`; api.onChange(); });
+      api.check = () => { const t = (q.answer.tolerance || 0) + 1e-9; return Math.abs(api.value[0] - q.answer.x) <= t && Math.abs(api.value[1] - q.answer.y) <= t; };
+      api.reveal = () => { read.textContent = `정답: (${fmt(q.answer.x)}, ${fmt(q.answer.y)})`; };
+    }
+    box.append(svg, read); api.focus = () => svg.focus(); api.lock = () => svg.lock();
+    return api;
+  }
+  if (q.qtype === "written"){
+    const t = document.createElement("textarea"); t.setAttribute("aria-label", "설명 쓰기"); t.placeholder = "자기 말로 설명해 보세요";
+    t.addEventListener("input", () => { api.ready = t.value.trim().length >= 10; api.onChange(); });
+    host.appendChild(t); api.focus = () => t.focus();
+    api.check = () => { const v = norm(t.value); const r = q.rubric;
+      const hit = r.keyword_groups.filter(g => g.some(k => v.includes(norm(k)))).length; return hit >= r.min_groups_matched; };
+    api.lock = () => t.readOnly = true; api.reveal = () => {};
+    api.written = true;
+    return api;
+  }
+  host.appendChild(document.createTextNode("지원하지 않는 문항 형식입니다."));
+  api.ready = true; api.check = () => true; return api;
+}
+
+/* ---------- 흐름 ---------- */
+let data, screens, idx = 0, api = null, tries = 0, firstRight = 0, qCount = 0, phase = "idle", chapterMeta = null, courseMeta = null;
+const main = $("#main"), fb = $("#fb"), fbText = $("#fbText"), mainBtn = $("#mainBtn"), hintBtn = $("#hintBtn"), revealBtn = $("#revealBtn");
+
+function setFb(kind, html){ fb.className = "feedback" + (kind ? " " + kind : ""); fbText.innerHTML = html || ""; }
+function progress(){ const p = Math.round(idx / screens.length * 100); $("#barFill").style.width = p + "%"; document.querySelector(".bar").setAttribute("aria-valuenow", p); }
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+
+function show(){
+  progress(); window.scrollTo(0, 0);
+  if (idx >= screens.length) return finish();
+  const s = screens[idx]; main.innerHTML = ""; tries = 0; api = null;
+  hintBtn.hidden = true; revealBtn.hidden = true; setFb("", "");
+  const st = document.createElement("p"); st.className = "stage"; st.textContent = STAGE[s.stage] || ""; main.appendChild(st);
+  if (s.type === "explain"){
+    const h = document.createElement("h1"); h.textContent = s.title; main.appendChild(h);
+    const b = document.createElement("div"); b.className = "body";
+    s.body.forEach(t => { const p = document.createElement("p"); p.textContent = t; b.appendChild(p); }); main.appendChild(b);
+    if (s.figure) main.appendChild(figure(s.figure));
+    phase = "next"; mainBtn.textContent = "계속"; mainBtn.disabled = false; mainBtn.focus({preventScroll:true});
+    return;
+  }
+  api = buildQuestion(s, main);
+  api.onChange = () => { if (phase === "check") mainBtn.disabled = !api.ready; };
+  if (s.hint){ hintBtn.hidden = false; hintBtn.onclick = () => { if (main.querySelector(".hintbox")) return;
+    const h = document.createElement("div"); h.className = "hintbox"; h.textContent = s.hint; main.appendChild(h); hintBtn.hidden = true; }; }
+  (api.enter || []).forEach(inp => inp.addEventListener("keydown", e => { if (e.key === "Enter" && !mainBtn.disabled){ e.preventDefault(); mainBtn.click(); } }));
+  phase = "check"; mainBtn.textContent = "확인"; mainBtn.disabled = !api.ready;
+  if (api.focus && matchMedia("(pointer:fine)").matches) setTimeout(() => api.focus(), 50);
+}
+
+function resolved(correct, revealed){
+  const s = screens[idx]; api.lock(); hintBtn.hidden = true; revealBtn.hidden = true;
+  if (correct && tries === 1) firstRight++;
+  let html = correct ? "<strong>맞았어요</strong>" : "<strong>정답을 확인하세요</strong>";
+  if (s.qtype === "written") html = correct ? "<strong>핵심을 잘 짚었어요</strong>" : "<strong>모범 답안과 비교해 보세요</strong>";
+  if (s.qtype === "written" && s.model_answer) html += esc(s.model_answer);
+  else if (s.explanation) html += esc(s.explanation);
+  if (revealed) api.reveal();
+  setFb(correct ? "ok" : "bad", html);
+  phase = "next"; mainBtn.textContent = "계속"; mainBtn.disabled = false; mainBtn.focus({preventScroll:true});
+}
+
+mainBtn.addEventListener("click", () => {
+  if (phase === "next"){ idx++; show(); return; }
+  if (phase !== "check" || !api || !api.ready) return;
+  tries++; if (tries === 1) qCount++;
+  const ok = api.check();
+  if (ok) return resolved(true, false);
+  if (api.written){
+    setFb("bad", "<strong>빠진 내용이 있을 수 있어요</strong>설명을 보완해 다시 확인하거나 모범 답안을 보세요.");
+    revealBtn.hidden = false; revealBtn.textContent = "모범 답안 보기"; return;
+  }
+  setFb("bad", tries >= 2 ? "<strong>아직 아니에요</strong>다시 해 보거나 정답을 확인하세요." : "<strong>아직 아니에요</strong>한 번 더 생각해 보세요.");
+  if (tries >= 2){ revealBtn.hidden = false; revealBtn.textContent = "정답 보기"; }
+});
+revealBtn.addEventListener("click", () => resolved(false, true));
+$("#close").addEventListener("click", () => { location.href = `browse.html?c=${COURSE}`; });
+
+function nextTarget(){
+  if (!chapterMeta) return null;
+  const ls = chapterMeta.lessons;
+  if (!IS_REVIEW){ const k = ls.findIndex(l => l.id === data.lesson.id);
+    if (k >= 0 && k < ls.length - 1) return {href:`player.html?c=${COURSE}&ch=${CH}&l=${String(ls[k + 1].no).padStart(2, "0")}`, label:`다음 레슨: ${ls[k + 1].title}`};
+    if (chapterMeta.review) return {href:`player.html?c=${COURSE}&ch=${CH}&review=1`, label:"챕터 복습 풀기"}; }
+  if (courseMeta){ const chs = courseMeta.chapters, k = chs.findIndex(c => c.id === chapterMeta.chapter.id);
+    if (k >= 0 && k < chs.length - 1) return {href:`player.html?c=${COURSE}&ch=${String(chs[k + 1].no).padStart(2, "0")}&l=01`, label:`다음 챕터: ${chs[k + 1].title}`}; }
+  return null;
+}
+
+function finish(){
+  progress(); setFb("", "");
+  const id = IS_REVIEW ? data.review.id : data.lesson.id;
+  store.put(id, {done:true, first:firstRight, total:qCount, at:Date.now()});
+  const nxt = nextTarget();
+  main.innerHTML = `<div class="done"><p class="stage">${IS_REVIEW ? "복습 완료" : "레슨 완료"}</p>
+    <h1></h1><p class="score">${firstRight}<small> / ${qCount}</small></p>
+    <p class="body" style="font-size:17px;color:var(--ink-soft)">한 번에 맞힌 문항 수입니다.</p></div>`;
+  main.querySelector("h1").textContent = IS_REVIEW ? data.review.title : data.lesson.title;
+  hintBtn.hidden = true; revealBtn.hidden = false; revealBtn.textContent = "목록으로";
+  revealBtn.onclick = () => { location.href = `browse.html?c=${COURSE}`; };
+  if (nxt){ mainBtn.textContent = nxt.label; mainBtn.disabled = false; phase = "done"; mainBtn.onclick = () => { location.href = nxt.href; }; }
+  else { mainBtn.textContent = "목록으로"; mainBtn.onclick = () => { location.href = `browse.html?c=${COURSE}`; }; revealBtn.hidden = true; }
+}
+
+async function load(){
+  try{
+    const file = IS_REVIEW ? "review.json" : `l${LES}.json`;
+    const r = await fetch(BASE + file); if (!r.ok) throw new Error(`${BASE + file}을(를) 찾을 수 없습니다 (${r.status})`);
+    data = await r.json();
+    screens = IS_REVIEW ? data.questions : data.screens;
+    const title = IS_REVIEW ? data.review.title : data.lesson.title;
+    document.title = `${title} · math-arena`;
+    $("#where").textContent = IS_REVIEW ? `${data.chapter.title} 복습` : `${data.chapter.no}-${data.lesson.no} ${title}`;
+    Promise.all([fetch(BASE + "chapter.json").then(r => r.ok ? r.json() : null), fetch(`content/level${LEVEL}/${COURSE}/course.json`).then(r => r.ok ? r.json() : null)])
+      .then(([c, k]) => { chapterMeta = c; courseMeta = k; }).catch(() => {});
+    show();
+  }catch(e){
+    main.innerHTML = `<div class="error"><h1>레슨을 불러오지 못했습니다</h1><p class="body"></p><p><a href="browse.html">코스 목록으로 돌아가기</a></p></div>`;
+    main.querySelector(".body").textContent = e.message; fb.hidden = true;
+  }
+}
+load();
+</script>
+</body>
+</html>
