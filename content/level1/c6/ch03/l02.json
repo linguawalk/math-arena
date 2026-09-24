@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch03",
+    "no": 3,
+    "title": "쌍곡선"
+  },
+  "lesson": {
+    "id": "c6-ch03-l02",
+    "no": 2,
+    "title": "쌍곡선의 방정식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "x²/a² − y²/b² = 1",
+      "body": [
+        "두 초점이 (±c, 0)이고 거리의 차가 2a인 쌍곡선은 x²/a² − y²/b² = 1 (b² = c² − a²)입니다. 꼭짓점은 (±a, 0)입니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -6,
+          "xmax": 6,
+          "ymin": -6,
+          "ymax": 6,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "hyperbola",
+              "a": 3,
+              "b": 4,
+              "cx": 0,
+              "cy": 0,
+              "axis": "x"
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "쌍곡선 x²/9 − y²/16 = 1의 초점은 (±{{1}}, 0)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "같은 쌍곡선의 주축의 길이는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "같은 쌍곡선의 꼭짓점 중 x > 0인 것의 x좌표는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "위아래로 열리는 쌍곡선",
+      "body": [
+        "x²/a² − y²/b² = −1은 초점이 y축 위에 있어 위아래로 열립니다. 초점은 (0, ±c), c² = a² + b²"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "쌍곡선 x²/16 − y²/9 = −1의 초점은 (0, ±{{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 쌍곡선의 꼭짓점 중 y > 0인 것의 y좌표는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "방정식 세우기",
+      "body": [
+        "a와 c를 찾아 b² = c² − a²을 구합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "두 초점이 (±5, 0)이고 주축의 길이가 8인 쌍곡선은 x²/16 − y²/{{1}} = 1",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "9"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "꼭짓점이 (±2, 0), 초점이 (±3, 0)인 쌍곡선은 x²/4 − y²/{{1}} = 1",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "일반형과 평행이동",
+      "body": [
+        "우변을 1로 만들어 a², b²을 읽습니다. (x − p)²/a² − (y − q)²/b² = 1의 중심은 (p, q)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "쌍곡선 9x² − 16y² = 144의 주축의 길이는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -6,
+        "xmax": 6,
+        "ymin": -6,
+        "ymax": 6,
+        "xstep": 1,
+        "ystep": 1,
+        "curves": [
+          {
+            "kind": "hyperbola",
+            "a": 2,
+            "b": 3,
+            "cx": 1,
+            "cy": 2,
+            "axis": "x"
+          }
+        ]
+      },
+      "prompt": "쌍곡선 (x − 1)²/4 − (y − 2)²/9 = 1의 중심을 표시하세요.",
+      "answer": {
+        "x": 1,
+        "y": 2,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "쌍곡선 x² − y² = 1의 초점 중 x > 0인 것은 (√{{1}}, 0)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "x²의 부호가 +이면 좌우로, y²의 부호가 +이면 위아래로 열립니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "쌍곡선 x²/a² − y²/5 = 1이 점 (3, 2)를 지날 때 a²의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "쌍곡선 x²/4 − y²/12 = 1의 두 초점 사이의 거리는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 쌍곡선의 오른쪽 가지 위의 점 P에 대해 PF′ − PF의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "쌍곡선 x² − y² = 4의 주축의 길이는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "쌍곡선 x²/9 − y²/7 = 1의 두 초점 사이의 거리는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "쌍곡선의 방정식이 타원과 달리 빼기(−) 꼴이 되는 이유를 정의와 연결해 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "차"
+          ],
+          [
+            "c² = a² + b²",
+            "c가 a보다",
+            "c > a"
+          ],
+          [
+            "빼",
+            "−"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "쌍곡선은 거리의 차가 일정하므로 두 초점 사이의 거리 2c가 거리의 차 2a보다 큽니다. 그래서 c² − a² = b²이 되고, 정리하면 x²/a² − y²/b² = 1처럼 빼기 꼴이 됩니다."
+    }
+  ]
+}

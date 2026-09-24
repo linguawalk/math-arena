@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch03",
+    "no": 3,
+    "title": "쌍곡선"
+  },
+  "lesson": {
+    "id": "c6-ch03-l04",
+    "no": 4,
+    "title": "이차곡선 정리",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "식으로 구별하기",
+      "body": [
+        "x², y²의 계수가 같은 부호이고 같으면 원, 같은 부호이고 다르면 타원, 다른 부호이면 쌍곡선, 한쪽만 제곱이면 포물선입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "4x² + 9y² = 36은 어떤 곡선일까요?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "x² − y² = 4는 어떤 곡선일까요?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "y² = 6x는 어떤 곡선일까요?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "표준형으로 바꾸기",
+      "body": [
+        "일차항이 있으면 완전제곱식으로 묶어 중심이나 꼭짓점을 찾은 뒤 종류를 판단합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x² + y² − 4x = 0은 어떤 곡선일까요?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x² + 2y² − 4y = 0은 어떤 곡선일까요?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "x² − 4y² + 2x = 0은 어떤 곡선일까요?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "원뿔의 단면",
+      "body": [
+        "원뿔을 밑면과 평행하게 자르면 원, 조금 기울이면 타원, 모선과 평행하게 자르면 포물선, 더 기울이면 쌍곡선이 나옵니다. 그래서 이차곡선을 원뿔곡선이라고도 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "원뿔을 밑면과 평행한 평면으로 자른 단면은?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "원뿔을 모선과 평행한 평면으로 자른 단면은?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "이심률로 구별하기",
+      "body": [
+        "초점까지의 거리와 준선까지의 거리의 비가 e로 일정한 점의 모임은 e < 1이면 타원, e = 1이면 포물선, e > 1이면 쌍곡선입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "이심률이 0.5인 이차곡선은?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "이심률이 1인 이차곡선은?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "이심률이 2인 이차곡선은?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "원, 타원, 포물선, 쌍곡선은 모두 x, y에 대한 이차방정식으로 나타나는 이차곡선입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "초점까지의 거리가 준선까지의 거리의 2배인 점의 모임은?  (원 1, 타원 2, 포물선 3, 쌍곡선 4 중 번호)",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "타원 x²/25 + y²/16 = 1의 이심률은? (기약분수로)",
+      "answer": "3/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "쌍곡선 x²/16 − y²/9 = 1의 이심률은? (기약분수로)",
+      "answer": "5/4",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "포물선 y² = 4x의 이심률은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "원, 타원, 포물선, 쌍곡선을 원뿔곡선이라 부르는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "원뿔"
+          ],
+          [
+            "평면",
+            "자르"
+          ],
+          [
+            "기울"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "원뿔을 평면으로 자를 때 평면을 기울이는 정도에 따라 단면이 원, 타원, 포물선, 쌍곡선이 되기 때문입니다. 네 곡선 모두 원뿔의 단면으로 얻을 수 있어 원뿔곡선이라고 합니다."
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch04",
+    "no": 4,
+    "title": "평면벡터"
+  },
+  "lesson": {
+    "id": "c6-ch04-l01",
+    "no": 1,
+    "title": "벡터의 뜻",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "벡터",
+      "body": [
+        "크기와 방향을 함께 가진 양을 벡터라고 합니다. 점 A에서 점 B로 향하는 벡터를 AB로 쓰고, 그 크기를 |AB|로 씁니다.",
+        "길이, 넓이처럼 크기만 있는 양은 스칼라라고 합니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -6,
+          "xmax": 6,
+          "ymin": -6,
+          "ymax": 6,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "arrow",
+              "x1": 0,
+              "y1": 0,
+              "x2": 3,
+              "y2": 4,
+              "label": "AB"
+            }
+          ],
+          "points": [
+            [
+              0,
+              0,
+              "A"
+            ],
+            [
+              3,
+              4,
+              "B"
+            ]
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "A(0, 0), B(3, 4)일 때 |AB|는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "크기가 1인 벡터를 {{1}}벡터라고 합니다.",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "단위"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "서로 같은 벡터",
+      "body": [
+        "크기와 방향이 모두 같으면 시작점이 달라도 같은 벡터입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "평행사변형 ABCD에서 AB와 DC는 서로 같은 벡터일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "AB와 BA는 서로 같은 벡터일까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "역벡터와 영벡터",
+      "body": [
+        "크기는 같고 방향이 반대인 벡터를 역벡터라 하며 BA = −AB입니다. 시작점과 끝점이 같은 벡터는 영벡터 0이고 크기는 0입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "BA = {{1}} × AB",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−1",
+            "-1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "|AA|의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "도형 속의 벡터",
+      "body": [
+        "정다각형의 중심에서 꼭짓점으로 향하는 벡터들은 크기가 같고 방향만 다릅니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "정육각형의 중심 O에서 여섯 꼭짓점으로 향하는 벡터를 모두 더한 벡터의 크기는?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "한 변이 2인 정삼각형 ABC에서 |AB|는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "벡터는 화살표로 나타냅니다. 크기는 화살표의 길이, 방향은 화살표가 가리키는 쪽입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A(1, 2), B(4, 6)일 때 |AB|는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "한 변이 1인 정사각형의 대각선을 나타내는 벡터의 크기는 √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "평행사변형 ABCD에서 AD와 BC는 서로 같은 벡터일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "단위벡터의 크기는?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "벡터의 크기가 음수일 수 있을까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "한 변이 1인 정육각형 ABCDEF에서 |AD|는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "반지름이 3인 원의 중심에서 원 위의 점으로 향하는 벡터의 크기는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "벡터와 스칼라의 차이를 예를 들어 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "크기"
+          ],
+          [
+            "방향"
+          ],
+          [
+            "속도",
+            "힘",
+            "이동",
+            "변위"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "스칼라는 온도나 길이처럼 크기만 있는 양이고, 벡터는 속도나 힘처럼 크기와 방향을 함께 가진 양입니다. 시속 60km는 스칼라이지만 '북쪽으로 시속 60km'는 벡터입니다."
+    }
+  ]
+}

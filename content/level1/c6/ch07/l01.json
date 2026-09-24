@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch07",
+    "no": 7,
+    "title": "공간좌표"
+  },
+  "lesson": {
+    "id": "c6-ch07-l01",
+    "no": 1,
+    "title": "공간좌표",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "공간의 점",
+      "body": [
+        "서로 수직인 세 수직선 x축, y축, z축을 기준으로 공간의 점을 (x, y, z)로 나타냅니다.",
+        "두 축으로 정해지는 평면을 xy평면, yz평면, zx평면이라고 합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "점 (2, 3, 4)에서 xy평면에 내린 수선의 발의 z좌표는?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "점 (2, 3, 4)에서 x축에 내린 수선의 발의 x좌표는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "대칭이동",
+      "body": [
+        "xy평면에 대하여 대칭이면 z의 부호가, x축에 대하여 대칭이면 y, z의 부호가, 원점에 대하여 대칭이면 모든 부호가 바뀝니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "점 (1, 2, 3)을 xy평면에 대하여 대칭이동한 점은 (1, 2, {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−3",
+            "-3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "점 (1, 2, 3)을 원점에 대하여 대칭이동한 점은 ({{1}}, −2, −3)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−1",
+            "-1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "점 (1, 2, 3)을 z축에 대하여 대칭이동한 점은 (−1, −2, {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "좌표평면 위의 점",
+      "body": [
+        "xy평면 위의 점은 z = 0, yz평면 위의 점은 x = 0, zx평면 위의 점은 y = 0입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "점 (1, 2, 3)의 세 좌표는 모두 양수일까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "yz평면 위의 점의 x좌표는?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "좌표평면과 축까지의 거리",
+      "body": [
+        "점 (a, b, c)에서 xy평면까지의 거리는 |c|, x축까지의 거리는 √(b² + c²)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "점 (2, 3, 4)에서 xy평면까지의 거리는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "점 (2, 3, 4)에서 x축까지의 거리는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "원점까지의 거리",
+      "body": [
+        "점 (a, b, c)와 원점 사이의 거리는 √(a² + b² + c²)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "점 (3, −4, 12)와 원점 사이의 거리는?",
+      "answer": "13",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "점 (1, 2, 2)와 원점 사이의 거리는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "점 (a, 2, 3)이 yz평면 위에 있을 때 a의 값은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "점 (2, 3, 6)에서 z축까지의 거리는 √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "13"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "점 (4, 5, 6)을 y축에 대하여 대칭이동한 점은 (−4, 5, {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−6",
+            "-6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "점 (1, 1, 1)과 원점 사이의 거리는 √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "공간에서 점의 위치를 나타내는 데 좌표가 세 개 필요한 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "평면"
+          ],
+          [
+            "높이",
+            "z"
+          ],
+          [
+            "세",
+            "3"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "평면에서는 가로와 세로 두 방향만으로 위치를 정할 수 있지만, 공간에는 높이 방향이 하나 더 있습니다. 그래서 x, y에 z를 더한 세 개의 좌표가 필요합니다."
+    }
+  ]
+}

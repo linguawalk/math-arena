@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch01",
+    "no": 1,
+    "title": "포물선"
+  },
+  "review": {
+    "id": "c6-ch01-review",
+    "title": "포물선 복습",
+    "minutes": 10
+  },
+  "questions": [
+    {
+      "type": "question",
+      "id": "r1",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "초점이 (0, 2), 준선이 y = −2인 포물선의 꼭짓점의 y좌표는?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l01"
+    },
+    {
+      "type": "question",
+      "id": "r2",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y² = 4x 위의 점 중 초점과의 거리가 6인 점의 x좌표는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l01"
+    },
+    {
+      "type": "question",
+      "id": "r3",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "포물선 y² = 20x의 초점은 ({{1}}, 0)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r4",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "포물선 x² = 8y의 준선은 y = ?",
+      "answer": "-2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r5",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "초점이 (−3, 0), 준선이 x = 3인 포물선은 y² = −{{1}}x",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "12"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l02"
+    },
+    {
+      "type": "question",
+      "id": "r6",
+      "stage": "review",
+      "qtype": "fill_blank",
+      "prompt": "y² = 4x 위의 점 (4, 4)에서의 접선은 y = x/2 + {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r7",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "직선 y = x + k가 포물선 y² = 8x에 접할 때 k의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l03"
+    },
+    {
+      "type": "question",
+      "id": "r8",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y² = 16x의 통경의 길이는?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l04"
+    },
+    {
+      "type": "question",
+      "id": "r9",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "지름 4m, 깊이 1m인 포물면 접시의 초점은 바닥에서 몇 m 높이일까요?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l04"
+    },
+    {
+      "type": "question",
+      "id": "r10",
+      "stage": "review",
+      "qtype": "numeric",
+      "prompt": "y² = 12x 위에서 x좌표가 2인 점과 초점 사이의 거리는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "",
+      "source_lesson": "c6-ch01-l04"
+    }
+  ]
+}

@@ -47,6 +47,10 @@
   - log: y = a·log_b(x − p) + q
   - trig: y = a·fn(b(x − p)) + q, fn = sin | cos | tan
   - vline: x / hline: y (점선, 점근선·경계 표시용)
+  - ellipse: 중심 (cx, cy), 반축 a(가로), b(세로)
+  - hyperbola: 중심 (cx, cy), a, b, axis = x(좌우로 열림) | y(위아래로 열림)
+  - parab_x: (y − cy)² = 4p(x − cx), 옆으로 열리는 포물선
+  - arrow: (x1, y1)에서 (x2, y2)로 향하는 화살표, label(선택)
   - normal: 평균 m, 표준편차 s인 정규분포 밀도 곡선 (scale로 세로 배율 조정)
   - shade: curve와 x축(또는 curve2) 사이를 from~to 구간에서 칠함 (넓이 표시용)
   - 공통 선택 키: from, to(그릴 x 범위), color

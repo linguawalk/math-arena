@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch04",
+    "no": 4,
+    "title": "평면벡터"
+  },
+  "lesson": {
+    "id": "c6-ch04-l03",
+    "no": 3,
+    "title": "벡터의 성분",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "성분으로 나타내기",
+      "body": [
+        "좌표평면에서 벡터를 a = (a₁, a₂)로 나타내고 크기는 |a| = √(a₁² + a₂²)입니다.",
+        "A(x₁, y₁), B(x₂, y₂)이면 AB = (x₂ − x₁, y₂ − y₁)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "벡터 (3, 4)의 크기는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "A(1, 2), B(4, 6)일 때 AB = ({{1}}, {{2}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "성분으로 계산하기",
+      "body": [
+        "덧셈, 뺄셈, 실수배는 성분끼리 계산합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "(1, 2) + (3, −1) = ({{1}}, {{2}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "2(1, −3) − (0, 1) = (2, {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "−7",
+            "-7"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "평행 조건",
+      "body": [
+        "(a₁, a₂)와 (b₁, b₂)가 평행하면 성분의 비가 같습니다. a₁ : a₂ = b₁ : b₂"
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "(2, k)와 (1, 3)이 평행할 때 k의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "(k, 4)와 (2, 8)이 평행할 때 k의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "단위벡터",
+      "body": [
+        "a와 같은 방향의 단위벡터는 a/|a|입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "(3, 4)와 같은 방향의 단위벡터는 ({{1}}/5, 4/5)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "벡터 (6, 8)의 크기는?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "성분으로 나타내면 벡터 계산이 좌표 계산처럼 간단해집니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -6,
+        "xmax": 6,
+        "ymin": -6,
+        "ymax": 6,
+        "xstep": 1,
+        "ystep": 1,
+        "curves": [
+          {
+            "kind": "arrow",
+            "x1": 0,
+            "y1": 0,
+            "x2": 2,
+            "y2": 1,
+            "label": "OA"
+          },
+          {
+            "kind": "arrow",
+            "x1": 0,
+            "y1": 0,
+            "x2": -1,
+            "y2": 3,
+            "label": "OB"
+          }
+        ]
+      },
+      "prompt": "OA = (2, 1), OB = (−1, 3)일 때 OA + OB가 가리키는 점을 표시하세요.",
+      "answer": {
+        "x": 1,
+        "y": 4,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "A(2, 4), B(6, 0)의 중점을 가리키는 위치벡터는 ({{1}}, {{2}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        },
+        {
+          "id": 2,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "|(x, 3)| = 5이고 x > 0일 때 x의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a = (1, 1), b = (2, −1)일 때 |a + b|는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "a = (1, 1), b = (2, −1)일 때 3a − 2b = (−1, {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a = (1, 1), b = (1, −1)이고 pa + qb = (5, 1)일 때 p의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 조건에서 q의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "벡터를 성분으로 나타내면 편리한 점을 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "계산",
+            "더하"
+          ],
+          [
+            "성분끼리",
+            "좌표"
+          ],
+          [
+            "크기",
+            "평행",
+            "그림"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "성분으로 나타내면 그림을 그리지 않고도 벡터의 덧셈, 실수배를 성분끼리 계산할 수 있습니다. 크기나 평행 여부도 수로 바로 판단할 수 있습니다."
+    }
+  ]
+}

@@ -180,6 +180,24 @@ function drawCurves(svg, cfg, X, Y, pad, S){
   [...curves].sort((p, q) => (q.kind === "shade") - (p.kind === "shade")).forEach(c => {
     const col = c.color || colors[ci++ % colors.length];
     if (c.kind === "circle"){ el("circle", {cx:X(c.cx), cy:Y(c.cy), r:Math.abs(X(c.cx + c.r) - X(c.cx)), fill:"none", stroke:col, "stroke-width":2.5}, g); return; }
+    if (c.kind === "ellipse" || c.kind === "hyperbola" || c.kind === "parab_x"){
+      const cx = c.cx || 0, cy = c.cy || 0, branches = [];
+      if (c.kind === "ellipse"){ const pts = []; for (let i = 0; i <= 360; i++){ const t = i / 360 * 2 * Math.PI; pts.push([cx + c.a * Math.cos(t), cy + c.b * Math.sin(t)]); } branches.push(pts); }
+      if (c.kind === "hyperbola"){ const U = 4; [1, -1].forEach(sg => { const pts = [];
+        for (let i = 0; i <= 400; i++){ const u = -U + 2 * U * i / 400; const ch = Math.cosh(u), sh = Math.sinh(u);
+          pts.push(c.axis === "y" ? [cx + c.b * sh, cy + sg * c.a * ch] : [cx + sg * c.a * ch, cy + c.b * sh]); } branches.push(pts); }); }
+      if (c.kind === "parab_x"){ const pts = [], sp = (ymax - ymin) * 1.5;
+        for (let i = 0; i <= 400; i++){ const v = -sp + 2 * sp * i / 400; pts.push([cx + v * v / (4 * c.p), cy + v]); } branches.push(pts); }
+      branches.forEach(pts => el("path", {d: pts.map((q, i) => (i ? "L" : "M") + X(q[0]).toFixed(1) + " " + Y(q[1]).toFixed(1)).join(" "), fill:"none", stroke:col, "stroke-width":2.5}, g));
+      return;
+    }
+    if (c.kind === "arrow"){
+      const x1 = X(c.x1), y1 = Y(c.y1), x2 = X(c.x2), y2 = Y(c.y2), ang = Math.atan2(y2 - y1, x2 - x1), hl = 12;
+      el("line", {x1, y1, x2, y2, stroke:col, "stroke-width":2.5}, g);
+      el("path", {d:`M${x2} ${y2} L${x2 - hl * Math.cos(ang - 0.4)} ${y2 - hl * Math.sin(ang - 0.4)} L${x2 - hl * Math.cos(ang + 0.4)} ${y2 - hl * Math.sin(ang + 0.4)} Z`, fill:col}, g);
+      if (c.label) txt(g, (x1 + x2) / 2 + 10, (y1 + y2) / 2 - 8, c.label, {fill:col, "font-size":15, "text-anchor":"start"});
+      return;
+    }
     if (c.kind === "vline"){ el("line", {x1:X(c.x), x2:X(c.x), y1:Y(ymin), y2:Y(ymax), stroke:"#4A5670", "stroke-dasharray":"5 5", "stroke-width":1.5}, g); return; }
     if (c.kind === "hline"){ el("line", {x1:X(xmin), x2:X(xmax), y1:Y(c.y), y2:Y(c.y), stroke:"#4A5670", "stroke-dasharray":"5 5", "stroke-width":1.5}, g); return; }
     if (c.kind === "shade"){

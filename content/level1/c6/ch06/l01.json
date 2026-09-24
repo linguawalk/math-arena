@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch06",
+    "no": 6,
+    "title": "공간도형"
+  },
+  "lesson": {
+    "id": "c6-ch06-l01",
+    "no": 1,
+    "title": "직선과 평면의 위치 관계",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "두 직선의 위치 관계",
+      "body": [
+        "공간에서 두 직선은 한 점에서 만나거나, 평행하거나, 만나지도 평행하지도 않을 수 있습니다. 마지막 경우를 꼬인 위치라고 합니다.",
+        "아래에서 정육면체 ABCD-EFGH는 아랫면 ABCD, 윗면 EFGH이고 AE, BF, CG, DH가 세로 모서리입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "정육면체에서 모서리 AB와 GH의 위치 관계는?  (만난다 1, 평행하다 2, 꼬인 위치 3 중 번호)",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "모서리 AB와 CG의 위치 관계는?  (만난다 1, 평행하다 2, 꼬인 위치 3 중 번호)",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "모서리 AB와 BF의 위치 관계는?  (만난다 1, 평행하다 2, 꼬인 위치 3 중 번호)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "직선과 평면",
+      "body": [
+        "직선과 평면은 직선이 평면에 포함되거나, 한 점에서 만나거나, 평행합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "정육면체의 모서리 중 면 ABCD와 평행한 것은 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "정육면체의 모서리 중 면 ABCD와 수직인 것은 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "두 평면",
+      "body": [
+        "두 평면은 한 직선(교선)에서 만나거나 평행합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "정육면체의 면 중 면 ABCD와 평행한 면은 몇 개일까요?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "정육면체의 면 중 면 ABCD와 수직인 면은 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "평면이 하나로 정해지는 조건",
+      "body": [
+        "한 직선 위에 있지 않은 세 점, 한 직선과 그 밖의 한 점, 만나는 두 직선, 평행한 두 직선은 평면을 하나로 정합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "어느 세 점도 한 직선 위에 있지 않고 네 점이 한 평면 위에 있지 않을 때, 이 중 세 점으로 정해지는 평면은 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "꼬인 위치에 있는 두 직선으로 평면을 하나 정할 수 있을까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "꼬인 위치는 공간에서만 생기는 관계입니다. 평면에서는 두 직선이 만나거나 평행할 뿐입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "정육면체의 모서리 중 AB와 꼬인 위치에 있는 것은 몇 개일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "정육면체의 대각선 AG와 꼬인 위치에 있는 모서리는 몇 개일까요?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "서로 다른 세 평면으로 공간을 나눌 때 생길 수 있는 부분의 최대 개수는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "평면 밖의 한 점을 지나고 그 평면에 평행한 평면은 몇 개일까요?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "한 직선에 수직인 서로 다른 두 평면은 평행할까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "한 평면에 수직인 서로 다른 두 직선은 평행할까요?  (그렇다 1, 아니다 0)",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "꼬인 위치가 무엇인지 예를 들어 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "만나지"
+          ],
+          [
+            "평행하지"
+          ],
+          [
+            "정육면체",
+            "모서리",
+            "예"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "공간에서 두 직선이 만나지도 않고 평행하지도 않은 관계를 꼬인 위치라고 합니다. 예를 들어 정육면체에서 아랫면의 모서리 AB와 세로 모서리 CG는 만나지 않고 평행하지도 않으므로 꼬인 위치입니다."
+    }
+  ]
+}

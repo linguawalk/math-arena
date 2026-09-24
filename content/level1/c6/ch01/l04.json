@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch01",
+    "no": 1,
+    "title": "포물선"
+  },
+  "lesson": {
+    "id": "c6-ch01-l04",
+    "no": 4,
+    "title": "반사 성질과 활용",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "반사 성질",
+      "body": [
+        "축에 평행하게 들어온 빛은 포물선에서 반사되어 모두 초점을 지납니다. 반대로 초점에서 나온 빛은 반사되어 축에 평행하게 나갑니다.",
+        "위성 안테나, 자동차 전조등, 반사 망원경이 이 성질을 이용합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "단면이 y² = 16x인 포물면 안테나에서 신호가 모이는 점의 x좌표는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "단면이 x² = 12y인 전조등에서 전구를 놓아야 할 위치의 y좌표는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "실제 크기에서 초점 찾기",
+      "body": [
+        "접시의 지름과 깊이를 알면 가장자리 점을 x² = 4py에 넣어 p를 구합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "지름 8m, 깊이 1m인 포물면 접시의 초점은 바닥에서 몇 m 높이일까요?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "지름 12m, 깊이 3m인 포물면 접시의 초점은 바닥에서 몇 m 높이일까요?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "초점까지의 거리",
+      "body": [
+        "y² = 4px 위의 점 (x₁, y₁)과 초점 사이의 거리는 준선까지의 거리 x₁ + p입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y² = 8x 위에서 x좌표가 6인 점과 초점 사이의 거리는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "y² = 4x 위의 두 점 P, Q의 x좌표의 합이 10일 때 PF + QF의 값은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "포물선 모양의 운동",
+      "body": [
+        "분수의 물줄기나 던진 공의 궤적은 위로 볼록한 포물선입니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -5,
+          "xmax": 5,
+          "ymin": -1,
+          "ymax": 5,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "poly",
+              "coef": [
+                4,
+                0,
+                -0.25
+              ]
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "물줄기가 y = −x²/4 + 4의 모양일 때 가장 높은 곳의 높이는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그 물줄기가 바닥(y = 0)에 닿는 점 중 x > 0인 것의 x좌표는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "초점을 지나는 현",
+      "body": [
+        "초점을 지나고 축에 수직인 현을 통경이라 하며, y² = 4px의 통경의 길이는 4p입니다.",
+        "초점을 지나는 현의 길이는 두 끝점의 x좌표의 합에 2p를 더한 값입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y² = 4x의 통경의 길이는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y² = 12x의 통경의 길이는?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y² = 4x의 초점을 지나는 현의 두 끝점의 x좌표의 합이 6일 때 현의 길이는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y² = 8x 위의 점과 초점 사이 거리의 최솟값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "단면이 x² = 20y인 반사 망원경의 초점의 y좌표는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "폭이 20m이고 가장 높은 곳이 4m인 포물선 아치에서 가장 높은 곳의 높이는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "y² = 4x 위의 점 P에 대해 (P와 초점 사이의 거리) − (P와 y축 사이의 거리)의 값은?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "포물면 안테나가 신호를 한 점에 모을 수 있는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "축에 평행",
+            "평행하게"
+          ],
+          [
+            "반사"
+          ],
+          [
+            "초점"
+          ]
+        ],
+        "min_groups_matched": 3
+      },
+      "model_answer": "먼 곳에서 오는 신호는 축에 평행하게 들어오고, 포물면에서 반사되면 모두 초점을 지납니다. 그래서 초점에 수신기를 두면 신호를 한곳에 모을 수 있습니다."
+    }
+  ]
+}

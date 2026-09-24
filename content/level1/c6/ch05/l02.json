@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch05",
+    "no": 5,
+    "title": "벡터의 활용"
+  },
+  "lesson": {
+    "id": "c6-ch05-l02",
+    "no": 2,
+    "title": "원의 벡터방정식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "원의 벡터방정식",
+      "body": [
+        "중심의 위치벡터가 c, 반지름이 r인 원 위의 점 P는 |p − c| = r을 만족합니다. (p − c)·(p − c) = r²로도 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "|p − (1, 2)| = 3이 나타내는 원의 반지름은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -6,
+        "xmax": 6,
+        "ymin": -6,
+        "ymax": 6,
+        "xstep": 1,
+        "ystep": 1,
+        "curves": [
+          {
+            "kind": "circle",
+            "cx": 1,
+            "cy": 2,
+            "r": 3
+          }
+        ]
+      },
+      "prompt": "그 원의 중심을 표시하세요.",
+      "answer": {
+        "x": 1,
+        "y": 2,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "지름의 양 끝이 주어진 원",
+      "body": [
+        "(p − a)·(p − b) = 0은 AB를 지름으로 하는 원입니다. 지름에 대한 원주각이 직각이기 때문입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "A(0, 0), B(4, 0)에 대해 (p − a)·(p − b) = 0이 나타내는 원의 반지름은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -6,
+        "xmax": 6,
+        "ymin": -6,
+        "ymax": 6,
+        "xstep": 1,
+        "ystep": 1,
+        "curves": [
+          {
+            "kind": "circle",
+            "cx": 2,
+            "cy": 0,
+            "r": 2
+          }
+        ]
+      },
+      "prompt": "그 원의 중심을 표시하세요.",
+      "answer": {
+        "x": 2,
+        "y": 0,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "원의 접선",
+      "body": [
+        "원 위의 점 Q에서의 접선 위의 점 P는 (q − c)·(p − q) = 0을 만족합니다. 반지름과 접선이 수직이기 때문입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "원 x² + y² = 25 위의 점 (3, 4)에서의 접선은 3x + 4y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "25"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "원의 접선과 접점을 지나는 반지름이 이루는 각은 몇 도일까요?",
+      "answer": "90",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "자취",
+      "body": [
+        "|PA| = |PB|인 점 P의 자취는 AB의 수직이등분선, |PA| = k|PB| (k ≠ 1)인 점의 자취는 원입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "A(0, 0), B(4, 0)에 대해 |PA| = |PB|인 점 P의 자취는 직선 x = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "A(0, 0), B(3, 0)에 대해 |PA| = 2|PB|인 점 P의 자취는 원입니다. 그 반지름은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그 원의 중심의 x좌표는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "원은 '중심에서 거리가 일정', 지름 원은 '양 끝을 보는 각이 직각'이라는 벡터 조건으로 나타낼 수 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "원 |p − (0, 3)| = 5는 원점을 지날까요?  (그렇다 1, 아니다 0)",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a = (1, 1), b = (5, 1)일 때 (p − a)·(p − b) = 0이 나타내는 원의 반지름은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "원 |p| = 1 위의 점과 점 (3, 4) 사이의 거리의 최솟값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 경우 거리의 최댓값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "p·p = 9를 만족하는 점 P의 자취는 원입니다. 그 반지름은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "|2p − (2, 0)| = 4가 나타내는 원의 반지름은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "(p − a)·(p − b) = 0이 AB를 지름으로 하는 원인 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "수직",
+            "직각"
+          ],
+          [
+            "지름"
+          ],
+          [
+            "원주각"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "(p − a)·(p − b) = 0은 벡터 PA와 PB가 수직이라는 뜻입니다. 선분 AB를 보는 각이 직각인 점 P는 AB를 지름으로 하는 원 위에 있으므로(지름에 대한 원주각은 직각), 이 식은 그 원을 나타냅니다."
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch07",
+    "no": 7,
+    "title": "공간좌표"
+  },
+  "lesson": {
+    "id": "c6-ch07-l02",
+    "no": 2,
+    "title": "두 점 사이의 거리와 내분점",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "공간에서의 거리",
+      "body": [
+        "두 점 (x₁, y₁, z₁), (x₂, y₂, z₂) 사이의 거리는 √((x₂ − x₁)² + (y₂ − y₁)² + (z₂ − z₁)²)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "두 점 (1, 2, 3), (4, 6, 3) 사이의 거리는?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "원점과 점 (2, 3, 6) 사이의 거리는?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "내분점과 중점",
+      "body": [
+        "평면과 같이 각 좌표를 따로 내분합니다. 중점은 각 좌표의 평균입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A(1, 2, 3), B(5, 6, 7)의 중점은 (3, {{1}}, 5)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "A(0, 0, 0), B(4, 8, 12)를 1 : 3으로 내분하는 점은 (1, 2, {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "3"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "무게중심",
+      "body": [
+        "세 꼭짓점의 각 좌표를 더해 3으로 나눕니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "세 점 (1, 0, 0), (0, 2, 0), (0, 0, 3)을 꼭짓점으로 하는 삼각형의 무게중심은 (1/3, 2/3, {{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "1"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "세 점 (2, 4, 6), (4, 2, 0), (0, 0, 3)을 꼭짓점으로 하는 삼각형의 무게중심의 x좌표는?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "거리 조건",
+      "body": [
+        "두 점에서 같은 거리에 있는 점은 거리의 제곱이 같다는 식으로 구합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "두 점 (1, 2, 3), (3, 2, 1)에서 같은 거리에 있는 x축 위의 점의 x좌표는?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "원점과 점 (2, 2, 1) 사이의 거리는?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "공간의 거리 공식은 평면의 공식에 z 성분만 더한 것입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "두 점 (1, 1, 1), (3, 3, 3) 사이의 거리는 {{1}}√3",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "원점과 (3, 6, 9)를 2 : 1로 내분하는 점의 z좌표는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "한 변이 2인 정육면체의 대각선의 길이는 {{1}}√3",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "세 점 (0, 0, 0), (3, 0, 0), (0, 4, 0)을 꼭짓점으로 하는 삼각형의 둘레는?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "점 A(2, −1, 3)과 A를 xy평면에 대하여 대칭이동한 점 사이의 거리는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "선분 AB의 중점이 (2, 3, 4)이고 A(1, 1, 1)일 때 B의 z좌표는?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "세 점 (1, 0, 0), (0, 1, 0), (0, 0, 1)로 만든 정삼각형의 한 변의 길이는 √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "공간에서 두 점 사이의 거리 공식이 피타고라스 정리를 두 번 쓴 것과 같은 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "피타고라스"
+          ],
+          [
+            "밑면",
+            "xy평면",
+            "평면"
+          ],
+          [
+            "높이",
+            "z"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "먼저 두 점을 xy평면에 정사영해 가로·세로 차이로 밑면의 거리를 피타고라스 정리로 구합니다. 그 거리와 높이(z) 차이를 두 변으로 하는 직각삼각형에 피타고라스 정리를 한 번 더 쓰면 공간의 거리가 됩니다."
+    }
+  ]
+}

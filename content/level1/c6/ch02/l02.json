@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch02",
+    "no": 2,
+    "title": "타원"
+  },
+  "lesson": {
+    "id": "c6-ch02-l02",
+    "no": 2,
+    "title": "타원의 방정식",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "x²/a² + y²/b² = 1",
+      "body": [
+        "두 초점이 (±c, 0)이고 거리의 합이 2a인 타원은 x²/a² + y²/b² = 1 (b² = a² − c²)입니다.",
+        "장축은 x축 위에 있고 꼭짓점은 (±a, 0), (0, ±b)입니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -6,
+          "xmax": 6,
+          "ymin": -6,
+          "ymax": 6,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "ellipse",
+              "a": 5,
+              "b": 3,
+              "cx": 0,
+              "cy": 0
+            }
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "타원 x²/25 + y²/9 = 1의 장축의 길이는?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "같은 타원의 단축의 길이는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "같은 타원의 초점은 (±{{1}}, 0)",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "장축이 y축 위에 있을 때",
+      "body": [
+        "분모가 큰 쪽이 장축입니다. x²/9 + y²/25 = 1은 장축이 y축 위에 있고 초점이 (0, ±4)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "타원 x²/9 + y²/25 = 1의 초점은 (0, ±{{1}})",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 타원의 장축의 길이는?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "방정식 세우기",
+      "body": [
+        "a와 c를 찾아 b² = a² − c²으로 b²을 구하거나, 지나는 점을 대입합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "두 초점이 (±3, 0)이고 장축의 길이가 10인 타원은 x²/25 + y²/{{1}} = 1",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "16"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "꼭짓점이 (±4, 0), (0, ±2)인 타원은 x²/{{1}} + y²/4 = 1",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "16"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "타원 x²/a² + y²/4 = 1이 점 (3, 0)을 지날 때 a²의 값은?",
+      "answer": "9",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "평행이동과 일반형",
+      "body": [
+        "(x − p)²/a² + (y − q)²/b² = 1의 중심은 (p, q)입니다. 계수가 붙은 식은 양변을 나눠 우변을 1로 만듭니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -6,
+        "xmax": 6,
+        "ymin": -6,
+        "ymax": 6,
+        "xstep": 1,
+        "ystep": 1,
+        "curves": [
+          {
+            "kind": "ellipse",
+            "a": 3,
+            "b": 2,
+            "cx": 1,
+            "cy": -2
+          }
+        ]
+      },
+      "prompt": "타원 (x − 1)²/9 + (y + 2)²/4 = 1의 중심을 표시하세요.",
+      "answer": {
+        "x": 1,
+        "y": -2,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "타원 x² + 4y² = 16의 장축의 길이는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "타원 4x² + 9y² = 36의 두 초점 사이의 거리는 {{1}}√5",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "a > b일 때 c² = a² − b². 분모가 큰 변수의 축 위에 초점이 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "타원 x²/16 + y²/7 = 1의 두 초점 사이의 거리는?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "타원 x²/25 + y²/16 = 1 위의 점과 두 초점 사이의 거리의 합은?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "타원 x²/25 + y²/9 = 1 위에서 y좌표가 9/5이고 x > 0인 점의 x좌표는?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "타원 x²/9 + y²/4 = 1의 넓이는 πab = {{1}}π",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "6"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "타원의 방정식에서 분모가 큰 쪽이 장축이 되는 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "분모"
+          ],
+          [
+            "꼭짓점",
+            "절편",
+            "만나는 점"
+          ],
+          [
+            "길",
+            "긴",
+            "멀"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "x²/a² + y²/b² = 1에서 y = 0이면 x = ±a, x = 0이면 y = ±b입니다. 분모가 클수록 그 축과 만나는 점이 원점에서 멀어지므로, 분모가 큰 쪽 축 방향이 더 긴 장축이 됩니다."
+    }
+  ]
+}

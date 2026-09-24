@@ -1,0 +1,330 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch02",
+    "no": 2,
+    "title": "타원"
+  },
+  "lesson": {
+    "id": "c6-ch02-l03",
+    "no": 3,
+    "title": "타원의 접선",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "타원 위의 점에서의 접선",
+      "body": [
+        "타원 x²/a² + y²/b² = 1 위의 점 (x₁, y₁)에서의 접선은 x₁x/a² + y₁y/b² = 1입니다. 원의 접선 공식과 같은 모양입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "타원 x²/8 + y²/2 = 1 위의 점 (2, 1)에서의 접선은 x + 2y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "4"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "fill_blank",
+      "prompt": "타원 x²/25 + y²/9 = 1 위의 점 (4, 9/5)에서의 접선은 4x + 5y = {{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "25"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "기울기가 주어진 접선",
+      "body": [
+        "타원에 접하고 기울기가 m인 직선은 y = mx ± √(a²m² + b²)입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "타원 x²/4 + y² = 1에 접하고 기울기가 1인 직선 중 y절편이 양수인 것의 y절편은 √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "5"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "타원 x²/9 + y²/4 = 1에 접하고 기울기가 0인 직선 중 y > 0인 것은 y = ?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "판별식으로 접할 조건",
+      "body": [
+        "직선을 타원의 방정식에 대입한 이차방정식의 판별식이 0이면 접합니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "직선 y = x + k가 타원 x²/2 + y² = 1에 접할 때 k²의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "직선 y = k가 타원 x²/9 + y²/16 = 1에 접할 때 양수 k의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "두 접선이 수직으로 만나는 점",
+      "body": [
+        "타원 밖에서 그은 두 접선이 수직으로 만나는 점들은 원 x² + y² = a² + b² 위에 있습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "타원 x²/9 + y²/16 = 1에서 두 접선이 수직으로 만나는 점들이 이루는 원의 반지름은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그 원 위의 점에서 타원에 그은 두 접선이 이루는 각은 몇 도일까요?",
+      "answer": "90",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "위의 점이 주어지면 x₁x/a² + y₁y/b² = 1, 기울기가 주어지면 y = mx ± √(a²m² + b²)을 씁니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "diagram",
+      "widget": "coordinate_plane",
+      "config": {
+        "xmin": -4,
+        "xmax": 4,
+        "ymin": -4,
+        "ymax": 4,
+        "xstep": 1,
+        "ystep": 1,
+        "curves": [
+          {
+            "kind": "ellipse",
+            "a": 2,
+            "b": 1,
+            "cx": 0,
+            "cy": 0
+          },
+          {
+            "kind": "vline",
+            "x": 2
+          },
+          {
+            "kind": "hline",
+            "y": 1
+          }
+        ]
+      },
+      "prompt": "타원 x²/4 + y² = 1 위의 점 (2, 0)과 (0, 1)에서의 두 접선이 만나는 점을 표시하세요.",
+      "answer": {
+        "x": 2,
+        "y": 1,
+        "tolerance": 0
+      },
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "타원 x²/16 + y²/9 = 1에 접하고 기울기가 0인 직선 중 y > 0인 것은 y = ?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "직선 y = x + 3이 타원 x²/a² + y²/4 = 1에 접할 때 a²의 값은?",
+      "answer": "5",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": "√(a² + 4) = 3"
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "타원 x²/8 + y²/2 = 1 위의 점 (2, 1)에서의 접선의 기울기는? (기약분수로)",
+      "answer": "-1/2",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "그 접선 x + 2y = 4의 x절편은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "fill_blank",
+      "prompt": "타원 x² + 4y² = 4에 접하고 기울기가 1/2인 직선 중 y절편이 양수인 것의 y절편은 √{{1}}",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "원 x² + y² = 1 위의 점 (1, 0)에서의 접선은 x = ?",
+      "answer": "1",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "타원의 접선 공식 x₁x/a² + y₁y/b² = 1이 원의 접선 공식과 닮은 이유를 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "원"
+          ],
+          [
+            "a = b",
+            "같을 때",
+            "늘이",
+            "줄이"
+          ],
+          [
+            "x₁x",
+            "같은 모양"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "타원은 원을 한 방향으로 늘이거나 줄인 모양이고, a = b이면 원이 됩니다. 원의 접선 x₁x + y₁y = r²을 같은 비율로 늘이면 x₁x/a² + y₁y/b² = 1이 되어 모양이 닮습니다."
+    }
+  ]
+}

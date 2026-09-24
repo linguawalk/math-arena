@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0",
+  "site": "math-arena",
+  "level": 1,
+  "course": {
+    "id": "c6",
+    "title": "기하"
+  },
+  "chapter": {
+    "id": "c6-ch02",
+    "no": 2,
+    "title": "타원"
+  },
+  "lesson": {
+    "id": "c6-ch02-l01",
+    "no": 1,
+    "title": "타원의 뜻",
+    "minutes": 15
+  },
+  "tags": {
+    "domain": [
+      "기하위상"
+    ],
+    "region": "KR",
+    "curriculum": "2022-high"
+  },
+  "screens": [
+    {
+      "type": "explain",
+      "id": "s1",
+      "stage": "intro",
+      "title": "두 초점까지의 거리의 합",
+      "body": [
+        "평면 위의 두 점 F, F′까지의 거리의 합이 일정한 점들의 모임을 타원이라고 합니다. F, F′은 초점입니다.",
+        "끈의 양 끝을 두 핀에 고정하고 연필로 팽팽하게 당기며 돌리면 타원이 그려집니다."
+      ],
+      "figure": {
+        "widget": "graph",
+        "config": {
+          "xmin": -6,
+          "xmax": 6,
+          "ymin": -6,
+          "ymax": 6,
+          "xstep": 1,
+          "ystep": 1,
+          "curves": [
+            {
+              "kind": "ellipse",
+              "a": 5,
+              "b": 3,
+              "cx": 0,
+              "cy": 0
+            }
+          ],
+          "points": [
+            [
+              -4,
+              0,
+              "F′"
+            ],
+            [
+              4,
+              0,
+              "F"
+            ]
+          ]
+        },
+        "static": true
+      }
+    },
+    {
+      "type": "question",
+      "id": "q1",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "두 초점까지의 거리의 합이 10인 타원의 장축의 길이는?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q2",
+      "stage": "intro",
+      "qtype": "numeric",
+      "prompt": "그 타원 위의 점 P와 F 사이의 거리가 3이면 PF′은?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s2",
+      "stage": "discover",
+      "title": "장축, 단축, 초점",
+      "body": [
+        "장축의 길이를 2a, 단축의 길이를 2b, 두 초점 사이의 거리를 2c라 하면 a² = b² + c²입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q3",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a = 5, c = 3인 타원에서 b의 값은?",
+      "answer": "4",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q4",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "같은 타원의 단축의 길이는?",
+      "answer": "8",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q5",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "a = 13, b = 5인 타원에서 c의 값은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s3",
+      "stage": "discover",
+      "title": "끈으로 그리기",
+      "body": [
+        "끈의 길이가 장축의 길이 2a, 두 핀 사이의 거리가 2c입니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q6",
+      "stage": "discover",
+      "qtype": "fill_blank",
+      "prompt": "길이 12인 끈을 거리 8인 두 핀에 걸어 그린 타원의 b = {{1}}√5",
+      "blanks": [
+        {
+          "id": 1,
+          "answers": [
+            "2"
+          ]
+        }
+      ],
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q7",
+      "stage": "discover",
+      "qtype": "numeric",
+      "prompt": "장축의 길이가 12인 타원의 a의 값은?",
+      "answer": "6",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s4",
+      "stage": "summary",
+      "title": "이심률",
+      "body": [
+        "e = c/a를 이심률이라 합니다. 타원은 0 < e < 1이고, e가 0에 가까울수록 원에 가깝습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q8",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a = 5, c = 3인 타원의 이심률은? (기약분수로)",
+      "answer": "3/5",
+      "answer_format": "fraction",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q9",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "두 초점이 한 점으로 겹친 경우(원)의 이심률은?",
+      "answer": "0",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "explain",
+      "id": "s5",
+      "stage": "summary",
+      "title": "정리",
+      "body": [
+        "타원 위 어디에서든 두 초점까지 거리의 합은 2a로 같습니다."
+      ]
+    },
+    {
+      "type": "question",
+      "id": "q10",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "두 초점이 (±4, 0)이고 장축의 길이가 10인 타원의 b의 값은?",
+      "answer": "3",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q11",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "타원 위의 점에서 두 초점까지 거리의 합이 12이고 한쪽이 5일 때 다른 쪽은?",
+      "answer": "7",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q12",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "두 초점 사이의 거리가 6, 단축의 길이가 8인 타원의 장축의 길이는?",
+      "answer": "10",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q13",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "a = 5, c = 3인 타원 위의 점 P와 두 초점 F, F′으로 만든 삼각형의 둘레는?",
+      "answer": "16",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q14",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "이심률이 1/2이고 a = 4인 타원의 c의 값은?",
+      "answer": "2",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q15",
+      "stage": "apply",
+      "qtype": "numeric",
+      "prompt": "같은 타원의 b²의 값은?",
+      "answer": "12",
+      "answer_format": "integer",
+      "tolerance": 0,
+      "hint": null,
+      "explanation": ""
+    },
+    {
+      "type": "question",
+      "id": "q16",
+      "stage": "apply",
+      "qtype": "written",
+      "prompt": "원과 타원의 관계를 초점을 이용해 설명해 보세요.",
+      "hint": null,
+      "rubric": {
+        "visibility": "hidden",
+        "keyword_groups": [
+          [
+            "초점"
+          ],
+          [
+            "겹",
+            "한 점",
+            "같아"
+          ],
+          [
+            "원"
+          ]
+        ],
+        "min_groups_matched": 2
+      },
+      "model_answer": "타원은 두 초점까지 거리의 합이 일정한 점의 모임입니다. 두 초점이 한 점으로 겹치면 그 점까지의 거리가 일정한 점의 모임, 즉 원이 됩니다. 원은 이심률이 0인 특별한 타원입니다."
+    }
+  ]
+}
