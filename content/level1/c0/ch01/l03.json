@@ -45,7 +45,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "7 × 7 = 49"
+      "explanation": "한 변을 x라 하면 x × x = 49\n7 × 7 = 49이므로 한 변은 7m\n길이는 음수가 될 수 없으므로 −7은 답이 아닙니다."
     },
     {
       "type": "explain",
@@ -59,6 +59,20 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "25의 제곱근을 모두 구하세요.",
+      "steps": [
+        "제곱해서 25가 되는 수를 찾습니다.",
+        "5² = 25",
+        "(−5)² = 25",
+        "따라서 25의 제곱근은 5와 −5입니다."
+      ],
+      "answer": "±5"
+    },
+    {
       "type": "question",
       "id": "k1",
       "stage": "discover",
@@ -68,7 +82,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "0 하나뿐입니다."
+      "explanation": "제곱해서 0이 되는 수는 0뿐입니다.\n0이 아닌 수는 양수든 음수든 제곱하면 양수가 되기 때문입니다."
     },
     {
       "type": "question",
@@ -93,7 +107,7 @@
         }
       ],
       "hint": null,
-      "explanation": "양수의 제곱근은 절댓값이 같고 부호가 다른 두 수입니다.",
+      "explanation": "4² = 16이고 (−4)² = 16입니다.\n그래서 16의 제곱근은 4와 −4, 두 개입니다.",
       "unordered_groups": [
         [
           1,
@@ -111,7 +125,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "어떤 수를 제곱해도 음수가 되지 않으므로 0개입니다."
+      "explanation": "양수를 제곱해도, 음수를 제곱해도 양수이고 0을 제곱하면 0입니다.\n제곱해서 −9가 되는 수는 없으므로 0개입니다."
     },
     {
       "type": "explain",
@@ -139,7 +153,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "5의 제곱근은 √5와 −√5입니다.\n그중 음수인 것이 음의 제곱근이므로 −√5"
     },
     {
       "type": "question",
@@ -155,8 +169,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "81의 양의 제곱근은 9입니다."
+      "hint": "제곱해서 81이 되는 양수를 찾으세요.",
+      "explanation": "√81은 81의 양의 제곱근입니다.\n9 × 9 = 81이므로 √81 = 9"
     },
     {
       "type": "question",
@@ -167,8 +181,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "제곱근 36 = √36 = 6"
+      "hint": "'제곱근 36'은 √36을 뜻합니다.",
+      "explanation": "'제곱근 36'은 √36, 즉 36의 양의 제곱근 하나입니다.\n6² = 36이므로 6 ('36의 제곱근'이라고 하면 ±6 두 개입니다.)"
     },
     {
       "type": "explain",
@@ -181,6 +195,19 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e2",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "√((−8)²) − (√3)²을 계산하세요.",
+      "steps": [
+        "괄호 안부터: (−8)² = 64이므로 √64 = 8",
+        "(√3)² = 3",
+        "8 − 3 = 5"
+      ],
+      "answer": "5"
+    },
+    {
       "type": "question",
       "id": "k3",
       "stage": "apply",
@@ -189,8 +216,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "음수를 제곱하면 양수가 됩니다.",
+      "explanation": "(−√6)² = (−√6) × (−√6)\n음수 × 음수 = 양수이고 √6 × √6 = 6\n따라서 6"
     },
     {
       "type": "question",
@@ -201,8 +228,8 @@
       "answer": "7",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "3 + |−4| = 7"
+      "hint": "√(a²) = |a|를 이용하세요.",
+      "explanation": "√(3²) = √9 = 3\n√((−4)²) = √16 = 4\n3 + 4 = 7"
     },
     {
       "type": "question",
@@ -213,8 +240,8 @@
       "answer": "7",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "√7을 두 번 곱하면 어떻게 될까요?",
+      "explanation": "√7은 제곱해서 7이 되는 양수입니다.\n그러므로 (√7)² = 7"
     },
     {
       "type": "question",
@@ -226,7 +253,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "(−5)²을 먼저 계산하세요.",
-      "explanation": "√25 = 5. √((−5)²) = |−5| = 5"
+      "explanation": "괄호 안부터 계산합니다: (−5)² = 25\n√25 = 5\n√(a²) = |a|이므로 |−5| = 5와 같습니다."
     },
     {
       "type": "explain",
@@ -237,6 +264,19 @@
         "a, b가 0 이상일 때 a < b이면 √a < √b입니다.",
         "2 = √4, 3 = √9처럼 자연수도 근호로 바꾸면 쉽게 비교할 수 있습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "√7과 2.5 중 어느 쪽이 더 클까요?",
+      "steps": [
+        "2.5를 근호 꼴로 바꿉니다: 2.5² = 6.25이므로 2.5 = √6.25",
+        "근호 안끼리 비교하면 7 > 6.25",
+        "따라서 √7 > 2.5"
+      ],
+      "answer": "√7이 더 크다"
     },
     {
       "type": "question",
@@ -252,8 +292,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "3 = √9이고 √10 > √9"
+      "hint": "3을 근호가 있는 꼴로 바꿔 보세요.",
+      "explanation": "3 = √9입니다.\n10 > 9이므로 √10 > √9\n따라서 √10 > 3"
     },
     {
       "type": "question",
@@ -290,8 +330,8 @@
         "d",
         "e"
       ],
-      "hint": null,
-      "explanation": "모두 근호로 쓰면 √3 < √4 < √5 < √9 < √10"
+      "hint": "모두 √ 꼴로 바꿔 비교하세요.",
+      "explanation": "2 = √4, 3 = √9로 바꿉니다.\n근호 안의 수를 비교합니다: 3 < 4 < 5 < 9 < 10\n따라서 √3, 2, √5, 3, √10"
     },
     {
       "type": "question",
@@ -302,8 +342,8 @@
       "answer": "24",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": "5 = √25",
-      "explanation": "√n < √25이므로 n < 25, n = 1, 2, …, 24로 24개입니다."
+      "hint": "5를 근호 꼴로 바꾸면 √25입니다.",
+      "explanation": "5 = √25이므로 √n < √25\n근호 안끼리 비교하면 n < 25\n자연수 n은 1부터 24까지 24개"
     },
     {
       "type": "question",
@@ -322,7 +362,7 @@
         "tolerance": 0.05
       },
       "hint": "1.4²과 1.5²을 계산해 보세요.",
-      "explanation": "1.4² = 1.96, 1.5² = 2.25이므로 √2는 1.4와 1.5 사이이고 1.4에 더 가깝습니다(√2 ≈ 1.414)."
+      "explanation": "1.4² = 1.96으로 2보다 조금 작고, 1.5² = 2.25로 2보다 큽니다.\n그래서 √2는 1.4와 1.5 사이에 있습니다.\n2 − 1.96 = 0.04가 2.25 − 2 = 0.25보다 작으므로 1.4에 더 가깝습니다 (√2 ≈ 1.414)."
     },
     {
       "type": "question",

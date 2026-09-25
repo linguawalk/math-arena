@@ -51,6 +51,18 @@ svg.pad:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-ra
 .symbols{display:flex;flex-wrap:wrap;gap:6px;margin:-8px 0 20px}
 .symbols button{min-width:44px;height:40px;border:1px solid var(--grid-strong);background:#fff;border-radius:var(--radius-s);font-size:19px;cursor:pointer}
 .symbols button:hover{background:var(--blue-soft)}
+.conceptbox{margin-top:18px;padding:12px 14px;background:var(--blue-soft);border-left:4px solid var(--blue);border-radius:0 var(--radius-s) var(--radius-s) 0;font-size:16px;line-height:1.6}
+.conceptbox b{display:block;margin-bottom:4px}
+.fb-text{max-height:46vh;overflow-y:auto}
+.answerline{font-weight:700;margin:4px 0 2px}
+.solution{margin-top:6px}
+.solution ol{margin:4px 0 0;padding-left:1.3em}
+.solution li{margin:2px 0}
+.ex-problem{font-size:19px;line-height:1.7;margin:0 0 18px;padding:14px 16px;background:#fff;border:1px solid var(--grid);border-radius:var(--radius-m)}
+.ex-steps{margin:0;padding-left:1.4em;font-size:18px;line-height:1.75}
+.ex-steps li{margin:0 0 8px}
+.ex-steps li[hidden]{display:none}
+.ex-answer{margin-top:14px;font-weight:700;font-size:18px;color:var(--ok)}
 .hintbox{margin-top:18px;padding:12px 14px;background:var(--marker-soft);border-left:4px solid var(--marker);border-radius:0 var(--radius-s) var(--radius-s) 0;font-size:16px;line-height:1.6}
 .feedback{position:fixed;left:0;right:0;bottom:0;z-index:6;border-top:1px solid var(--grid);background:var(--paper);padding:14px 16px calc(14px + env(safe-area-inset-bottom,0px))}
 .feedback.ok{background:var(--ok-soft);border-top-color:#BFE3CF}
@@ -62,7 +74,7 @@ svg.pad:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-ra
 .btn{border:none;border-radius:var(--radius-m);padding:13px 22px;font-size:17px;font-weight:700;cursor:pointer;background:var(--blue);color:#fff;min-width:120px}
 .btn:disabled{background:var(--grid-strong);cursor:default}
 .btn.ghost{background:transparent;color:var(--blue);border:2px solid var(--blue)}
-.btn.link{background:none;color:var(--ink-soft);font-weight:500;min-width:0;padding:13px 8px;text-decoration:underline}
+.btn.link{white-space:nowrap;flex:0 0 auto !important;background:none;color:var(--ink-soft);font-weight:500;min-width:0;padding:13px 8px;text-decoration:underline}
 .done{text-align:left}
 .score{font-size:64px;font-weight:700;line-height:1;margin:8px 0 6px;font-variant-numeric:tabular-nums}
 .score small{font-size:24px;color:var(--ink-soft);font-weight:500}
@@ -80,6 +92,7 @@ svg.pad:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-ra
 <main id="main" aria-live="polite"></main>
 <div class="feedback" id="fb"><div class="fb-inner">
   <div class="fb-text" id="fbText"></div>
+  <button class="btn link" id="conceptBtn" hidden>개념 다시 보기</button>
   <button class="btn link" id="hintBtn" hidden>힌트 보기</button>
   <button class="btn ghost" id="revealBtn" hidden>정답 보기</button>
   <button class="btn" id="mainBtn">확인</button>
@@ -459,17 +472,40 @@ function buildQuestion(q, host){
 
 /* ---------- 흐름 ---------- */
 let data, screens, idx = 0, api = null, tries = 0, firstRight = 0, qCount = 0, phase = "idle", chapterMeta = null, courseMeta = null;
-const main = $("#main"), fb = $("#fb"), fbText = $("#fbText"), mainBtn = $("#mainBtn"), hintBtn = $("#hintBtn"), revealBtn = $("#revealBtn");
+const main = $("#main"), fb = $("#fb"), fbText = $("#fbText"), mainBtn = $("#mainBtn"), hintBtn = $("#hintBtn"), revealBtn = $("#revealBtn"), conceptBtn = $("#conceptBtn");
 
 function setFb(kind, html){ fb.className = "feedback" + (kind ? " " + kind : ""); fbText.innerHTML = html || ""; }
 function progress(){ const p = Math.round(idx / screens.length * 100); $("#barFill").style.width = p + "%"; document.querySelector(".bar").setAttribute("aria-valuenow", p); }
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
 
+function lastConcept(i){ for (let k = i - 1; k >= 0; k--) if (screens[k].type === "explain") return screens[k]; return null; }
+function answerText(q){
+  if (q.qtype === "numeric") return q.answer.replace(/^-/, "−");
+  if (q.qtype === "fill_blank") return q.prompt.replace(/\{\{(\d+)\}\}/g, (m, n) => q.blanks[n - 1].answers[0]);
+  if (q.qtype === "ordering"){ const t = Object.fromEntries(q.items.map(it => [it.id, it.text])); return q.answer_order.map(id => t[id]).join("  →  "); }
+  if (q.qtype === "diagram") return q.widget === "number_line" ? fmt(q.answer.value) : `(${fmt(q.answer.x)}, ${fmt(q.answer.y)})`;
+  return "";
+}
+function solHtml(text){
+  const lines = String(text || "").split("\n").map(t => t.trim()).filter(Boolean);
+  if (!lines.length) return "";
+  return '<div class="solution"><b>풀이</b>' + (lines.length > 1 ? "<ol>" + lines.map(l => "<li>" + esc(l) + "</li>").join("") + "</ol>" : "<br>" + esc(lines[0])) + "</div>";
+}
+function showConcept(){
+  const c = lastConcept(idx); if (!c) return;
+  const old = main.querySelector(".conceptbox"); if (old){ old.remove(); return; }
+  const box = document.createElement("div"); box.className = "conceptbox";
+  box.innerHTML = "<b>" + esc(c.title) + "</b>" + c.body.map(t => esc(t)).join("<br>");
+  main.appendChild(box); box.scrollIntoView({block:"nearest", behavior:"smooth"});
+}
+conceptBtn.addEventListener("click", showConcept);
+let exStep = 0;
+
 function show(){
   progress(); window.scrollTo(0, 0);
   if (idx >= screens.length) return finish();
   const s = screens[idx]; main.innerHTML = ""; tries = 0; api = null;
-  hintBtn.hidden = true; revealBtn.hidden = true; setFb("", "");
+  hintBtn.hidden = true; revealBtn.hidden = true; conceptBtn.hidden = true; setFb("", "");
   const st = document.createElement("p"); st.className = "stage"; st.textContent = STAGE[s.stage] || ""; main.appendChild(st);
   if (s.type === "explain"){
     const h = document.createElement("h1"); h.textContent = s.title; main.appendChild(h);
@@ -479,7 +515,17 @@ function show(){
     phase = "next"; mainBtn.textContent = "계속"; mainBtn.disabled = false; mainBtn.focus({preventScroll:true});
     return;
   }
+  if (s.type === "example"){
+    const h = document.createElement("h1"); h.textContent = s.title || "예제"; main.appendChild(h);
+    const pb = document.createElement("div"); pb.className = "ex-problem"; pb.textContent = s.problem; main.appendChild(pb);
+    if (s.figure) main.appendChild(figure(s.figure));
+    const ol = document.createElement("ol"); ol.className = "ex-steps";
+    s.steps.forEach(t => { const li = document.createElement("li"); li.textContent = t; li.hidden = true; ol.appendChild(li); }); main.appendChild(ol);
+    exStep = 0; phase = "step"; mainBtn.textContent = "풀이 보기"; mainBtn.disabled = false; mainBtn.focus({preventScroll:true});
+    return;
+  }
   api = buildQuestion(s, main);
+  if (lastConcept(idx)) conceptBtn.hidden = false;
   if (s.figure){ const pr = main.querySelector(".prompt"); if (pr) pr.after(figure(s.figure)); }
   api.onChange = () => { if (phase === "check") mainBtn.disabled = !api.ready; };
   if (s.hint){ hintBtn.hidden = false; hintBtn.onclick = () => { if (main.querySelector(".hintbox")) return;
@@ -490,18 +536,30 @@ function show(){
 }
 
 function resolved(correct, revealed){
-  const s = screens[idx]; api.lock(); hintBtn.hidden = true; revealBtn.hidden = true;
+  const s = screens[idx]; api.lock(); hintBtn.hidden = true; revealBtn.hidden = true; conceptBtn.hidden = true;
   if (correct && tries === 1) firstRight++;
   let html = correct ? "<strong>맞았어요</strong>" : "<strong>정답을 확인하세요</strong>";
-  if (s.qtype === "written") html = correct ? "<strong>핵심을 잘 짚었어요</strong>" : "<strong>모범 답안과 비교해 보세요</strong>";
-  if (s.qtype === "written" && s.model_answer) html += esc(s.model_answer);
-  else if (s.explanation) html += esc(s.explanation);
+  if (s.qtype === "written"){ html = correct ? "<strong>핵심을 잘 짚었어요</strong>" : "<strong>모범 답안과 비교해 보세요</strong>"; if (s.model_answer) html += esc(s.model_answer); }
+  else {
+    if (!correct) html += '<p class="answerline">정답: ' + esc(answerText(s)) + "</p>";
+    if (s.explanation) html += solHtml(s.explanation);
+    else if (!correct){ const c = lastConcept(idx); if (c) html += '<div class="solution"><b>관련 개념: ' + esc(c.title) + "</b><br>" + c.body.map(t => esc(t)).join("<br>") + "</div>"; }
+  }
   if (revealed) api.reveal();
   setFb(correct ? "ok" : "bad", html);
   phase = "next"; mainBtn.textContent = "계속"; mainBtn.disabled = false; mainBtn.focus({preventScroll:true});
 }
 
 mainBtn.addEventListener("click", () => {
+  if (phase === "step"){
+    const lis = main.querySelectorAll(".ex-steps li");
+    if (exStep < lis.length){ lis[exStep].hidden = false; exStep++; lis[exStep - 1].scrollIntoView({block:"nearest", behavior:"smooth"}); }
+    if (exStep >= lis.length){ const s = screens[idx];
+      if (s.answer && !main.querySelector(".ex-answer")){ const a = document.createElement("p"); a.className = "ex-answer"; a.textContent = "답: " + s.answer; main.appendChild(a); }
+      phase = "next"; mainBtn.textContent = "계속"; }
+    else mainBtn.textContent = "다음 단계";
+    return;
+  }
   if (phase === "next"){ idx++; show(); return; }
   if (phase !== "check" || !api || !api.ready) return;
   tries++; if (tries === 1) qCount++;
@@ -511,7 +569,10 @@ mainBtn.addEventListener("click", () => {
     setFb("bad", "<strong>빠진 내용이 있을 수 있어요</strong>설명을 보완해 다시 확인하거나 모범 답안을 보세요.");
     revealBtn.hidden = false; revealBtn.textContent = "모범 답안 보기"; return;
   }
-  setFb("bad", tries >= 2 ? "<strong>아직 아니에요</strong>다시 해 보거나 정답을 확인하세요." : "<strong>아직 아니에요</strong>한 번 더 생각해 보세요.");
+  const s0 = screens[idx];
+  if (tries === 1 && s0.hint && !main.querySelector(".hintbox")) hintBtn.click();
+  setFb("bad", tries >= 2 ? "<strong>아직 아니에요</strong>다시 해 보거나 정답과 풀이를 확인하세요."
+                          : "<strong>아직 아니에요</strong>" + (s0.hint ? "아래 힌트를 보고 한 번 더 생각해 보세요." : "한 번 더 생각해 보거나 개념을 다시 보세요."));
   if (tries >= 2){ revealBtn.hidden = false; revealBtn.textContent = "정답 보기"; }
 });
 revealBtn.addEventListener("click", () => resolved(false, true));

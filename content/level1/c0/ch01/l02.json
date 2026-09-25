@@ -61,7 +61,7 @@
         "tolerance": 0
       },
       "hint": null,
-      "explanation": "0에서 왼쪽으로 3칸 간 곳입니다."
+      "explanation": "수직선에서 0의 오른쪽은 양수, 왼쪽은 음수입니다.\n−3은 0에서 왼쪽으로 3칸 간 곳입니다."
     },
     {
       "type": "explain",
@@ -83,7 +83,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "−3, 0, 7이 정수입니다."
+      "explanation": "정수는 …, −2, −1, 0, 1, 2, …처럼 분수나 소수 부분이 없는 수입니다.\n−3, 0, 7은 정수이고 2.5와 −1/2은 정수가 아닙니다.\n따라서 3개입니다."
     },
     {
       "type": "question",
@@ -101,8 +101,8 @@
         "value": -2.5,
         "tolerance": 0
       },
-      "hint": "−5/2 = −2.5입니다.",
-      "explanation": "−2와 −3의 한가운데입니다."
+      "hint": "−5/2를 소수로 바꿔 보세요.",
+      "explanation": "−5/2 = −2.5입니다.\n0에서 왼쪽으로 2칸 간 −2와 3칸 간 −3의 한가운데에 표시합니다."
     },
     {
       "type": "explain",
@@ -115,6 +115,20 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "|−6| + |4| − |−2|를 계산하세요.",
+      "steps": [
+        "|−6|은 −6과 0 사이의 거리이므로 6",
+        "|4| = 4",
+        "|−2| = 2",
+        "6 + 4 − 2 = 8"
+      ],
+      "answer": "8"
+    },
+    {
       "type": "question",
       "id": "k2",
       "stage": "discover",
@@ -124,7 +138,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "4와 −4, 2개입니다."
+      "explanation": "절댓값은 0으로부터의 거리입니다.\n0에서 거리가 4인 점은 오른쪽의 4와 왼쪽의 −4, 두 개입니다."
     },
     {
       "type": "question",
@@ -141,7 +155,7 @@
         }
       ],
       "hint": null,
-      "explanation": "−7은 0에서 7만큼 떨어져 있습니다."
+      "explanation": "|−7|은 −7과 0 사이의 거리입니다.\n0에서 왼쪽으로 7만큼 떨어져 있으므로 7입니다."
     },
     {
       "type": "question",
@@ -179,7 +193,7 @@
         "d"
       ],
       "hint": null,
-      "explanation": "음수는 절댓값이 클수록 작습니다. −3 < −2.25 < −1/2 < 0 < 1.5"
+      "explanation": "음수끼리는 0에서 멀수록, 즉 절댓값이 클수록 작습니다: −3 < −2.25 < −1/2\n그다음이 0, 마지막이 양수 1.5입니다.\n따라서 −3, −2.25, −1/2, 0, 1.5"
     },
     {
       "type": "explain",
@@ -192,6 +206,19 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e2",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "(−7) − (−2) + 3을 계산하세요.",
+      "steps": [
+        "빼기 음수는 더하기 양수로 바꿉니다: (−7) + 2 + 3",
+        "(−7) + 2 = −5 (절댓값의 차 5, 큰 쪽의 부호 −)",
+        "−5 + 3 = −2"
+      ],
+      "answer": "−2"
+    },
+    {
       "type": "question",
       "id": "k3",
       "stage": "apply",
@@ -200,8 +227,8 @@
       "answer": "-8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "−5 + (−3) = −8"
+      "hint": "빼는 수의 부호를 바꿔 더하세요.",
+      "explanation": "(−5) − (+3) = (−5) + (−3)\n음수끼리 더하면 절댓값을 더하고 부호는 −입니다: −(5 + 3) = −8"
     },
     {
       "type": "question",
@@ -212,8 +239,8 @@
       "answer": "-3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "−8에서 오른쪽으로 5칸 가면 −3입니다."
+      "hint": "절댓값이 큰 쪽의 부호를 따르세요.",
+      "explanation": "부호가 다른 두 수의 덧셈은 절댓값의 차에 절댓값이 큰 쪽의 부호를 붙입니다.\n8 − 5 = 3이고, 절댓값이 큰 −8의 부호가 −이므로 −3"
     },
     {
       "type": "question",
@@ -224,8 +251,8 @@
       "answer": "7",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "3 + 4 = 7"
+      "hint": "−(−4)는 +4와 같습니다.",
+      "explanation": "빼기 음수는 더하기 양수로 바꿉니다: 3 − (−4) = 3 + 4\n= 7"
     },
     {
       "type": "question",
@@ -236,8 +263,8 @@
       "answer": "10",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "4 − (−6) = 10°C"
+      "hint": "일교차는 (높은 기온) − (낮은 기온)입니다.",
+      "explanation": "일교차 = (가장 높은 기온) − (가장 낮은 기온) = 4 − (−6)\n= 4 + 6 = 10°C"
     },
     {
       "type": "explain",
@@ -251,6 +278,19 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "(−2)³ × (−3) ÷ 4를 계산하세요.",
+      "steps": [
+        "거듭제곱을 먼저: (−2)³ = −8",
+        "(−8) × (−3) = 24 (음수 × 음수 = 양수)",
+        "24 ÷ 4 = 6"
+      ],
+      "answer": "6"
+    },
+    {
       "type": "question",
       "id": "q8",
       "stage": "apply",
@@ -259,8 +299,8 @@
       "answer": "-30",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "음수가 3개(홀수)이므로 부호는 −, 크기는 30입니다."
+      "hint": "먼저 음수의 개수로 부호를 정하세요.",
+      "explanation": "음수가 3개(홀수)이므로 결과는 음수입니다.\n절댓값끼리 곱하면 2 × 3 × 5 = 30\n따라서 −30"
     },
     {
       "type": "question",
@@ -277,8 +317,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "−1을 짝수 번 곱하면 1입니다."
+      "hint": "−1을 두 번 곱할 때마다 1이 됩니다.",
+      "explanation": "(−1)² = 1, (−1)³ = −1, (−1)⁴ = 1, …\n−1을 짝수 번 곱하면 1, 홀수 번 곱하면 −1입니다.\n100은 짝수이므로 1"
     },
     {
       "type": "question",
@@ -289,8 +329,8 @@
       "answer": "-5/12",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "−8/12 + 3/12 = −5/12"
+      "hint": "분모를 12로 통분하세요.",
+      "explanation": "3과 4의 최소공배수 12로 통분합니다: −2/3 = −8/12, 1/4 = 3/12\n−8/12 + 3/12 = −5/12"
     },
     {
       "type": "question",
@@ -301,8 +341,8 @@
       "answer": "-2/3",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "−3/4 × 8/9 = −24/36 = −2/3"
+      "hint": "나누는 수를 뒤집어 곱하세요.",
+      "explanation": "÷ 9/8은 × 8/9와 같습니다: (−3/4) × (8/9)\n= −24/36\n약분하면 −2/3"
     },
     {
       "type": "question",
@@ -314,7 +354,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "−3²은 3²에 −를 붙인 것입니다.",
-      "explanation": "−9 + (−8) ÷ 4 = −9 − 2 = −11. 거듭제곱 → 곱셈·나눗셈 → 덧셈·뺄셈 순서입니다."
+      "explanation": "−3²은 3²에 −를 붙인 것이므로 −9\n(−2)³ = −8이므로 (−8) ÷ 4 = −2\n−9 + (−2) = −11 (거듭제곱 → 곱셈·나눗셈 → 덧셈·뺄셈 순서)"
     },
     {
       "type": "question",
