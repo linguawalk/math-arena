@@ -32,7 +32,8 @@
       "title": "역함수",
       "body": [
         "f가 일대일대응이면 y = f(x)에서 거꾸로 y에 x를 대응시키는 함수를 만들 수 있고, 이를 역함수 f⁻¹이라 합니다.",
-        "y = f(x) ⇔ x = f⁻¹(y)"
+        "y = f(x) ⇔ x = f⁻¹(y)",
+        "역함수는 결과에서 원래 값을 되찾는 함수입니다. f가 x를 y로 보냈다면 f⁻¹은 y를 x로 돌려보냅니다. 그래서 f⁻¹(b) = a를 구하려면 f(a) = b인 a를 찾으면 됩니다."
       ]
     },
     {
@@ -45,7 +46,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "역함수의 정의에 따라 f⁻¹(7) = a이면 f(a) = 7\n2a + 1 = 7\na = 3"
     },
     {
       "type": "question",
@@ -57,7 +58,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "f(3) = 5이면 역함수의 정의에 따라 f⁻¹(5) = 3\n역함수는 5를 원래 값 3으로 돌려보냅니다."
     },
     {
       "type": "explain",
@@ -65,8 +66,22 @@
       "stage": "discover",
       "title": "역함수 구하기",
       "body": [
-        "y = f(x)를 x에 대해 푼 뒤 x와 y를 바꿉니다."
+        "y = f(x)를 x에 대해 푼 뒤 x와 y를 바꿉니다.",
+        "왜 x와 y를 바꿀까요? x에 대해 풀면 'y를 넣으면 x가 나오는' 식이 됩니다. 관습적으로 입력을 x, 출력을 y로 쓰므로 마지막에 두 문자를 바꿔 y = f⁻¹(x) 꼴로 나타냅니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "f(x) = (2x − 3)/5의 역함수를 구하세요.",
+      "steps": [
+        "y = (2x − 3)/5를 x에 대해 풉니다: 5y = 2x − 3, x = (5y + 3)/2",
+        "x와 y를 바꿉니다: y = (5x + 3)/2",
+        "f⁻¹(x) = (5x + 3)/2"
+      ],
+      "answer": "f⁻¹(x) = (5x + 3)/2"
     },
     {
       "type": "question",
@@ -83,7 +98,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "y = 3x − 6을 x에 대해 풀면 x = (y + 6)/3 = y/3 + 2\nx와 y를 바꾸면 y = x/3 + 2\n빈칸은 2"
     },
     {
       "type": "question",
@@ -100,7 +115,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "y = (x + 1)/2를 x에 대해 풀면 x = 2y − 1\nx와 y를 바꾸면 y = 2x − 1\n빈칸은 2"
     },
     {
       "type": "question",
@@ -112,7 +127,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "역함수의 정의에 따라 f⁻¹(8) = a이면 f(a) = 8\na³ = 8\na = 2"
     },
     {
       "type": "explain",
@@ -120,7 +135,8 @@
       "stage": "discover",
       "title": "역함수가 존재할 조건",
       "body": [
-        "역함수가 있으려면 f가 일대일대응이어야 합니다. 정의역을 좁히면 역함수가 생기기도 합니다."
+        "역함수가 있으려면 f가 일대일대응이어야 합니다. 정의역을 좁히면 역함수가 생기기도 합니다.",
+        "일대일대응이 아니면 거꾸로 대응시킬 때 한 값에 두 개가 대응하거나(일대일이 아님), 대응할 값이 없는 원소가 생깁니다(치역 ≠ 공역). 그래서 역함수가 함수가 될 수 없습니다."
       ]
     },
     {
@@ -133,7 +149,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "x ≥ 0에서 x²은 증가하므로 일대일함수이고, 치역이 0 이상의 실수 전체입니다.\n정의역을 좁혀 일대일대응이 되었으므로 역함수 √x가 있습니다.\n1"
     },
     {
       "type": "question",
@@ -145,7 +161,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "실수 전체에서는 f(2) = f(−2) = 4처럼 일대일이 아닙니다.\n4를 거꾸로 대응시키면 2와 −2 두 개가 나와 함수가 될 수 없습니다.\n0"
     },
     {
       "type": "explain",
@@ -154,7 +170,8 @@
       "title": "역함수의 그래프와 성질",
       "body": [
         "y = f(x)와 y = f⁻¹(x)의 그래프는 직선 y = x에 대하여 대칭입니다.",
-        "(f⁻¹∘f)(x) = x, (f∘f⁻¹)(x) = x"
+        "(f⁻¹∘f)(x) = x, (f∘f⁻¹)(x) = x",
+        "왜 y = x에 대하여 대칭일까요? 점 (a, b)가 y = f(x) 위에 있으면 f⁻¹(b) = a이므로 (b, a)가 y = f⁻¹(x) 위에 있습니다. 좌표를 바꾸는 것은 직선 y = x에 대한 대칭이동입니다."
       ],
       "figure": {
         "widget": "graph",
@@ -193,6 +210,19 @@
       }
     },
     {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "f(x) = 3x + 2일 때 f⁻¹(11)과 (f∘f⁻¹)(7)을 구하세요.",
+      "steps": [
+        "f⁻¹(11) = a이면 f(a) = 11: 3a + 2 = 11, a = 3",
+        "f∘f⁻¹은 항등함수이므로 (f∘f⁻¹)(7) = 7",
+        "역함수 식을 구하지 않아도 됩니다."
+      ],
+      "answer": "f⁻¹(11) = 3, (f∘f⁻¹)(7) = 7"
+    },
+    {
       "type": "question",
       "id": "q8",
       "stage": "apply",
@@ -212,8 +242,8 @@
         "y": 1,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": ""
+      "hint": "x좌표와 y좌표를 바꾸세요.",
+      "explanation": "(1, 4)가 y = f(x) 위에 있으면 f(1) = 4, 즉 f⁻¹(4) = 1\ny = f⁻¹(x) 위의 점은 좌표를 바꾼 (4, 1)\n그 점을 표시합니다."
     },
     {
       "type": "question",
@@ -224,8 +254,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "역함수와 원래 함수를 합성하면 무엇이 되나요?",
+      "explanation": "f∘f⁻¹은 f⁻¹로 되돌린 뒤 다시 f를 하므로 항등함수입니다.\n(f∘f⁻¹)(5) = 5"
     },
     {
       "type": "question",
@@ -236,8 +266,8 @@
       "answer": "10",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "f⁻¹∘f는 항등함수입니다.",
+      "explanation": "g = f⁻¹이므로 g∘f = f⁻¹∘f는 원래 값으로 되돌리는 항등함수입니다.\n(g∘f)(10) = 10"
     },
     {
       "type": "explain",
@@ -245,8 +275,22 @@
       "stage": "summary",
       "title": "역함수와의 교점",
       "body": [
-        "증가하는 함수에서 y = f(x)와 y = f⁻¹(x)의 교점은 직선 y = x 위에 있으므로 f(x) = x를 풀면 됩니다."
+        "증가하는 함수에서 y = f(x)와 y = f⁻¹(x)의 교점은 직선 y = x 위에 있으므로 f(x) = x를 풀면 됩니다.",
+        "증가함수이면 두 그래프가 y = x를 사이에 두고 대칭이라 교점은 y = x 위에만 생깁니다. 그래서 f(x) = f⁻¹(x)를 직접 풀 필요 없이 f(x) = x만 풀면 됩니다. 감소함수에서는 이 방법이 통하지 않을 수 있습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "f(x) = (1/2)x + 3과 그 역함수의 그래프의 교점을 구하세요.",
+      "steps": [
+        "f는 증가함수이므로 교점은 y = x 위",
+        "(1/2)x + 3 = x에서 x = 6",
+        "교점 (6, 6)"
+      ],
+      "answer": "(6, 6)"
     },
     {
       "type": "question",
@@ -257,8 +301,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "f(x) = x를 푸세요.",
+      "explanation": "f는 증가함수이므로 역함수와의 교점은 y = x 위에 있습니다.\n2x − 3 = x\nx = 3"
     },
     {
       "type": "question",
@@ -269,8 +313,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "f⁻¹(3) = 1을 f(1) = 3으로 바꾸세요.",
+      "explanation": "f⁻¹(3) = 1이면 f(1) = a + b = 3, f(2) = 2a + b = 5\n두 식을 빼면 a = 2, b = 1\na + b = 3"
     },
     {
       "type": "question",
@@ -281,8 +325,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "어느 범위의 식에서 5가 나오는지 보세요.",
+      "explanation": "f⁻¹(5) = a이면 f(a) = 5\nx < 0에서 f(x) = x + 1 < 1이므로 5가 될 수 없고, x ≥ 0에서 2a + 1 = 5\na = 2"
     },
     {
       "type": "question",
@@ -293,8 +337,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "g(2)를 먼저 구하세요.",
+      "explanation": "안쪽부터: g(2) = 6\nf⁻¹(6) = a이면 f(a) = a + 2 = 6\na = 4"
     },
     {
       "type": "question",
@@ -305,8 +349,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "g∘f의 식을 먼저 구하세요.",
+      "explanation": "(g∘f)(x) = g(x + 1) = 2x + 2\n(g∘f)⁻¹(8) = a이면 2a + 2 = 8\na = 3"
     },
     {
       "type": "question",

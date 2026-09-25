@@ -32,7 +32,8 @@
       "title": "y = ax²",
       "body": [
         "y = ax²의 그래프는 꼭짓점이 원점, 축이 y축인 포물선입니다.",
-        "a > 0이면 아래로 볼록, a < 0이면 위로 볼록하고, |a|가 클수록 폭이 좁습니다."
+        "a > 0이면 아래로 볼록, a < 0이면 위로 볼록하고, |a|가 클수록 폭이 좁습니다.",
+        "왜 a의 부호로 볼록한 방향이 정해질까요? a > 0이면 x²에 양수를 곱해 y가 항상 0 이상이라 원점이 가장 낮은 점이 되고, a < 0이면 y가 항상 0 이하라 원점이 가장 높은 점이 됩니다. |a|가 크면 같은 x에서 y가 더 빨리 커져 폭이 좁아집니다."
       ],
       "figure": {
         "widget": "graph",
@@ -75,7 +76,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "그래프 위의 점이므로 x = 3을 식에 대입합니다.\ny = 2 × 3² = 2 × 9\n= 18"
     },
     {
       "type": "question",
@@ -92,7 +93,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "a < 0이면 y = ax²의 값이 항상 0 이하입니다.\n원점이 가장 높은 점이 되어 위로 볼록합니다."
     },
     {
       "type": "explain",
@@ -101,8 +102,22 @@
       "title": "표준형 y = a(x − p)² + q",
       "body": [
         "y = ax²을 x축 방향으로 p, y축 방향으로 q만큼 평행이동한 그래프입니다.",
-        "꼭짓점은 (p, q), 축은 직선 x = p입니다."
+        "꼭짓점은 (p, q), 축은 직선 x = p입니다.",
+        "평행이동해도 포물선의 모양(a)은 그대로이고 위치만 바뀝니다. 그래서 a는 폭과 방향을, p와 q는 꼭짓점의 위치를 알려 줍니다. (x − p)²에서 괄호 안의 부호와 꼭짓점의 x좌표는 반대라는 점에 주의합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "y = −(x − 2)² + 3의 그래프의 꼭짓점, 축, 볼록한 방향을 말하세요.",
+      "steps": [
+        "y = a(x − p)² + q에서 a = −1, p = 2, q = 3",
+        "꼭짓점 (2, 3), 축은 직선 x = 2",
+        "a < 0이므로 위로 볼록"
+      ],
+      "answer": "꼭짓점 (2, 3), 축 x = 2, 위로 볼록"
     },
     {
       "type": "question",
@@ -135,7 +150,7 @@
         "tolerance": 0
       },
       "hint": null,
-      "explanation": ""
+      "explanation": "y = a(x − p)² + q의 꼭짓점은 (p, q)\np = 1, q = 2이므로 꼭짓점 (1, 2)\n그 점을 표시합니다."
     },
     {
       "type": "question",
@@ -160,7 +175,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "(x + 3)² = (x − (−3))²이므로 p = −3, q = −1\n꼭짓점 (−3, −1)"
     },
     {
       "type": "question",
@@ -172,7 +187,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "y = 3(x − 4)²은 p = 4, q = 0인 표준형입니다.\n축은 꼭짓점을 지나는 세로선 x = p\nx = 4"
     },
     {
       "type": "explain",
@@ -181,8 +196,22 @@
       "title": "일반형에서 꼭짓점 찾기",
       "body": [
         "y = ax² + bx + c는 완전제곱식으로 바꿔 y = a(x − p)² + q 꼴로 만듭니다.",
-        "꼭짓점의 x좌표는 −b/2a입니다."
+        "꼭짓점의 x좌표는 −b/2a입니다.",
+        "왜 −b/2a일까요? ax² + bx = a(x² + (b/a)x) = a(x + b/2a)² − b²/4a로 바꾸면 괄호 안이 0이 되는 x = −b/2a가 꼭짓점의 x좌표입니다. 이를 원래 식에 넣으면 꼭짓점의 y좌표가 나옵니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "y = 2x² − 8x + 5의 꼭짓점을 구하세요.",
+      "steps": [
+        "2를 묶습니다: y = 2(x² − 4x) + 5",
+        "완전제곱식: 2(x − 2)² − 8 + 5",
+        "y = 2(x − 2)² − 3이므로 꼭짓점 (2, −3)"
+      ],
+      "answer": "(2, −3)"
     },
     {
       "type": "question",
@@ -199,7 +228,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "x² − 4x를 완전제곱식으로: (x − 2)² − 4\ny = (x − 2)² − 4 + 1\n= (x − 2)² − 3"
     },
     {
       "type": "question",
@@ -232,7 +261,7 @@
         "tolerance": 0
       },
       "hint": null,
-      "explanation": ""
+      "explanation": "x² + 2x = (x + 1)² − 1이므로 y = (x + 1)² − 4\n꼭짓점 (−1, −4)\n그 점을 표시합니다."
     },
     {
       "type": "question",
@@ -244,7 +273,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "−1을 묶으면 y = −(x² − 6x) − 5 = −(x − 3)² + 9 − 5\n= −(x − 3)² + 4\n꼭짓점의 y좌표는 4"
     },
     {
       "type": "explain",
@@ -252,7 +281,8 @@
       "stage": "summary",
       "title": "절편",
       "body": [
-        "y절편은 x = 0일 때의 값 c이고, x절편은 y = 0인 이차방정식의 실근입니다."
+        "y절편은 x = 0일 때의 값 c이고, x절편은 y = 0인 이차방정식의 실근입니다.",
+        "x절편은 그래프가 x축과 만나는 곳이라 y = 0입니다. 그래서 x절편을 구하는 것은 이차방정식을 푸는 것과 같습니다. 실근이 없으면 x절편도 없습니다."
       ]
     },
     {
@@ -264,8 +294,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "x = 0을 대입하세요.",
+      "explanation": "y절편은 x = 0일 때의 값입니다.\ny = 0 − 0 + 3\n= 3 (상수항 c)"
     },
     {
       "type": "question",
@@ -287,8 +317,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "y = 0으로 놓고 푸세요.",
+      "explanation": "x절편은 y = 0인 이차방정식의 실근입니다.\nx² − 4x + 3 = (x − 1)(x − 3) = 0\nx = 1, 3",
       "unordered_groups": [
         [
           1,
@@ -326,8 +356,8 @@
         "y": 0,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": ""
+      "hint": "y = 0을 넣어 푸세요.",
+      "explanation": "y = 0으로 놓으면 (x − 2)² = 4\nx − 2 = ±2이므로 x = 0 또는 x = 4\n더 큰 쪽 (4, 0)을 표시합니다."
     },
     {
       "type": "explain",
@@ -335,8 +365,22 @@
       "stage": "summary",
       "title": "조건으로 식 세우기",
       "body": [
-        "x절편 α, β가 주어지면 y = a(x − α)(x − β), 꼭짓점 (p, q)가 주어지면 y = a(x − p)² + q로 놓고 a를 찾습니다."
+        "x절편 α, β가 주어지면 y = a(x − α)(x − β), 꼭짓점 (p, q)가 주어지면 y = a(x − p)² + q로 놓고 a를 찾습니다.",
+        "주어진 조건에 맞는 꼴을 고르면 모르는 계수가 하나로 줄어듭니다. x절편을 알면 y = a(x − α)(x − β), 꼭짓점을 알면 y = a(x − p)² + q로 놓고, 지나는 점 하나를 대입해 a를 구합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "x절편이 −1, 3이고 점 (1, −8)을 지나는 포물선의 식을 구하세요.",
+      "steps": [
+        "y = a(x + 1)(x − 3)으로 놓습니다.",
+        "(1, −8)을 대입: −8 = a × 2 × (−2) = −4a",
+        "a = 2이므로 y = 2(x + 1)(x − 3) = 2x² − 4x − 6"
+      ],
+      "answer": "y = 2x² − 4x − 6"
     },
     {
       "type": "question",
@@ -347,8 +391,8 @@
       "answer": "-4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "x절편을 이용해 식을 세우세요.",
+      "explanation": "x절편이 1, 3이므로 y = a(x − 1)(x − 3)\n(0, 3)을 대입하면 3 = 3a, a = 1\ny = x² − 4x + 3이므로 b = −4"
     },
     {
       "type": "question",
@@ -359,8 +403,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "지나는 점을 대입하세요.",
+      "explanation": "점 (0, 3)을 대입: 3 = a(0 − 2)² − 1\n4a − 1 = 3\na = 1"
     },
     {
       "type": "question",
@@ -371,8 +415,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "꼭짓점 (k, k)"
+      "hint": "먼저 꼭짓점을 k로 나타내세요.",
+      "explanation": "y = (x − k)² + k로 바꾸면 꼭짓점 (k, k)\n꼭짓점이 y = 2x − 1 위에 있으므로 k = 2k − 1\nk = 1"
     },
     {
       "type": "question",
@@ -383,8 +427,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "평행이동해도 a는 그대로입니다.",
+      "explanation": "모양(a = 2)은 그대로이고 꼭짓점이 (1, 3): y = 2(x − 1)² + 3\nx = 0을 넣으면 2 + 3\n= 5"
     },
     {
       "type": "question",

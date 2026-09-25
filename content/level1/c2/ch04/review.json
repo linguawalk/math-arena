@@ -39,8 +39,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "완전제곱식으로 바꾸세요.",
+      "explanation": "완전제곱식으로: x² + 6x = (x + 3)² − 9\ny = (x + 3)² − 4\n꼭짓점 (−3, −4)",
       "source_lesson": "c2-ch04-l01"
     },
     {
@@ -52,8 +52,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "x = 0을 대입하세요.",
+      "explanation": "y절편은 x = 0일 때의 값입니다.\ny = −(0 − 1)² + 9 = −1 + 9\n= 8",
       "source_lesson": "c2-ch04-l01"
     },
     {
@@ -65,8 +65,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "완전제곱식으로 바꾸세요.",
+      "explanation": "y = (x − 4)² − 16 + 20 = (x − 4)² + 4\n(x − 4)² ≥ 0이므로 x = 4일 때 최소\n최솟값 4",
       "source_lesson": "c2-ch04-l02"
     },
     {
@@ -78,8 +78,8 @@
       "answer": "0",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "위로 볼록이면 최솟값은 양 끝에서 나옵니다.",
+      "explanation": "y = −(x − 2)² + 4, 꼭짓점 x = 2는 범위 안이지만 위로 볼록이라 꼭짓점은 최대\n양 끝을 비교: x = 1이면 3, x = 4이면 0\n최솟값 0",
       "source_lesson": "c2-ch04-l02"
     },
     {
@@ -91,8 +91,8 @@
       "answer": "16",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "가로를 x로 놓으세요.",
+      "explanation": "가로 x, 세로 8 − x이면 넓이 x(8 − x) = −(x − 4)² + 16\nx = 4일 때 최댓값\n16",
       "source_lesson": "c2-ch04-l02"
     },
     {
@@ -104,8 +104,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "인수분해해 두 근을 구하세요.",
+      "explanation": "x² + 5x + 6 = (x + 2)(x + 3) = 0에서 x = −2, −3\n두 점 사이의 거리 −2 − (−3)\n= 1",
       "source_lesson": "c2-ch04-l03"
     },
     {
@@ -117,8 +117,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "D = 0이어야 합니다.",
+      "explanation": "그래프가 x축에 접하려면 x² + 4x + k = 0이 중근을 가져야 하므로 D = 0\nD/4 = 4 − k = 0\nk = 4",
       "source_lesson": "c2-ch04-l03"
     },
     {
@@ -130,8 +130,8 @@
       "answer": "-1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "두 식을 같게 놓고 D = 0을 쓰세요.",
+      "explanation": "x² = −2x + k → x² + 2x − k = 0\n접하려면 D/4 = 1 + k = 0\nk = −1",
       "source_lesson": "c2-ch04-l04"
     },
     {
@@ -143,8 +143,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "근과 계수의 관계를 쓰세요.",
+      "explanation": "x² + 2 = 3x → x² − 3x + 2 = 0\n근과 계수의 관계: 두 근의 합 = 3\n(두 근 1, 2)",
       "source_lesson": "c2-ch04-l04"
     },
     {
@@ -184,8 +184,8 @@
         "y": 4,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": "",
+      "hint": "두 식을 같게 놓고 푸세요.",
+      "explanation": "x² = x + 2 → x² − x − 2 = (x + 1)(x − 2) = 0\nx = −1 또는 x = 2, 양수인 x = 2에서 y = 4\n(2, 4)를 표시합니다.",
       "source_lesson": "c2-ch04-l04"
     }
   ]

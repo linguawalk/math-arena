@@ -13,7 +13,7 @@
       "title": "비례 관계와 함수 모델",
       "file": "l01.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 2,
@@ -21,7 +21,7 @@
       "title": "평균변화율",
       "file": "l02.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 3,
@@ -29,7 +29,7 @@
       "title": "데이터에 함수 맞추기",
       "file": "l03.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 4,
@@ -37,7 +37,7 @@
       "title": "모델링 종합",
       "file": "l04.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     }
   ],
   "review": {

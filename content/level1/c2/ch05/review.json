@@ -31,8 +31,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "분자를 인수분해하세요.",
+      "explanation": "분자를 인수분해: x² − 9 = (x + 3)(x − 3)\n분모 x + 3과 약분(x ≠ −3)하면 x − 3\n빈칸은 3",
       "source_lesson": "c2-ch05-l01"
     },
     {
@@ -44,8 +44,8 @@
       "answer": "3/10",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "부분분수로 나누세요.",
+      "explanation": "부분분수: 1/(k(k + 1)) = 1/k − 1/(k + 1)\n(1/2 − 1/3) + (1/3 − 1/4) + (1/4 − 1/5) = 1/2 − 1/5\n= 3/10",
       "source_lesson": "c2-ch05-l01"
     },
     {
@@ -69,8 +69,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "p와 q를 읽으세요.",
+      "explanation": "y = k/(x − p) + q에서 x + 3 = x − (−3)이므로 p = −3, q = 4\n점근선 x = −3, y = 4",
       "source_lesson": "c2-ch05-l02"
     },
     {
@@ -87,8 +87,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "분자를 분모로 나누세요.",
+      "explanation": "3x − 1 = 3(x − 1) + 2이므로\n(3x − 1)/(x − 1) = 3 + 2/(x − 1)\n빈칸은 3",
       "source_lesson": "c2-ch05-l02"
     },
     {
@@ -100,8 +100,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "감소함수의 최솟값은 오른쪽 끝입니다.",
+      "explanation": "k = 6 > 0이므로 x > 0에서 감소함수\n오른쪽 끝 x = 3에서 최소: 6/3\n= 2",
       "source_lesson": "c2-ch05-l02"
     },
     {
@@ -113,8 +113,8 @@
       "answer": "22",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "합과 곱을 먼저 구하세요.",
+      "explanation": "x + y = 6, xy = 9 − 2 = 7\nx² + y² = (x + y)² − 2xy = 36 − 14\n= 22",
       "source_lesson": "c2-ch05-l03"
     },
     {
@@ -126,8 +126,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "무연근을 확인하세요.",
+      "explanation": "양변을 제곱: x + 7 = x² + 2x + 1 → x² + x − 6 = 0\nx = 2 또는 −3, x = −3이면 우변 −2 < 0으로 무연근\n해는 x = 2",
       "source_lesson": "c2-ch05-l03"
     },
     {
@@ -159,8 +159,8 @@
         "y": -3,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": "",
+      "hint": "시작점은 (p, q)입니다.",
+      "explanation": "y = √(x − p) + q에서 x + 2 = x − (−2)이므로 p = −2, q = −3\n시작점 (−2, −3)\n그 점을 표시합니다.",
       "source_lesson": "c2-ch05-l04"
     },
     {
@@ -172,8 +172,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "양변을 제곱하세요.",
+      "explanation": "(a, 4)를 대입: 4 = √(2a)\n양변을 제곱하면 16 = 2a\na = 8",
       "source_lesson": "c2-ch05-l04"
     },
     {
@@ -185,8 +185,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "증가함수는 오른쪽 끝에서 최대입니다.",
+      "explanation": "y = √(x + 4)는 증가함수이므로 오른쪽 끝에서 최대\nx = 12일 때 √16\n= 4",
       "source_lesson": "c2-ch05-l04"
     }
   ]

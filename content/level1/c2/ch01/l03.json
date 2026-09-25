@@ -32,7 +32,8 @@
       "stage": "intro",
       "title": "기울기와 한 점",
       "body": [
-        "기울기가 m이고 점 (x₁, y₁)을 지나는 직선은 y − y₁ = m(x − x₁)입니다."
+        "기울기가 m이고 점 (x₁, y₁)을 지나는 직선은 y − y₁ = m(x − x₁)입니다.",
+        "왜 이 식이 될까요? 직선 위의 점 (x, y)와 (x₁, y₁) 사이의 기울기가 항상 m이어야 하므로 (y − y₁)/(x − x₁) = m입니다. 양변에 x − x₁을 곱하면 y − y₁ = m(x − x₁)입니다."
       ]
     },
     {
@@ -50,7 +51,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "y − 3 = 2(x − 1)\n= 2x − 2이므로 y = 2x + 1\n빈칸은 1"
     },
     {
       "type": "question",
@@ -67,7 +68,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "y − 5 = −(x − 2)\ny = −x + 2 + 5\n= −x + 7"
     },
     {
       "type": "explain",
@@ -75,8 +76,22 @@
       "stage": "discover",
       "title": "두 점을 지나는 직선",
       "body": [
-        "두 점 (x₁, y₁), (x₂, y₂)를 지나는 직선의 기울기는 (y₂ − y₁)/(x₂ − x₁)입니다. x₁ = x₂이면 직선 x = x₁입니다."
+        "두 점 (x₁, y₁), (x₂, y₂)를 지나는 직선의 기울기는 (y₂ − y₁)/(x₂ − x₁)입니다. x₁ = x₂이면 직선 x = x₁입니다.",
+        "두 점을 알면 기울기를 먼저 구하고, 두 점 중 하나를 골라 '기울기와 한 점' 공식에 넣습니다. 어느 점을 골라도 같은 직선이 나옵니다. x좌표가 같으면 기울기를 정할 수 없어 세로선 x = x₁이 됩니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "두 점 (−2, 5), (1, −1)을 지나는 직선의 방정식을 구하세요.",
+      "steps": [
+        "기울기: (−1 − 5)/(1 − (−2)) = −6/3 = −2",
+        "점 (1, −1)을 이용: y + 1 = −2(x − 1)",
+        "y = −2x + 1"
+      ],
+      "answer": "y = −2x + 1"
     },
     {
       "type": "question",
@@ -99,7 +114,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "기울기: (8 − 2)/(3 − 1) = 3\n점 (1, 2)를 이용: y − 2 = 3(x − 1), y = 3x − 1\n빈칸은 3, 1"
     },
     {
       "type": "question",
@@ -111,7 +126,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "두 점을 지나는 직선의 기울기 = (y의 증가량)/(x의 증가량)\n(−2 − 4)/(2 − (−1)) = −6/3\n= −2"
     },
     {
       "type": "explain",
@@ -119,7 +134,8 @@
       "stage": "discover",
       "title": "절편으로 나타내기",
       "body": [
-        "x절편이 a, y절편이 b인 직선은 x/a + y/b = 1입니다."
+        "x절편이 a, y절편이 b인 직선은 x/a + y/b = 1입니다.",
+        "왜 x/a + y/b = 1일까요? x = a, y = 0을 넣으면 1, x = 0, y = b를 넣으면 1이 되어 두 절편을 모두 지납니다. 절편이 주어진 문제는 이 꼴로 바로 쓰면 편리합니다."
       ]
     },
     {
@@ -137,7 +153,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "절편 공식: x/3 + y/6 = 1\n양변에 6을 곱하면 2x + y = 6\n빈칸은 6"
     },
     {
       "type": "question",
@@ -149,7 +165,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "x/2 + y/4 = 1의 x절편은 2, y절편은 4\n좌표축과 만드는 직각삼각형의 넓이: 2 × 4 ÷ 2\n= 4"
     },
     {
       "type": "explain",
@@ -158,8 +174,22 @@
       "title": "일반형",
       "body": [
         "모든 직선은 ax + by + c = 0 꼴로 나타낼 수 있습니다. b ≠ 0이면 기울기는 −a/b입니다.",
-        "a = 0이면 x축에 평행, b = 0이면 y축에 평행한 직선입니다."
+        "a = 0이면 x축에 평행, b = 0이면 y축에 평행한 직선입니다.",
+        "일반형은 세로선(x = k)까지 포함해 모든 직선을 한 가지 꼴로 나타냅니다. 기울기를 알고 싶으면 y에 대해 풀어 y = −(a/b)x − c/b 꼴로 바꾸면 됩니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "직선 3x − 2y + 6 = 0의 기울기, y절편, x절편을 구하세요.",
+      "steps": [
+        "y에 대해 풀면 2y = 3x + 6, y = (3/2)x + 3",
+        "기울기 3/2, y절편 3",
+        "y = 0을 넣으면 3x + 6 = 0, x절편 −2"
+      ],
+      "answer": "기울기 3/2, y절편 3, x절편 −2"
     },
     {
       "type": "question",
@@ -171,7 +201,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "y에 대해 풀면 y = 2x + 3\nx의 계수가 기울기이므로 2\n(일반형에서 −a/b = −2/(−1) = 2)"
     },
     {
       "type": "question",
@@ -183,7 +213,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "y절편은 직선이 y축과 만나는 점의 y좌표로, x = 0일 때의 값입니다.\ny = 2x + 3에 x = 0을 넣으면 y = 3"
     },
     {
       "type": "question",
@@ -200,7 +230,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "y축에 평행한 직선은 x좌표가 모두 같은 세로선입니다.\n점 (2, −1)을 지나므로 x = 2"
     },
     {
       "type": "question",
@@ -231,8 +261,8 @@
         "y": 2,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": ""
+      "hint": "y축 위의 점은 x좌표가 0입니다.",
+      "explanation": "그림의 직선은 y절편이 2이고 기울기가 −1/2입니다.\ny축과 만나는 점은 x = 0일 때이므로 (0, 2)\n그 점을 표시합니다."
     },
     {
       "type": "explain",
@@ -240,8 +270,22 @@
       "stage": "summary",
       "title": "세 점이 한 직선 위에",
       "body": [
-        "세 점이 한 직선 위에 있으면 어느 두 점을 골라도 기울기가 같습니다."
+        "세 점이 한 직선 위에 있으면 어느 두 점을 골라도 기울기가 같습니다.",
+        "세 점이 한 직선 위에 있는지 확인하려면 두 쌍의 기울기를 비교합니다. 기울기가 다르면 한 점이 직선에서 벗어나 삼각형이 만들어집니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "세 점 (1, 2), (3, 6), (k, 10)이 한 직선 위에 있을 때 k를 구하세요.",
+      "steps": [
+        "(1, 2), (3, 6)의 기울기: 4/2 = 2",
+        "(1, 2), (k, 10)의 기울기: 8/(k − 1)",
+        "8/(k − 1) = 2에서 k − 1 = 4, k = 5"
+      ],
+      "answer": "5"
     },
     {
       "type": "question",
@@ -252,8 +296,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "두 쌍의 기울기가 같아야 합니다.",
+      "explanation": "(1, 1), (3, 5)의 기울기: 4/2 = 2\n(1, 1), (a, 9)의 기울기: 8/(a − 1) = 2\na − 1 = 4에서 a = 5"
     },
     {
       "type": "question",
@@ -264,8 +308,8 @@
       "answer": "-5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "지나는 점을 대입하세요.",
+      "explanation": "직선이 점 (3, 1)을 지나므로 대입하면 성립합니다.\n1 = 2 × 3 + k\nk = −5"
     },
     {
       "type": "question",
@@ -287,8 +331,8 @@
         "y": 0,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": ""
+      "hint": "y = 0을 넣으세요.",
+      "explanation": "x축과 만나는 점은 y = 0일 때입니다.\n3x = 6에서 x = 2\n점 (2, 0)을 표시합니다."
     },
     {
       "type": "question",
@@ -299,8 +343,8 @@
       "answer": "1/2",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "(y의 증가량)/(x의 증가량)",
+      "explanation": "기울기 = (y의 증가량)/(x의 증가량) = (0 − (−3))/(6 − 0)\n= 3/6\n= 1/2"
     },
     {
       "type": "question",
@@ -311,8 +355,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "y에 대해 풀어 기울기를 구하세요.",
+      "explanation": "y에 대해 풀면 2y = −ax + 4, y = −(a/2)x + 2\n기울기 −a/2 = −3\na = 6"
     },
     {
       "type": "question",

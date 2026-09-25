@@ -32,7 +32,8 @@
       "title": "y = k/x",
       "body": [
         "y = k/x의 그래프는 x축과 y축에 한없이 가까워지는 두 곡선입니다. 이렇게 가까워지는 직선을 점근선이라고 합니다.",
-        "k > 0이면 제1, 3사분면, k < 0이면 제2, 4사분면에 그려집니다."
+        "k > 0이면 제1, 3사분면, k < 0이면 제2, 4사분면에 그려집니다.",
+        "왜 축에 가까워질까요? x가 커지면 k/x는 0에 가까워지지만 0이 되지는 않고, x가 0에 가까워지면 k/x의 절댓값이 한없이 커집니다. 그래서 그래프가 x축과 y축을 향해 다가가기만 하고 만나지 않습니다."
       ],
       "figure": {
         "widget": "graph",
@@ -65,7 +66,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "그래프 위의 점이므로 x = 3을 식에 대입합니다.\ny = 6/3\n= 2 (xy = 6이 일정한 반비례 관계)"
     },
     {
       "type": "question",
@@ -77,7 +78,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "그래프가 (2, −4)를 지나므로 대입: −4 = k/2\nk = −8 (k = xy로 구해도 같음)"
     },
     {
       "type": "explain",
@@ -86,7 +87,8 @@
       "title": "평행이동한 유리함수",
       "body": [
         "y = k/(x − p) + q는 y = k/x를 x축 방향으로 p, y축 방향으로 q만큼 평행이동한 그래프입니다.",
-        "점근선은 x = p, y = q이고, 그래프는 점 (p, q)에 대하여 대칭입니다."
+        "점근선은 x = p, y = q이고, 그래프는 점 (p, q)에 대하여 대칭입니다.",
+        "y = k/x의 점근선은 x = 0, y = 0이고 대칭의 중심은 원점입니다. 평행이동하면 이 모든 것이 함께 옮겨지므로 점근선은 x = p, y = q, 대칭의 중심은 (p, q)가 됩니다."
       ],
       "figure": {
         "widget": "graph",
@@ -118,6 +120,19 @@
       }
     },
     {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "y = −3/(x + 2) + 1의 점근선과 대칭의 중심을 구하세요.",
+      "steps": [
+        "y = k/(x − p) + q에서 k = −3, p = −2, q = 1",
+        "점근선: x = −2, y = 1",
+        "대칭의 중심 (−2, 1), k < 0이므로 중심 기준 제2, 4사분면 쪽에 그려짐"
+      ],
+      "answer": "점근선 x = −2, y = 1, 중심 (−2, 1)"
+    },
+    {
       "type": "question",
       "id": "q3",
       "stage": "discover",
@@ -138,7 +153,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "y = k/(x − p) + q에서 p = 2, q = 1\n점근선 x = 2, y = 1"
     },
     {
       "type": "question",
@@ -169,7 +184,7 @@
         "tolerance": 0
       },
       "hint": null,
-      "explanation": ""
+      "explanation": "x + 1 = x − (−1)이므로 p = −1, q = −3\n점근선 x = −1, y = −3의 교점 (−1, −3)\n그 점을 표시합니다."
     },
     {
       "type": "question",
@@ -181,7 +196,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "분모가 0이 되는 x는 정의역에서 제외됩니다.\nx − 4 = 0\nx = 4"
     },
     {
       "type": "explain",
@@ -189,8 +204,22 @@
       "stage": "discover",
       "title": "y = (ax + b)/(cx + d) 꼴",
       "body": [
-        "분자를 분모로 나누어 y = k/(x − p) + q 꼴로 바꿉니다."
+        "분자를 분모로 나누어 y = k/(x − p) + q 꼴로 바꿉니다.",
+        "(2x + 1)/(x − 1)처럼 분자와 분모의 차수가 같으면 나눗셈을 합니다. 2x + 1 = 2(x − 1) + 3이므로 (2x + 1)/(x − 1) = 2 + 3/(x − 1)입니다. 몫이 수평 점근선이 됩니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "y = (3x − 4)/(x − 2)를 y = k/(x − p) + q 꼴로 바꾸세요.",
+      "steps": [
+        "분자를 분모로 나눕니다: 3x − 4 = 3(x − 2) + 2",
+        "(3x − 4)/(x − 2) = 3 + 2/(x − 2)",
+        "y = 2/(x − 2) + 3, 점근선 x = 2, y = 3"
+      ],
+      "answer": "y = 2/(x − 2) + 3"
     },
     {
       "type": "question",
@@ -207,7 +236,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "2x + 1 = 2(x − 1) + 3이므로\n(2x + 1)/(x − 1) = 2 + 3/(x − 1)\n빈칸은 2"
     },
     {
       "type": "question",
@@ -224,7 +253,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "y = 3/(x − 1) + 2에서 q = 2\n수평 점근선 y = 2\n(수직 점근선 x = 1)"
     },
     {
       "type": "question",
@@ -236,7 +265,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "x + 3 = (x + 1) + 2이므로 y = 1 + 2/(x + 1)\n수평 점근선 y = 1"
     },
     {
       "type": "explain",
@@ -245,7 +274,8 @@
       "title": "그래프의 성질",
       "body": [
         "k의 부호로 그래프가 놓이는 사분면이, p, q로 중심의 위치가 정해집니다.",
-        "y = k/(x − p) + q의 치역은 q를 제외한 실수 전체입니다."
+        "y = k/(x − p) + q의 치역은 q를 제외한 실수 전체입니다.",
+        "치역에서 q가 빠지는 이유는 k/(x − p)가 0이 될 수 없기 때문입니다. 분자 k가 0이 아니면 분수는 절대 0이 되지 않으므로 y = q가 되는 x가 없습니다."
       ]
     },
     {
@@ -262,8 +292,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "x와 y의 부호가 같아야 합니다.",
+      "explanation": "k = 2 > 0이면 x > 0일 때 y > 0(제1사분면), x < 0일 때 y < 0(제3사분면)\n제1사분면과 제3사분면\n빈칸은 3"
     },
     {
       "type": "question",
@@ -274,8 +304,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "(0, 0)을 대입하세요.",
+      "explanation": "원점을 지나므로 x = 0, y = 0을 대입: 0 = k/(0 − 2) + 3\nk/(−2) = −3\nk = 6"
     },
     {
       "type": "question",
@@ -286,8 +316,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "분수 부분이 0이 될 수 있는지 보세요.",
+      "explanation": "1/(x − 1)은 0이 될 수 없으므로 y는 2가 될 수 없습니다.\n치역은 2를 제외한 실수 전체\n빠지는 값 2"
     },
     {
       "type": "explain",
@@ -295,8 +325,22 @@
       "stage": "summary",
       "title": "범위에서의 최대·최소",
       "body": [
-        "y = k/x (k > 0)는 x > 0에서 감소하므로 범위의 왼쪽 끝에서 최대, 오른쪽 끝에서 최소입니다."
+        "y = k/x (k > 0)는 x > 0에서 감소하므로 범위의 왼쪽 끝에서 최대, 오른쪽 끝에서 최소입니다.",
+        "왜 k > 0일 때 감소할까요? x > 0에서 x가 커지면 분모가 커져 k/x는 작아집니다. 감소함수에서는 범위의 왼쪽 끝이 가장 크고 오른쪽 끝이 가장 작습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "2 ≤ x ≤ 5에서 y = 3/(x − 1) + 2의 최댓값과 최솟값을 구하세요.",
+      "steps": [
+        "k = 3 > 0이므로 x > 1에서 감소함수",
+        "최댓값은 왼쪽 끝 x = 2: 3/1 + 2 = 5",
+        "최솟값은 오른쪽 끝 x = 5: 3/4 + 2 = 11/4"
+      ],
+      "answer": "최댓값 5, 최솟값 11/4"
     },
     {
       "type": "question",
@@ -307,8 +351,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "감소함수는 왼쪽 끝에서 최대입니다.",
+      "explanation": "k = 4 > 0이므로 x > 0에서 감소함수\n왼쪽 끝 x = 1에서 최대: 4/1\n= 4"
     },
     {
       "type": "question",
@@ -319,8 +363,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "오른쪽 끝에서 최소입니다.",
+      "explanation": "y = 4/x는 x > 0에서 감소함수이므로 오른쪽 끝 x = 4에서 최소\n4/4\n= 1"
     },
     {
       "type": "question",
@@ -331,8 +375,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "감소함수의 최솟값은 오른쪽 끝입니다.",
+      "explanation": "k = 2 > 0이므로 x > 1에서 감소함수\n오른쪽 끝 x = 3에서 최소: 2/2 + 1\n= 2"
     },
     {
       "type": "question",
@@ -343,8 +387,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "역함수는 y = 1/x + 2"
+      "hint": "역함수를 구해 점근선을 보세요.",
+      "explanation": "y = 1/(x − 2)를 x에 대해 풀면 x − 2 = 1/y, x = 1/y + 2\nx와 y를 바꾸면 역함수 y = 1/x + 2\n수평 점근선 y = 2"
     },
     {
       "type": "question",

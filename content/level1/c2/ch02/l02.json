@@ -32,7 +32,8 @@
       "title": "거리로 판단하기",
       "body": [
         "원의 중심과 직선 사이의 거리를 d, 반지름을 r이라 합니다.",
-        "d < r이면 두 점에서 만나고, d = r이면 접하고, d > r이면 만나지 않습니다."
+        "d < r이면 두 점에서 만나고, d = r이면 접하고, d > r이면 만나지 않습니다.",
+        "왜 거리로 판단할까요? 직선이 중심에서 반지름보다 가까이 지나면 원을 가로지르고, 정확히 반지름만큼 떨어지면 한 점에서 스치고, 더 멀면 원 밖을 지나기 때문입니다."
       ],
       "figure": {
         "widget": "graph",
@@ -73,7 +74,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "중심 (0, 0)과 직선 x = 3 사이의 거리 d = 3\n반지름 r = 2보다 크므로(d > r) 만나지 않습니다.\n0개"
     },
     {
       "type": "question",
@@ -85,7 +86,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "중심과 직선 y = 1 사이의 거리 d = 1\n반지름 2보다 작으므로(d < r) 두 점에서 만납니다.\n2개"
     },
     {
       "type": "explain",
@@ -93,8 +94,22 @@
       "stage": "discover",
       "title": "판별식으로 판단하기",
       "body": [
-        "직선의 식을 원의 방정식에 대입해 얻은 이차방정식의 판별식으로도 판단할 수 있습니다."
+        "직선의 식을 원의 방정식에 대입해 얻은 이차방정식의 판별식으로도 판단할 수 있습니다.",
+        "직선을 원의 방정식에 대입하면 교점의 x좌표에 대한 이차방정식이 됩니다. 실근의 개수가 교점의 개수이므로 D > 0이면 두 점, D = 0이면 접함, D < 0이면 만나지 않습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "원 x² + y² = 8과 직선 y = x + k가 접할 때 k를 구하세요.",
+      "steps": [
+        "중심 (0, 0)과 직선 x − y + k = 0 사이의 거리 = |k|/√2",
+        "접하려면 거리 = 반지름: |k|/√2 = 2√2",
+        "|k| = 4, k = ±4"
+      ],
+      "answer": "k = ±4"
     },
     {
       "type": "question",
@@ -106,7 +121,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "y = 2x를 대입: x² + 4x² = 5, x² = 1\nx = ±1로 실근이 2개\n교점 2개"
     },
     {
       "type": "question",
@@ -118,7 +133,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "중심과 직선 x − y + 2 = 0 사이의 거리 = 2/√2 = √2\n반지름 √2와 같으므로 접합니다.\n1개"
     },
     {
       "type": "question",
@@ -130,7 +145,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "|k|/√2 ≤ 3이므로 |k| ≤ 3√2 ≈ 4.2"
+      "explanation": "만나려면 거리 ≤ 반지름: |k|/√2 ≤ 3\n|k| ≤ 3√2 ≈ 4.24\n정수 k는 −4부터 4까지 9개"
     },
     {
       "type": "explain",
@@ -139,7 +154,8 @@
       "title": "접선의 방정식",
       "body": [
         "원 x² + y² = r² 위의 점 (x₁, y₁)에서의 접선은 x₁x + y₁y = r²입니다.",
-        "원 x² + y² = r²에 접하고 기울기가 m인 직선은 y = mx ± r√(m² + 1)입니다."
+        "원 x² + y² = r²에 접하고 기울기가 m인 직선은 y = mx ± r√(m² + 1)입니다.",
+        "왜 x₁x + y₁y = r²일까요? 접선은 접점을 지나는 반지름에 수직입니다. 반지름의 방향이 (x₁, y₁)이므로 이에 수직이고 (x₁, y₁)을 지나는 직선을 구하면 이 식이 나옵니다."
       ]
     },
     {
@@ -157,7 +173,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "원 위의 점 (x₁, y₁)에서의 접선은 x₁x + y₁y = r²\n3x + 4y = 25"
     },
     {
       "type": "question",
@@ -174,7 +190,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "(1, 3)은 1 + 9 = 10으로 원 위의 점입니다.\n접선: 1 × x + 3 × y = 10\nx + 3y = 10"
     },
     {
       "type": "question",
@@ -186,7 +202,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "기울기 m인 접선: y = mx ± r√(m² + 1)\nr = √5, m = 2이므로 ±√5 × √5 = ±5\ny절편이 양수인 것은 5"
     },
     {
       "type": "explain",
@@ -194,8 +210,22 @@
       "stage": "summary",
       "title": "현의 길이",
       "body": [
-        "중심과 현 사이의 거리가 d이면 현의 길이는 2√(r² − d²)입니다."
+        "중심과 현 사이의 거리가 d이면 현의 길이는 2√(r² − d²)입니다.",
+        "중심에서 현에 내린 수선은 현을 이등분합니다. 그래서 반지름 r, 거리 d, 현의 절반이 직각삼각형을 이루고, 피타고라스 정리로 현의 절반 √(r² − d²)을 구합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "원 x² + y² = 10 위의 점 (3, 1)에서의 접선을 구하세요.",
+      "steps": [
+        "x₁x + y₁y = r²에 넣습니다.",
+        "3x + y = 10",
+        "확인: 3² + 1² = 10이므로 (3, 1)은 원 위의 점"
+      ],
+      "answer": "3x + y = 10"
     },
     {
       "type": "question",
@@ -206,8 +236,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "현의 절반을 피타고라스 정리로 구하세요.",
+      "explanation": "중심과 직선 x = 3 사이의 거리 d = 3, 반지름 5\n현의 절반 = √(25 − 9) = 4\n현의 길이 8"
     },
     {
       "type": "question",
@@ -218,8 +248,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "2√(r² − d²)",
+      "explanation": "중심과 직선 y = 2 사이의 거리 d = 2, r² = 13\n현의 절반 = √(13 − 4) = 3\n현의 길이 6"
     },
     {
       "type": "question",
@@ -235,8 +265,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "직선이 중심을 지나므로 현은 지름입니다."
+      "hint": "직선이 중심을 지나는지 확인하세요.",
+      "explanation": "중심 (1, 1)을 직선에 넣으면 1 + 3 − 4 = 0이므로 직선이 중심을 지납니다(d = 0).\n그러면 현은 지름이 되고 길이는 2r = 2√10\n빈칸은 2"
     },
     {
       "type": "explain",
@@ -245,8 +275,22 @@
       "title": "접선의 길이와 거리의 최대·최소",
       "body": [
         "원 밖의 점에서 그은 접선의 길이는 √(d² − r²)입니다. d는 점과 중심 사이의 거리입니다.",
-        "원 위의 점과 직선 사이 거리의 최댓값은 d + r, 최솟값은 d − r입니다."
+        "원 위의 점과 직선 사이 거리의 최댓값은 d + r, 최솟값은 d − r입니다.",
+        "접선의 길이도 직각삼각형으로 구합니다. 중심, 접점, 원 밖의 점이 접점에서 직각을 이루므로 (접선의 길이)² + r² = d²입니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "원 x² + y² = 25와 직선 3x + 4y = 15가 만나 생기는 현의 길이를 구하세요.",
+      "steps": [
+        "중심과 직선 사이의 거리 d = |−15|/√(9 + 16) = 3",
+        "현의 절반 = √(25 − 9) = 4",
+        "현의 길이 = 8"
+      ],
+      "answer": "8"
     },
     {
       "type": "question",
@@ -257,8 +301,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "중심, 접점, 점이 직각삼각형을 이룹니다.",
+      "explanation": "중심과 점 사이의 거리 d = 5, 반지름 r = 3\n접선의 길이 = √(d² − r²) = √(25 − 9)\n= 4"
     },
     {
       "type": "question",
@@ -269,8 +313,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "중심까지의 거리에 반지름을 더하세요.",
+      "explanation": "중심과 직선 3x + 4y − 20 = 0 사이의 거리 d = 20/5 = 4\n원 위의 점과 직선 사이 거리의 최댓값 d + r\n= 4 + 2 = 6"
     },
     {
       "type": "question",
@@ -281,8 +325,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "중심까지의 거리에서 반지름을 빼세요.",
+      "explanation": "d = 4, r = 2이고 d > r이므로 원과 직선은 만나지 않습니다.\n최솟값 d − r\n= 2"
     },
     {
       "type": "question",
@@ -316,8 +360,8 @@
         "y": 4,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": ""
+      "hint": "x = 3을 대입하세요.",
+      "explanation": "x = 3을 원의 방정식에 대입: 9 + y² = 25\ny² = 16, y = ±4\ny > 0인 점 (3, 4)를 표시합니다."
     },
     {
       "type": "question",
