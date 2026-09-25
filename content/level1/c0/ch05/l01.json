@@ -105,7 +105,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "확대하면 모든 길이가 같은 비율로 커집니다.\n3 × 3 = 9cm"
     },
     {
       "type": "question",
@@ -117,7 +117,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "2배로 확대하면 가로와 세로가 모두 2배가 됩니다.\n세로 6 × 2 = 12cm"
     },
     {
       "type": "explain",
@@ -222,6 +222,19 @@
       }
     },
     {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "닮음비가 3 : 5인 두 삼각형에서 작은 삼각형의 변이 6, 9, 12일 때 큰 삼각형의 가장 긴 변은?",
+      "steps": [
+        "대응하는 변의 비가 3 : 5로 같습니다.",
+        "작은 삼각형의 가장 긴 변 12에 대응하는 변을 x라 하면 3 : 5 = 12 : x",
+        "3x = 60, x = 20"
+      ],
+      "answer": "20"
+    },
+    {
       "type": "question",
       "id": "k2",
       "stage": "discover",
@@ -236,7 +249,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "닮음비 1 : 4는 큰 도형의 변이 작은 도형의 4배라는 뜻입니다.\n5 × 4 = 20"
     },
     {
       "type": "question",
@@ -253,7 +266,7 @@
         }
       ],
       "hint": null,
-      "explanation": "2 : 3 = 8 : x에서 x = 12"
+      "explanation": "대응하는 변의 비가 2 : 3이므로 2 : 3 = 8 : x\n2x = 24\nx = 12cm"
     },
     {
       "type": "question",
@@ -265,7 +278,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "닮은 도형은 대응하는 각의 크기가 같습니다.\n확대·축소해도 각은 변하지 않으므로 70°"
     },
     {
       "type": "explain",
@@ -391,6 +404,19 @@
       }
     },
     {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "∠A = 40°, ∠B = 75°인 삼각형 ABC와 ∠D = 40°, ∠F = 65°인 삼각형 DEF는 닮았을까요?",
+      "steps": [
+        "삼각형 ABC의 ∠C = 180° − 40° − 75° = 65°",
+        "∠A = ∠D = 40°, ∠C = ∠F = 65°",
+        "두 쌍의 각이 같으므로 AA 닮음"
+      ],
+      "answer": "닮았다 (AA 닮음)"
+    },
+    {
       "type": "question",
       "id": "k3",
       "stage": "discover",
@@ -405,7 +431,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "세 쌍의 대응변(Side)의 비가 같은 경우입니다.\nSide–Side–Side의 머리글자를 따서 SSS 닮음"
     },
     {
       "type": "question",
@@ -417,7 +443,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "닮은 삼각형은 세 각이 같습니다.\n나머지 한 각 = 180° − 50° − 60° = 70°"
     },
     {
       "type": "question",
@@ -434,7 +460,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "두 쌍의 대응각(Angle)이 같은 경우입니다.\n세 번째 각도 자동으로 같아지므로 AA 닮음"
     },
     {
       "type": "question",
@@ -445,8 +471,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": "햇빛이 같은 각도로 비추므로 두 직각삼각형은 AA 닮음입니다.",
-      "explanation": "1 : 1.5 = x : 9, x = 6",
+      "hint": "막대와 그림자, 나무와 그림자가 만드는 삼각형이 닮았습니다.",
+      "explanation": "같은 시각이면 햇빛의 각도가 같아 막대와 나무가 만든 삼각형이 닮음입니다.\n1 : 1.5 = x : 9\n1.5x = 9, x = 6m",
       "figure": {
         "widget": "geo",
         "config": {
@@ -590,6 +616,18 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "닮음비가 2 : 3인 두 원기둥에서 작은 원기둥의 겉넓이가 40, 부피가 16일 때 큰 원기둥의 겉넓이와 부피는?",
+      "steps": [
+        "넓이의 비는 2² : 3² = 4 : 9이므로 40 × 9/4 = 90",
+        "부피의 비는 2³ : 3³ = 8 : 27이므로 16 × 27/8 = 54"
+      ],
+      "answer": "겉넓이 90, 부피 54"
+    },
+    {
       "type": "question",
       "id": "k5",
       "stage": "apply",
@@ -603,8 +641,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "넓이의 비 = 닮음비의 제곱",
+      "explanation": "넓이의 비는 닮음비의 제곱입니다.\n1² : 3² = 1 : 9"
     },
     {
       "type": "question",
@@ -626,8 +664,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "넓이의 비 = 닮음비의 제곱",
+      "explanation": "넓이의 비는 닮음비의 제곱입니다.\n2² : 3² = 4 : 9"
     },
     {
       "type": "question",
@@ -638,8 +676,8 @@
       "answer": "40",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "부피의 비는 1 : 8이므로 5 × 8 = 40"
+      "hint": "부피의 비 = 닮음비의 세제곱",
+      "explanation": "부피의 비는 닮음비의 세제곱입니다: 1³ : 2³ = 1 : 8\n큰 정육면체의 부피 = 5 × 8\n= 40cm³"
     },
     {
       "type": "question",
@@ -650,8 +688,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "4 × 50000 = 200000cm = 2km"
+      "hint": "cm를 km로 바꿀 때 100000으로 나눕니다.",
+      "explanation": "지도의 1cm는 실제 50000cm입니다.\n4cm → 4 × 50000 = 200000cm\n200000cm = 2000m = 2km"
     },
     {
       "type": "question",
@@ -662,8 +700,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": "DE ∥ BC이면 AD : DB = AE : EC입니다.",
-      "explanation": "4 : 2 = 6 : EC, EC = 3",
+      "hint": "DE가 BC와 평행하면 AD : DB = AE : EC입니다.",
+      "explanation": "DE ∥ BC이면 삼각형 ADE와 ABC가 닮음이라 AD : DB = AE : EC입니다.\n4 : 2 = 6 : EC\n4 × EC = 12, EC = 3",
       "figure": {
         "widget": "geo",
         "config": {
@@ -788,8 +826,8 @@
       "answer": "27000",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "닮음비 2 : 3, 넓이의 비 4 : 9이므로 12000 × 9/4 = 27000원"
+      "hint": "넓이의 비는 지름의 비의 제곱입니다.",
+      "explanation": "지름의 비(닮음비)가 20 : 30 = 2 : 3\n넓이의 비는 4 : 9\n가격 = 12000 × 9/4 = 27000원"
     },
     {
       "type": "question",

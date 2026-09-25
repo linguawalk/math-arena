@@ -50,7 +50,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "문자와 차수가 같은 항끼리는 계수끼리 계산합니다.\n7y − 3y = (7 − 3)y = 4y"
     },
     {
       "type": "question",
@@ -67,7 +67,7 @@
         }
       ],
       "hint": null,
-      "explanation": "x가 3개와 2개이므로 5x입니다."
+      "explanation": "x가 3개와 2개이므로\n3x + 2x = (3 + 2)x = 5x"
     },
     {
       "type": "explain",
@@ -81,6 +81,19 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "4x − 2 + 3 − 6x를 간단히 하세요.",
+      "steps": [
+        "문자항끼리 모읍니다: 4x − 6x = −2x",
+        "상수항끼리 모읍니다: −2 + 3 = 1",
+        "합치면 −2x + 1"
+      ],
+      "answer": "−2x + 1"
+    },
+    {
       "type": "question",
       "id": "k2",
       "stage": "discover",
@@ -90,7 +103,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "5a와 −a입니다."
+      "explanation": "3a와 문자와 차수가 모두 같은 항을 찾습니다.\n5a, −a는 동류항, 3b는 문자가 다르고 a²은 차수가 다르며 2는 상수항입니다.\n따라서 2개"
     },
     {
       "type": "question",
@@ -113,7 +126,7 @@
         }
       ],
       "hint": null,
-      "explanation": "(5a + 2a) + (−3 + 8) = 7a + 5"
+      "explanation": "a항끼리: 5a + 2a = 7a\n상수항끼리: −3 + 8 = 5\n7a + 5"
     },
     {
       "type": "question",
@@ -137,7 +150,7 @@
         }
       ],
       "hint": "x²끼리, x끼리 따로 모으세요.",
-      "explanation": "(1 − 2)x² + (3 + 1)x = −x² + 4x"
+      "explanation": "x²항끼리: x² − 2x² = (1 − 2)x² = −x²\nx항끼리: 3x + x = 4x\n−x² + 4x이므로 빈칸은 −1, 4"
     },
     {
       "type": "explain",
@@ -148,6 +161,20 @@
         "a(b + c) = ab + ac. 괄호 밖의 수를 괄호 안 모든 항에 곱합니다.",
         "괄호 앞에 −가 있으면 괄호 안 모든 항의 부호가 바뀝니다. −(x − 2) = −x + 2"
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "3(x − 2) − 2(x + 1)을 간단히 하세요.",
+      "steps": [
+        "분배법칙: 3(x − 2) = 3x − 6",
+        "−2(x + 1) = −2x − 2 (−2를 두 항에 모두 곱함)",
+        "3x − 6 − 2x − 2",
+        "동류항 정리: x − 8"
+      ],
+      "answer": "x − 8"
     },
     {
       "type": "question",
@@ -164,7 +191,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "분배법칙: 괄호 밖의 4를 두 항에 모두 곱합니다.\n4 × x + 4 × 2 = 4x + 8"
     },
     {
       "type": "question",
@@ -181,7 +208,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "−2를 두 항에 모두 곱합니다: −2 × x + (−2) × (−3)\n= −2x + 6"
     },
     {
       "type": "question",
@@ -204,7 +231,7 @@
         }
       ],
       "hint": null,
-      "explanation": "3 × 2x − 3 × 5 = 6x − 15"
+      "explanation": "3 × 2x = 6x\n3 × (−5) = −15\n6x − 15"
     },
     {
       "type": "question",
@@ -228,7 +255,7 @@
         }
       ],
       "hint": null,
-      "explanation": "부호가 모두 바뀌어 −4a + 7"
+      "explanation": "괄호 앞의 −는 −1을 곱하는 것과 같아 모든 항의 부호가 바뀝니다.\n−(4a − 7) = −4a + 7"
     },
     {
       "type": "question",
@@ -252,7 +279,7 @@
         }
       ],
       "hint": "−3을 괄호 안에 곱할 때 부호에 주의하세요.",
-      "explanation": "2x + 6 − 3x + 3 = −x + 9"
+      "explanation": "2(x + 3) = 2x + 6\n−3(x − 1) = −3x + 3\n2x + 6 − 3x + 3 = −x + 9"
     },
     {
       "type": "explain",
@@ -263,6 +290,20 @@
         "일차식을 수로 나눌 때는 그 수의 역수를 곱합니다. (6x + 4) ÷ 2 = (6x + 4) × 1/2 = 3x + 2",
         "분수 꼴의 일차식끼리 더할 때는 분모를 통분한 뒤 분자끼리 계산합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "(x + 3)/2 − (x − 1)/4를 간단히 하세요.",
+      "steps": [
+        "분모 2, 4의 최소공배수 4로 통분합니다.",
+        "(x + 3)/2 = (2x + 6)/4",
+        "(2x + 6 − x + 1)/4  (빼는 식은 모든 항의 부호가 바뀜)",
+        "= (x + 7)/4"
+      ],
+      "answer": "(x + 7)/4"
     },
     {
       "type": "question",
@@ -284,8 +325,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "각 항을 3으로 나누세요.",
+      "explanation": "나눗셈은 각 항을 나눕니다.\n9x ÷ 3 = 3x, 6 ÷ 3 = 2\n3x + 2"
     },
     {
       "type": "question",
@@ -307,8 +348,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "12x ÷ 4 − 8 ÷ 4 = 3x − 2"
+      "hint": "각 항을 4로 나누세요.",
+      "explanation": "12x ÷ 4 = 3x\n−8 ÷ 4 = −2\n3x − 2"
     },
     {
       "type": "question",
@@ -331,7 +372,7 @@
         }
       ],
       "hint": "분모를 6으로 통분하세요.",
-      "explanation": "{3(x + 1) + 2(x − 3)}/6 = (3x + 3 + 2x − 6)/6 = (5x − 3)/6"
+      "explanation": "분모 2, 3의 최소공배수 6으로 통분합니다.\n(x + 1)/2 = (3x + 3)/6, (x − 3)/3 = (2x − 6)/6\n분자끼리 더하면 (3x + 3 + 2x − 6)/6 = (5x − 3)/6"
     },
     {
       "type": "question",
@@ -358,8 +399,8 @@
         "a",
         "b"
       ],
-      "hint": null,
-      "explanation": "괄호를 풀고, 동류항끼리 모은 뒤, 계산합니다."
+      "hint": "괄호 풀기 → 모으기 → 계산 순서입니다.",
+      "explanation": "먼저 괄호를 풉니다: 4x − 8 − 6x + 2\n동류항끼리 모읍니다: (4x − 6x) + (−8 + 2)\n계산하면 −2x − 6"
     },
     {
       "type": "question",
@@ -371,7 +412,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "둘레 = 2 × (가로 + 세로)",
-      "explanation": "2(2x + 3 + 5) = 4x + 16이고, x = 4이면 32cm입니다."
+      "explanation": "둘레 = 2 × (가로 + 세로) = 2(2x + 3 + 5) = 2(2x + 8) = 4x + 16\nx = 4를 대입하면 16 + 16 = 32cm"
     },
     {
       "type": "question",

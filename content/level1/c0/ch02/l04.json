@@ -64,7 +64,7 @@
         }
       ],
       "hint": null,
-      "explanation": "ab 조각이 두 개입니다."
+      "explanation": "한 변이 a + b인 정사각형을 나누면 a², ab, ab, b² 네 조각이 생깁니다.\nab 조각이 2개이므로 a² + 2ab + b²"
     },
     {
       "type": "explain",
@@ -76,6 +76,20 @@
         "(a + b)(a − b) = a² − b²",
         "(x + a)(x + b) = x² + (a + b)x + ab"
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "(2x + 3)²을 전개하세요.",
+      "steps": [
+        "(a + b)² = a² + 2ab + b²에서 a = 2x, b = 3",
+        "a² = 4x²",
+        "2ab = 2 × 2x × 3 = 12x",
+        "b² = 9"
+      ],
+      "answer": "4x² + 12x + 9"
     },
     {
       "type": "question",
@@ -92,7 +106,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "(a + b)² = a² + 2ab + b²에서 a = x, b = 1\n2ab = 2 × x × 1 = 2x\nx² + 2x + 1"
     },
     {
       "type": "question",
@@ -115,7 +129,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "(x + a)(x + b) = x² + (a + b)x + ab\na + b = 2 + 3 = 5, ab = 6\nx² + 5x + 6"
     },
     {
       "type": "question",
@@ -138,7 +152,7 @@
         }
       ],
       "hint": null,
-      "explanation": "x² − 2 × 3 × x + 3²"
+      "explanation": "(a − b)² = a² − 2ab + b²에서 a = x, b = 3\n2ab = 2 × x × 3 = 6x, b² = 9\nx² − 6x + 9"
     },
     {
       "type": "question",
@@ -155,7 +169,7 @@
         }
       ],
       "hint": null,
-      "explanation": "합과 차의 곱은 제곱의 차입니다."
+      "explanation": "(a + b)(a − b) = a² − b²\n(x + 4)(x − 4) = x² − 16"
     },
     {
       "type": "question",
@@ -167,7 +181,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "10000 + 400 + 4 = 10404"
+      "explanation": "(100 + 2)² = 100² + 2 × 100 × 2 + 2²\n= 10000 + 400 + 4\n= 10404"
     },
     {
       "type": "question",
@@ -178,8 +192,8 @@
       "answer": "9996",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": "(100 − 2)(100 + 2)로 볼 수 있습니다.",
-      "explanation": "100² − 2² = 10000 − 4 = 9996"
+      "hint": "합과 차의 곱 꼴로 바꿔 보세요.",
+      "explanation": "98 × 102 = (100 − 2)(100 + 2)\n= 100² − 2² = 10000 − 4\n= 9996"
     },
     {
       "type": "explain",
@@ -191,6 +205,19 @@
         "모든 항에 공통으로 들어 있는 인수가 있으면 먼저 묶어 냅니다. 4x² + 6x = 2x(2x + 3)",
         "제곱의 차는 합과 차의 곱으로 바꿉니다. a² − b² = (a + b)(a − b)"
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "3x² − 12를 인수분해하세요.",
+      "steps": [
+        "공통인수 3을 묶습니다: 3(x² − 4)",
+        "x² − 4 = x² − 2²은 제곱의 차",
+        "x² − 2² = (x + 2)(x − 2)"
+      ],
+      "answer": "3(x + 2)(x − 2)"
     },
     {
       "type": "question",
@@ -207,7 +234,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "두 항 5x와 10에 공통으로 들어 있는 수는 5입니다.\n5x + 10 = 5(x + 2)"
     },
     {
       "type": "question",
@@ -230,7 +257,7 @@
         }
       ],
       "hint": null,
-      "explanation": "공통인수 3x로 묶으면 3x(2x + 3)"
+      "explanation": "6x²과 9x에 공통인 인수는 3x입니다.\n6x² ÷ 3x = 2x, 9x ÷ 3x = 3\n3x(2x + 3)"
     },
     {
       "type": "question",
@@ -252,8 +279,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "x² − 5² = (x + 5)(x − 5)"
+      "hint": "25 = 5²입니다.",
+      "explanation": "x² − 25 = x² − 5²은 제곱의 차입니다.\na² − b² = (a + b)(a − b)이므로 (x + 5)(x − 5)"
     },
     {
       "type": "explain",
@@ -264,6 +291,20 @@
         "x² + px + q를 (x + a)(x + b)로 인수분해하려면 더해서 p, 곱해서 q가 되는 두 수 a, b를 찾습니다.",
         "예: x² + 5x + 6은 더해서 5, 곱해서 6인 2와 3을 찾아 (x + 2)(x + 3)"
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "x² − x − 12를 인수분해하세요.",
+      "steps": [
+        "더해서 −1, 곱해서 −12인 두 수를 찾습니다.",
+        "곱이 음수이므로 부호가 다릅니다: (3, −4), (−3, 4), (2, −6) …",
+        "3 + (−4) = −1이므로 3과 −4",
+        "(x + 3)(x − 4)"
+      ],
+      "answer": "(x + 3)(x − 4)"
     },
     {
       "type": "question",
@@ -279,8 +320,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "더해서 5, 곱해서 6인 두 수를 찾으세요.",
+      "explanation": "더해서 5, 곱해서 6인 두 수를 찾습니다: 2와 3\nx² + 5x + 6 = (x + 2)(x + 3)"
     },
     {
       "type": "question",
@@ -302,8 +343,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "더해서 7, 곱해서 12인 두 수는 3과 4입니다.",
+      "hint": "더해서 7, 곱해서 12인 두 수를 찾으세요.",
+      "explanation": "곱해서 12가 되는 두 수: (1, 12), (2, 6), (3, 4)\n그중 합이 7인 것은 3과 4\n(x + 3)(x + 4)",
       "unordered_groups": [
         [
           1,
@@ -332,7 +373,7 @@
         }
       ],
       "hint": "곱이 음수이므로 두 수의 부호가 다릅니다.",
-      "explanation": "더해서 −2, 곱해서 −15인 두 수는 3과 −5입니다."
+      "explanation": "곱이 −15로 음수이므로 두 수의 부호가 다릅니다.\n더해서 −2가 되는 짝은 3과 −5 (3 + (−5) = −2)\n(x + 3)(x − 5)"
     },
     {
       "type": "question",
@@ -348,8 +389,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "x² + 2 × 5 × x + 5²"
+      "hint": "10x = 2 × 5 × x로 볼 수 있습니다.",
+      "explanation": "25 = 5²이고 10x = 2 × 5 × x\n완전제곱식 a² + 2ab + b² = (a + b)²의 꼴\n(x + 5)²"
     },
     {
       "type": "question",
@@ -376,8 +417,8 @@
         "c",
         "a"
       ],
-      "hint": null,
-      "explanation": "공통인수 2를 먼저 묶고, 괄호 안을 제곱의 차로 보고 인수분해합니다."
+      "hint": "공통인수부터 묶으세요.",
+      "explanation": "공통인수 2를 먼저 묶습니다: 2(x² − 9)\n9 = 3²이므로 2(x² − 3²)\n제곱의 차를 인수분해: 2(x + 3)(x − 3)"
     },
     {
       "type": "question",

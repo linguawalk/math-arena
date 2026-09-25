@@ -26,8 +26,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "12의 약수를 나열하세요.",
+      "explanation": "12의 약수를 모두 찾습니다: 1, 2, 3, 4, 6, 12\n모두 U에 속하므로 진리집합의 원소는 6개",
       "source_lesson": "c1-ch03-l01"
     },
     {
@@ -44,8 +44,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "'또는'의 부정은 '그리고'입니다.",
+      "explanation": "'또는'의 부정은 '그리고'입니다 (드모르간의 법칙).\n'x ≤ 2'의 부정은 'x > 2', 'x ≥ 5'의 부정은 'x < 5'\n'2 < x 그리고 x < 5'",
       "source_lesson": "c1-ch03-l01"
     },
     {
@@ -57,8 +57,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "짝수인 소수를 떠올리세요.",
+      "explanation": "2는 소수이지만 짝수입니다.\n가정은 만족하고 결론은 만족하지 않으므로\n반례는 2",
       "source_lesson": "c1-ch03-l01"
     },
     {
@@ -76,8 +76,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "가정과 결론을 바꾸고 모두 부정하세요.",
+      "explanation": "대우: 결론의 부정 → 가정의 부정\n'x² > 0'의 부정은 'x² ≤ 0', 'x > 0'의 부정은 'x ≤ 0'\n'x² ≤ 0이면 x ≤ 0'",
       "source_lesson": "c1-ch03-l02"
     },
     {
@@ -89,8 +89,8 @@
       "answer": "0",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "x² = 9의 해를 모두 생각하세요.",
+      "explanation": "역은 가정과 결론을 바꾼 'x² = 9이면 x = 3'입니다.\nx = −3도 x² = 9를 만족하므로 반례가 되어 거짓\n0",
       "source_lesson": "c1-ch03-l02"
     },
     {
@@ -102,8 +102,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "화살표 방향을 확인하세요.",
+      "explanation": "x = 3이면 x² = 9 → 참이므로 x = 3 ⇒ x² = 9\nx² = 9이어도 x = −3일 수 있어 역은 거짓\nx² = 9는 필요조건 → 2",
       "source_lesson": "c1-ch03-l03"
     },
     {
@@ -115,8 +115,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "P ⊂ Q가 되게 하세요.",
+      "explanation": "충분조건이려면 P ⊂ Q: (−∞, 2) ⊂ (−∞, a)\n2 ≤ a이어야 하므로\na의 최솟값은 2",
       "source_lesson": "c1-ch03-l03"
     },
     {
@@ -128,8 +128,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "산술평균과 기하평균의 관계",
+      "explanation": "x + 9/x ≥ 2√(x × 9/x) = 2 × 3\n= 6\n등호는 x = 3일 때",
       "source_lesson": "c1-ch03-l04"
     },
     {
@@ -141,8 +141,8 @@
       "answer": "16",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "합이 일정하면 곱이 최대가 되는 때를 찾으세요.",
+      "explanation": "(a + b)/2 ≥ √(ab)이므로 4 ≥ √(ab)\nab ≤ 16\n등호는 a = b = 4일 때",
       "source_lesson": "c1-ch03-l04"
     },
     {
@@ -159,8 +159,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "가정과 결론을 바꾸고 부정하세요.",
+      "explanation": "대우: 결론의 부정 → 가정의 부정\n'n은 홀수'의 부정은 'n은 짝수', 'n²은 홀수'의 부정은 'n²은 짝수'\n'n이 짝수이면 n²은 짝수'",
       "source_lesson": "c1-ch03-l04"
     }
   ]

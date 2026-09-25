@@ -45,7 +45,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "각이 같은 직각삼각형은 닮음이라 높이 ÷ 밑변의 비율이 같습니다.\n3/4 = x/8\nx = 6m"
     },
     {
       "type": "explain",
@@ -71,6 +71,20 @@
       }
     },
     {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "∠C = 90°, BC = 8, AC = 6, AB = 10일 때 sin A, cos A, tan A를 구하세요.",
+      "steps": [
+        "∠A와 마주 보는 변(높이)은 BC = 8, ∠A를 낀 변(밑변)은 AC = 6, 빗변은 AB = 10",
+        "sin A = 8/10 = 4/5",
+        "cos A = 6/10 = 3/5",
+        "tan A = 8/6 = 4/3"
+      ],
+      "answer": "sin A = 4/5, cos A = 3/5, tan A = 4/3"
+    },
+    {
       "type": "question",
       "id": "k1",
       "stage": "discover",
@@ -91,7 +105,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "sin A = (∠A와 마주 보는 변) ÷ (빗변)\n∠A와 마주 보는 변은 BC = 5, 빗변은 13\nsin A = 5/13"
     },
     {
       "type": "question",
@@ -114,7 +128,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "tan A = (마주 보는 변) ÷ (∠A를 낀 변)\nBC = 5, AC = 12\ntan A = 5/12"
     },
     {
       "type": "question",
@@ -137,7 +151,7 @@
         }
       ],
       "hint": null,
-      "explanation": "∠A와 마주 보는 변은 BC = 3, 빗변은 5입니다.",
+      "explanation": "∠A와 마주 보는 변은 BC = 3, 빗변은 AB = 5\nsin A = 3/5",
       "figure": {
         "widget": "geo",
         "config": {
@@ -268,7 +282,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "∠A를 낀 빗변이 아닌 변은 AC = 4, 빗변은 5\ncos A = 4/5"
     },
     {
       "type": "question",
@@ -291,7 +305,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "마주 보는 변 BC = 3, 낀 변 AC = 4\ntan A = 3/4"
     },
     {
       "type": "explain",
@@ -461,6 +475,20 @@
       }
     },
     {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "sin 30° + cos 60°를 구하세요.",
+      "steps": [
+        "정삼각형을 반으로 자른 삼각형(1 : √3 : 2)에서",
+        "sin 30° = 1/2",
+        "cos 60° = 1/2",
+        "합은 1"
+      ],
+      "answer": "1"
+    },
+    {
       "type": "question",
       "id": "k3",
       "stage": "discover",
@@ -475,7 +503,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "60°는 1 : √3 : 2 삼각형에서 √3인 변과 마주 봅니다.\nsin 60° = √3/2"
     },
     {
       "type": "question",
@@ -492,7 +520,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "45°는 직각이등변삼각형(1 : 1 : √2)의 각입니다.\ncos 45° = 1/√2 = √2/2"
     },
     {
       "type": "question",
@@ -515,7 +543,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "30°는 1 : √3 : 2 삼각형에서 가장 짧은 변 1과 마주 봅니다.\nsin 30° = 1/2"
     },
     {
       "type": "question",
@@ -531,8 +559,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "직각이등변삼각형에서 높이와 밑변이 같습니다."
+      "hint": "45°인 직각삼각형은 두 변의 길이가 같습니다.",
+      "explanation": "직각이등변삼각형에서 두 변의 길이가 같습니다.\ntan 45° = 1/1 = 1"
     },
     {
       "type": "question",
@@ -554,8 +582,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "1 : √3 : 2 삼각형을 떠올리세요.",
+      "explanation": "60°를 낀 변은 1 : √3 : 2 삼각형에서 1입니다.\ncos 60° = 1/2"
     },
     {
       "type": "explain",
@@ -568,6 +596,19 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "빗변이 12이고 ∠A = 30°인 직각삼각형에서 ∠A를 낀 밑변을 구하세요.",
+      "steps": [
+        "밑변 = 빗변 × cos A",
+        "cos 30° = √3/2",
+        "12 × √3/2 = 6√3"
+      ],
+      "answer": "6√3"
+    },
+    {
       "type": "question",
       "id": "k5",
       "stage": "apply",
@@ -576,8 +617,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "8 × cos 60° = 4"
+      "hint": "∠A를 낀 변은 빗변 × cos A입니다.",
+      "explanation": "밑변 = 빗변 × cos A\n8 × cos 60° = 8 × 1/2\n= 4"
     },
     {
       "type": "question",
@@ -588,8 +629,8 @@
       "answer": "20",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "높이 = 20 × tan 45° = 20",
+      "hint": "tan 45° = 1입니다.",
+      "explanation": "높이 = 밑변 × tan 45°\n20 × 1\n= 20m",
       "figure": {
         "widget": "geo",
         "config": {
@@ -692,8 +733,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "10 × sin 30° = 5",
+      "hint": "마주 보는 변은 빗변 × sin A입니다.",
+      "explanation": "30°와 마주 보는 변 = 빗변 × sin 30°\n10 × 1/2\n= 5",
       "figure": {
         "widget": "geo",
         "config": {
@@ -779,8 +820,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": "3, 4, 5 삼각형으로 확인해 보세요.",
-      "explanation": "(3/5)² + (4/5)² = 25/25 = 1. 피타고라스 정리 때문에 항상 1입니다."
+      "hint": "피타고라스 정리를 이용하세요.",
+      "explanation": "sin A = a/c, cos A = b/c (c는 빗변)\n(sin A)² + (cos A)² = (a² + b²)/c²\n피타고라스 정리로 a² + b² = c²이므로 1"
     },
     {
       "type": "question",

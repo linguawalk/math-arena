@@ -26,8 +26,8 @@
       "answer": "7",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "평균 = 총합 ÷ 개수",
+      "explanation": "총합: 4 + 8 + 6 + 12 + 5 = 35\n35 ÷ 5 = 7",
       "source_lesson": "c0-ch06-l01"
     },
     {
@@ -39,8 +39,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "먼저 크기순으로 늘어놓으세요.",
+      "explanation": "크기순: 4, 5, 6, 8, 12\n5개 중 3번째 값 6",
       "source_lesson": "c0-ch06-l01"
     },
     {
@@ -52,8 +52,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "가장 많이 나온 값을 찾으세요.",
+      "explanation": "1은 1번, 3은 2번, 5는 1번, 8은 3번\n가장 많은 8이 최빈값",
       "source_lesson": "c0-ch06-l01"
     },
     {
@@ -65,8 +65,8 @@
       "answer": "8/3",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "편차를 제곱해 평균을 내세요.",
+      "explanation": "평균 5, 편차 −2, 0, 2\n편차의 제곱의 합: 4 + 0 + 4 = 8\n분산 = 8 ÷ 3 = 8/3",
       "source_lesson": "c0-ch06-l02"
     },
     {
@@ -78,8 +78,8 @@
       "answer": "12",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "표준편차도 같은 배수로 변합니다.",
+      "explanation": "모든 변량을 3배 하면 편차도 3배\n표준편차 4 × 3 = 12",
       "source_lesson": "c0-ch06-l02"
     },
     {
@@ -96,8 +96,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "편차의 크기를 떠올리세요.",
+      "explanation": "표준편차가 작을수록 편차가 작아 변량이 평균 가까이 모여 있습니다.\n따라서 '작을수록'",
       "source_lesson": "c0-ch06-l02"
     },
     {
@@ -109,8 +109,8 @@
       "answer": "0.2",
       "answer_format": "decimal",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "도수 ÷ 총도수",
+      "explanation": "상대도수 = 도수 ÷ 총도수\n5 ÷ 25 = 0.2",
       "source_lesson": "c0-ch06-l03"
     },
     {
@@ -122,8 +122,8 @@
       "answer": "45",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "양 끝 값의 평균입니다.",
+      "explanation": "계급값 = 계급의 가운데 값\n(40 + 50) ÷ 2 = 45",
       "source_lesson": "c0-ch06-l03"
     },
     {
@@ -140,8 +140,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "한쪽이 커질 때 다른 쪽은 어떻게 되나요?",
+      "explanation": "운동 시간이 커질 때 체지방률은 대체로 작아집니다.\n따라서 음의 상관관계",
       "source_lesson": "c0-ch06-l04"
     },
     {
@@ -153,8 +153,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "각 점에서 y좌표와 x좌표를 비교하세요.",
+      "explanation": "y > x인 점: (1, 2), (2, 3), (4, 5)\n(3, 1), (5, 4)는 y < x\n따라서 3개",
       "source_lesson": "c0-ch06-l04"
     }
   ]

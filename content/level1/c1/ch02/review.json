@@ -26,8 +26,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "12의 약수를 모두 나열하세요.",
+      "explanation": "12의 약수: 12를 나누어떨어지게 하는 자연수\n1, 2, 3, 4, 6, 12\n6개",
       "source_lesson": "c1-ch02-l01"
     },
     {
@@ -44,8 +44,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "원소들의 공통점을 찾으세요.",
+      "explanation": "2, 4, 6, 8은 2로 나누어떨어지는 10 미만의 자연수입니다.\n{x | x는 10 미만의 짝수인 자연수}",
       "source_lesson": "c1-ch02-l01"
     },
     {
@@ -57,8 +57,8 @@
       "answer": "16",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "각 원소를 넣을지 뺄지 2가지씩입니다.",
+      "explanation": "원소 4개 각각을 넣을지 뺄지 2가지씩 고릅니다.\n원소가 n개인 집합의 부분집합은 2ⁿ개\n2⁴ = 16개",
       "source_lesson": "c1-ch02-l02"
     },
     {
@@ -70,8 +70,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "정해진 원소를 빼고 세세요.",
+      "explanation": "1, 2는 반드시 넣고 6은 반드시 뺍니다.\n자유롭게 고를 원소 3, 4, 5의 3개\n2³ = 8개",
       "source_lesson": "c1-ch02-l02"
     },
     {
@@ -83,8 +83,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "겹치는 원소를 확인하세요.",
+      "explanation": "A ∪ B = {1, 3, 5, 6, 7, 9}\n겹치는 3, 7은 한 번만 셉니다.\n6개",
       "source_lesson": "c1-ch02-l03"
     },
     {
@@ -101,8 +101,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "드모르간의 법칙을 쓰세요.",
+      "explanation": "드모르간의 법칙: (A ∩ B)ᶜ = Aᶜ ∪ Bᶜ\n'A이고 B이다'가 아니면 'A가 아니거나 B가 아니다'",
       "source_lesson": "c1-ch02-l03"
     },
     {
@@ -114,8 +114,8 @@
       "answer": "15",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "U에서 A를 빼세요.",
+      "explanation": "Aᶜ = U − A = {4, 5, 6}\n원소의 합: 4 + 5 + 6\n= 15",
       "source_lesson": "c1-ch02-l03"
     },
     {
@@ -127,8 +127,8 @@
       "answer": "28",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "합집합의 원소의 개수 공식",
+      "explanation": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)\n= 20 + 14 − 6\n= 28",
       "source_lesson": "c1-ch02-l04"
     },
     {
@@ -140,8 +140,8 @@
       "answer": "14",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "15의 배수가 겹칩니다.",
+      "explanation": "3의 배수 10개, 5의 배수 6개, 둘 다(15의 배수) 2개\n10 + 6 − 2\n= 14",
       "source_lesson": "c1-ch02-l04"
     },
     {
@@ -153,8 +153,8 @@
       "answer": "7",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "먼저 합집합을 구하세요.",
+      "explanation": "하나 이상 하는 학생: 25 + 18 − 10 = 33명\n둘 다 하지 않는 학생: 40 − 33\n= 7명",
       "source_lesson": "c1-ch02-l04"
     }
   ]

@@ -32,7 +32,8 @@
       "title": "항등식과 미정계수",
       "body": [
         "x에 어떤 값을 넣어도 성립하는 등식이 항등식입니다.",
-        "양변의 같은 차수 항의 계수를 비교하면 모르는 계수를 찾을 수 있습니다."
+        "양변의 같은 차수 항의 계수를 비교하면 모르는 계수를 찾을 수 있습니다.",
+        "왜 계수를 비교할 수 있을까요? 모든 x에서 같은 두 다항식은 사실상 같은 식이므로, 같은 차수의 계수가 하나라도 다르면 어떤 x에서는 값이 달라집니다. 그래서 계수가 모두 같아야 합니다."
       ]
     },
     {
@@ -45,7 +46,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "우변을 전개해 비교하세요.",
-      "explanation": "x² + (b + 1)x + b이므로 b = 3, a = 4"
+      "explanation": "우변을 전개하면 x² + (1 + b)x + b\n상수항 비교: b = 3\nx의 계수 비교: a = 1 + b = 4"
     },
     {
       "type": "question",
@@ -57,7 +58,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "항등식이므로 양변의 상수항이 같아야 합니다.\n좌변의 상수항 3 = 우변의 상수항 b\nb = 3"
     },
     {
       "type": "explain",
@@ -66,8 +67,22 @@
       "title": "나머지정리",
       "body": [
         "다항식 f(x)를 x − a로 나눈 나머지는 f(a)입니다.",
-        "f(x) = (x − a)Q(x) + R에 x = a를 넣으면 f(a) = R이 되기 때문입니다."
+        "f(x) = (x − a)Q(x) + R에 x = a를 넣으면 f(a) = R이 되기 때문입니다.",
+        "나머지정리의 핵심은 '실제로 나누지 않고도 나머지를 안다'는 점입니다. 긴 나눗셈 대신 f(a) 하나만 계산하면 되므로 차수가 높을수록 훨씬 빠릅니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "f(x) = 2x³ − 3x² + x − 5를 x − 2로 나눈 나머지를 구하세요.",
+      "steps": [
+        "나머지정리: x − 2로 나눈 나머지는 f(2)",
+        "f(2) = 2 × 8 − 3 × 4 + 2 − 5",
+        "= 16 − 12 + 2 − 5 = 1"
+      ],
+      "answer": "1"
     },
     {
       "type": "question",
@@ -79,7 +94,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "나머지정리: x − 2로 나눈 나머지는 f(2)\nf(2) = 8 − 4 + 5\n= 9"
     },
     {
       "type": "question",
@@ -91,7 +106,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "x + 1 = x − (−1)",
-      "explanation": ""
+      "explanation": "x + 1 = x − (−1)이므로 나머지는 f(−1)\nf(−1) = −1 + 2 + 5\n= 6"
     },
     {
       "type": "question",
@@ -103,7 +118,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "나머지정리: x − 1로 나눈 나머지는 f(1)\nf(1) = 1 + a + 2 = 5\na = 2"
     },
     {
       "type": "explain",
@@ -112,7 +127,8 @@
       "title": "인수정리",
       "body": [
         "f(a) = 0이면 f(x)는 x − a로 나누어떨어지고, x − a는 f(x)의 인수입니다.",
-        "a³ − b³ = (a − b)(a² + ab + b²),  a³ + b³ = (a + b)(a² − ab + b²)"
+        "a³ − b³ = (a − b)(a² + ab + b²),  a³ + b³ = (a + b)(a² − ab + b²)",
+        "인수정리는 나머지정리에서 나머지가 0인 특별한 경우입니다. f(a) = 0을 찾으면 x − a를 인수로 떼어 낼 수 있어, 고차식을 차수가 낮은 식들의 곱으로 쪼갤 수 있습니다."
       ]
     },
     {
@@ -125,7 +141,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "x − 1이 인수이면 인수정리에 따라 f(1) = 0\n1 − 3 + k − 2 = 0\nk = 4"
     },
     {
       "type": "question",
@@ -142,7 +158,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "a³ − b³ = (a − b)(a² + ab + b²)에서 a = x, b = 1\nab = x, b² = 1\nx³ − 1 = (x − 1)(x² + x + 1)"
     },
     {
       "type": "question",
@@ -159,7 +175,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "a³ + b³ = (a + b)(a² − ab + b²)에서 a = x, b = 2\nab = 2x, b² = 4\nx³ + 8 = (x + 2)(x² − 2x + 4)"
     },
     {
       "type": "explain",
@@ -168,8 +184,23 @@
       "title": "고차식의 인수분해",
       "body": [
         "f(1), f(−1), f(2)처럼 상수항의 약수를 넣어 f(a) = 0인 a를 찾고, 조립제법으로 나눕니다.",
-        "x² = t처럼 치환하거나, 완전제곱식을 만들어 A² − B² 꼴로 바꾸는 방법도 있습니다."
+        "x² = t처럼 치환하거나, 완전제곱식을 만들어 A² − B² 꼴로 바꾸는 방법도 있습니다.",
+        "왜 상수항의 약수를 넣을까요? 계수가 정수이고 최고차항의 계수가 1이면, f(x) = (x − a)(…)에서 상수항은 a와 다른 정수들의 곱이므로 a는 상수항의 약수여야 하기 때문입니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "x³ − 4x² + x + 6을 인수분해하세요.",
+      "steps": [
+        "상수항 6의 약수 ±1, ±2, ±3을 넣어 봅니다: f(−1) = −1 − 4 − 1 + 6 = 0",
+        "x + 1이 인수 → 조립제법으로 나누면 몫 x² − 5x + 6",
+        "x² − 5x + 6 = (x − 2)(x − 3)",
+        "따라서 (x + 1)(x − 2)(x − 3)"
+      ],
+      "answer": "(x + 1)(x − 2)(x − 3)"
     },
     {
       "type": "question",
@@ -185,8 +216,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "f(1)부터 계산해 보세요.",
+      "explanation": "f(1) = 1 − 6 + 11 − 6 = 0이므로 x − 1이 인수\n조립제법으로 나누면 몫 x² − 5x + 6 = (x − 2)(x − 3)\n따라서 (x − 1)(x − 2)(x − 3)"
     },
     {
       "type": "question",
@@ -202,8 +233,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "x² = t로 보고 t² − 1을 인수분해하세요.",
+      "explanation": "x⁴ − 1 = (x²)² − 1² = (x² − 1)(x² + 1) (합차 공식)\nx² − 1 = (x − 1)(x + 1)\n따라서 (x − 1)(x + 1)(x² + 1)"
     },
     {
       "type": "question",
@@ -219,8 +250,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "앞의 세 항을 먼저 묶으세요.",
+      "explanation": "앞의 세 항은 완전제곱식: a² + 2ab + b² = (a + b)²\n(a + b)² − c²은 제곱의 차\n(a + b + c)(a + b − c)"
     },
     {
       "type": "question",
@@ -236,8 +267,8 @@
           ]
         }
       ],
-      "hint": "(x² + 1)² − x²으로 바꿔 보세요.",
-      "explanation": ""
+      "hint": "x²을 더하고 빼서 A² − B² 꼴을 만드세요.",
+      "explanation": "x² 항을 더하고 빼서 완전제곱식을 만듭니다: x⁴ + 2x² + 1 − x² = (x² + 1)² − x²\n제곱의 차로 인수분해: (x² + 1 + x)(x² + 1 − x)\n= (x² + x + 1)(x² − x + 1)"
     },
     {
       "type": "explain",
@@ -246,8 +277,23 @@
       "title": "이차식으로 나눈 나머지",
       "body": [
         "이차식으로 나눈 나머지는 일차 이하이므로 ax + b로 놓습니다.",
-        "f(x) = (x − 1)(x − 2)Q(x) + ax + b에 x = 1, 2를 넣어 a, b를 구합니다."
+        "f(x) = (x − 1)(x − 2)Q(x) + ax + b에 x = 1, 2를 넣어 a, b를 구합니다.",
+        "왜 ax + b로 놓을까요? 이차식으로 나눈 나머지는 이차보다 차수가 낮아야 하므로 일차식이나 상수입니다. 두 경우를 모두 포함하려고 ax + b(a = 0이면 상수)로 놓습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "f(x)를 x + 1로 나눈 나머지가 2, x − 3으로 나눈 나머지가 10일 때 (x + 1)(x − 3)으로 나눈 나머지를 구하세요.",
+      "steps": [
+        "나머지를 ax + b로 놓으면 f(x) = (x + 1)(x − 3)Q(x) + ax + b",
+        "x = −1: f(−1) = −a + b = 2",
+        "x = 3: f(3) = 3a + b = 10",
+        "두 식을 빼면 4a = 8, a = 2, b = 4"
+      ],
+      "answer": "2x + 4"
     },
     {
       "type": "question",
@@ -258,8 +304,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "x = 1, 2를 넣어 식 두 개를 세우세요.",
+      "explanation": "나머지를 ax + b로 놓으면 f(1) = a + b = 3, f(2) = 2a + b = 5\n두 식을 빼면 a = 2"
     },
     {
       "type": "question",
@@ -270,8 +316,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "a + b = 3, 2a + b = 5"
+      "hint": "앞에서 구한 a를 대입하세요.",
+      "explanation": "앞에서 세운 식 f(1) = a + b = 3에 a = 2를 넣으면\nb = 1\n따라서 나머지는 2x + 1"
     },
     {
       "type": "question",
@@ -282,8 +328,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "나머지정리를 쓰면 나누지 않아도 됩니다.",
+      "explanation": "나머지정리: x − 1로 나눈 나머지는 f(1)\nf(1) = 1¹⁰\n= 1"
     },
     {
       "type": "question",

@@ -32,7 +32,8 @@
       "title": "부등식의 성질",
       "body": [
         "양변에 같은 수를 더하거나 빼도, 양수를 곱하거나 나눠도 부등호 방향은 그대로입니다.",
-        "양변에 음수를 곱하거나 나누면 부등호 방향이 바뀝니다."
+        "양변에 음수를 곱하거나 나누면 부등호 방향이 바뀝니다.",
+        "왜 음수를 곱하면 방향이 바뀔까요? 2 < 3에 −1을 곱하면 −2와 −3이 되는데, 수직선에서 −2가 −3보다 오른쪽에 있으므로 −2 > −3입니다. 음수를 곱하면 수직선이 뒤집히기 때문입니다."
       ]
     },
     {
@@ -50,7 +51,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "a < b의 양변에 음수 −2를 곱하면 부등호 방향이 바뀝니다.\n−2a > −2b\n예: 1 < 2이면 −2 > −4"
     },
     {
       "type": "question",
@@ -67,7 +68,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "양변에서 같은 수 3을 빼도 부등호 방향은 그대로입니다.\na − 3 < b − 3"
     },
     {
       "type": "explain",
@@ -75,8 +76,22 @@
       "stage": "discover",
       "title": "일차부등식 풀기",
       "body": [
-        "방정식처럼 이항해 ax > b 꼴로 만든 뒤 a로 나눕니다. a가 음수이면 방향을 바꿉니다."
+        "방정식처럼 이항해 ax > b 꼴로 만든 뒤 a로 나눕니다. a가 음수이면 방향을 바꿉니다.",
+        "부등식 풀이는 방정식과 거의 같지만, 음수로 나누는 순간에만 부등호 방향이 바뀝니다. 해는 하나의 값이 아니라 범위이므로 수직선에 나타내 확인하면 좋습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "5 − 2x ≥ 3x − 10을 푸세요.",
+      "steps": [
+        "x항은 왼쪽, 상수항은 오른쪽으로 이항: −2x − 3x ≥ −10 − 5",
+        "−5x ≥ −15",
+        "음수 −5로 나누므로 부등호 방향이 바뀝니다: x ≤ 3"
+      ],
+      "answer": "x ≤ 3"
     },
     {
       "type": "question",
@@ -93,7 +108,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "−3을 이항하면 2x > 8\n양수 2로 나누므로 방향은 그대로: x > 4"
     },
     {
       "type": "question",
@@ -111,7 +126,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "1을 이항하면 −3x ≤ 6\n음수 −3으로 나누므로 방향이 바뀝니다: x ≥ −2"
     },
     {
       "type": "question",
@@ -130,7 +145,7 @@
         "tolerance": 0
       },
       "hint": null,
-      "explanation": ""
+      "explanation": "3x − 6 ≤ 0에서 3x ≤ 6, x ≤ 2\n해 중 가장 큰 값은 2\n수직선의 2에 표시합니다(등호가 있으므로 포함)."
     },
     {
       "type": "explain",
@@ -139,7 +154,8 @@
       "title": "ax > b의 해",
       "body": [
         "a > 0이면 x > b/a, a < 0이면 x < b/a입니다.",
-        "a = 0이면 0 > b인지에 따라 모든 실수이거나 해가 없습니다."
+        "a = 0이면 0 > b인지에 따라 모든 실수이거나 해가 없습니다.",
+        "x의 계수에 문자가 있으면 그 문자가 양수인지, 음수인지, 0인지에 따라 나눠 생각해야 합니다. 부호를 모르는 수로 나누면 부등호 방향을 정할 수 없기 때문입니다."
       ]
     },
     {
@@ -152,7 +168,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "a > 0이면 x > 3/a, a < 0이면 x < 3/a로 해가 있습니다.\na = 0이면 0 > 3이 되어 어떤 x로도 성립하지 않습니다.\n따라서 a = 0"
     },
     {
       "type": "question",
@@ -169,7 +185,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "ax > 3의 양변을 음수 a로 나누면 부등호 방향이 바뀝니다.\nx < 3/a"
     },
     {
       "type": "explain",
@@ -178,8 +194,36 @@
       "title": "연립부등식",
       "body": [
         "각 부등식의 해를 구해 수직선에 나타내고 공통 범위를 찾습니다.",
-        "A < B < C 꼴은 A < B와 B < C를 연립한 것입니다."
+        "A < B < C 꼴은 A < B와 B < C를 연립한 것입니다.",
+        "연립부등식은 두 조건을 동시에 만족해야 하므로 해는 두 해의 교집합입니다. 수직선에서 두 범위가 겹치는 부분을 찾고, 끝점에 등호가 포함되는지(●, ○)를 꼭 확인합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "2x − 1 < x + 3과 3x + 2 ≥ −4를 동시에 만족하는 x의 범위를 구하세요.",
+      "steps": [
+        "첫째 부등식: x < 4",
+        "둘째 부등식: 3x ≥ −6, x ≥ −2",
+        "두 범위의 공통부분: −2 ≤ x < 4"
+      ],
+      "answer": "−2 ≤ x < 4"
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "한 개 1,200원인 빵과 700원인 우유를 합해 12개 사고 10,000원 이하를 내려고 합니다. 빵은 최대 몇 개 살 수 있을까요?",
+      "steps": [
+        "빵을 x개라 하면 우유는 (12 − x)개",
+        "1200x + 700(12 − x) ≤ 10000",
+        "500x + 8400 ≤ 10000, 500x ≤ 1600, x ≤ 3.2",
+        "x는 자연수이므로 최대 3개"
+      ],
+      "answer": "3개"
     },
     {
       "type": "question",
@@ -202,8 +246,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "두 부등식을 각각 푼 뒤 공통부분을 찾으세요.",
+      "explanation": "x + 2 > 0에서 x > −2, 2x − 5 < 3에서 x < 4\n두 범위의 공통부분\n−2 < x < 4"
     },
     {
       "type": "question",
@@ -214,8 +258,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "끝점이 포함되는지 확인하세요.",
+      "explanation": "−2 < x < 4를 만족하는 정수는 −1, 0, 1, 2, 3\n끝점 −2와 4는 포함되지 않습니다.\n5개"
     },
     {
       "type": "question",
@@ -237,8 +281,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "각 변에서 1을 빼고 2로 나누세요.",
+      "explanation": "각 변에서 1을 뺍니다: 2 < 2x ≤ 8\n각 변을 2로 나눕니다: 1 < x ≤ 4\nA < B < C는 세 변에 같은 계산을 동시에 할 수 있습니다."
     },
     {
       "type": "question",
@@ -249,8 +293,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "수직선에 두 범위를 그려 겹치지 않을 조건을 찾으세요.",
+      "explanation": "해가 없으려면 x > 3과 x < a의 공통부분이 없어야 합니다.\na ≤ 3이면 겹치지 않으므로\na의 최댓값은 3"
     },
     {
       "type": "question",
@@ -261,8 +305,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "사과의 개수를 x로 놓으세요.",
+      "explanation": "사과를 x개라 하면 귤은 (10 − x)개\n800x + 500(10 − x) ≤ 6500 → 300x ≤ 1500\nx ≤ 5이므로 최대 5개"
     },
     {
       "type": "question",
@@ -273,8 +317,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "부등식을 세운 뒤 자연수만 세세요.",
+      "explanation": "자연수를 n이라 하면 3n − 5 < 10\n3n < 15, n < 5\nn = 1, 2, 3, 4로 4개"
     },
     {
       "type": "question",
@@ -285,8 +329,8 @@
       "answer": "-3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "−4 < x ≤ 2"
+      "hint": "A < B ≤ C를 두 부등식으로 나누세요.",
+      "explanation": "x − 1 < 2x + 3에서 x > −4, 2x + 3 ≤ x + 5에서 x ≤ 2\n공통부분 −4 < x ≤ 2의 정수: −3, −2, −1, 0, 1, 2\n합은 −3"
     },
     {
       "type": "question",
@@ -304,8 +348,8 @@
         "value": 1,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": ""
+      "hint": "등호가 있는 쪽 끝점이 포함됩니다.",
+      "explanation": "공통부분은 1 ≤ x < 3\n1은 포함(●), 3은 포함하지 않음(○)\n가장 작은 값 1에 표시합니다."
     },
     {
       "type": "question",

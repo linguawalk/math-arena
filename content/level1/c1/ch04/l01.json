@@ -32,7 +32,8 @@
       "title": "ax = b의 해",
       "body": [
         "a ≠ 0이면 해는 x = b/a 하나입니다.",
-        "a = 0일 때 b = 0이면 해가 무수히 많고, b ≠ 0이면 해가 없습니다."
+        "a = 0일 때 b = 0이면 해가 무수히 많고, b ≠ 0이면 해가 없습니다.",
+        "왜 a = 0일 때 경우가 나뉠까요? 0 × x는 x가 무엇이든 0이므로, 식이 0 = b가 됩니다. b도 0이면 항상 참이라 모든 x가 해이고, b가 0이 아니면 절대 참이 될 수 없어 해가 없습니다."
       ]
     },
     {
@@ -45,7 +46,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "ax = 2에서 a ≠ 0이면 x = 2/a로 해가 하나 있습니다.\na = 0이면 0 = 2가 되어 어떤 x로도 성립하지 않아 해가 없습니다.\n따라서 a = 0"
     },
     {
       "type": "question",
@@ -57,7 +58,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "해가 무수히 많으려면 0 × x = 0 꼴이어야 합니다.\na − 1 = 0이고 a² − 1 = 0이어야 하므로\na = 1"
     },
     {
       "type": "explain",
@@ -66,8 +67,22 @@
       "title": "이차방정식 풀기",
       "body": [
         "인수분해가 되면 AB = 0에서 A = 0 또는 B = 0으로 풉니다.",
-        "안 되면 근의 공식 x = (−b ± √(b² − 4ac)) / 2a를 씁니다."
+        "안 되면 근의 공식 x = (−b ± √(b² − 4ac)) / 2a를 씁니다.",
+        "AB = 0이면 A = 0 또는 B = 0인 이유는 0이 아닌 두 수를 곱해 0이 될 수 없기 때문입니다. 근의 공식은 ax² + bx + c = 0을 완전제곱식으로 바꿔 x에 대해 푼 결과입니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "3x² − 5x − 2 = 0을 푸세요.",
+      "steps": [
+        "인수분해: 곱해서 3 × (−2) = −6, 더해서 −5인 두 수 −6과 1을 이용합니다.",
+        "3x² − 6x + x − 2 = 3x(x − 2) + (x − 2) = (3x + 1)(x − 2)",
+        "(3x + 1)(x − 2) = 0에서 x = −1/3 또는 x = 2"
+      ],
+      "answer": "x = −1/3 또는 x = 2"
     },
     {
       "type": "question",
@@ -90,7 +105,7 @@
         }
       ],
       "hint": null,
-      "explanation": "",
+      "explanation": "곱해서 6, 더해서 −5인 두 수 −2, −3을 찾습니다.\nx² − 5x + 6 = (x − 2)(x − 3) = 0\nx = 2 또는 x = 3",
       "unordered_groups": [
         [
           1,
@@ -113,7 +128,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "인수분해가 되지 않으므로 근의 공식을 씁니다(a = 1, b = −2, c = −1).\nx = (2 ± √(4 + 4))/2 = (2 ± 2√2)/2\n= 1 ± √2"
     },
     {
       "type": "question",
@@ -130,7 +145,7 @@
         }
       ],
       "hint": null,
-      "explanation": "(2x − 1)(x + 2) = 0"
+      "explanation": "2x² + 3x − 2 = (2x − 1)(x + 2) = 0\nx = 1/2 또는 x = −2\n빈칸은 2"
     },
     {
       "type": "explain",
@@ -139,8 +154,22 @@
       "title": "절댓값이 있는 방정식",
       "body": [
         "|x − a| = b(b > 0)이면 x − a = b 또는 x − a = −b입니다.",
-        "좌변과 우변에 모두 x가 있으면 절댓값 안이 0 이상인 경우와 음수인 경우로 나눠 풉니다."
+        "좌변과 우변에 모두 x가 있으면 절댓값 안이 0 이상인 경우와 음수인 경우로 나눠 풉니다.",
+        "절댓값은 0에서의 거리이므로 |x − a| = b는 'x와 a 사이의 거리가 b'라는 뜻입니다. 수직선에서 a의 오른쪽과 왼쪽으로 b만큼 떨어진 두 점이 해입니다. 경우를 나눈 뒤에는 각 범위에 맞는 해만 남깁니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "|x − 2| = 2x − 1을 푸세요.",
+      "steps": [
+        "x ≥ 2일 때: x − 2 = 2x − 1에서 x = −1 → x ≥ 2가 아니므로 버림",
+        "x < 2일 때: −(x − 2) = 2x − 1에서 −x + 2 = 2x − 1, x = 1 → x < 2이므로 해",
+        "해는 x = 1"
+      ],
+      "answer": "x = 1"
     },
     {
       "type": "question",
@@ -152,7 +181,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "x = 7 또는 x = −1"
+      "explanation": "|x − 3| = 4이면 x − 3 = 4 또는 x − 3 = −4\nx = 7 또는 x = −1\n두 해의 합은 6"
     },
     {
       "type": "question",
@@ -164,7 +193,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "x = 5, x = −1 모두 조건에 맞습니다."
+      "explanation": "2x − 1 ≥ 0일 때: 2x − 1 = x + 4에서 x = 5 (조건 만족)\n2x − 1 < 0일 때: −2x + 1 = x + 4에서 x = −1 (조건 만족)\n두 해의 합은 5 + (−1) = 4"
     },
     {
       "type": "explain",
@@ -173,7 +202,8 @@
       "title": "복소수 범위의 근",
       "body": [
         "복소수 범위에서는 모든 이차방정식이 근을 가집니다.",
-        "x² + 4 = 0이면 x² = −4, x = ±2i"
+        "x² + 4 = 0이면 x² = −4, x = ±2i",
+        "실수 범위에서 해가 없던 방정식도 i를 쓰면 해를 가집니다. 계수가 실수인 이차방정식의 허근은 항상 p ± qi처럼 켤레복소수 쌍으로 나옵니다."
       ]
     },
     {
@@ -191,7 +221,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "x² = −4이므로 x = ±√(−4)\n√(−4) = √4 i = 2i\nx = ±2i"
     },
     {
       "type": "question",
@@ -208,7 +238,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "근의 공식: x = (2 ± √(4 − 20))/2 = (2 ± √(−16))/2\n√(−16) = 4i이므로 (2 ± 4i)/2\n= 1 ± 2i"
     },
     {
       "type": "question",
@@ -220,7 +250,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "판별식 D = 1² − 4 × 1 × 1 = −3 < 0\n근호 안이 음수라 실근이 없습니다.\n실근은 0개 (허근 2개)"
     },
     {
       "type": "explain",
@@ -228,8 +258,23 @@
       "stage": "summary",
       "title": "이차방정식의 활용",
       "body": [
-        "구하는 것을 x로 놓고 식을 세운 뒤, 문제의 조건(길이는 양수 등)에 맞는 근만 답으로 고릅니다."
+        "구하는 것을 x로 놓고 식을 세운 뒤, 문제의 조건(길이는 양수 등)에 맞는 근만 답으로 고릅니다.",
+        "왜 조건을 확인할까요? 방정식은 식만 보고 풀기 때문에 음수 길이, 자연수가 아닌 개수처럼 문제 상황에 맞지 않는 근도 함께 나옵니다. 마지막에 이런 근을 버려야 합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "둘레가 26cm, 넓이가 40cm²인 직사각형의 가로를 구하세요(가로가 더 김).",
+      "steps": [
+        "가로를 x라 하면 세로는 13 − x",
+        "x(13 − x) = 40 → x² − 13x + 40 = 0",
+        "(x − 5)(x − 8) = 0에서 x = 5 또는 8",
+        "가로가 더 길어야 하므로 x = 8"
+      ],
+      "answer": "8cm"
     },
     {
       "type": "question",
@@ -240,8 +285,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "세로를 x로 놓고 식을 세우세요.",
+      "explanation": "세로를 x라 하면 가로는 x + 3, 넓이 x(x + 3) = 40\nx² + 3x − 40 = (x + 8)(x − 5) = 0\n길이는 양수이므로 x = 5"
     },
     {
       "type": "question",
@@ -252,8 +297,8 @@
       "answer": "11",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "두 수를 x와 x + 1로 놓으세요.",
+      "explanation": "작은 수를 x라 하면 x(x + 1) = 132\nx² + x − 132 = (x + 12)(x − 11) = 0\n자연수이므로 x = 11"
     },
     {
       "type": "question",
@@ -264,8 +309,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "근을 대입하세요.",
+      "explanation": "x = 2가 근이므로 대입하면 식이 성립합니다.\n4 − 12 + k = 0\nk = 8"
     },
     {
       "type": "question",
@@ -276,8 +321,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "k를 넣어 인수분해하세요.",
+      "explanation": "k = 8이면 x² − 6x + 8 = (x − 2)(x − 4) = 0\n근은 2와 4이므로 다른 한 근은 4\n(근과 계수의 관계로도 2 + β = 6에서 β = 4)"
     },
     {
       "type": "question",
@@ -288,8 +333,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": "x² = |x|²입니다.",
-      "explanation": "|x| = 3이므로 x = ±3"
+      "hint": "|x| = t로 치환하세요. t는 0 이상입니다.",
+      "explanation": "x² = |x|²이므로 |x| = t (t ≥ 0)로 놓으면 t² − t − 6 = 0\n(t − 3)(t + 2) = 0에서 t ≥ 0이므로 t = 3\n|x| = 3이면 x = ±3, 실근은 2개"
     },
     {
       "type": "question",

@@ -32,7 +32,8 @@
       "title": "다항식 정리하기",
       "body": [
         "차수가 높은 항부터 쓰는 것을 내림차순 정리라고 합니다.",
-        "3 + x² − 2x는 x² − 2x + 3으로 씁니다."
+        "3 + x² − 2x는 x² − 2x + 3으로 씁니다.",
+        "왜 정리할까요? 차수 순서로 쓰면 동류항을 찾기 쉽고, 두 다항식을 비교하거나 나눗셈을 할 때 자리를 맞추기 편합니다. 세로셈에서 자릿수를 맞추는 것과 같은 역할입니다."
       ]
     },
     {
@@ -50,7 +51,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "각 항의 차수: 3은 0차, x²은 2차, −2x는 1차\n차수가 높은 것부터: x² − 2x + 3\n상수항은 3"
     },
     {
       "type": "question",
@@ -62,7 +63,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "각 항의 차수는 2x³이 3, −x가 1, 4가 0\n다항식의 차수는 가장 높은 항의 차수이므로 3"
     },
     {
       "type": "explain",
@@ -71,8 +72,23 @@
       "title": "덧셈과 뺄셈",
       "body": [
         "동류항끼리 모아 계산합니다. 빼는 식은 괄호를 풀 때 모든 항의 부호가 바뀝니다.",
-        "아래 문제에서 A = x² + 2x − 1, B = 2x² − x + 3입니다."
+        "아래 문제에서 A = x² + 2x − 1, B = 2x² − x + 3입니다.",
+        "왜 부호가 모두 바뀔까요? −(B)는 (−1) × B이므로 분배법칙에 따라 B의 모든 항에 −1이 곱해집니다. 첫 항만 바꾸고 나머지를 그대로 두는 실수가 가장 흔합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "A = 2x² − x + 3, B = x² + 4x − 1일 때 A − 2B를 계산하세요.",
+      "steps": [
+        "2B = 2x² + 8x − 2",
+        "A − 2B = (2x² − x + 3) − (2x² + 8x − 2)",
+        "괄호를 풀면 빼는 식의 모든 부호가 바뀝니다: 2x² − x + 3 − 2x² − 8x + 2",
+        "동류항 정리: −9x + 5"
+      ],
+      "answer": "−9x + 5"
     },
     {
       "type": "question",
@@ -95,7 +111,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "A + B = (x² + 2x − 1) + (2x² − x + 3)\nx²항: 1 + 2 = 3, x항: 2 − 1 = 1, 상수항: −1 + 3 = 2\n3x² + x + 2"
     },
     {
       "type": "question",
@@ -118,7 +134,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "A − B = x² + 2x − 1 − 2x² + x − 3 (B의 모든 부호가 바뀜)\nx²항: 1 − 2 = −1, x항: 2 + 1 = 3, 상수항: −1 − 3 = −4\n−x² + 3x − 4"
     },
     {
       "type": "question",
@@ -141,7 +157,7 @@
         }
       ],
       "hint": null,
-      "explanation": "2x² + 4x − 2 − 2x² + x − 3"
+      "explanation": "2A = 2x² + 4x − 2\n2A − B = 2x² + 4x − 2 − 2x² + x − 3\nx²항이 사라져 5x − 5"
     },
     {
       "type": "explain",
@@ -151,7 +167,8 @@
       "body": [
         "(a + b)³ = a³ + 3a²b + 3ab² + b³",
         "(a + b + c)² = a² + b² + c² + 2(ab + bc + ca)",
-        "(a + b)(a² − ab + b²) = a³ + b³"
+        "(a + b)(a² − ab + b²) = a³ + b³",
+        "이 공식들은 새로 외울 것이 아니라 분배법칙을 끝까지 적용한 결과입니다. (a + b)³ = (a + b)²(a + b)로 전개해 보면 3a²b와 3ab²이 어디서 나오는지 확인할 수 있습니다."
       ]
     },
     {
@@ -175,7 +192,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "(a + b)³ = a³ + 3a²b + 3ab² + b³에서 a = x, b = 1\n3a²b = 3x², 3ab² = 3x\nx³ + 3x² + 3x + 1"
     },
     {
       "type": "question",
@@ -198,7 +215,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "(a − b)³ = a³ − 3a²b + 3ab² − b³에서 a = x, b = 2\n3a²b = 6x², 3ab² = 12x, b³ = 8\nx³ − 6x² + 12x − 8"
     },
     {
       "type": "question",
@@ -215,7 +232,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "(a + b + c)²을 전개하면 각 문자의 제곱과 서로 다른 두 문자의 곱이 나옵니다.\n서로 다른 두 문자의 곱 ab, bc, ca는 각각 두 번씩 나오므로 계수는 2"
     },
     {
       "type": "question",
@@ -232,7 +249,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "(a + b)(a² − ab + b²) = a³ + b³에서 a = x, b = 2\n(x + 2)(x² − 2x + 4) = x³ + 2³\n= x³ + 8"
     },
     {
       "type": "explain",
@@ -242,8 +259,22 @@
       "body": [
         "a² + b² = (a + b)² − 2ab",
         "a³ + b³ = (a + b)³ − 3ab(a + b)",
-        "x² + 1/x² = (x + 1/x)² − 2"
+        "x² + 1/x² = (x + 1/x)² − 2",
+        "왜 변형이 필요할까요? a, b를 직접 구하지 않아도 합과 곱만으로 여러 식의 값을 구할 수 있기 때문입니다. (a + b)² = a² + 2ab + b²에서 2ab를 옮기면 첫 번째 식이 나옵니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "a − b = 2, ab = 4일 때 a² + b²과 a³ − b³을 구하세요.",
+      "steps": [
+        "a² + b² = (a − b)² + 2ab = 4 + 8 = 12",
+        "a³ − b³ = (a − b)³ + 3ab(a − b)",
+        "= 8 + 3 × 4 × 2 = 32"
+      ],
+      "answer": "a² + b² = 12, a³ − b³ = 32"
     },
     {
       "type": "question",
@@ -254,8 +285,8 @@
       "answer": "19",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "(a + b)²을 전개해 a² + b²을 남기세요.",
+      "explanation": "a² + b² = (a + b)² − 2ab (곱셈공식의 변형)\n= 5² − 2 × 3\n= 25 − 6 = 19"
     },
     {
       "type": "question",
@@ -266,8 +297,8 @@
       "answer": "80",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "125 − 3 × 3 × 5 = 80"
+      "hint": "a³ + b³ = (a + b)³ − 3ab(a + b)",
+      "explanation": "a³ + b³ = (a + b)³ − 3ab(a + b)\n= 125 − 3 × 3 × 5\n= 125 − 45 = 80"
     },
     {
       "type": "question",
@@ -278,8 +309,8 @@
       "answer": "7",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "x + 1/x를 제곱해 보세요.",
+      "explanation": "(x + 1/x)² = x² + 2 + 1/x² (가운데 항: 2 × x × 1/x = 2)\n따라서 x² + 1/x² = (x + 1/x)² − 2\n= 9 − 2 = 7"
     },
     {
       "type": "explain",
@@ -288,8 +319,23 @@
       "title": "다항식의 나눗셈",
       "body": [
         "A를 B로 나눈 몫을 Q, 나머지를 R이라 하면 A = BQ + R입니다.",
-        "나머지 R의 차수는 B의 차수보다 작아야 합니다."
+        "나머지 R의 차수는 B의 차수보다 작아야 합니다.",
+        "왜 나머지의 차수가 더 작아야 할까요? 나머지의 차수가 나누는 식 이상이면 한 번 더 나눌 수 있기 때문입니다. 수의 나눗셈에서 나머지가 나누는 수보다 작아야 하는 것과 같습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "(x³ − 2x + 4) ÷ (x + 2)의 몫과 나머지를 구하세요.",
+      "steps": [
+        "x² 항이 없으므로 0x²을 채워 자리를 맞춥니다: x³ + 0x² − 2x + 4",
+        "x³ ÷ x = x² → x²(x + 2) = x³ + 2x²을 빼면 −2x² − 2x + 4",
+        "−2x² ÷ x = −2x → 빼면 2x + 4",
+        "2x ÷ x = 2 → 빼면 0"
+      ],
+      "answer": "몫 x² − 2x + 2, 나머지 0"
     },
     {
       "type": "question",
@@ -311,8 +357,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "최고차항끼리 나누어 몫의 첫 항을 정하세요.",
+      "explanation": "x² ÷ x = x → x(x + 2) = x² + 2x를 빼면 3x + 7\n3x ÷ x = 3 → 3(x + 2) = 3x + 6을 빼면 1\n몫 x + 3, 나머지 1 (확인: (x + 2)(x + 3) + 1 = x² + 5x + 7)"
     },
     {
       "type": "question",
@@ -340,8 +386,8 @@
           ]
         }
       ],
-      "hint": "x²의 계수 0을 빠뜨리지 마세요.",
-      "explanation": ""
+      "hint": "빠진 차수의 항은 0으로 채우세요.",
+      "explanation": "x² 항이 없으므로 2x³ + 0x² − x + 3으로 자리를 맞춥니다.\n2x³ ÷ x = 2x² → 빼면 2x² − x + 3 → 2x → 빼면 x + 3 → 1 → 빼면 4\n몫 2x² + 2x + 1, 나머지 4"
     },
     {
       "type": "question",
@@ -368,8 +414,8 @@
         "b",
         "c"
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "수의 긴 나눗셈과 같은 순서입니다.",
+      "explanation": "나눗셈은 최고차항부터 몫을 하나씩 정하는 일의 반복입니다.\n정한 항을 나누는 식에 곱해 빼고, 남은 식으로 다시 반복합니다.\n나머지의 차수가 나누는 식보다 작아지면 멈춥니다."
     },
     {
       "type": "question",

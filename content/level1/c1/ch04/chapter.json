@@ -13,7 +13,7 @@
       "title": "일차방정식과 이차방정식",
       "file": "l01.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 2,
@@ -21,7 +21,7 @@
       "title": "판별식과 근과 계수의 관계",
       "file": "l02.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 3,
@@ -29,7 +29,7 @@
       "title": "고차방정식",
       "file": "l03.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 4,
@@ -37,7 +37,7 @@
       "title": "연립방정식",
       "file": "l04.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     }
   ],
   "review": {

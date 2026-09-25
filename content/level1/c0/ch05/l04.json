@@ -45,7 +45,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "지름은 반지름의 2배이므로 반지름 = 지름 ÷ 2\n14 ÷ 2 = 7cm"
     },
     {
       "type": "question",
@@ -57,7 +57,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "지름 = 반지름 × 2\n5 × 2 = 10cm"
     },
     {
       "type": "explain",
@@ -171,6 +171,20 @@
       }
     },
     {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "반지름이 10인 원에서 중심과의 거리가 6인 현의 길이를 구하세요.",
+      "steps": [
+        "중심에서 현에 내린 수선이 현을 이등분합니다.",
+        "반지름 10, 거리 6, 현의 절반 x로 직각삼각형: x² + 6² = 10²",
+        "x² = 64, x = 8",
+        "현의 길이 = 2 × 8 = 16"
+      ],
+      "answer": "16"
+    },
+    {
       "type": "question",
       "id": "k2",
       "stage": "discover",
@@ -185,7 +199,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "원 위의 두 점을 이은 선분이 현, 두 점 사이의 곡선 부분이 호입니다.\n가장 긴 현이 지름입니다."
     },
     {
       "type": "question",
@@ -197,7 +211,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "수선이 현을 이등분하므로 현의 절반은 6\n거리를 d라 하면 d² + 6² = 10²\nd² = 64, d = 8"
     },
     {
       "type": "question",
@@ -209,7 +223,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "현의 절반을 먼저 피타고라스 정리로 구하세요.",
-      "explanation": "현의 절반 = √(25 − 9) = 4이므로 현은 8",
+      "explanation": "현의 절반을 x라 하면 x² + 3² = 5²\nx² = 16, x = 4\n현의 길이 = 2 × 4 = 8",
       "figure": {
         "widget": "geo",
         "config": {
@@ -322,7 +336,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "√(169 − 144) = 5"
+      "explanation": "현의 절반은 12\nd² + 12² = 13²\nd² = 25, d = 5"
     },
     {
       "type": "explain",
@@ -477,7 +491,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "원의 접선은 접점을 지나는 반지름과 항상 수직입니다.\n따라서 90°"
     },
     {
       "type": "question",
@@ -489,7 +503,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "반지름과 접선이 수직입니다.",
-      "explanation": "√(100 − 36) = 8",
+      "explanation": "반지름과 접선이 수직이므로 직각삼각형: 반지름 6, 빗변 10(중심과 P 사이)\nx² + 6² = 10²\nx² = 64, x = 8",
       "figure": {
         "widget": "geo",
         "config": {
@@ -611,7 +625,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "원 밖의 한 점에서 그은 두 접선의 길이는 같습니다.\nPB = PA = 7"
     },
     {
       "type": "explain",
@@ -756,6 +770,18 @@
       }
     },
     {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "중심각이 140°인 호에 대한 원주각은?",
+      "steps": [
+        "원주각은 같은 호에 대한 중심각의 절반입니다.",
+        "140° ÷ 2 = 70°"
+      ],
+      "answer": "70°"
+    },
+    {
       "type": "question",
       "id": "k5",
       "stage": "apply",
@@ -764,8 +790,8 @@
       "answer": "80",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "중심각 = 원주각 × 2",
+      "explanation": "원주각은 중심각의 절반이므로 중심각은 원주각의 2배입니다.\n40° × 2 = 80°"
     },
     {
       "type": "question",
@@ -776,8 +802,8 @@
       "answer": "50",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "원주각은 중심각의 절반입니다.",
+      "explanation": "원주각 = 중심각 ÷ 2\n100° ÷ 2 = 50°"
     },
     {
       "type": "question",
@@ -788,8 +814,8 @@
       "answer": "90",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "지름에 대한 중심각은 180°이므로 원주각은 90°입니다."
+      "hint": "지름에 대한 중심각은 180°입니다.",
+      "explanation": "지름에 대한 중심각은 180°(일직선)입니다.\n원주각은 그 절반이므로 90°"
     },
     {
       "type": "explain",
@@ -919,6 +945,19 @@
       }
     },
     {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "원에 내접하는 사각형 ABCD에서 ∠B = 85°, ∠C = 110°일 때 ∠A와 ∠D는?",
+      "steps": [
+        "마주 보는 두 각의 합은 180°입니다.",
+        "∠D = 180° − ∠B = 95°",
+        "∠A = 180° − ∠C = 70°"
+      ],
+      "answer": "∠A = 70°, ∠D = 95°"
+    },
+    {
       "type": "question",
       "id": "q8",
       "stage": "apply",
@@ -927,8 +966,8 @@
       "answer": "110",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "마주 보는 두 각의 합은 180°입니다.",
+      "explanation": "원에 내접하는 사각형에서 마주 보는 두 각의 합은 180°입니다.\n180° − 70° = 110°"
     },
     {
       "type": "question",
@@ -939,8 +978,8 @@
       "answer": "35",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "같은 호에 대한 원주각은 모두 같습니다.",
+      "explanation": "같은 호에 대한 원주각은 모두 같습니다.\n따라서 35°"
     },
     {
       "type": "question",
@@ -951,8 +990,8 @@
       "answer": "50",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "∠C는 지름에 대한 원주각이라 90°이므로 ∠B = 180° − 90° − 40° = 50°",
+      "hint": "지름에 대한 원주각은 90°입니다.",
+      "explanation": "AB가 지름이므로 지름에 대한 원주각 ∠C = 90°\n삼각형의 세 각의 합은 180°: ∠B = 180° − 90° − 40°\n= 50°",
       "figure": {
         "widget": "geo",
         "config": {

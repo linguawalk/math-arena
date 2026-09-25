@@ -45,7 +45,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "총합: 2 + 4 + 6 + 8 = 20\n개수 4개\n평균 = 20 ÷ 4 = 5"
     },
     {
       "type": "explain",
@@ -56,6 +56,19 @@
         "각 변량에서 평균을 뺀 값을 편차라고 합니다. (편차) = (변량) − (평균)",
         "평균보다 크면 편차는 양수, 작으면 음수입니다. 편차의 합은 항상 0입니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "자료 3, 5, 7, 9의 편차를 구하세요.",
+      "steps": [
+        "평균: 24 ÷ 4 = 6",
+        "편차 = 변량 − 평균: −3, −1, 1, 3",
+        "확인: 편차의 합 = 0"
+      ],
+      "answer": "−3, −1, 1, 3"
     },
     {
       "type": "question",
@@ -73,7 +86,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "편차 = 변량 − 평균\n7 − 10 = −3\n평균보다 작으므로 음수입니다."
     },
     {
       "type": "question",
@@ -85,7 +98,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "평균보다 큰 쪽의 편차와 작은 쪽의 편차가 정확히 상쇄됩니다.\n그래서 편차의 합은 항상 0"
     },
     {
       "type": "question",
@@ -103,7 +116,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "편차 = 변량 − 평균\n8 − 5 = 3"
     },
     {
       "type": "question",
@@ -115,7 +128,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "편차의 합이 0이므로 −2 + 1 + 3 + x = 0, x = −2"
+      "explanation": "편차의 합은 0이므로 −2 + 1 + 3 + x = 0\n2 + x = 0\nx = −2"
     },
     {
       "type": "explain",
@@ -129,6 +142,20 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "자료 3, 5, 7, 9의 분산과 표준편차를 구하세요.",
+      "steps": [
+        "편차: −3, −1, 1, 3",
+        "편차의 제곱: 9, 1, 1, 9 → 합 20",
+        "분산 = 20 ÷ 4 = 5",
+        "표준편차 = √5"
+      ],
+      "answer": "분산 5, 표준편차 √5"
+    },
+    {
       "type": "question",
       "id": "k3",
       "stage": "discover",
@@ -138,7 +165,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "편차의 제곱: (−1)² = 1, 1² = 1\n제곱의 평균: (1 + 1) ÷ 2\n= 1"
     },
     {
       "type": "question",
@@ -150,7 +177,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "표준편차는 분산의 양의 제곱근입니다.\n√9 = 3"
     },
     {
       "type": "question",
@@ -162,7 +189,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "편차는 −3, −1, 1, 3입니다.",
-      "explanation": "(9 + 1 + 1 + 9) ÷ 4 = 5"
+      "explanation": "평균은 5, 편차는 −3, −1, 1, 3\n편차의 제곱: 9, 1, 1, 9 → 합 20\n분산 = 20 ÷ 4 = 5"
     },
     {
       "type": "question",
@@ -179,7 +206,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "표준편차는 분산의 양의 제곱근입니다.\n분산이 5이므로 √5"
     },
     {
       "type": "question",
@@ -190,8 +217,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "편차 −4, −2, 0, 2, 4이므로 (16 + 4 + 0 + 4 + 16) ÷ 5 = 8"
+      "hint": "먼저 평균과 편차를 구하세요.",
+      "explanation": "평균: 25 ÷ 5 = 5, 편차: −4, −2, 0, 2, 4\n편차의 제곱: 16, 4, 0, 4, 16 → 합 40\n분산 = 40 ÷ 5 = 8"
     },
     {
       "type": "explain",
@@ -204,6 +231,19 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "표준편차가 2인 자료의 모든 변량을 3배 한 뒤 5를 더하면 표준편차는?",
+      "steps": [
+        "3배 하면 흩어진 정도도 3배: 2 × 3 = 6",
+        "5를 더하면 모두 같이 움직일 뿐 흩어진 정도는 그대로",
+        "표준편차는 6"
+      ],
+      "answer": "6"
+    },
+    {
       "type": "question",
       "id": "k5",
       "stage": "apply",
@@ -212,8 +252,8 @@
       "answer": "0",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "모두 평균과 같아 흩어짐이 없습니다."
+      "hint": "흩어져 있지 않은 자료입니다.",
+      "explanation": "모든 값이 5로 같아 평균도 5, 편차는 모두 0\n편차의 제곱의 평균도 0\n분산 = 0"
     },
     {
       "type": "question",
@@ -224,8 +264,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "모두 같이 움직여 흩어진 정도는 그대로입니다."
+      "hint": "모든 값을 같이 옮기면 흩어진 정도는 그대로입니다.",
+      "explanation": "모든 변량에 10을 더하면 평균도 10 커집니다.\n편차(변량 − 평균)는 그대로이므로 분산도 그대로 8"
     },
     {
       "type": "question",
@@ -236,8 +276,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "편차가 몇 배가 되는지 생각하세요.",
+      "explanation": "모든 변량을 2배 하면 평균과의 거리(편차)도 2배가 됩니다.\n표준편차 3 × 2 = 6"
     },
     {
       "type": "question",
@@ -253,8 +293,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "표준편차가 작을수록 고릅니다.",
+      "explanation": "평균이 같으므로 흩어진 정도로 비교합니다.\n표준편차가 작은 A반(4점)이 평균 가까이 모여 있습니다.\n따라서 성적이 더 고른 반은 A반"
     },
     {
       "type": "question",
@@ -265,8 +305,8 @@
       "answer": "3.6",
       "answer_format": "decimal",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "(1 + 4 + 0 + 9 + 4) ÷ 5 = 18 ÷ 5 = 3.6"
+      "hint": "편차를 제곱해 평균을 내세요.",
+      "explanation": "편차의 제곱: 1, 4, 0, 9, 4 → 합 18\n개수 5개\n분산 = 18 ÷ 5 = 3.6"
     },
     {
       "type": "question",

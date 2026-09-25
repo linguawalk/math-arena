@@ -45,7 +45,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "y = 500x에 y = 4000을 대입: 4000 = 500x\n양변을 500으로 나누면 x = 8"
     },
     {
       "type": "question",
@@ -57,7 +57,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "y = 500x에 x = 6을 대입합니다.\ny = 500 × 6 = 3000"
     },
     {
       "type": "explain",
@@ -68,6 +68,19 @@
         "x가 2배, 3배, …로 변할 때 y도 2배, 3배, …로 변하면 y는 x에 정비례한다고 합니다.",
         "정비례 관계는 y = ax(a ≠ 0) 꼴이고, 그래프는 원점을 지나는 직선입니다. a > 0이면 오른쪽 위로, a < 0이면 오른쪽 아래로 향합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "y가 x에 정비례하고 x = 4일 때 y = 10입니다. x = 6일 때 y는?",
+      "steps": [
+        "정비례이므로 y = ax로 놓습니다.",
+        "10 = a × 4에서 a = 5/2",
+        "y = (5/2) × 6 = 15"
+      ],
+      "answer": "15"
     },
     {
       "type": "question",
@@ -84,7 +97,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "정비례 y = ax의 그래프는 항상 원점을 지납니다.\nx = 0이면 y = 3 × 0 = 0이므로 (0, 0)"
     },
     {
       "type": "question",
@@ -107,7 +120,7 @@
         "tolerance": 0
       },
       "hint": null,
-      "explanation": ""
+      "explanation": "x = 4를 대입하면 y = 4/2 = 2\n점 (4, 2)를 찍습니다."
     },
     {
       "type": "question",
@@ -124,7 +137,7 @@
         }
       ],
       "hint": null,
-      "explanation": "12 = a × 3이므로 a = 4"
+      "explanation": "y = ax에 x = 3, y = 12를 대입: 12 = 3a\na = 4\ny = 4x"
     },
     {
       "type": "question",
@@ -147,7 +160,7 @@
         "tolerance": 0
       },
       "hint": null,
-      "explanation": "y = −2 × 2 = −4이므로 (2, −4)입니다."
+      "explanation": "x = 2를 대입하면 y = −2 × 2 = −4\n점 (2, −4)를 찍습니다."
     },
     {
       "type": "explain",
@@ -160,6 +173,19 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "y가 x에 반비례하고 x = 3일 때 y = 8입니다. x = 4일 때 y는?",
+      "steps": [
+        "반비례이므로 xy가 일정합니다.",
+        "xy = 3 × 8 = 24",
+        "4 × y = 24이므로 y = 6"
+      ],
+      "answer": "6"
+    },
+    {
       "type": "question",
       "id": "k4",
       "stage": "discover",
@@ -169,7 +195,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "y = 18/x에 x = 6을 대입합니다.\ny = 18 ÷ 6 = 3"
     },
     {
       "type": "question",
@@ -181,7 +207,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "xy = 12로 일정하므로 y = 12 ÷ 3 = 4"
+      "explanation": "반비례이므로 xy가 일정: 2 × 6 = 12\nx = 3이면 3 × y = 12\ny = 4"
     },
     {
       "type": "question",
@@ -193,7 +219,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "xy = 24이므로 y = 3. 가로와 세로는 반비례합니다."
+      "explanation": "직사각형의 넓이 = 가로 × 세로이므로 xy = 24\nx = 8이면 8y = 24\ny = 3"
     },
     {
       "type": "question",
@@ -210,7 +236,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "xy = a (일정)이면 y = a/x 꼴입니다.\n이것이 반비례 관계입니다."
     },
     {
       "type": "explain",
@@ -221,6 +247,19 @@
         "정비례: y = ax, y/x가 일정, 그래프는 원점을 지나는 직선",
         "반비례: y = a/x, xy가 일정, 그래프는 원점을 지나지 않는 한 쌍의 곡선"
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "시속 x km로 60km를 가는 데 y시간이 걸립니다. 정비례일까요, 반비례일까요?",
+      "steps": [
+        "(속력) × (시간) = (거리)이므로 xy = 60",
+        "곱이 일정하므로 반비례",
+        "y = 60/x"
+      ],
+      "answer": "반비례 (y = 60/x)"
     },
     {
       "type": "question",
@@ -236,8 +275,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "y/x = a를 y에 대해 풀어 보세요.",
+      "explanation": "y/x = a (일정)이면 y = ax 꼴입니다.\n이것이 정비례 관계입니다."
     },
     {
       "type": "question",
@@ -248,8 +287,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": "맞물린 톱니 수는 두 바퀴가 같습니다.",
-      "explanation": "xy = 30 × 4 = 120이므로 y = 120 ÷ 40 = 3"
+      "hint": "두 톱니바퀴가 돌아간 톱니의 수가 같습니다.",
+      "explanation": "맞물린 톱니바퀴는 돌아간 톱니 수가 같습니다: 30 × 4 = xy\nxy = 120이므로 반비례\nx = 40이면 y = 120 ÷ 40 = 3"
     },
     {
       "type": "question",
@@ -260,8 +299,8 @@
       "answer": "-3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "6 = a × (−2), a = −3"
+      "hint": "지나는 점의 좌표를 식에 대입하세요.",
+      "explanation": "그래프가 (−2, 6)을 지나므로 대입합니다: 6 = a × (−2)\na = 6 ÷ (−2)\n= −3"
     },
     {
       "type": "question",
@@ -272,8 +311,8 @@
       "answer": "-12",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "a = xy = 3 × (−4) = −12"
+      "hint": "반비례에서 a = xy입니다.",
+      "explanation": "y = a/x에서 a = xy입니다.\n점 (3, −4)를 지나므로 a = 3 × (−4)\n= −12"
     },
     {
       "type": "question",
@@ -284,8 +323,8 @@
       "answer": "12",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": "x는 12의 약수이거나 그 음수여야 합니다.",
-      "explanation": "x = ±1, ±2, ±3, ±4, ±6, ±12로 12개입니다."
+      "hint": "x가 12의 약수이면 y도 정수가 됩니다. 음수도 생각하세요.",
+      "explanation": "xy = 12인 정수 x는 12의 약수와 그 음수입니다.\n12의 약수: 1, 2, 3, 4, 6, 12 (6개)\n음수까지 합하면 12개"
     },
     {
       "type": "question",

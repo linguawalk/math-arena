@@ -26,8 +26,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "i = 3, j = 1을 넣으세요.",
+      "explanation": "(3, 1) 성분은 3행 1열이므로 i = 3, j = 1일 때의 값입니다.\naᵢⱼ = i − j = 3 − 1\n= 2",
       "source_lesson": "c1-ch07-l01"
     },
     {
@@ -39,8 +39,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "같은 위치의 성분을 비교하세요.",
+      "explanation": "대응하는 성분이 같으므로 x + 1 = 4, y = 2\nx = 3\nxy = 6",
       "source_lesson": "c1-ch07-l01"
     },
     {
@@ -57,8 +57,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "실수배 후 더하세요.",
+      "explanation": "2[1 0 ; 1 1] = [2 0 ; 2 2]\n(2, 1) 성분: 0 + 2\n= 2",
       "source_lesson": "c1-ch07-l02"
     },
     {
@@ -70,8 +70,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "2B를 먼저 구하세요.",
+      "explanation": "2B = [2 2 ; 2 2]이므로 A − 2B = [3 2 ; 1 0]\n성분의 합: 3 + 2 + 1 + 0\n= 6",
       "source_lesson": "c1-ch07-l02"
     },
     {
@@ -83,8 +83,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "행과 열을 곱하세요.",
+      "explanation": "행과 열의 같은 순서 성분끼리 곱해 더합니다.\n1 × 2 + 2 × 3\n= 8",
       "source_lesson": "c1-ch07-l03"
     },
     {
@@ -101,8 +101,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "2행과 2열을 곱하세요.",
+      "explanation": "(2, 2) 성분은 2행 [2 1]과 2열 [1 ; 2]의 곱\n2 × 1 + 1 × 2\n= 4",
       "source_lesson": "c1-ch07-l03"
     },
     {
@@ -114,8 +114,8 @@
       "answer": "0",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "A² = E를 이용하세요.",
+      "explanation": "A² = E이므로 A³ = A² × A = A\nA의 (1, 1) 성분은\n0",
       "source_lesson": "c1-ch07-l03"
     },
     {
@@ -127,8 +127,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "ad − bc를 계산하세요.",
+      "explanation": "a = 4, b = 3, c = 1, d = 1\nad − bc = 4 − 3\n= 1",
       "source_lesson": "c1-ch07-l04"
     },
     {
@@ -151,8 +151,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "역행렬을 구해 곱하세요.",
+      "explanation": "ad − bc = 1이므로 A⁻¹ = [1 −3 ; −1 4]\nX = [1 × 7 − 3 × 2 ; −1 × 7 + 4 × 2] = [1 ; 1]\nx = 1, y = 1",
       "source_lesson": "c1-ch07-l04"
     },
     {
@@ -164,8 +164,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "ad − bc = 0으로 놓으세요.",
+      "explanation": "역행렬이 없으려면 ad − bc = 0\n6k − 3 × 2 = 0\nk = 1",
       "source_lesson": "c1-ch07-l04"
     }
   ]

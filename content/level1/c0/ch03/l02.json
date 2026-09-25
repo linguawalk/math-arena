@@ -50,7 +50,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "우변의 x²과 −4를 좌변으로 이항합니다: x² + 2x − x² + 4 = 0\nx²끼리 없어져 2x + 4 = 0\nx의 계수는 2이므로 일차방정식입니다."
     },
     {
       "type": "question",
@@ -62,7 +62,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "모두 좌변으로 옮겨 정리해 보세요.",
-      "explanation": "①은 2x − 4 = 0, ②는 x²이 없어져 −x − 1 = 0이 되어 일차방정식입니다. ③은 0 = 0인 항등식, ④는 이차, ⑤는 x가 분모에 있어 일차방정식이 아닙니다."
+      "explanation": "각 식을 정리해 봅니다. ①은 2x − 4 = 0으로 일차방정식\n②는 x²이 없어져 −x − 1 = 0으로 일차방정식\n③은 0 = 0이 되어 항등식, ④는 x²이 남고, ⑤는 분모에 x가 있어 일차방정식이 아닙니다.\n따라서 2개"
     },
     {
       "type": "explain",
@@ -75,6 +75,20 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "2(x + 3) = 5x − 3을 푸세요.",
+      "steps": [
+        "괄호를 풉니다: 2x + 6 = 5x − 3",
+        "이항합니다: 2x − 5x = −3 − 6",
+        "−3x = −9",
+        "x = 3"
+      ],
+      "answer": "x = 3"
+    },
+    {
       "type": "question",
       "id": "k2",
       "stage": "discover",
@@ -84,7 +98,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "이항: 4x − 2x = 7 + 3\n2x = 10\nx = 5"
     },
     {
       "type": "question",
@@ -96,7 +110,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "괄호를 풉니다: 5 − x + 1 = 2 (괄호 앞 −는 모든 항의 부호를 바꿈)\n−x + 6 = 2, −x = −4\nx = 4"
     },
     {
       "type": "question",
@@ -108,7 +122,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "3x − 6 = x + 4, 2x = 10, x = 5"
+      "explanation": "괄호를 풉니다: 3x − 6 = x + 4\n이항: 3x − x = 4 + 6, 2x = 10\nx = 5"
     },
     {
       "type": "question",
@@ -120,7 +134,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": "우변의 괄호 앞 −에 주의하세요.",
-      "explanation": "6 − 2x = −x − 2, −x = −8, x = 8"
+      "explanation": "좌변 6 − 2x, 우변 −x − 2\n이항: −2x + x = −2 − 6, −x = −8\nx = 8"
     },
     {
       "type": "explain",
@@ -133,6 +147,20 @@
       ]
     },
     {
+      "type": "example",
+      "id": "e2",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "x/3 − 1 = x/4를 푸세요.",
+      "steps": [
+        "분모 3, 4의 최소공배수 12를 양변의 모든 항에 곱합니다.",
+        "4x − 12 = 3x",
+        "이항: 4x − 3x = 12",
+        "x = 12"
+      ],
+      "answer": "x = 12"
+    },
+    {
       "type": "question",
       "id": "k4",
       "stage": "discover",
@@ -142,7 +170,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "양변에 10을 곱하면 2x + 10 = 16"
+      "explanation": "양변에 10을 곱해 정수로 바꿉니다: 2x + 10 = 16\n2x = 6\nx = 3"
     },
     {
       "type": "question",
@@ -153,8 +181,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "양변에 10을 곱하면 3x − 2 = x + 6, 2x = 8, x = 4"
+      "hint": "양변에 10을 곱해 소수를 없애세요.",
+      "explanation": "양변에 10을 곱합니다: 3x − 2 = x + 6\n이항: 2x = 8\nx = 4"
     },
     {
       "type": "question",
@@ -165,8 +193,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "양변에 6을 곱하면 3x − 6 = 2x, x = 6"
+      "hint": "양변에 6을 곱하세요.",
+      "explanation": "분모 2, 3의 최소공배수 6을 곱합니다: 3x − 6 = 2x\n이항: 3x − 2x = 6\nx = 6"
     },
     {
       "type": "question",
@@ -177,8 +205,8 @@
       "answer": "-5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "양변에 12를 곱하면 3(x − 1) = 2(2x + 1), 3x − 3 = 4x + 2, x = −5"
+      "hint": "양변에 12를 곱하세요.",
+      "explanation": "분모 4, 6의 최소공배수 12를 곱합니다: 3(x − 1) = 2(2x + 1)\n3x − 3 = 4x + 2\n−x = 5이므로 x = −5"
     },
     {
       "type": "question",
@@ -205,8 +233,8 @@
         "a",
         "c"
       ],
-      "hint": null,
-      "explanation": "양변에 6을 곱할 때 상수항 1에도 곱해 6이 됩니다."
+      "hint": "모든 항에 6을 곱해야 합니다.",
+      "explanation": "양변에 6을 곱합니다(1에도 곱하는 것에 주의): 3(x + 1) = 2(x − 1) + 6\n괄호를 풀면 3x + 3 = 2x − 2 + 6 = 2x + 4\n이항하면 x = 1"
     },
     {
       "type": "explain",
@@ -217,6 +245,20 @@
         "정리한 결과가 0 × x = b 꼴이 되는 경우가 있습니다.",
         "b ≠ 0이면 어떤 x를 넣어도 성립하지 않아 해가 없습니다. b = 0이면 모든 x가 해이므로 해가 무수히 많습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "2(x + 1) = 2x + 3의 해를 구하세요.",
+      "steps": [
+        "괄호를 풀면 2x + 2 = 2x + 3",
+        "이항하면 2x − 2x = 3 − 2",
+        "0 × x = 1",
+        "어떤 x를 넣어도 0 = 1이 될 수 없으므로 해가 없습니다."
+      ],
+      "answer": "해가 없다"
     },
     {
       "type": "question",
@@ -232,8 +274,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "그래서 해가 무수히 많습니다."
+      "hint": "이항해서 정리해 보세요.",
+      "explanation": "우변을 좌변으로 이항하면 3x + 6 − 3x − 6 = 0\nx항과 상수항이 모두 없어져 0 × x = 0\n모든 x가 해입니다."
     },
     {
       "type": "question",
@@ -244,8 +286,8 @@
       "answer": "0",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "정리하면 0 × x = 2가 되어 해가 없습니다."
+      "hint": "정리하면 x가 사라집니다.",
+      "explanation": "이항: 2x − 2x = 5 − 3\n0 × x = 2\n어떤 x를 넣어도 0 = 2가 될 수 없으므로 해는 0개"
     },
     {
       "type": "question",
@@ -256,8 +298,8 @@
       "answer": "-1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": "양변의 x의 계수와 상수항이 각각 같아야 합니다.",
-      "explanation": "a = 2, b = −3이므로 a + b = −1"
+      "hint": "0 × x = 0 꼴이 되어야 합니다.",
+      "explanation": "정리하면 (a − 2)x = b + 3\n해가 무수히 많으려면 0 × x = 0이어야 합니다: a − 2 = 0, b + 3 = 0\na = 2, b = −3이므로 a + b = −1"
     },
     {
       "type": "question",
@@ -268,8 +310,8 @@
       "answer": "2/3",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "x = 2를 대입하면 2a + 4 = 6 − a, 3a = 2, a = 2/3"
+      "hint": "해를 대입하면 a에 대한 방정식이 됩니다.",
+      "explanation": "x = 2를 대입합니다: 2a + 4 = 6 − a\n이항: 3a = 2\na = 2/3"
     },
     {
       "type": "question",

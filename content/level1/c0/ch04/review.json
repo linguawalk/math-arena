@@ -37,8 +37,8 @@
         "y": -3,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": "",
+      "hint": "x좌표가 0이면 y축 위의 점입니다.",
+      "explanation": "x좌표 0: 좌우로 움직이지 않음\ny좌표 −3: 아래로 3칸\ny축 위의 점 (0, −3)",
       "source_lesson": "c0-ch04-l01"
     },
     {
@@ -56,8 +56,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "y좌표의 부호만 바뀝니다.",
+      "explanation": "x축에 대하여 대칭이동하면 y좌표의 부호만 바뀝니다.\n(−1, 4) → (−1, −4)",
       "source_lesson": "c0-ch04-l01"
     },
     {
@@ -69,8 +69,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "먼저 y = ax의 a를 구하세요.",
+      "explanation": "y = ax에 x = 4, y = −8을 대입: a = −2\ny = −2x에 x = −3을 대입\ny = 6",
       "source_lesson": "c0-ch04-l02"
     },
     {
@@ -82,8 +82,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "xy가 일정합니다.",
+      "explanation": "반비례이므로 xy = 5 × 4 = 20\nx = 10이면 10y = 20\ny = 2",
       "source_lesson": "c0-ch04-l02"
     },
     {
@@ -95,8 +95,8 @@
       "answer": "-2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "기울기 = y의 증가량 ÷ x의 증가량",
+      "explanation": "x의 증가량: 2 − (−1) = 3\ny의 증가량: −1 − 5 = −6\n기울기 = −6 ÷ 3 = −2",
       "source_lesson": "c0-ch04-l03"
     },
     {
@@ -114,8 +114,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "y = (기울기)x + (y절편)",
+      "explanation": "기울기가 a, y절편이 b인 직선은 y = ax + b\ny = −3x + 4",
       "source_lesson": "c0-ch04-l03"
     },
     {
@@ -127,8 +127,8 @@
       "answer": "-3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "y = 0을 넣으세요.",
+      "explanation": "x절편은 y = 0일 때의 x\n0 = 2x + 6\nx = −3",
       "source_lesson": "c0-ch04-l03"
     },
     {
@@ -151,8 +151,8 @@
         "y": -1,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": "",
+      "hint": "두 식의 y를 같게 놓으세요.",
+      "explanation": "−x + 1 = x − 3\n−2x = −4, x = 2\ny = −2 + 1 = −1이므로 (2, −1)",
       "source_lesson": "c0-ch04-l04"
     },
     {
@@ -164,8 +164,8 @@
       "answer": "4.5",
       "answer_format": "decimal",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "x절편과 y절편을 구하세요.",
+      "explanation": "x절편: 0 = x + 3에서 −3 → 밑변 3\ny절편: 3 → 높이 3\n넓이 = 3 × 3 ÷ 2 = 4.5",
       "source_lesson": "c0-ch04-l04"
     },
     {
@@ -177,8 +177,8 @@
       "answer": "9",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "네 직선이 만드는 도형은 직사각형입니다.",
+      "explanation": "x = 2와 x = 5 사이의 거리: 3\ny = 0과 y = 3 사이의 거리: 3\n직사각형(정사각형)의 넓이 = 3 × 3 = 9",
       "source_lesson": "c0-ch04-l04"
     }
   ]

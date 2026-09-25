@@ -26,8 +26,8 @@
       "answer": "-3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "7을 이항한 뒤 2로 나누세요.",
+      "explanation": "7을 이항: 2x = 1 − 7 = −6\n양변을 2로 나누면 x = −3",
       "source_lesson": "c0-ch03-l01"
     },
     {
@@ -39,8 +39,8 @@
       "answer": "10",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "a = 5, b = 2",
+      "hint": "양변의 계수를 비교하세요.",
+      "explanation": "항등식이면 양변의 계수가 같습니다.\nx의 계수: a = 5, 상수항: 2 = b\nab = 10",
       "source_lesson": "c0-ch03-l01"
     },
     {
@@ -52,8 +52,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "괄호를 먼저 푸세요.",
+      "explanation": "괄호를 풉니다: 2x − 8 = −x − 2\n이항: 3x = 6\nx = 2",
       "source_lesson": "c0-ch03-l02"
     },
     {
@@ -65,8 +65,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "양변에 4를 곱하세요.",
+      "explanation": "양변에 4를 곱합니다: x + 4 = 2x\n이항: −x = −4\nx = 4",
       "source_lesson": "c0-ch03-l02"
     },
     {
@@ -78,8 +78,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "양변에 10을 곱하세요.",
+      "explanation": "양변에 10을 곱합니다: 5x − 10 = 2x + 8\n이항: 3x = 18\nx = 6",
       "source_lesson": "c0-ch03-l02"
     },
     {
@@ -102,8 +102,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "두 식을 더하면 y가 없어집니다.",
+      "explanation": "두 식을 더하면 3x = 9, x = 3\nx − y = 1에 대입: 3 − y = 1\ny = 2",
       "source_lesson": "c0-ch03-l03"
     },
     {
@@ -126,8 +126,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "대입법을 쓰세요.",
+      "explanation": "y = x + 1을 둘째 식에 대입: 3x − (x + 1) = 5\n2x − 1 = 5, x = 3\ny = 3 + 1 = 4",
       "source_lesson": "c0-ch03-l03"
     },
     {
@@ -139,8 +139,8 @@
       "answer": "18",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "두 식을 더해 보세요.",
+      "explanation": "큰 수를 x, 작은 수를 y라 하면 x + y = 30, x − y = 6\n두 식을 더하면 2x = 36\nx = 18",
       "source_lesson": "c0-ch03-l04"
     },
     {
@@ -152,8 +152,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "토끼 다리 4개, 닭 다리 2개입니다.",
+      "explanation": "토끼를 x마리라 하면 닭은 (10 − x)마리\n다리 수: 4x + 2(10 − x) = 28\n2x + 20 = 28, x = 4",
       "source_lesson": "c0-ch03-l04"
     },
     {
@@ -165,8 +165,8 @@
       "answer": "30",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "소금 = (농도 ÷ 100) × 소금물",
+      "explanation": "소금의 양 = (농도 ÷ 100) × (소금물의 양)\n0.15 × 200\n= 30g",
       "source_lesson": "c0-ch03-l04"
     }
   ]
