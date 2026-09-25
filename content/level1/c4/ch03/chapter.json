@@ -13,7 +13,7 @@
       "title": "접선의 방정식과 평균값 정리",
       "file": "l01.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 2,
@@ -21,7 +21,7 @@
       "title": "함수의 증가와 감소",
       "file": "l02.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 3,
@@ -29,7 +29,7 @@
       "title": "극값과 최대·최소",
       "file": "l03.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 4,
@@ -37,7 +37,7 @@
       "title": "속도와 가속도",
       "file": "l04.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     }
   ],
   "review": {

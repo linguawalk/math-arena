@@ -13,7 +13,7 @@
       "title": "부정적분",
       "file": "l01.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 2,
@@ -21,7 +21,7 @@
       "title": "정적분의 뜻",
       "file": "l02.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 3,
@@ -29,7 +29,7 @@
       "title": "미적분의 기본정리",
       "file": "l03.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 4,
@@ -37,7 +37,7 @@
       "title": "넓이와 이동 거리",
       "file": "l04.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     }
   ],
   "review": {
