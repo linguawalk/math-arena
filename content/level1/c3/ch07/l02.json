@@ -33,8 +33,23 @@
       "title": "aₙ₊₁ = paₙ + q 꼴",
       "body": [
         "α = pα + q를 만족하는 α를 찾으면 aₙ₊₁ − α = p(aₙ − α)가 되어, aₙ − α가 공비 p인 등비수열입니다.",
-        "예: aₙ₊₁ = 2aₙ + 1이면 α = −1이므로 aₙ + 1이 공비 2인 등비수열입니다."
+        "예: aₙ₊₁ = 2aₙ + 1이면 α = −1이므로 aₙ + 1이 공비 2인 등비수열입니다.",
+        "왜 α를 찾을까요? aₙ₊₁ = paₙ + q에서 양변에 −α를 하면 aₙ₊₁ − α = paₙ + q − α입니다. α = pα + q이면 q − α = −pα가 되어 aₙ₊₁ − α = p(aₙ − α)로 깔끔하게 정리됩니다. 새 수열 bₙ = aₙ − α가 등비수열이므로 일반항을 구할 수 있습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "a₁ = 3, aₙ₊₁ = 3aₙ − 4의 일반항을 구하세요.",
+      "steps": [
+        "α = 3α − 4에서 α = 2",
+        "aₙ₊₁ − 2 = 3(aₙ − 2)이므로 aₙ − 2는 첫째항 1, 공비 3인 등비수열",
+        "aₙ − 2 = 3ⁿ⁻¹",
+        "aₙ = 3ⁿ⁻¹ + 2 (확인: a₂ = 5 = 3 × 3 − 4)"
+      ],
+      "answer": "aₙ = 3ⁿ⁻¹ + 2"
     },
     {
       "type": "question",
@@ -46,7 +61,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "aₙ + 1 = 2ⁿ"
+      "explanation": "α = 2α + 1에서 α = −1이므로 aₙ + 1은 첫째항 2, 공비 2인 등비수열\naₙ + 1 = 2ⁿ, aₙ = 2ⁿ − 1\na₆ = 64 − 1 = 63"
     },
     {
       "type": "question",
@@ -58,7 +73,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "aₙ − 1 = 3ⁿ⁻¹"
+      "explanation": "차례로: a₂ = 3 × 2 − 2 = 4, a₃ = 10, a₄ = 28\n일반항으로: α = 1, aₙ − 1 = 3ⁿ⁻¹이므로 aₙ = 3ⁿ⁻¹ + 1\na₄ = 27 + 1 = 28"
     },
     {
       "type": "explain",
@@ -66,8 +81,23 @@
       "stage": "discover",
       "title": "계차가 주어진 점화식",
       "body": [
-        "aₙ₊₁ − aₙ = f(n)이면 aₙ = a₁ + Σ(k=1~n−1) f(k)입니다."
+        "aₙ₊₁ − aₙ = f(n)이면 aₙ = a₁ + Σ(k=1~n−1) f(k)입니다.",
+        "계차가 주어진 점화식은 앞 레슨의 '더해 가기'를 Σ로 한 번에 쓴 것입니다. f(k)가 k에 대한 다항식이면 Σk, Σk² 공식으로, 지수식이면 등비수열의 합 공식으로 계산합니다. 더하는 범위가 k = n − 1까지라는 점을 꼭 지킵니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "a₁ = 1, aₙ₊₁ − aₙ = 2ⁿ의 일반항을 구하세요.",
+      "steps": [
+        "aₙ = 1 + Σ(k=1~n−1) 2ᵏ",
+        "Σ(k=1~n−1) 2ᵏ = 2(2ⁿ⁻¹ − 1) = 2ⁿ − 2",
+        "aₙ = 2ⁿ − 1",
+        "확인: 1, 3, 7, 15, …"
+      ],
+      "answer": "aₙ = 2ⁿ − 1"
     },
     {
       "type": "question",
@@ -79,7 +109,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "aₙ = a₁ + Σ(k=1~n−1) 2k\na₁₀ = 2 + 2 × 45\n= 92\n원리: 계차의 합을 첫째항에 더합니다."
     },
     {
       "type": "question",
@@ -91,7 +121,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "a₄ = 1 + (3¹ + 3² + 3³)\n= 1 + 3 + 9 + 27\n= 40\n원리: 계차가 등비수열이면 등비수열의 합을 더합니다."
     },
     {
       "type": "explain",
@@ -99,8 +129,23 @@
       "stage": "discover",
       "title": "합 Sₙ이 주어진 경우",
       "body": [
-        "aₙ₊₁ = Sₙ₊₁ − Sₙ을 이용해 aₙ 사이의 관계식을 만듭니다."
+        "aₙ₊₁ = Sₙ₊₁ − Sₙ을 이용해 aₙ 사이의 관계식을 만듭니다.",
+        "Sₙ에 대한 식이 주어지면 n 대신 n + 1을 넣은 식을 하나 더 만들어 빼 봅니다. Sₙ₊₁ − Sₙ = aₙ₊₁이므로 합이 사라지고 항들만의 관계식이 남습니다. 첫째항은 S₁ = a₁로 따로 구하고, 구한 관계식이 n = 1부터 성립하는지도 확인합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "Sₙ = 3aₙ − 2일 때 일반항을 구하세요.",
+      "steps": [
+        "n = 1: a₁ = 3a₁ − 2에서 a₁ = 1",
+        "Sₙ₊₁ − Sₙ: aₙ₊₁ = 3aₙ₊₁ − 3aₙ → 2aₙ₊₁ = 3aₙ",
+        "aₙ₊₁ = (3/2)aₙ, 공비 3/2인 등비수열",
+        "aₙ = (3/2)ⁿ⁻¹"
+      ],
+      "answer": "aₙ = (3/2)ⁿ⁻¹"
     },
     {
       "type": "question",
@@ -112,7 +157,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "aₙ₊₁ = 2aₙ, a₁ = 1"
+      "explanation": "n = 1: a₁ = 2a₁ − 1에서 a₁ = 1\nSₙ₊₁ − Sₙ: aₙ₊₁ = 2aₙ₊₁ − 2aₙ → aₙ₊₁ = 2aₙ\n공비 2인 등비수열이므로 a₆ = 2⁵ = 32"
     },
     {
       "type": "question",
@@ -124,7 +169,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "a₁₀ = S₁₀ − S₉\n= (100 − 10) − (81 − 9) = 90 − 72\n= 18\n원리: aₙ = Sₙ − Sₙ₋₁ = 2n − 2"
     },
     {
       "type": "explain",
@@ -132,7 +177,8 @@
       "stage": "summary",
       "title": "곱의 꼴",
       "body": [
-        "aₙ₊₁ = f(n)aₙ은 차례로 곱해 약분합니다."
+        "aₙ₊₁ = f(n)aₙ은 차례로 곱해 약분합니다.",
+        "f(n)이 분수이면 곱할 때 이웃한 분자와 분모가 약분됩니다. 예를 들어 (1/2)(2/3)(3/4)…((n − 1)/n) = 1/n처럼 처음 분자와 마지막 분모만 남습니다. 망원급수의 곱셈 버전이라고 할 수 있으며, 몇 항만 써 보면 약분 규칙이 바로 보입니다."
       ]
     },
     {
@@ -144,8 +190,8 @@
       "answer": "1/10",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "차례로 곱해 약분하세요.",
+      "explanation": "곱해 가면 aₙ = 1 × (1/2)(2/3)(3/4)…((n − 1)/n)\n이웃한 분자와 분모가 약분되어 1/n\na₁₀ = 1/10"
     },
     {
       "type": "question",
@@ -156,8 +202,8 @@
       "answer": "15",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "차례로 계산하세요.",
+      "explanation": "a₂ = 3 × 1 = 3, a₃ = (4/2) × 3 = 6, a₄ = (5/3) × 6 = 10, a₅ = (6/4) × 10\n= 15\n규칙: aₙ = n(n + 1)/2"
     },
     {
       "type": "explain",
@@ -165,7 +211,8 @@
       "stage": "summary",
       "title": "점화식 세우기",
       "body": [
-        "n단계와 n + 1단계의 관계를 식으로 세우면 복잡한 세기 문제도 풀 수 있습니다."
+        "n단계와 n + 1단계의 관계를 식으로 세우면 복잡한 세기 문제도 풀 수 있습니다.",
+        "하노이의 탑, 계단 오르기, 평면 나누기처럼 직접 세기 어려운 문제도, n번째와 n + 1번째 상황의 관계만 찾으면 점화식을 세울 수 있습니다. 점화식을 세운 뒤에는 차례로 계산하거나 일반항을 구하면 됩니다."
       ]
     },
     {
@@ -177,8 +224,8 @@
       "answer": "19",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "차례로 계산하거나 α를 찾으세요.",
+      "explanation": "차례로: 4, 5, 7, 11, 19\n일반항으로: α = 3, aₙ − 3 = 2ⁿ⁻¹\na₅ = 16 + 3 = 19"
     },
     {
       "type": "question",
@@ -189,8 +236,8 @@
       "answer": "5/2",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "차례로 계산하세요.",
+      "explanation": "a₂ = 4/2 + 1 = 3\na₃ = 3/2 + 1 = 5/2\n원리: α = α/2 + 1에서 α = 2이므로 aₙ은 2에 가까워집니다."
     },
     {
       "type": "question",
@@ -201,8 +248,8 @@
       "answer": "100",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "계차의 합을 구하세요.",
+      "explanation": "aₙ = 1 + Σ(k=1~n−1)(2k + 1) = 1 + (n − 1)n + (n − 1)\n= n²\na₁₀ = 100 (홀수를 차례로 더하면 제곱수)"
     },
     {
       "type": "question",
@@ -213,8 +260,8 @@
       "answer": "31",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "점화식으로 차례로 계산하세요.",
+      "explanation": "α = −1이므로 aₙ + 1이 공비 2인 등비수열: aₙ = 2ⁿ − 1\na₅ = 32 − 1\n= 31번\n확인: 1, 3, 7, 15, 31"
     },
     {
       "type": "question",
@@ -225,8 +272,8 @@
       "answer": "13",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "앞의 두 항을 더하세요.",
+      "explanation": "a₃ = 3, a₄ = 5, a₅ = 8, a₆ = 13\n원리: 마지막 걸음이 1칸이면 aₙ₋₁, 2칸이면 aₙ₋₂가지\n확인: 피보나치수열과 같은 규칙"
     },
     {
       "type": "question",
@@ -237,8 +284,8 @@
       "answer": "14",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "차례로 계산하세요.",
+      "explanation": "a₂ = 2 + 2 = 4, a₃ = 4 + 4 = 8, a₄ = 8 + 6\n= 14\n원리: 새 원은 기존 n개의 원과 2n개의 점에서 만나 영역을 2n개 늘립니다."
     },
     {
       "type": "question",
@@ -249,8 +296,8 @@
       "answer": "16",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "차례로 계산하세요.",
+      "explanation": "a₂ = 2 + 2 = 4, a₃ = 4 + 3 = 7, a₄ = 7 + 4 = 11, a₅ = 11 + 5\n= 16\n원리: 새 직선은 기존 n개와 n번 만나 n + 1개의 영역을 나눕니다."
     },
     {
       "type": "question",

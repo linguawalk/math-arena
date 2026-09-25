@@ -26,8 +26,8 @@
       "answer": "62",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "aₙ = a + (n − 1)d",
+      "explanation": "첫째항 5, 공차 3\na₂₀ = 5 + 19 × 3\n= 62\n원리: 제20항까지 공차를 19번 더합니다(aₙ = a + (n − 1)d).",
       "source_lesson": "c3-ch06-l01"
     },
     {
@@ -39,8 +39,8 @@
       "answer": "100",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "제10항부터 구하세요.",
+      "explanation": "a₁₀ = 1 + 9 × 2 = 19\nS₁₀ = 10 × (1 + 19)/2\n= 100 (홀수 10개의 합은 10²)",
       "source_lesson": "c3-ch06-l01"
     },
     {
@@ -52,8 +52,8 @@
       "answer": "128",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "aₙ = arⁿ⁻¹",
+      "explanation": "첫째항 2, 공비 2\na₇ = 2 × 2⁶\n= 128\n원리: 제7항까지 공비를 6번 곱합니다(aₙ = arⁿ⁻¹).",
       "source_lesson": "c3-ch06-l02"
     },
     {
@@ -65,8 +65,8 @@
       "answer": "364",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "항의 개수를 세세요.",
+      "explanation": "첫째항 1, 공비 3, 항의 개수 6 (3⁰부터 3⁵까지)\nS₆ = (3⁶ − 1)/(3 − 1) = 728/2\n= 364",
       "source_lesson": "c3-ch06-l02"
     },
     {
@@ -78,8 +78,8 @@
       "answer": "6",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "b² = ac",
+      "explanation": "등비중항: x² = 3 × 12 = 36\nx > 0이므로 x = 6\n확인: 공비 2\n원리: 등비중항은 양옆 두 항의 곱의 양의 제곱근입니다.",
       "source_lesson": "c3-ch06-l02"
     },
     {
@@ -91,8 +91,8 @@
       "answer": "91",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "Σk² 공식",
+      "explanation": "Σk² = 6 × 7 × 13/6\n= 91\n원리: 자연수의 제곱의 합 공식 Σk² = n(n + 1)(2n + 1)/6에 n = 6을 넣었습니다.",
       "source_lesson": "c3-ch06-l03"
     },
     {
@@ -104,8 +104,8 @@
       "answer": "175",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "Σ를 나누세요.",
+      "explanation": "Σ(3k + 1) = 3Σk + Σ1\n= 3 × 55 + 10\n= 175\n원리: Σ(pk + q) = pΣk + qn",
       "source_lesson": "c3-ch06-l03"
     },
     {
@@ -117,8 +117,8 @@
       "answer": "4/5",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "1/k − 1/(k + 1)로 나누세요.",
+      "explanation": "부분분수로 나누면 1 − 1/5\n= 4/5\n원리: Σ(k=1~n) 1/(k(k + 1)) = n/(n + 1)",
       "source_lesson": "c3-ch06-l04"
     },
     {
@@ -130,8 +130,8 @@
       "answer": "17",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "계차수열을 보세요.",
+      "explanation": "계차: 1, 2, 3, 4, …\n다음 계차는 5\n12 + 5 = 17\n원리: 계차가 1씩 커지므로 다음 계차는 5입니다.",
       "source_lesson": "c3-ch06-l04"
     },
     {
@@ -143,8 +143,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "분모를 유리화하세요.",
+      "explanation": "유리화하면 √(k + 1) − √k이므로 합은 √16 − 1\n= 4 − 1\n= 3\n원리: 가운데 항이 모두 지워지고 √16과 −√1만 남습니다.",
       "source_lesson": "c3-ch06-l04"
     }
   ]

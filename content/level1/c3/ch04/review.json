@@ -31,8 +31,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "45°는 180°의 1/4입니다.",
+      "explanation": "180° = π이므로 45°는 그 1/4\n45° = π/4\n빈칸은 4\n원리: x° = x × π/180\n확인: π/4 = 180°/4 = 45°",
       "source_lesson": "c3-ch04-l01"
     },
     {
@@ -44,8 +44,8 @@
       "answer": "135",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "π 자리에 180°를 넣으세요.",
+      "explanation": "π = 180°를 넣습니다: 3π/4 = 3 × 180°/4\n= 135°\n확인: π/4 = 45°의 3배\n원리: 라디안을 도로 바꿀 때는 π에 180°를 넣습니다.",
       "source_lesson": "c3-ch04-l01"
     },
     {
@@ -62,8 +62,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "S = (1/2)r²θ",
+      "explanation": "넓이 S = (1/2)r²θ = (1/2) × 16 × π/2\n= 4π\n빈칸은 4\n확인: 원 넓이 16π의 1/4",
       "source_lesson": "c3-ch04-l01"
     },
     {
@@ -75,8 +75,8 @@
       "answer": "-1/2",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "제3사분면에서 sin은 음수입니다.",
+      "explanation": "7π/6 = π + π/6 (제3사분면)\nsin (7π/6) = −sin (π/6)\n= −1/2\n원리: π + x는 원점 대칭이라 sin의 부호가 바뀝니다.",
       "source_lesson": "c3-ch04-l02"
     },
     {
@@ -88,8 +88,8 @@
       "answer": "-3/5",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "sin² θ + cos² θ = 1",
+      "explanation": "sin² θ = 1 − cos² θ = 1 − 16/25 = 9/25\n제4사분면이므로 sin θ < 0\nsin θ = −3/5",
       "source_lesson": "c3-ch04-l02"
     },
     {
@@ -101,8 +101,8 @@
       "answer": "-5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "cos x가 최소일 때입니다.",
+      "explanation": "cos x의 최솟값 −1을 넣으면 4 × (−1) − 1\n= −5\n원리: 최솟값 = −|a| + d\n확인: x = π일 때 4 cos π − 1 = −5",
       "source_lesson": "c3-ch04-l03"
     },
     {
@@ -119,8 +119,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "2π/|b|",
+      "explanation": "y = sin bx의 주기는 2π/|b| = 2π/4\n= π/2\n빈칸은 2\n원리: 계수 b가 클수록 가로로 압축되어 주기가 짧아집니다.",
       "source_lesson": "c3-ch04-l03"
     },
     {
@@ -132,8 +132,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "단위원에서 x좌표가 1인 점은 하나입니다.",
+      "explanation": "cos x = 1은 단위원 위의 점 (1, 0)\n0 ≤ x < 2π에서는 x = 0 하나뿐\n해 1개\n원리: cos x = 1은 cos의 최댓값이라 단위원에서 한 점만 만납니다.",
       "source_lesson": "c3-ch04-l04"
     },
     {
@@ -145,8 +145,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "직선 y = −x와 단위원의 교점입니다.",
+      "explanation": "tan x = −1은 직선 y = −x 위의 점\n단위원과 두 점에서 만납니다: 3π/4, 7π/4\n해 2개\n원리: tan의 주기가 π라 두 해는 π만큼 차이 납니다.",
       "source_lesson": "c3-ch04-l04"
     },
     {
@@ -158,8 +158,8 @@
       "answer": "-1/2",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "cos(π − x) = −cos x",
+      "explanation": "cos(π − x) = −cos x이므로 cos (π − π/3) = −cos (π/3)\n= −1/2\n확인: 2π/3은 제2사분면이라 cos이 음수",
       "source_lesson": "c3-ch04-l04"
     }
   ]
