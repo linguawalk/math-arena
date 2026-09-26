@@ -6,6 +6,13 @@
     "title": "함수와 그래프",
     "description": "좌표평면, 원과 도형의 이동, 함수, 이차함수, 유리·무리함수, 함수 모델링"
   },
+  "totals": {
+    "chapters": 6,
+    "lessons": 24,
+    "lesson_questions": 384,
+    "review_questions": 60,
+    "questions": 444
+  },
   "chapters": [
     {
       "no": 1,
@@ -61,12 +68,5 @@
       "lesson_questions": 64,
       "review_questions": 10
     }
-  ],
-  "totals": {
-    "chapters": 6,
-    "lessons": 24,
-    "lesson_questions": 384,
-    "review_questions": 60,
-    "questions": 444
-  }
+  ]
 }
