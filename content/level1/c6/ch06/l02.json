@@ -31,8 +31,10 @@
       "stage": "intro",
       "title": "직선과 평면이 수직일 조건",
       "body": [
-        "직선 l이 평면 α 위의 만나는 두 직선에 각각 수직이면 l은 평면 α에 수직입니다. 평면 위의 한 직선에만 수직인 것으로는 부족합니다."
-      ]
+        "직선 l이 평면 α 위의 만나는 두 직선에 각각 수직이면 l은 평면 α에 수직입니다. 평면 위의 한 직선에만 수직인 것으로는 부족합니다.",
+        "왜 두 직선이 필요할까요? 책상 위에 연필을 세웠을 때 한 방향에서만 보고 수직이라 해도, 옆에서 보면 기울어져 있을 수 있습니다. 평면 위의 만나는 두 방향 모두에 수직이어야 평면 전체에 수직입니다. 평면 위의 한 직선에만 수직인 직선은 그 직선을 축으로 회전하며 여러 방향을 가질 수 있습니다."
+      ],
+      "explanation": "\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "question",
@@ -44,7 +46,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "평면 위의 한 직선에만 수직이면 그 직선을 축으로 기울어질 수 있음\n반드시 수직은 아님\n0\n원리: 만나는 두 직선에 수직이어야 합니다."
     },
     {
       "type": "question",
@@ -56,7 +58,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "직선과 평면이 수직일 조건 그대로\n만나는 두 직선에 각각 수직이면 평면 위의 모든 직선에 수직\n그렇다 → 1\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "explain",
@@ -65,8 +67,10 @@
       "title": "삼수선 정리",
       "body": [
         "평면 밖의 점 P에서 평면에 내린 수선의 발을 O, O에서 평면 위의 직선 l에 내린 수선의 발을 H라 하면 PH ⊥ l입니다.",
-        "이때 삼각형 POH는 ∠POH가 직각인 직각삼각형입니다."
+        "이때 삼각형 POH는 ∠POH가 직각인 직각삼각형입니다.",
+        "삼수선 정리는 세 개의 수직 관계를 이어 줍니다. PO ⊥ 평면이면 PO는 평면 위의 직선 l에도 수직이고, OH ⊥ l이므로 l은 평면 POH 위의 만나는 두 직선에 수직입니다. 그래서 l ⊥ 평면 POH이고, 그 평면 위의 PH도 l에 수직입니다."
       ],
+      "explanation": "\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다.",
       "figure": {
         "widget": "geo",
         "config": {
@@ -229,7 +233,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "",
+      "explanation": "∠POH = 90°인 직각삼각형\nPH = √(3² + 4²) = √25\n= 5\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다.",
       "figure": {
         "widget": "geo",
         "config": {
@@ -392,7 +396,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "OH² = PH² − PO²\n= 25 − 16 = 9\nOH = 3\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "explain",
@@ -400,8 +404,24 @@
       "stage": "discover",
       "title": "점과 직선 사이의 거리",
       "body": [
-        "평면 밖의 점과 평면 위의 직선 사이의 거리는 삼수선 정리로 직각삼각형을 만들어 구합니다."
-      ]
+        "평면 밖의 점과 평면 위의 직선 사이의 거리는 삼수선 정리로 직각삼각형을 만들어 구합니다.",
+        "평면 밖의 점 P에서 평면 위의 직선 l까지의 거리를 직접 재기는 어렵습니다. 삼수선 정리로 수선의 발 H를 찾으면, 높이 PO와 평면 위의 거리 OH를 두 변으로 하는 직각삼각형의 빗변이 PH입니다. 공간의 거리를 평면의 직각삼각형으로 바꾸는 것이 핵심입니다."
+      ],
+      "explanation": "\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "평면 α 위의 직선 l과 α 밖의 점 P가 있습니다. P에서 α까지의 거리가 5이고, 수선의 발 O에서 l까지의 거리가 12일 때 P와 l 사이의 거리를 구하세요.",
+      "steps": [
+        "O에서 l에 내린 수선의 발 H: OH = 12",
+        "삼수선 정리로 PH ⊥ l",
+        "△POH는 ∠POH = 90°: PH = √(25 + 144)",
+        "= 13"
+      ],
+      "answer": "13"
     },
     {
       "type": "question",
@@ -413,7 +433,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": "",
+      "explanation": "PH = √(12² + 5²)\n= √169\n= 13\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다.",
       "figure": {
         "widget": "geo",
         "config": {
@@ -576,7 +596,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "PO = 6 (점과 평면 사이의 거리)\nOH = √(10² − 6²) = √64\n= 8\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "explain",
@@ -584,8 +604,24 @@
       "stage": "summary",
       "title": "정육면체에서의 거리",
       "body": [
-        "정육면체의 꼭짓점에서 모서리나 대각선까지의 거리도 수선의 발을 찾아 직각삼각형으로 계산합니다."
-      ]
+        "정육면체의 꼭짓점에서 모서리나 대각선까지의 거리도 수선의 발을 찾아 직각삼각형으로 계산합니다.",
+        "정육면체에서는 한 면이 다른 면에 수직이므로 수선의 발을 쉽게 찾을 수 있습니다. 꼭짓점 G에서 모서리 AB까지의 거리는, G에서 면 ABCD에 내린 수선의 발이 C이고 C에서 AB에 내린 수선의 발이 B이므로 GB가 됩니다."
+      ],
+      "explanation": "\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "한 변이 4인 정육면체 ABCD-EFGH에서 꼭짓점 H와 모서리 BC 사이의 거리를 구하세요.",
+      "steps": [
+        "H에서 면 ABCD에 내린 수선의 발은 D",
+        "D에서 BC에 내린 수선의 발은 C (DC ⊥ BC)",
+        "삼수선 정리로 HC ⊥ BC, 거리는 HC",
+        "HC = √(4² + 4²) = 4√2 (면 DCGH의 대각선)"
+      ],
+      "answer": "4√2"
     },
     {
       "type": "question",
@@ -601,8 +637,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "G에서 밑면에 내린 수선의 발은 C입니다.",
+      "explanation": "G의 수선의 발 C, C에서 AB로의 수선의 발 B → GB ⊥ AB\nGB는 면 BCGF의 대각선: √(4 + 4)\n= 2√2",
       "figure": {
         "widget": "geo",
         "config": {
@@ -847,8 +883,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "E에서 밑면에 내린 수선의 발은 A입니다.",
+      "explanation": "E의 수선의 발 A, A에서 BD로의 수선의 발은 BD의 중점 M: AM = √2/2\nEM = √(1² + (√2/2)²) = √(3/2)\n= √6/2"
     },
     {
       "type": "explain",
@@ -856,8 +892,24 @@
       "stage": "summary",
       "title": "정리",
       "body": [
-        "세 개의 수직(PO ⊥ 평면, OH ⊥ l, PH ⊥ l) 중 두 개가 있으면 나머지 하나가 성립합니다."
-      ]
+        "세 개의 수직(PO ⊥ 평면, OH ⊥ l, PH ⊥ l) 중 두 개가 있으면 나머지 하나가 성립합니다.",
+        "삼수선 정리의 세 가지 형태: ① PO ⊥ α, OH ⊥ l이면 PH ⊥ l ② PO ⊥ α, PH ⊥ l이면 OH ⊥ l ③ PH ⊥ l, OH ⊥ l, PO ⊥ OH이면 PO ⊥ α. 어느 두 개가 주어지면 세 번째를 끌어낼 수 있습니다."
+      ],
+      "explanation": "\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "밑면이 한 변 8인 정사각형이고 높이가 3인 정사각뿔 O-ABCD에서 꼭짓점 O와 밑변 AB 사이의 거리를 구하세요.",
+      "steps": [
+        "O에서 밑면에 내린 수선의 발은 밑면의 중심 M",
+        "M에서 AB에 내린 수선의 발은 AB의 중점 N, MN = 4",
+        "삼수선 정리로 ON ⊥ AB",
+        "ON = √(3² + 4²) = 5 (옆면의 높이)"
+      ],
+      "answer": "5"
     },
     {
       "type": "question",
@@ -868,8 +920,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "피타고라스 정리를 쓰세요.",
+      "explanation": "PH = √(1 + 3)\n= √4\n= 2\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "question",
@@ -880,8 +932,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "이름의 뜻을 생각하세요.",
+      "explanation": "PO ⊥ 평면, OH ⊥ l, PH ⊥ l의 세 수직\n세 개의 수선이라 '삼수선'\n그렇다 → 1\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "question",
@@ -892,8 +944,8 @@
       "answer": "12",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "피타고라스 정리를 거꾸로 쓰세요.",
+      "explanation": "OH = √(13² − 5²)\n= √144\n= 12\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "question",
@@ -909,8 +961,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "가장 먼 모서리를 먼저 찾으세요.",
+      "explanation": "꼭짓점 A에서 가장 먼 모서리는 G를 지나는 윗면의 모서리(예: GH)\n거리는 면의 대각선 AH = √(9 + 9)\n= 3√2"
     },
     {
       "type": "question",
@@ -921,8 +973,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "밑면의 중심에서 변까지의 거리는 3입니다.",
+      "explanation": "꼭짓점의 수선의 발은 밑면의 중심, 중심에서 한 변까지 3\n거리 = √(4² + 3²)\n= 5 (옆면의 높이)\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "question",
@@ -933,8 +985,8 @@
       "answer": "10",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "피타고라스 정리를 쓰세요.",
+      "explanation": "PH = √(36 + 64)\n= √100\n= 10\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "question",
@@ -950,8 +1002,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "피타고라스 정리를 두 번 쓰세요.",
+      "explanation": "대각선² = 가로² + 세로² + 높이²\n= 4 + 4 + 4 = 12\n√12 = 2√3\n원리: 삼수선 정리로 생긴 삼각형 POH는 ∠POH = 90°인 직각삼각형이라 피타고라스 정리를 씁니다."
     },
     {
       "type": "question",

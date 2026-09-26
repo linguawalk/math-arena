@@ -31,7 +31,8 @@
       "stage": "intro",
       "title": "x²/a² − y²/b² = 1",
       "body": [
-        "두 초점이 (±c, 0)이고 거리의 차가 2a인 쌍곡선은 x²/a² − y²/b² = 1 (b² = c² − a²)입니다. 꼭짓점은 (±a, 0)입니다."
+        "두 초점이 (±c, 0)이고 거리의 차가 2a인 쌍곡선은 x²/a² − y²/b² = 1 (b² = c² − a²)입니다. 꼭짓점은 (±a, 0)입니다.",
+        "방정식은 타원과 같은 방법으로 정의에서 나옵니다. |√((x − c)² + y²) − √((x + c)² + y²)| = 2a를 두 번 제곱해 정리하면 x²/a² − y²/(c² − a²) = 1이 되고, c² − a²을 b²으로 두면 표준형입니다. 타원과 달리 가운데 부호가 −입니다."
       ],
       "figure": {
         "widget": "graph",
@@ -71,7 +72,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "a² = 9, b² = 16\nc² = 9 + 16 = 25, c = 5\n초점 (±5, 0)이므로 빈칸은 5\n원리: 쌍곡선에서는 c² = a² + b² (타원의 a² = b² + c²과 부호가 다름)"
     },
     {
       "type": "question",
@@ -83,7 +84,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "a² = 9에서 a = 3\n주축의 길이 2a\n= 6 (b = 4가 a보다 커도 주축은 2a)\n주의: 쌍곡선은 타원과 달리 분모의 크기가 아니라 부호로 방향을 정합니다."
     },
     {
       "type": "question",
@@ -95,7 +96,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "x²/a² − y²/b² = 1의 꼭짓점은 (±a, 0)\na = 3\nx좌표 3\n원리: x² 앞이 +이므로 x축 위에 꼭짓점"
     },
     {
       "type": "explain",
@@ -103,8 +104,23 @@
       "stage": "discover",
       "title": "위아래로 열리는 쌍곡선",
       "body": [
-        "x²/a² − y²/b² = −1은 초점이 y축 위에 있어 위아래로 열립니다. 초점은 (0, ±c), c² = a² + b²"
+        "x²/a² − y²/b² = −1은 초점이 y축 위에 있어 위아래로 열립니다. 초점은 (0, ±c), c² = a² + b²",
+        "x²/a² − y²/b² = −1은 y²/b² − x²/a² = 1과 같습니다. y² 앞의 부호가 +이므로 y값이 커지는 쪽(위아래)으로 열리고, 초점도 y축 위에 있습니다. 쌍곡선에서는 분모의 크기가 아니라 부호가 방향을 정한다는 점이 타원과 다릅니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "쌍곡선 y²/16 − x²/20 = 1의 꼭짓점, 초점, 주축의 길이를 구하세요.",
+      "steps": [
+        "y²의 부호가 +이므로 위아래로 열림: a² = 16, b² = 20",
+        "c² = 16 + 20 = 36, c = 6",
+        "꼭짓점 (0, ±4), 초점 (0, ±6)",
+        "주축의 길이 8"
+      ],
+      "answer": "꼭짓점 (0, ±4), 초점 (0, ±6), 주축 8"
     },
     {
       "type": "question",
@@ -121,7 +137,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "우변이 −1이므로 위아래로 열림, 초점 (0, ±c)\nc² = 16 + 9 = 25, c = 5\n빈칸은 5\n원리: 쌍곡선에서는 c² = a² + b² (타원의 a² = b² + c²과 부호가 다름)"
     },
     {
       "type": "question",
@@ -133,7 +149,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "−1로 나누면 y²/9 − x²/16 = 1이므로 꼭짓점 (0, ±3)\ny좌표 3\n원리: +인 변수 y의 축 위에 꼭짓점"
     },
     {
       "type": "explain",
@@ -141,8 +157,23 @@
       "stage": "discover",
       "title": "방정식 세우기",
       "body": [
-        "a와 c를 찾아 b² = c² − a²을 구합니다."
+        "a와 c를 찾아 b² = c² − a²을 구합니다.",
+        "쌍곡선의 방정식은 a²과 b²만 알면 됩니다. 초점과 주축이 주어지면 b² = c² − a²으로, 지나는 점이 주어지면 대입해서 구합니다. 타원처럼 a > b라는 조건이 없어서 b가 a보다 클 수도 있습니다. a는 항상 + 부호인 변수의 분모에서 읽습니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "두 초점이 (±4, 0)이고 점 (4, 6)을 지나는 쌍곡선의 방정식을 구하세요.",
+      "steps": [
+        "F(4, 0), F′(−4, 0)까지의 거리: 6, √(64 + 36) = 10",
+        "차 10 − 6 = 4 = 2a에서 a = 2",
+        "b² = 16 − 4 = 12",
+        "x²/4 − y²/12 = 1"
+      ],
+      "answer": "x²/4 − y²/12 = 1"
     },
     {
       "type": "question",
@@ -159,7 +190,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "c = 5, 2a = 8에서 a² = 16\nb² = c² − a² = 25 − 16\n= 9\n원리: 쌍곡선에서는 c² = a² + b² (타원의 a² = b² + c²과 부호가 다름)"
     },
     {
       "type": "question",
@@ -176,7 +207,7 @@
         }
       ],
       "hint": null,
-      "explanation": ""
+      "explanation": "a = 2, c = 3\nb² = 9 − 4\n= 5\n원리: 쌍곡선에서는 c² = a² + b² (타원의 a² = b² + c²과 부호가 다름)"
     },
     {
       "type": "explain",
@@ -184,8 +215,23 @@
       "stage": "summary",
       "title": "일반형과 평행이동",
       "body": [
-        "우변을 1로 만들어 a², b²을 읽습니다. (x − p)²/a² − (y − q)²/b² = 1의 중심은 (p, q)입니다."
+        "우변을 1로 만들어 a², b²을 읽습니다. (x − p)²/a² − (y − q)²/b² = 1의 중심은 (p, q)입니다.",
+        "일반형은 양변을 나눠 우변을 1(또는 −1)로 만듭니다. 9x² − 16y² = 144를 144로 나누면 x²/16 − y²/9 = 1이 되어 a = 4, b = 3을 읽을 수 있습니다. 평행이동한 쌍곡선은 중심을 먼저 찾고, 원래 쌍곡선처럼 생각합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "4x² − 9y² − 8x − 32 = 0의 중심과 주축의 길이를 구하세요.",
+      "steps": [
+        "완전제곱식: 4(x − 1)² − 4 − 9y² − 32 = 0",
+        "4(x − 1)² − 9y² = 36",
+        "(x − 1)²/9 − y²/4 = 1",
+        "중심 (1, 0), a = 3이므로 주축의 길이 6"
+      ],
+      "answer": "중심 (1, 0), 주축 6"
     },
     {
       "type": "question",
@@ -196,8 +242,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "우변을 1로 만드세요.",
+      "explanation": "144로 나누면 x²/16 − y²/9 = 1\na = 4\n주축의 길이 8\n원리: 계수가 붙은 식은 양변을 나눠 우변을 1로 만듭니다."
     },
     {
       "type": "question",
@@ -229,8 +275,8 @@
         "y": 2,
         "tolerance": 0
       },
-      "hint": null,
-      "explanation": ""
+      "hint": "괄호 안의 부호 반대가 중심입니다.",
+      "explanation": "(x − p)²/a² − (y − q)²/b² = 1의 중심은 (p, q)\np = 1, q = 2\n점 (1, 2)를 표시합니다."
     },
     {
       "type": "question",
@@ -246,8 +292,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": ""
+      "hint": "c² = a² + b²",
+      "explanation": "a² = b² = 1\nc² = 1 + 1 = 2, c = √2\n초점 (√2, 0)이므로 빈칸은 2\n원리: x² − y² = 1은 a = b인 직각쌍곡선"
     },
     {
       "type": "explain",
@@ -255,7 +301,8 @@
       "stage": "summary",
       "title": "정리",
       "body": [
-        "x²의 부호가 +이면 좌우로, y²의 부호가 +이면 위아래로 열립니다."
+        "x²의 부호가 +이면 좌우로, y²의 부호가 +이면 위아래로 열립니다.",
+        "이차곡선의 방정식을 보면 제곱항의 부호부터 확인합니다. 두 부호가 같으면 타원(또는 원), 다르면 쌍곡선입니다. 쌍곡선이면 + 부호인 변수의 축 방향으로 열리고, 그 축 위에 초점과 꼭짓점이 있습니다. 분모의 크기는 방향과 관계가 없습니다."
       ]
     },
     {
@@ -267,8 +314,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "지나는 점을 대입하세요.",
+      "explanation": "(3, 2) 대입: 9/a² − 4/5 = 1\n9/a² = 9/5\na² = 5\n원리: 지나는 점을 방정식에 대입해 모르는 계수를 구합니다."
     },
     {
       "type": "question",
@@ -279,8 +326,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "c² = a² + b²",
+      "explanation": "c² = 4 + 12 = 16, c = 4\n두 초점 사이의 거리 2c\n= 8\n원리: 쌍곡선에서는 c² = a² + b² (타원의 a² = b² + c²과 부호가 다름)"
     },
     {
       "type": "question",
@@ -291,8 +338,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "어느 초점에 더 가까운지 보세요.",
+      "explanation": "오른쪽 가지 위의 점은 오른쪽 초점 F에 더 가까움\nPF′ − PF = 2a = 4\n원리: 쌍곡선 위의 모든 점에서 두 초점까지의 거리의 차(절댓값)는 주축의 길이 2a로 일정합니다."
     },
     {
       "type": "question",
@@ -303,8 +350,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "우변을 1로 만드세요.",
+      "explanation": "4로 나누면 x²/4 − y²/4 = 1\na = 2\n주축의 길이 4\n원리: x² − y² = a² 꼴의 직각쌍곡선은 주축의 길이가 2a"
     },
     {
       "type": "question",
@@ -315,8 +362,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "c² = a² + b²",
+      "explanation": "c² = 9 + 7 = 16\nc = 4\n두 초점 사이의 거리 8\n원리: 쌍곡선에서는 c² = a² + b² (타원의 a² = b² + c²과 부호가 다름)"
     },
     {
       "type": "question",

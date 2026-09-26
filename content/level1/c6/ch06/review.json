@@ -26,8 +26,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "공통점이 있는지 확인하세요.",
+      "explanation": "AE는 세로 모서리, BC는 아랫면의 모서리\n평행하지도 만나지도 않음\n꼬인 위치 → 3\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l01",
       "figure": {
         "widget": "geo",
@@ -256,8 +256,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "같은 방향의 모서리를 세세요.",
+      "explanation": "AB와 같은 방향의 모서리: DC, EF, HG\n3개\n원리: 정육면체의 모서리는 방향별로 4개씩 세 묶음\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l01",
       "figure": {
         "widget": "geo",
@@ -486,8 +486,8 @@
       "answer": "10",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "피타고라스 정리를 쓰세요.",
+      "explanation": "PH = √(8² + 6²)\n= √100\n= 10\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l02"
     },
     {
@@ -499,8 +499,8 @@
       "answer": "12",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "피타고라스 정리를 거꾸로 쓰세요.",
+      "explanation": "OH = √(15² − 9²)\n= √144\n= 12\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l02"
     },
     {
@@ -512,8 +512,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "l cos θ",
+      "explanation": "6 × cos 60°\n= 6 × 1/2\n= 3\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l03"
     },
     {
@@ -530,8 +530,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "S cos θ",
+      "explanation": "10 × cos 45° = 10 × √2/2\n= 5√2\n빈칸은 5\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l03"
     },
     {
@@ -543,8 +543,8 @@
       "answer": "60",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "비를 구하세요.",
+      "explanation": "cos θ = 8/16 = 1/2\nθ = 60°\n원리: 정사영 ÷ 원래 = cos θ\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l03"
     },
     {
@@ -556,8 +556,8 @@
       "answer": "0",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "평행한 평면입니다.",
+      "explanation": "마주 보는 두 면은 평행\n평행한 두 평면이 이루는 각\n0°\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l04"
     },
     {
@@ -569,8 +569,8 @@
       "answer": "3/5",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "비를 구하세요.",
+      "explanation": "cos θ = 정사영 넓이 ÷ 원래 넓이\n= 6/10\n= 3/5\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l04"
     },
     {
@@ -582,8 +582,8 @@
       "answer": "7",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "S cos θ",
+      "explanation": "14 × cos 60°\n= 14 × 1/2\n= 7\n원리: 위치 관계, 삼수선 정리, 정사영, 이면각이 공간도형의 핵심 도구입니다.",
       "source_lesson": "c6-ch06-l04"
     }
   ]

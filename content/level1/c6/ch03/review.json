@@ -26,8 +26,8 @@
       "answer": "12",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "c² = a² + b²",
+      "explanation": "b² = c² − a² = 169 − 25 = 144\nb = 12\n원리: 쌍곡선에서는 c² = a² + b² (타원의 a² = b² + c²과 부호가 다름)",
       "source_lesson": "c6-ch03-l01"
     },
     {
@@ -39,8 +39,8 @@
       "answer": "13/5",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "e = c/a",
+      "explanation": "e = c/a\n= 13/5\n원리: 쌍곡선의 이심률은 1보다 큽니다.\n비교: 같은 a, c로 타원을 만들 수는 없습니다(c > a).",
       "source_lesson": "c6-ch03-l01"
     },
     {
@@ -57,8 +57,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "c² = a² + b²",
+      "explanation": "c² = 16 + 9 = 25\nc = 5\n초점 (±5, 0)이므로 빈칸은 5\n원리: x² 앞이 +이므로 초점은 x축 위",
       "source_lesson": "c6-ch03-l02"
     },
     {
@@ -70,8 +70,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "우변을 1로 만드세요.",
+      "explanation": "16으로 나누면 x²/4 − y²/16 = 1\na = 2\n주축의 길이 4\n원리: 계수가 붙은 식은 양변을 나눠 우변을 1로 만듭니다.",
       "source_lesson": "c6-ch03-l02"
     },
     {
@@ -88,8 +88,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "b² = c² − a²",
+      "explanation": "c = 10, 2a = 12에서 a² = 36\nb² = 100 − 36\n= 64\n원리: 쌍곡선에서는 c² = a² + b² (타원의 a² = b² + c²과 부호가 다름)",
       "source_lesson": "c6-ch03-l02"
     },
     {
@@ -106,8 +106,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "y = ±(b/a)x",
+      "explanation": "a = 2, b = 5\n점근선 y = ±(5/2)x\n빈칸은 5\n원리: 방정식의 우변 1을 0으로 바꾸면 점근선 x²/4 − y²/25 = 0",
       "source_lesson": "c6-ch03-l03"
     },
     {
@@ -124,8 +124,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "x² 대신 x₁x, y² 대신 y₁y",
+      "explanation": "공식: 3x − 1 × y = 8 (x² − y² = 8에 x₁x − y₁y를 넣음)\n3x − y = 8\n빈칸은 8\n원리: 쌍곡선 위의 점에서의 접선 x₁x/a² − y₁y/b² = 1",
       "source_lesson": "c6-ch03-l03"
     },
     {
@@ -137,8 +137,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "계수를 비교하세요.",
+      "explanation": "x², y²의 계수가 같음\n중심 원점, 반지름 3\n원 → 1\n원리: x², y²의 계수가 같으면 원, 같은 부호이지만 다르면 타원, 다른 부호이면 쌍곡선, 한쪽만 제곱이면 포물선입니다.",
       "source_lesson": "c6-ch03-l04"
     },
     {
@@ -150,8 +150,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "계수의 부호를 보세요.",
+      "explanation": "계수 9, −4가 다른 부호\n36으로 나누면 x²/4 − y²/9 = 1\n쌍곡선 → 4\n원리: x², y²의 계수가 같으면 원, 같은 부호이지만 다르면 타원, 다른 부호이면 쌍곡선, 한쪽만 제곱이면 포물선입니다.",
       "source_lesson": "c6-ch03-l04"
     },
     {
@@ -163,8 +163,8 @@
       "answer": "3",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "한쪽만 제곱입니다.",
+      "explanation": "x만 제곱이고 y는 일차\nx² = 4py 꼴 (p = −2, 아래로 열림)\n포물선 → 3\n원리: x², y²의 계수가 같으면 원, 같은 부호이지만 다르면 타원, 다른 부호이면 쌍곡선, 한쪽만 제곱이면 포물선입니다.",
       "source_lesson": "c6-ch03-l04"
     }
   ]

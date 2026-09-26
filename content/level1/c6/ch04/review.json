@@ -26,8 +26,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "두 점 사이의 거리입니다.",
+      "explanation": "|AB| = √((2 − (−1))² + (5 − 1)²)\n= √(9 + 16)\n= 5\n원리: 벡터의 크기는 두 점 사이의 거리",
       "source_lesson": "c6-ch04-l01"
     },
     {
@@ -39,8 +39,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "역벡터의 크기를 생각하세요.",
+      "explanation": "BA는 AB의 역벡터로 방향만 반대\n크기는 같음\n그렇다 → 1\n원리: 역벡터는 크기가 같고 방향만 반대\n원리: 벡터의 크기, 성분 계산, 평행·수직 조건은 이 챕터의 기본 도구입니다.",
       "source_lesson": "c6-ch04-l01"
     },
     {
@@ -57,8 +57,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "뺄셈은 역벡터를 더하는 것입니다.",
+      "explanation": "AB − AC = AB + CA = CA + AB\n= CB\n빈칸은 B\n원리: 같은 시작점에서 나간 두 벡터의 차는 빼는 벡터의 끝에서 시작",
       "source_lesson": "c6-ch04-l02"
     },
     {
@@ -70,8 +70,8 @@
       "answer": "10",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "피타고라스 정리를 쓰세요.",
+      "explanation": "수직이면 직각삼각형의 빗변\n√(36 + 64) = √100\n= 10\n원리: 수직인 두 벡터의 합의 크기는 피타고라스 정리로",
       "source_lesson": "c6-ch04-l02"
     },
     {
@@ -88,8 +88,8 @@
           ]
         }
       ],
-      "hint": null,
-      "explanation": "",
+      "hint": "성분끼리 계산하세요.",
+      "explanation": "(2, 5) − (3, 3)\n= (−1, 2)\n빈칸은 2\n원리: 벡터의 덧셈, 뺄셈, 실수배는 성분끼리 계산합니다.",
       "source_lesson": "c6-ch04-l03"
     },
     {
@@ -101,8 +101,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "성분의 비가 같아야 합니다.",
+      "explanation": "평행하면 3 : k = 6 : 4\n6k = 12\nk = 2\n확인: (6, 4) = 2(3, 2)\n원리: 벡터의 크기, 성분 계산, 평행·수직 조건은 이 챕터의 기본 도구입니다.",
       "source_lesson": "c6-ch04-l03"
     },
     {
@@ -114,8 +114,8 @@
       "answer": "13",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "성분의 제곱의 합의 제곱근",
+      "explanation": "√(25 + 144) = √169\n= 13\n원리: 5, 12, 13은 피타고라스 수\n확인: 같은 방향의 단위벡터는 (5/13, 12/13)",
       "source_lesson": "c6-ch04-l03"
     },
     {
@@ -127,8 +127,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "성분의 곱의 합",
+      "explanation": "2 × 4 + 3 × (−1)\n= 8 − 3\n= 5\n원리: 성분으로 나타낸 내적 a·b = a₁b₁ + a₂b₂",
       "source_lesson": "c6-ch04-l04"
     },
     {
@@ -140,8 +140,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "내적을 0으로 놓으세요.",
+      "explanation": "수직이면 내적 0: 3k + 2 × (−6) = 0\n3k = 12\nk = 4\n원리: 영벡터가 아닌 두 벡터는 내적이 0일 때 수직",
       "source_lesson": "c6-ch04-l04"
     },
     {
@@ -153,8 +153,8 @@
       "answer": "10",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "|a||b|cos θ",
+      "explanation": "a·b = 4 × 5 × cos 60°\n= 20 × 1/2\n= 10\n원리: 내적 a·b = |a||b|cos θ",
       "source_lesson": "c6-ch04-l04"
     }
   ]

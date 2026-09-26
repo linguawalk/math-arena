@@ -32,7 +32,8 @@
       "title": "반사 성질",
       "body": [
         "축에 평행하게 들어온 빛은 포물선에서 반사되어 모두 초점을 지납니다. 반대로 초점에서 나온 빛은 반사되어 축에 평행하게 나갑니다.",
-        "위성 안테나, 자동차 전조등, 반사 망원경이 이 성질을 이용합니다."
+        "위성 안테나, 자동차 전조등, 반사 망원경이 이 성질을 이용합니다.",
+        "반사 성질은 포물선의 정의에서 나옵니다. 포물선 위의 점에서의 접선은 '초점과 그 점을 잇는 선'과 '준선에 수직인 선(축에 평행한 선)'이 이루는 각을 이등분합니다. 빛은 입사각과 반사각이 같게 반사되므로, 축에 평행하게 들어온 빛은 모두 초점으로 모입니다."
       ]
     },
     {
@@ -45,7 +46,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "4p = 16에서 p = 4\n신호는 초점 (4, 0)에 모임\nx좌표 4\n원리: 축에 평행하게 들어온 신호는 초점으로 반사됩니다."
     },
     {
       "type": "question",
@@ -57,7 +58,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "4p = 12에서 p = 3\n초점 (0, 3)에 전구를 두면 빛이 축에 평행하게 나감\ny좌표 3\n원리: 초점에서 나온 빛은 반사되어 축에 평행하게 나갑니다."
     },
     {
       "type": "explain",
@@ -65,8 +66,23 @@
       "stage": "discover",
       "title": "실제 크기에서 초점 찾기",
       "body": [
-        "접시의 지름과 깊이를 알면 가장자리 점을 x² = 4py에 넣어 p를 구합니다."
+        "접시의 지름과 깊이를 알면 가장자리 점을 x² = 4py에 넣어 p를 구합니다.",
+        "실제 접시의 모양을 방정식으로 옮기는 요령: 바닥의 가운데를 원점, 축을 y축으로 놓으면 x² = 4py입니다. 지름의 절반이 가장자리의 x좌표, 깊이가 y좌표이므로 이 점을 대입해 p를 구하면 초점은 바닥에서 p만큼 위입니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "지름 2.4m, 깊이 0.3m인 위성 안테나의 수신기(초점)는 바닥에서 몇 m 위에 두어야 할까요?",
+      "steps": [
+        "바닥 가운데를 원점으로: x² = 4py",
+        "가장자리 점 (1.2, 0.3) 대입: 1.44 = 1.2p",
+        "p = 1.2",
+        "바닥에서 1.2m 위"
+      ],
+      "answer": "1.2m"
     },
     {
       "type": "question",
@@ -78,7 +94,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "x² = 4py에 가장자리 점 (4, 1) 대입: 16 = 4p\np = 4\n초점은 바닥에서 4m 위\n원리: 접시 가장자리 점을 x² = 4py에 대입해 p를 구합니다."
     },
     {
       "type": "question",
@@ -90,7 +106,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "가장자리 점 (6, 3) 대입: 36 = 12p\np = 3\n초점은 바닥에서 3m 위\n원리: 접시 가장자리 점을 x² = 4py에 대입해 p를 구합니다."
     },
     {
       "type": "explain",
@@ -98,8 +114,23 @@
       "stage": "discover",
       "title": "초점까지의 거리",
       "body": [
-        "y² = 4px 위의 점 (x₁, y₁)과 초점 사이의 거리는 준선까지의 거리 x₁ + p입니다."
+        "y² = 4px 위의 점 (x₁, y₁)과 초점 사이의 거리는 준선까지의 거리 x₁ + p입니다.",
+        "초점까지의 거리를 두 점 사이의 거리 공식으로 구하면 근호가 생기지만, 정의를 쓰면 준선까지의 거리로 바로 바뀝니다. y² = 4px 위의 점이면 준선 x = −p까지의 거리가 x₁ + p이므로 초점까지의 거리도 x₁ + p입니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "y² = 12x 위의 두 점 A(3, 6), B(12, −12)와 초점 F에 대해 AF + BF를 구하세요.",
+      "steps": [
+        "4p = 12에서 p = 3",
+        "AF = 3 + 3 = 6",
+        "BF = 12 + 3 = 15",
+        "AF + BF = 21"
+      ],
+      "answer": "21"
     },
     {
       "type": "question",
@@ -111,7 +142,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "4p = 8에서 p = 2, 준선 x = −2\n초점까지의 거리 = 준선까지의 거리 = 6 + 2\n= 8\n확인: 점 (6, 4√3)에서 초점 (2, 0)까지 √(16 + 48) = 8"
     },
     {
       "type": "question",
@@ -123,7 +154,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "p = 1이므로 PF = x_P + 1, QF = x_Q + 1\nPF + QF = (x_P + x_Q) + 2\n= 10 + 2 = 12"
     },
     {
       "type": "explain",
@@ -131,7 +162,8 @@
       "stage": "summary",
       "title": "포물선 모양의 운동",
       "body": [
-        "분수의 물줄기나 던진 공의 궤적은 위로 볼록한 포물선입니다."
+        "분수의 물줄기나 던진 공의 궤적은 위로 볼록한 포물선입니다.",
+        "공기 저항을 무시하면 던진 물체는 수평 방향으로 일정하게 움직이고 수직 방향으로는 중력 때문에 일정하게 가속되므로 위로 볼록한 포물선을 그립니다. 가장 높은 점은 꼭짓점이고, 바닥에 닿는 점은 y = 0인 x절편입니다. 물줄기의 폭은 두 x절편 사이의 거리입니다."
       ],
       "figure": {
         "widget": "graph",
@@ -165,8 +197,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "꼭짓점의 y좌표입니다.",
+      "explanation": "y = −x²/4 + 4는 위로 볼록, 꼭짓점 (0, 4)\n가장 높은 곳은 꼭짓점\n높이 4\n원리: 위로 볼록한 포물선은 꼭짓점에서 가장 높습니다."
     },
     {
       "type": "question",
@@ -177,8 +209,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "y = 0으로 놓고 푸세요.",
+      "explanation": "y = 0: x²/4 = 4\nx² = 16\nx > 0이므로 x = 4\n원리: 바닥에 닿는 점은 y = 0인 x절편"
     },
     {
       "type": "explain",
@@ -187,8 +219,23 @@
       "title": "초점을 지나는 현",
       "body": [
         "초점을 지나고 축에 수직인 현을 통경이라 하며, y² = 4px의 통경의 길이는 4p입니다.",
-        "초점을 지나는 현의 길이는 두 끝점의 x좌표의 합에 2p를 더한 값입니다."
+        "초점을 지나는 현의 길이는 두 끝점의 x좌표의 합에 2p를 더한 값입니다.",
+        "초점을 지나는 현의 길이는 두 끝점의 초점까지의 거리의 합입니다. 각각을 준선까지의 거리 x + p로 바꾸면 (x₁ + p) + (x₂ + p) = x₁ + x₂ + 2p가 됩니다. 통경은 두 끝점의 x좌표가 모두 p이므로 길이가 4p입니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "y² = 8x의 초점을 지나는 직선이 포물선과 만나는 두 점의 x좌표가 1과 4일 때 현의 길이를 구하세요.",
+      "steps": [
+        "p = 2",
+        "초점까지의 거리: 1 + 2 = 3, 4 + 2 = 6",
+        "현의 길이 = 3 + 6 = 9",
+        "공식: x₁ + x₂ + 2p = 5 + 4 = 9"
+      ],
+      "answer": "9"
     },
     {
       "type": "question",
@@ -199,8 +246,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "4p입니다.",
+      "explanation": "통경의 길이 = 4p\n4p = 4\n원리: 통경의 두 끝점 (p, ±2p) 사이의 거리\n확인: 통경의 끝점 (1, ±2)"
     },
     {
       "type": "question",
@@ -211,8 +258,8 @@
       "answer": "12",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "4p입니다.",
+      "explanation": "통경의 길이 = 4p\n4p = 12\n= 12 (y² 앞의 계수와 같음)\n원리: 통경의 두 끝점 (p, ±2p) 사이의 거리 4p"
     },
     {
       "type": "question",
@@ -223,8 +270,8 @@
       "answer": "8",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "각 끝점의 준선까지의 거리를 더하세요.",
+      "explanation": "현의 길이 = x₁ + x₂ + 2p\n= 6 + 2 × 1\n= 8\n원리: 초점을 지나는 현의 길이는 각 끝점의 준선까지의 거리의 합"
     },
     {
       "type": "question",
@@ -235,8 +282,8 @@
       "answer": "2",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "준선까지의 거리로 바꾸세요.",
+      "explanation": "초점까지의 거리 = x + 2 (p = 2)\nx ≥ 0이므로 x = 0(꼭짓점)일 때 최소\n최솟값 2\n원리: 포물선에서 초점에 가장 가까운 점은 꼭짓점입니다."
     },
     {
       "type": "question",
@@ -247,8 +294,8 @@
       "answer": "5",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "4p = 20입니다.",
+      "explanation": "4p = 20에서 p = 5\n초점 (0, 5)\ny좌표 5\n원리: x² = 4py의 초점은 (0, p)이고, 들어온 빛이 이곳에 모입니다."
     },
     {
       "type": "question",
@@ -259,8 +306,8 @@
       "answer": "4",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "꼭짓점의 높이입니다.",
+      "explanation": "아치의 가장 높은 곳은 포물선의 꼭짓점\n문제에서 주어진 높이 4m\n높이 4 (폭 20m는 x절편 사이의 거리)\n확인: 방정식으로 쓰면 y = −x²/25 + 4"
     },
     {
       "type": "question",
@@ -271,8 +318,8 @@
       "answer": "1",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "초점까지의 거리를 준선까지의 거리로 바꾸세요.",
+      "explanation": "초점까지의 거리 = 준선 x = −1까지의 거리 = x + 1\ny축까지의 거리 = x\n차 = (x + 1) − x = 1\n원리: y² = 4x의 준선 x = −1과 y축 사이의 간격이 1입니다."
     },
     {
       "type": "question",
