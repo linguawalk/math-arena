@@ -124,19 +124,19 @@
      "level": 2,
      "id": "geometry",
      "title": "기하학 개론",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "differential-geometry",
      "title": "미분기하",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "topology",
      "title": "위상수학",
-     "available": false
+     "available": true
     }
    ]
   },
