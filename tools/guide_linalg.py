@@ -72,7 +72,6 @@ TRACKS = [
      "l3": [["numerical", "수치해석"], ["optimization", "최적화"], ["modeling", "수리모델링"]],
      "note": "라플라스·푸리에 변환, 수치 계산, 최적화. tech-arena·sci-arena로 이어집니다."},
 ]
-AVAILABLE = {("algebra", "linear-algebra")}
 
 # ---------------------------------------------------------------- 선형대수
 SUBJECT = {
@@ -486,30 +485,45 @@ def verify():
     return len(ok)
 
 
-def write():
-    base = os.path.join(SITE, "level2", "algebra", "linear-algebra")
+def write_subject(subject, units):
+    """과목 하나를 content/level{N}/{트랙}/{과목}/에 저장"""
+    lv, tr, sid = subject["level"], subject["track"], subject["id"]
+    base = os.path.join(SITE, f"level{lv}", tr, sid)
     os.makedirs(base, exist_ok=True)
-    subj = dict(SUBJECT)
+    subj = dict(subject)
     subj["units"] = [{"no": u["no"], "title": u["title"], "hours": u["hours"], "after": u["after"],
-                      "file": f"u{u['no']:02d}.json"} for u in U]
-    subj["total_hours"] = sum(u["hours"] for u in U)
+                      "file": f"u{u['no']:02d}.json"} for u in units]
+    subj["total_hours"] = sum(u["hours"] for u in units)
     json.dump(subj, open(os.path.join(base, "subject.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    for u in U:
-        d = dict(u, schema_version="1.0", type="guide_unit", level=2, track="algebra", subject="linear-algebra",
-                 id=f"l2-algebra-linear-algebra-u{u['no']:02d}")
+    for u in units:
+        d = dict(u, schema_version="1.0", type="guide_unit", level=lv, track=tr, subject=sid,
+                 id=f"l{lv}-{tr}-{sid}-u{u['no']:02d}")
         for k, q in enumerate(d["selfcheck"]):
             q["id"] = f"q{k + 1}"; q["stage"] = "selfcheck"
         json.dump(d, open(os.path.join(base, f"u{u['no']:02d}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return subj["total_hours"]
+
+
+def write_tracks():
+    """트랙 목록 저장. subject.json이 있는 과목을 열린 과목으로 표시"""
     tracks = {"schema_version": "1.0", "levels": {"2": "응용 (전문대졸·대학 1~2학년 수준)", "3": "심화 (대졸·학부 전공 수준)"},
               "validation": {"2": "대학 1~2학년 표준 교재의 목차", "3": "학부 전공필수 구성과 중등 수학 임용시험 과목(해석학, 복소해석, 선형대수, 현대대수, 정수론, 미분기하, 위상수학, 확률과 통계, 이산수학)"},
               "tracks": []}
     for t in TRACKS:
-        tracks["tracks"].append({"id": t["id"], "title": t["title"], "note": t["note"],
-                                 "subjects": [{"level": lv, "id": sid, "title": title,
-                                               "available": (t["id"], sid) in AVAILABLE}
-                                              for lv, key in ((2, "l2"), (3, "l3")) for sid, title in t[key]]})
+        subs = []
+        for lv, key in ((2, "l2"), (3, "l3")):
+            for sid, title in t[key]:
+                ok = os.path.exists(os.path.join(SITE, f"level{lv}", t["id"], sid, "subject.json"))
+                subs.append({"level": lv, "id": sid, "title": title, "available": ok})
+        tracks["tracks"].append({"id": t["id"], "title": t["title"], "note": t["note"], "subjects": subs})
     json.dump(tracks, open(os.path.join(SITE, "guides.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    return subj["total_hours"]
+    return sum(s["available"] for t in tracks["tracks"] for s in t["subjects"])
+
+
+def write():
+    h = write_subject(SUBJECT, U)
+    write_tracks()
+    return h
 
 
 if __name__ == "__main__":
