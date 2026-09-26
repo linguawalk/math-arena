@@ -6,6 +6,13 @@
     "title": "기초 수학",
     "description": "고등 수학에 필요한 중학 수학 핵심"
   },
+  "totals": {
+    "chapters": 6,
+    "lessons": 24,
+    "lesson_questions": 384,
+    "review_questions": 60,
+    "questions": 444
+  },
   "chapters": [
     {
       "no": 1,
@@ -61,12 +68,5 @@
       "lesson_questions": 64,
       "review_questions": 10
     }
-  ],
-  "totals": {
-    "chapters": 6,
-    "lessons": 24,
-    "lesson_questions": 384,
-    "review_questions": 60,
-    "questions": 444
-  }
+  ]
 }
