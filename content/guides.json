@@ -174,19 +174,19 @@
      "level": 2,
      "id": "discrete",
      "title": "이산수학",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "combinatorics",
      "title": "조합론",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "graph-theory",
      "title": "그래프 이론",
-     "available": false
+     "available": true
     }
    ]
   },
