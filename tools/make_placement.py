@@ -10,6 +10,7 @@
 사용: python3 make_placement.py [사이트 경로]
 """
 import json, os, re, sys, glob
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 SITE = sys.argv[1] if len(sys.argv) > 1 else "/home/claude/site"
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -65,17 +66,10 @@ def build_pool():
 
 
 def build_page():
+    from kit import render
     player = open(os.path.join(SITE, "player.html"), encoding="utf-8").read()
-    css = re.search(r"<style>(.*?)</style>", player, re.S).group(1)
-    kit = re.search(r"/\* ==KIT-START== \*/(.*?)/\* ==KIT-END== \*/", player, re.S).group(1)
-    extra = []
-    for name in ["const esc", "function answerText", "function solHtml"]:
-        i = player.index(name)
-        j = player.index("\n}\n", i) + 3 if name.startswith("function") else player.index("\n", i) + 1
-        extra.append(player[i:j])
     tpl = open(os.path.join(HERE, "placement_tpl.html"), encoding="utf-8").read()
-    page = (tpl.replace("/*__PLAYER_CSS__*/", css)
-               .replace("/*__KIT__*/", kit + "\n" + "".join(extra)))
+    page = render(tpl, player)
     path = os.path.join(SITE, "placement.html")
     open(path, "w", encoding="utf-8").write(page)
     return path, len(page)
