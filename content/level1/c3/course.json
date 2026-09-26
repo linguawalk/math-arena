@@ -6,6 +6,13 @@
     "title": "대수",
     "description": "지수와 로그, 지수·로그함수, 삼각함수, 삼각형의 활용, 수열, 수학적 귀납법"
   },
+  "totals": {
+    "chapters": 7,
+    "lessons": 28,
+    "lesson_questions": 448,
+    "review_questions": 70,
+    "questions": 518
+  },
   "chapters": [
     {
       "no": 1,
@@ -70,12 +77,5 @@
       "lesson_questions": 64,
       "review_questions": 10
     }
-  ],
-  "totals": {
-    "chapters": 7,
-    "lessons": 28,
-    "lesson_questions": 448,
-    "review_questions": 70,
-    "questions": 518
-  }
+  ]
 }
