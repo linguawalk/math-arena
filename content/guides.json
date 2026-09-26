@@ -149,19 +149,19 @@
      "level": 2,
      "id": "statistics",
      "title": "확률과 통계",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "math-statistics",
      "title": "수리통계",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "stochastic",
      "title": "확률과정 입문",
-     "available": false
+     "available": true
     }
    ]
   },
