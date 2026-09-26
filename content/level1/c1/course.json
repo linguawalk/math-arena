@@ -6,6 +6,13 @@
     "title": "수학의 기초",
     "description": "수와 식, 집합과 명제, 방정식과 부등식, 경우의 수, 행렬"
   },
+  "totals": {
+    "chapters": 7,
+    "lessons": 28,
+    "lesson_questions": 448,
+    "review_questions": 70,
+    "questions": 518
+  },
   "chapters": [
     {
       "no": 1,
@@ -70,12 +77,5 @@
       "lesson_questions": 64,
       "review_questions": 10
     }
-  ],
-  "totals": {
-    "chapters": 7,
-    "lessons": 28,
-    "lesson_questions": 448,
-    "review_questions": 70,
-    "questions": 518
-  }
+  ]
 }
