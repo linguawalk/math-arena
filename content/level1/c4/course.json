@@ -6,6 +6,13 @@
     "title": "미적분",
     "description": "극한과 연속, 미분과 활용, 적분과 활용, 수열의 극한과 급수"
   },
+  "totals": {
+    "chapters": 8,
+    "lessons": 32,
+    "lesson_questions": 512,
+    "review_questions": 80,
+    "questions": 592
+  },
   "chapters": [
     {
       "no": 1,
@@ -79,12 +86,5 @@
       "lesson_questions": 64,
       "review_questions": 10
     }
-  ],
-  "totals": {
-    "chapters": 8,
-    "lessons": 32,
-    "lesson_questions": 512,
-    "review_questions": 80,
-    "questions": 592
-  }
+  ]
 }
