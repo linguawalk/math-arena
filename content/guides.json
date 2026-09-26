@@ -87,31 +87,31 @@
      "level": 2,
      "id": "calculus",
      "title": "대학 미적분학(다변수)",
-     "available": false
+     "available": true
     },
     {
      "level": 2,
      "id": "ode",
      "title": "상미분방정식",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "real-analysis",
      "title": "해석학",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "complex-analysis",
      "title": "복소해석",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "pde",
      "title": "편미분방정식 입문",
-     "available": false
+     "available": true
     }
    ]
   },
