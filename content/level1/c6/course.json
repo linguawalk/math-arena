@@ -6,6 +6,13 @@
     "title": "기하",
     "description": "포물선·타원·쌍곡선, 평면벡터와 활용, 공간도형과 공간좌표"
   },
+  "totals": {
+    "chapters": 7,
+    "lessons": 28,
+    "lesson_questions": 448,
+    "review_questions": 70,
+    "questions": 518
+  },
   "chapters": [
     {
       "no": 1,
@@ -70,12 +77,5 @@
       "lesson_questions": 64,
       "review_questions": 10
     }
-  ],
-  "totals": {
-    "chapters": 7,
-    "lessons": 28,
-    "lesson_questions": 448,
-    "review_questions": 70,
-    "questions": 518
-  }
+  ]
 }
