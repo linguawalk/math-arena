@@ -49,13 +49,13 @@
      "level": 3,
      "id": "abstract-algebra",
      "title": "현대대수(군·환·체)",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "adv-linear-algebra",
      "title": "고급 선형대수",
-     "available": false
+     "available": true
     }
    ]
   },
