@@ -99,3 +99,17 @@
   - start {c, ch, chTitle, chNo}, status {코스: pass | assumed | start | later | fail | untested}
   - chapters {"c2-ch03": ok | weak | miss | start}  (browse.html이 챕터 옆 표시에 사용)
 - course.json은 make_course_index.py가 각 챕터의 chapter.json에서 생성
+
+
+## 레벨2·3 가이드 (guide)
+- 트랙 목록: content/guides.json (8트랙, 과목별 level·available)
+- 과목: content/level{2|3}/{트랙}/{과목}/subject.json
+  - overview(분야 개요 문단), tagline, level_note(수준과 목차 검증 기준)
+  - prereq: text, links(레벨1 챕터), questions(선수지식 진단, 레벨1 문항 스키마)
+  - units: no, title, hours, after(먼저 볼 단원 번호), file / total_hours / next(다음 과목)
+- 단원: uNN.json (tech-arena 커리큘럼 v1의 공통 단원 템플릿)
+  - objectives(학습 목표), checklist(핵심 개념), advice(학습 조언 1~2문단)
+  - resources: kind(lecture|video|book|web), provider, title, part(해당 강·장), url, lang
+  - hours(예상 학습 시간), selfcheck(자가점검 문항, 레벨1 문항 스키마, stage = selfcheck)
+- 페이지: guide.html (?lv=&t=&s=&u=) — make_guide.py가 player.html의 공용 코드로 생성
+- 저장: localStorage "math-arena:guide" = {단원 id: {checks: [체크한 항목 번호], sc: {문항 id: 정답 여부}}}
