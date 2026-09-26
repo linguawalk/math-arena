@@ -81,3 +81,21 @@
 - B(코스 1·2): 풀이 40자 이상·2단계 이상, 설명 화면 110자 이상("왜 그런지" 문단 포함)
 - C(코스 3~6): 풀이 60자 이상·3단계 이상, 설명 화면 160자 이상
 - check_enrich.py로 보강 파일을 빌드 전에 검사할 수 있음
+
+
+## 진입 진단 (placement)
+- 문항 풀: content/level1/placement.json (make_placement.py가 생성)
+  - courses[].chapters[].questions: 챕터마다 최대 5문항, 각 챕터 review.json에서 선별
+  - 선별 기준: 서술형 제외, 앞 문항에 기대는 문항("같은 X에서…") 제외, 그림 없이 그림을 언급하는 문항 제외
+  - '그렇다/아니다'처럼 찍기 쉬운 문항은 뒤로 보내고, 실제 출제는 앞의 3문항 중 무작위
+  - core(c0~c4)는 차례로 진단, elective(c5, c6)는 코스 2까지 통과했을 때만 선택 진단
+  - pass_rate: 코스 통과 기준(정답률, 기본 0.7)
+- 흐름(placement.html)
+  - 시작 코스는 학습자가 고름. 코스마다 챕터당 1문항
+  - 통과하면 다음 core 코스로, 탈락이 확정되면 그 코스는 즉시 종료
+  - 크게 탈락(정답 < 오답)하면 아래 코스를 추가로 진단
+  - 추천 시작 위치 = 처음으로 탈락한 core 코스에서 처음 틀린 챕터
+- 저장: localStorage "math-arena:placement"
+  - start {c, ch, chTitle, chNo}, status {코스: pass | assumed | start | later | fail | untested}
+  - chapters {"c2-ch03": ok | weak | miss | start}  (browse.html이 챕터 옆 표시에 사용)
+- course.json은 make_course_index.py가 각 챕터의 chapter.json에서 생성
