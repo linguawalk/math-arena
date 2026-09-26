@@ -68,13 +68,13 @@
      "level": 2,
      "id": "elem-number",
      "title": "정수론 입문",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "number-theory",
      "title": "정수론 심화",
-     "available": false
+     "available": true
     }
    ]
   },
