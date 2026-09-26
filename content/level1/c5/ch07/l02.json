@@ -32,7 +32,8 @@
       "title": "표본평균의 평균과 분산",
       "body": [
         "모평균 m, 모분산 σ²인 모집단에서 크기 n인 표본을 임의추출하면",
-        "E(X̄) = m,  V(X̄) = σ²/n,  σ(X̄) = σ/√n"
+        "E(X̄) = m,  V(X̄) = σ²/n,  σ(X̄) = σ/√n",
+        "왜 σ²/n일까요? X̄는 서로 독립인 n개의 값을 더해 n으로 나눈 것입니다. 독립인 값을 더하면 분산이 더해져 nσ²이 되고, n으로 나누면 분산은 n²으로 나뉘어 σ²/n이 됩니다. 평균을 내면 값들의 들쭉날쭉함이 서로 상쇄되어 흩어짐이 줄어든다는 뜻입니다."
       ]
     },
     {
@@ -45,7 +46,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "표본평균의 평균은 모평균과 같음\nE(X̄) = m\n= 50\n원리: 표본평균은 모평균을 치우침 없이 추정합니다."
     },
     {
       "type": "question",
@@ -57,7 +58,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "σ(X̄) = σ/√n\n= 10/√25\n= 2 (모표준편차의 1/5)\n원리: 표본평균은 개별 값보다 덜 흩어지며, 흩어짐은 √n으로 나눈 만큼 줄어듭니다."
     },
     {
       "type": "explain",
@@ -65,8 +66,23 @@
       "stage": "discover",
       "title": "직접 확인해 보기",
       "body": [
-        "모집단 {1, 3, 5}에서 크기 2인 표본을 복원추출하면 9가지 표본이 같은 확률로 나옵니다."
+        "모집단 {1, 3, 5}에서 크기 2인 표본을 복원추출하면 9가지 표본이 같은 확률로 나옵니다.",
+        "직접 모든 표본을 나열해 X̄의 분포를 만들어 보면 E(X̄) = m, V(X̄) = σ²/n이 정말 성립하는 것을 확인할 수 있습니다. 이런 확인은 공식이 왜 맞는지 감을 잡는 데 도움이 됩니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e1",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "모집단 {2, 4, 6}에서 크기 2인 표본을 복원추출할 때 E(X̄)와 V(X̄)를 공식으로 구하세요.",
+      "steps": [
+        "모평균 m = 4",
+        "모분산 σ² = (4 + 0 + 4)/3 = 8/3",
+        "E(X̄) = 4",
+        "V(X̄) = (8/3)/2 = 4/3"
+      ],
+      "answer": "E(X̄) = 4, V(X̄) = 4/3"
     },
     {
       "type": "question",
@@ -78,7 +94,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "표본평균의 평균은 모평균과 같습니다: E(X̄) = (1 + 3 + 5)/3\n= 3\n확인: 9가지 표본평균을 모두 평균해도 3"
     },
     {
       "type": "question",
@@ -90,7 +106,7 @@
       "answer_format": "fraction",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "모분산 σ² = 8/3, 표본의 크기 n = 2\nV(X̄) = σ²/n = (8/3)/2\n= 4/3\n원리: 표본평균의 분산 = 모분산 ÷ 표본의 크기"
     },
     {
       "type": "question",
@@ -102,7 +118,7 @@
       "answer_format": "fraction",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "X̄ = 3인 표본: (1,5), (5,1), (3,3)\n9가지 중 3가지\nP = 3/9 = 1/3\n원리: 복원추출의 9가지 표본은 모두 같은 확률로 나옵니다."
     },
     {
       "type": "explain",
@@ -111,8 +127,23 @@
       "title": "표본평균의 분포는 정규분포",
       "body": [
         "모집단이 정규분포이면 X̄ ~ N(m, σ²/n)입니다. 모집단이 정규분포가 아니어도 n이 크면 X̄는 정규분포에 가까워집니다.",
-        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987",
+        "모집단이 어떤 모양이든 표본의 크기가 충분히 크면 표본평균의 분포는 정규분포에 가까워집니다(중심극한정리). 그래서 X̄에 관한 확률은 평균 m, 표준편차 σ/√n인 정규분포로 표준화해 구합니다. 주의할 점은 표준화할 때 σ가 아니라 σ/√n으로 나눈다는 것입니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e2",
+      "stage": "discover",
+      "title": "예제",
+      "problem": "모집단 N(200, 30²)에서 크기 36인 표본을 뽑을 때 P(X̄ ≤ 195)를 구하세요.",
+      "steps": [
+        "σ(X̄) = 30/√36 = 5",
+        "Z = (195 − 200)/5 = −1",
+        "P(Z ≤ −1) = 0.5 − 0.3413",
+        "= 0.1587"
+      ],
+      "answer": "0.1587"
     },
     {
       "type": "question",
@@ -124,7 +155,7 @@
       "answer_format": "integer",
       "tolerance": 0,
       "hint": null,
-      "explanation": ""
+      "explanation": "표본평균의 표준편차 σ(X̄) = σ/√n\n= 20/√16\n= 5\n원리: 표본평균의 표준편차는 모표준편차를 √n으로 나눈 값"
     },
     {
       "type": "question",
@@ -136,7 +167,7 @@
       "answer_format": "decimal",
       "tolerance": 0.0001,
       "hint": null,
-      "explanation": ""
+      "explanation": "X̄ ~ N(100, 5²)이므로 Z = (110 − 100)/5 = 2\nP(Z ≥ 2) = 0.5 − 0.4772\n= 0.0228"
     },
     {
       "type": "question",
@@ -148,7 +179,7 @@
       "answer_format": "decimal",
       "tolerance": 0.0001,
       "hint": null,
-      "explanation": ""
+      "explanation": "Z = (95 − 100)/5 = −1, Z = (105 − 100)/5 = 1\n2 × 0.3413\n= 0.6826"
     },
     {
       "type": "explain",
@@ -156,7 +187,8 @@
       "stage": "summary",
       "title": "표본의 크기와 흩어짐",
       "body": [
-        "표본의 크기가 클수록 X̄는 모평균 근처에 모입니다. n을 4배로 하면 σ(X̄)는 1/2배가 됩니다."
+        "표본의 크기가 클수록 X̄는 모평균 근처에 모입니다. n을 4배로 하면 σ(X̄)는 1/2배가 됩니다.",
+        "σ(X̄) = σ/√n이라 표본의 크기가 커질수록 X̄는 모평균 m 근처에 몰립니다. 그래서 큰 표본의 평균은 모평균을 더 정확하게 알려 줍니다. 다만 정확도를 2배로 하려면 표본을 4배로 늘려야 해서, 정확도를 높이는 데 비용이 빠르게 늘어납니다."
       ]
     },
     {
@@ -168,8 +200,8 @@
       "answer": "1/2",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "σ/√n을 생각하세요.",
+      "explanation": "σ(X̄) = σ/√n이라 1/√n에 비례\nn을 4배 하면 √n은 2배\n1/2배\n원리: 정확도를 2배로 높이려면 표본이 4배 필요합니다."
     },
     {
       "type": "question",
@@ -180,8 +212,8 @@
       "answer": "36",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "σ/√n = 2를 푸세요.",
+      "explanation": "σ/√n = 2에서 12/√n = 2\n√n = 6\nn = 36\n원리: 표본평균의 표준편차 공식 σ/√n을 n에 대해 풉니다."
     },
     {
       "type": "explain",
@@ -190,8 +222,23 @@
       "title": "정리",
       "body": [
         "X̄의 평균은 모평균과 같고, 표준편차는 σ/√n으로 줄어듭니다.",
-        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987"
+        "표준정규분포표: P(0 ≤ Z ≤ 0.5) = 0.1915, P(0 ≤ Z ≤ 1) = 0.3413, P(0 ≤ Z ≤ 1.5) = 0.4332, P(0 ≤ Z ≤ 2) = 0.4772, P(0 ≤ Z ≤ 2.5) = 0.4938, P(0 ≤ Z ≤ 3) = 0.4987",
+        "X̄에 관한 확률 문제의 순서: ① σ(X̄) = σ/√n 계산 ② Z = (X̄ − m)/(σ/√n)으로 표준화 ③ 표준정규분포표로 확률 계산. 모집단의 표준편차 σ를 그대로 쓰는 실수를 가장 조심합니다."
       ]
+    },
+    {
+      "type": "example",
+      "id": "e3",
+      "stage": "apply",
+      "title": "예제",
+      "problem": "σ = 20인 모집단에서 표본평균의 표준편차를 2 이하로 하려면 표본의 크기는 최소 얼마여야 할까요?",
+      "steps": [
+        "σ/√n ≤ 2",
+        "20/√n ≤ 2에서 √n ≥ 10",
+        "n ≥ 100",
+        "최소 100"
+      ],
+      "answer": "100"
     },
     {
       "type": "question",
@@ -202,8 +249,8 @@
       "answer": "0.1587",
       "answer_format": "decimal",
       "tolerance": 0.0001,
-      "hint": null,
-      "explanation": ""
+      "hint": "σ(X̄)부터 구하세요.",
+      "explanation": "σ(X̄) = 8/√16 = 2, Z = (58 − 60)/2 = −1\nP(Z ≤ −1) = 0.5 − 0.3413\n= 0.1587"
     },
     {
       "type": "question",
@@ -214,8 +261,8 @@
       "answer": "25",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "V(X̄) = σ²/n",
+      "explanation": "V(X̄) = σ²/n = 100/n = 4\nn = 25\n원리: 분산은 σ², 표준편차는 σ로 구별합니다.\n확인: σ(X̄) = 10/5 = 2이고 V(X̄) = 4"
     },
     {
       "type": "question",
@@ -226,8 +273,8 @@
       "answer": "70",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "E(X̄) = m",
+      "explanation": "표본평균의 기댓값은 모평균과 같음\nE(X̄) = 70\n원리: 표본의 크기와 관계없이 성립\n확인: 표본평균은 모평균 근처에서 흩어집니다."
     },
     {
       "type": "question",
@@ -238,8 +285,8 @@
       "answer": "0.0668",
       "answer_format": "decimal",
       "tolerance": 0.0001,
-      "hint": null,
-      "explanation": ""
+      "hint": "σ(X̄)로 표준화하세요.",
+      "explanation": "σ(X̄) = 10/√25 = 2, Z = (53 − 50)/2 = 1.5\nP(Z ≥ 1.5) = 0.5 − 0.4332\n= 0.0668"
     },
     {
       "type": "question",
@@ -250,8 +297,8 @@
       "answer": "25",
       "answer_format": "integer",
       "tolerance": 0,
-      "hint": null,
-      "explanation": ""
+      "hint": "σ/√n = 3을 푸세요.",
+      "explanation": "표본평균의 표준편차 σ/√n = 3에서 15/√n = 3\n√n = 5\nn = 25\n원리: 표본평균의 표준편차 공식 σ/√n을 n에 대해 풉니다."
     },
     {
       "type": "question",

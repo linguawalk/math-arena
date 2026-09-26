@@ -13,7 +13,7 @@
       "title": "중복조합",
       "file": "l01.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 2,
@@ -21,7 +21,7 @@
       "title": "이항정리",
       "file": "l02.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 3,
@@ -29,7 +29,7 @@
       "title": "파스칼의 삼각형",
       "file": "l03.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     },
     {
       "no": 4,
@@ -37,7 +37,7 @@
       "title": "조합의 활용",
       "file": "l04.json",
       "questions": 16,
-      "screens": 21
+      "screens": 24
     }
   ],
   "review": {

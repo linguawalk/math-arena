@@ -26,8 +26,8 @@
       "answer": "2/3",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "홀수만 새 전체로 보세요.",
+      "explanation": "조건 '홀수': {1, 3, 5}가 새로운 전체\n그중 3 이상: {3, 5}\nP = 2/3\n원리: 조건에 해당하는 결과만 새로운 표본공간으로 봅니다.",
       "source_lesson": "c5-ch04-l01"
     },
     {
@@ -39,8 +39,8 @@
       "answer": "0.25",
       "answer_format": "decimal",
       "tolerance": 0.0001,
-      "hint": null,
-      "explanation": "",
+      "hint": "분모는 조건 B의 확률입니다.",
+      "explanation": "P(A|B) = P(A ∩ B)/P(B)\n= 0.1/0.4\n= 0.25\n원리: 조건부확률은 조건 사건에 대한 비율입니다.",
       "source_lesson": "c5-ch04-l01"
     },
     {
@@ -52,8 +52,8 @@
       "answer": "3/10",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "차례로 곱하세요.",
+      "explanation": "곱셈정리: (3/5) × (2/4)\n= 6/20\n= 3/10\n원리: 두 번째 확률은 첫 번째 결과로 바뀐 주머니에서 구합니다.",
       "source_lesson": "c5-ch04-l02"
     },
     {
@@ -65,8 +65,8 @@
       "answer": "3/5",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "두 경로를 더하세요.",
+      "explanation": "흰 → 검: (2/5)(3/4) = 6/20, 검 → 검: (3/5)(2/4) = 6/20\n합 12/20\n= 3/5",
       "source_lesson": "c5-ch04-l02"
     },
     {
@@ -78,8 +78,8 @@
       "answer": "0.6",
       "answer_format": "decimal",
       "tolerance": 0.0001,
-      "hint": null,
-      "explanation": "",
+      "hint": "먼저 P(A ∩ B)를 구하세요.",
+      "explanation": "독립이면 P(A ∩ B) = 0.2 × 0.5 = 0.1\nP(A ∪ B) = 0.2 + 0.5 − 0.1\n= 0.6",
       "source_lesson": "c5-ch04-l03"
     },
     {
@@ -91,8 +91,8 @@
       "answer": "0.2",
       "answer_format": "decimal",
       "tolerance": 0.0001,
-      "hint": null,
-      "explanation": "",
+      "hint": "빗나갈 확률끼리 곱하세요.",
+      "explanation": "빗나갈 확률 0.4, 0.5이고 서로 독립\n0.4 × 0.5\n= 0.2\n원리: 서로 영향이 없으면 둘 다 빗나갈 확률은 곱입니다.",
       "source_lesson": "c5-ch04-l03"
     },
     {
@@ -104,8 +104,8 @@
       "answer": "5/16",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "nCr pʳ(1 − p)ⁿ⁻ʳ",
+      "explanation": "₅C₂(1/2)⁵\n= 10/32\n= 5/16\n원리: 5번 중 앞면이 나올 2번의 자리를 고르는 방법 ₅C₂ = 10을 곱합니다.",
       "source_lesson": "c5-ch04-l04"
     },
     {
@@ -117,8 +117,8 @@
       "answer": "5/72",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "p = 1/6, n = 3, r = 2",
+      "explanation": "₃C₂(1/6)²(5/6)\n= 3 × (1/36) × (5/6)\n= 15/216 = 5/72\n원리: 독립시행에서는 성공이 일어나는 자리를 고르는 방법 nCr을 곱합니다.",
       "source_lesson": "c5-ch04-l04"
     },
     {
@@ -130,8 +130,8 @@
       "answer": "15/16",
       "answer_format": "fraction",
       "tolerance": 0,
-      "hint": null,
-      "explanation": "",
+      "hint": "여사건으로 구하세요.",
+      "explanation": "여사건: 4번 모두 실패, (1/2)⁴ = 1/16\n1 − 1/16\n= 15/16\n원리: '적어도 한 번'은 '한 번도 없음'의 여사건",
       "source_lesson": "c5-ch04-l04"
     },
     {
@@ -143,8 +143,8 @@
       "answer": "0.64",
       "answer_format": "decimal",
       "tolerance": 0.0001,
-      "hint": null,
-      "explanation": "",
+      "hint": "독립시행에서 실패가 2번입니다.",
+      "explanation": "실패 확률 0.8, 두 번 모두 실패\n0.8 × 0.8\n= 0.64\n원리: 독립시행에서 r = 0인 경우입니다.",
       "source_lesson": "c5-ch04-l04"
     }
   ]
