@@ -18,19 +18,19 @@
      "level": 2,
      "id": "proof",
      "title": "수학적 증명과 집합",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "set-theory",
      "title": "집합론",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "math-logic",
      "title": "수리논리",
-     "available": false
+     "available": true
     }
    ]
   },
