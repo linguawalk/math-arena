@@ -199,25 +199,25 @@
      "level": 2,
      "id": "engineering-math",
      "title": "공학수학",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "numerical",
      "title": "수치해석",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "optimization",
      "title": "최적화",
-     "available": false
+     "available": true
     },
     {
      "level": 3,
      "id": "modeling",
      "title": "수리모델링",
-     "available": false
+     "available": true
     }
    ]
   }
