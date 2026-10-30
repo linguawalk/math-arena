@@ -61,6 +61,8 @@ def build(templates, per=6, seed=1, tries=400):
             if q is None or q["prompt"] in seen: continue
             seen.add(q["prompt"]); k += 1
             assert q["explanation"] and len(q["explanation"]) >= 20, q
+            for key in ("prompt", "explanation", "hint"):
+                if q.get(key): q[key] = fixjosa(q[key])
             q["id"] = f"g{g}-{k}"; q["group"] = g; q["stage"] = "practice"
             pool.append(q)
             if k == per: break
@@ -90,12 +92,49 @@ def _bat(n):
     if n == 0: return True
     if n % 10: return n % 10 in (1, 3, 6, 7, 8)
     return True  # 십·백·천
-def j(n, pair):
-    """숫자 뒤 조사: j(12,'와과') → '12와'"""
+def j(n, pair, disp=None):
+    """숫자 뒤 조사: j(12,'와과') → '12와'. disp가 있으면 그 표기 뒤에 붙임"""
     a, b = pair[0], pair[1:]
-    return f"{n}{b if _bat(n) else a}"
+    return f"{n if disp is None else disp}{b if _bat(n) else a}"
 def ro(n):
     k = abs(int(n))
     rieul = (k % 10 in (1, 7, 8)) if k % 10 else False
     return f"{n}{'로' if (not _bat(n) or rieul) else '으로'}"
 bat = _bat
+
+def term(c, v="", first=False):
+    """계수 c와 문자 v로 항 만들기. first면 앞 부호 '+' 생략"""
+    if c == 0: return ""
+    a = abs(c)
+    body = (str(a) if (a != 1 or not v) else "") + v
+    if first: return ("−" if c < 0 else "") + body
+    return (" − " if c < 0 else " + ") + body
+def poly(*pairs):
+    """poly((3,'x'),(−2,'')) → '3x − 2'"""
+    out = ""; 
+    for c, v in pairs:
+        if c == 0: continue
+        out += term(c, v, first=(out == ""))
+    return out or "0"
+def ans(x):
+    """빈칸 정답 후보: 정수/분수, 음수면 −도"""
+    s = fs(x) if isinstance(x, F) else str(x)
+    out = [s]
+    if s.startswith("-"): out.append("−" + s[1:])
+    return out
+
+import re as _re
+_JP = {"를": ("를", "을"), "을": ("를", "을"), "와": ("와", "과"), "과": ("와", "과"), "는": ("는", "은"), "은": ("는", "은"), "가": ("가", "이")}
+def fixjosa(s):
+    """숫자(또는 숫자로 끝나는 괄호) 바로 뒤 조사를 받침에 맞게 고침"""
+    if not s: return s
+    def rep(mt):
+        n, close, jo = mt.group(1), mt.group(2), mt.group(3)
+        b = _bat(int(n))
+        if jo in ("로", "으로"):
+            k = int(n); rieul = (k % 10 in (1, 7, 8)) if k % 10 else False
+            jo2 = "로" if (not b or rieul) else "으로"
+        else:
+            jo2 = _JP[jo][1 if b else 0]
+        return n + close + jo2
+    return _re.sub(r"(\d+)(\)?)(으로|로|를|을|와|과|는|은|가)(?![가-힣])", rep, s)

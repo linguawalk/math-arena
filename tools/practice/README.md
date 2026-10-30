@@ -1,7 +1,8 @@
 # 레벨1 '더 연습하기' 문제 은행
 
 - core.py: 공통 도구 (num, fill, build, write, 조사 처리)
-- c0_ch01.py: 코스0 챕터1 템플릿. 실행하면 content/level1/c0/ch01/pNN.json 생성, chapter.json 연결
+- c0_ch01.py ~ c0_ch06.py: 코스0 챕터별 템플릿. 실행하면 content/level1/c0/chNN/pNN.json 생성, chapter.json 연결
+- verify.py: 식으로 읽을 수 있는 문항을 sympy로 독립 검산 (python3 verify.py "…/c0/ch0*/p0*.json")
 - totals.py: course.json에 연습 문항 수 반영
 - test_practice.py: 사이트 폴더에서 python3 -m http.server 8765 실행 후, 은행 전체를 정답 입력해 채점 확인
 

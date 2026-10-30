@@ -12,7 +12,7 @@
     "lesson_questions": 384,
     "review_questions": 60,
     "questions": 444,
-    "practice_questions": 216
+    "practice_questions": 1152
   },
   "chapters": [
     {
@@ -32,7 +32,8 @@
       "dir": "ch02",
       "lessons": 4,
       "lesson_questions": 64,
-      "review_questions": 10
+      "review_questions": 10,
+      "practice_questions": 210
     },
     {
       "no": 3,
@@ -41,7 +42,8 @@
       "dir": "ch03",
       "lessons": 4,
       "lesson_questions": 64,
-      "review_questions": 10
+      "review_questions": 10,
+      "practice_questions": 180
     },
     {
       "no": 4,
@@ -50,7 +52,8 @@
       "dir": "ch04",
       "lessons": 4,
       "lesson_questions": 64,
-      "review_questions": 10
+      "review_questions": 10,
+      "practice_questions": 198
     },
     {
       "no": 5,
@@ -59,7 +62,8 @@
       "dir": "ch05",
       "lessons": 4,
       "lesson_questions": 64,
-      "review_questions": 10
+      "review_questions": 10,
+      "practice_questions": 186
     },
     {
       "no": 6,
@@ -68,7 +72,8 @@
       "dir": "ch06",
       "lessons": 4,
       "lesson_questions": 64,
-      "review_questions": 10
+      "review_questions": 10,
+      "practice_questions": 162
     }
   ]
 }
