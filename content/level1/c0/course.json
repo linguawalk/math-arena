@@ -11,7 +11,8 @@
     "lessons": 24,
     "lesson_questions": 384,
     "review_questions": 60,
-    "questions": 444
+    "questions": 444,
+    "practice_questions": 216
   },
   "chapters": [
     {
@@ -21,7 +22,8 @@
       "dir": "ch01",
       "lessons": 4,
       "lesson_questions": 64,
-      "review_questions": 10
+      "review_questions": 10,
+      "practice_questions": 216
     },
     {
       "no": 2,
