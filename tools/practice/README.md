@@ -4,9 +4,11 @@
 - c0_ch01.py ~ c0_ch06.py: 코스0 챕터별 템플릿
 - c1_a.py(챕터1~4), c1_b.py(챕터5~7): 코스1 템플릿
 - c2_a.py(챕터1~3), c2_b.py(챕터4~6): 코스2 템플릿
+- c3_a.py(챕터1~3), c3_b.py(챕터4~5), c3_c.py(챕터6~7): 코스3 템플릿
   실행하면 content/level1/cX/chNN/pNN.json 생성, chapter.json 연결
 - verify.py: 식으로 읽을 수 있는 문항을 sympy로 독립 검산 (python3 verify.py "…/c0/ch0*/p0*.json")
 - verify_brute.py: 경우의 수·집합·행렬 문항을 완전탐색으로 검산
+- verify_c3.py: 로그·Σ·점화식·삼각함수값 검산
 - totals.py: course.json에 연습 문항 수 반영
 - test_practice.py: 사이트 폴더에서 python3 -m http.server 8765 실행 후, 은행 전체를 정답 입력해 채점 확인
 

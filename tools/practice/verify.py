@@ -20,6 +20,7 @@ if __name__ == "__main__":
         d = json.load(open(f))
         for q in d["questions"]:
             p = q["prompt"]
+            if any(w in p for w in ("log", "sin", "cos", "tan")): skip += 1; continue
             try:
                 if q["qtype"] == "fill_blank" and p.count("=") == 1 and re.fullmatch(r"[\dxyab²³⁴⁵⁶⁷⁸⁹⁰¹+−\-×÷()/^{} ]+=[\dxyab²³⁴⁵⁶⁷⁸⁹⁰¹+−\-×÷()/^{} ]+", p):
                     t = p
