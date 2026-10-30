@@ -49,6 +49,50 @@ if __name__ == "__main__":
                     if v == sp.Rational(q["answer"]): ok += 1
                     else: bad += 1; print("BAD", f, q["id"], p, v)
                     continue
+                mt = re.match(r"y = (.+?)의 꼭짓점은 \(\{\{1\}\}, \{\{2\}\}\)$", p)
+                if mt:
+                    e = tosym(mt.group(1)); x0 = sp.solve(sp.diff(e, x), x)[0]
+                    want = (sp.Rational(q["blanks"][0]["answers"][0]), sp.Rational(q["blanks"][1]["answers"][0]))
+                    if (x0, e.subs(x, x0)) == want: ok += 1
+                    else: bad += 1; print("BAD", f, q["id"], p)
+                    continue
+                mt = re.match(r"y = (.+?)의 (최솟값|최댓값)은\?$", p)
+                if mt and "≤" not in p:
+                    e = tosym(mt.group(1)); x0 = sp.solve(sp.diff(e, x), x)[0]
+                    if e.subs(x, x0) == sp.Rational(q["answer"]): ok += 1
+                    else: bad += 1; print("BAD", f, q["id"], p)
+                    continue
+                mt = re.match(r"두 점 \((.+?), (.+?)\), \((.+?), (.+?)\) 사이의 거리는\?$", p)
+                if mt:
+                    a1, b1, a2, b2 = [sp.Rational(v.replace("−", "-")) for v in mt.groups()]
+                    if sp.sqrt((a1 - a2) ** 2 + (b1 - b2) ** 2) == sp.Rational(q["answer"]): ok += 1
+                    else: bad += 1; print("BAD", f, q["id"], p)
+                    continue
+                mt = re.match(r"y = (.+?)의 그래프와 x축의 교점은 몇 개일까요\?$", p)
+                if mt:
+                    if len(set(sp.Poly(tosym(mt.group(1)), x).real_roots())) == int(q["answer"]): ok += 1
+                    else: bad += 1; print("BAD", f, q["id"], p)
+                    continue
+                mt = re.match(r"f\(x\) = (.+?)일 때 f⁻¹\((.+?)\)의 값은\?$", p)
+                if mt and "(x" not in mt.group(1):
+                    s_ = sp.solve(sp.Eq(tosym(mt.group(1)), tosym(mt.group(2))), x)
+                    if s_ == [sp.Rational(q["answer"])]: ok += 1
+                    else: bad += 1; print("BAD", f, q["id"], p, s_)
+                    continue
+                mt = re.match(r"f\(x\) = (.+?)에서 x가 (.+?)에서 (.+?)까지 변할 때 평균변화율은", p)
+                if mt and "a" not in mt.group(2):
+                    e = tosym(mt.group(1).replace("√x", "sqrt(x)")); A_, B_ = tosym(mt.group(2)), tosym(mt.group(3))
+                    if sp.simplify((e.subs(x, B_) - e.subs(x, A_)) / (B_ - A_) - sp.Rational(q["answer"])) == 0: ok += 1
+                    else: bad += 1; print("BAD", f, q["id"], p)
+                    continue
+                mt = re.match(r"원 (.+?) = 0의 (중심은|반지름은)", p)
+                if mt:
+                    e = tosym(mt.group(1)); y_ = y
+                    cx = sp.solve(sp.diff(e, x), x)[0]; cy = sp.solve(sp.diff(e, y_), y_)[0]; R2 = -e.subs({x: cx, y_: cy})
+                    good = (cx, cy) == (sp.Rational(q["blanks"][0]["answers"][0]), sp.Rational(q["blanks"][1]["answers"][0])) if "중심" in mt.group(2) else sp.sqrt(R2) == sp.Rational(q["answer"])
+                    if good: ok += 1
+                    else: bad += 1; print("BAD", f, q["id"], p)
+                    continue
                 mt = re.match(r"(.+?) = 0의 (두|세) 근의 (합|곱)은\?$", p)
                 if mt:
                     P_ = sp.Poly(tosym(mt.group(1)), x); rts = sp.roots(P_, multiple=True)

@@ -143,3 +143,16 @@ def fixjosa(s):
             jo2 = _JP[jo][1 if b else 0]
         return n + close + jo2
     return _re.sub(r"(\d+)([)\]]?)(으로|로|를|을|와|과|는|은|가)(?![가-힣])", rep, s)
+
+def mul(a, x):
+    """계수 a × 값 x 표기 (1, −1은 생략)"""
+    if a == 1: return par(x) if not isinstance(x, str) else x
+    if a == -1: return "−" + (par(x) if not isinstance(x, str) else x)
+    return f"{m(a)}×{par(x) if not isinstance(x, str) else x}"
+def sx(s, v="x"):
+    """기울기 s를 붙인 항: 1 → x, −1 → −x, 분수 → (p/q)x"""
+    s = F(s)
+    if s == 1: return v
+    if s == -1: return "−" + v
+    if s.denominator == 1: return f"{m(int(s))}{v}"
+    return f"{'−' if s < 0 else ''}({fs(abs(s))}){v}"
