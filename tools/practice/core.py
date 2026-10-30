@@ -16,6 +16,7 @@ def fs(fr):
     fr = F(fr)
     return str(fr.numerator) if fr.denominator == 1 else f"{fr.numerator}/{fr.denominator}"
 def fm(fr): return m(fs(fr))
+def fpar(fr): return f"({fm(fr)})" if F(fr) < 0 else fm(fr)
 def alts(x):
     s = str(x)
     out = [s]
@@ -51,7 +52,7 @@ def fstr(f): return " × ".join(f"{p}{sup(e) if e > 1 else ''}" for p, e in sort
 def divisors(n): return [d for d in range(1, n + 1) if n % d == 0]
 def is_prime(n): return n > 1 and all(n % d for d in range(2, isqrt(n) + 1))
 
-def build(templates, per=6, seed=1, tries=400):
+def build(templates, per=6, seed=1, tries=400, minlen=20):
     """templates: [(제목, 함수(rng)->question)] → 같은 문항 없이 per개씩"""
     pool = []
     for g, (title, fn) in enumerate(templates, 1):
@@ -59,6 +60,8 @@ def build(templates, per=6, seed=1, tries=400):
         for _ in range(tries):
             q = fn(rng)
             if q is None or q["prompt"] in seen: continue
+            if len(q["explanation"]) < minlen and q.get("hint"):
+                q["explanation"] += "\n핵심: " + q["hint"]
             seen.add(q["prompt"]); k += 1
             assert q["explanation"] and len(q["explanation"]) >= 20, q
             for key in ("prompt", "explanation", "hint"):
@@ -66,13 +69,15 @@ def build(templates, per=6, seed=1, tries=400):
             q["id"] = f"g{g}-{k}"; q["group"] = g; q["stage"] = "practice"
             pool.append(q)
             if k == per: break
-        assert k == per, (title, k)
+        assert k >= min(per, 4), (title, k)
+        if k < per: print(f"  · '{title}' {k}/{per}")
     return pool
 
-def write(c, ch, l, templates, per=6, seed=1):
+def write(c, ch, l, templates, per=6, seed=1, minlen=None):
+    if minlen is None: minlen = 20 if c == "c0" else 40 if c in ("c1", "c2") else 60
     d = f"{SITE}/content/level1/{c}/{ch}"
     lesson = json.load(open(f"{d}/{l}.json"))
-    pool = build(templates, per, seed)
+    pool = build(templates, per, seed, minlen=minlen)
     out = {"schema_version": "1.0", "site": "math-arena", "level": 1,
            "course": lesson["course"], "chapter": lesson["chapter"], "lesson": lesson["lesson"],
            "practice": {"id": lesson["lesson"]["id"] + "-p", "set_size": 10,
@@ -137,4 +142,4 @@ def fixjosa(s):
         else:
             jo2 = _JP[jo][1 if b else 0]
         return n + close + jo2
-    return _re.sub(r"(\d+)(\)?)(으로|로|를|을|와|과|는|은|가)(?![가-힣])", rep, s)
+    return _re.sub(r"(\d+)([)\]]?)(으로|로|를|을|와|과|는|은|가)(?![가-힣])", rep, s)

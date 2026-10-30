@@ -37,7 +37,7 @@ with sync_playwright() as pw:
         pg.goto(url); pg.wait_for_selector("#main .prompt")
         print(f.split("content/")[1], "bank", len(d["questions"]), "wrong", bad)
     # 레슨 완료 화면 링크와 목록 링크
-    pg.goto(BASE + "browse.html?c=c0"); pg.wait_for_selector(".chapter")
+    pg.goto(BASE + "browse.html?c=" + files[0].split("/")[-3]); pg.wait_for_selector(".chapter")
     k = len(pg.query_selector_all("a.prac")); print("browse 연습 링크", k, "|", pg.inner_text(".course-head p"))
     print("1회 표시:", [a.inner_text() for a in pg.query_selector_all("a.prac")][:4])
     b.close()
