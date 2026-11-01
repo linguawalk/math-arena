@@ -52,7 +52,7 @@ def fstr(f): return " × ".join(f"{p}{sup(e) if e > 1 else ''}" for p, e in sort
 def divisors(n): return [d for d in range(1, n + 1) if n % d == 0]
 def is_prime(n): return n > 1 and all(n % d for d in range(2, isqrt(n) + 1))
 
-def build(templates, per=6, seed=1, tries=400, minlen=20):
+def build(templates, per=6, seed=1, tries=1200, minlen=20):
     """templates: [(제목, 함수(rng)->question)] → 같은 문항 없이 per개씩"""
     pool = []
     for g, (title, fn) in enumerate(templates, 1):
